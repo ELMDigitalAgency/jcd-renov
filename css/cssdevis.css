@@ -1,0 +1,91 @@
+/* Style de la barre coulissante */
+input[type="range"] {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 8px;
+    background: #ef9e14;
+    outline: none;
+    opacity: 0.9;
+    transition: opacity 0.2s;
+  }
+  
+  input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: #ef9e14;
+    cursor: pointer;
+  }
+  
+  input[type="range"]::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    background: #4CAF50;
+    cursor: pointer;
+  }
+  
+  output {
+    font-weight: bold;
+    margin-top: 10px;
+    display: inline-block;
+    color: #ef9e14;
+  }
+
+  .euro {
+    font-weight: bold;
+    margin-top: 10px;
+    display: inline-block;
+    color: #ef9e14;
+  }
+  
+  .form-input {
+    background-color: #282828; /* Couleur de fond similaire à celle du formulaire */
+    color: #ffffff; /* Texte en blanc */
+    padding: 10px;
+    border: 1px solid #282828; /* Bordure avec une nuance plus foncée pour le contraste */
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%; /* Pour s'assurer que l'élément prend toute la largeur */
+}
+
+.form-input option {
+    background-color: #282828; /* Même couleur pour les options */
+    color: #ffffff; /* Texte en blanc pour les options */
+}
+
+/* Pour le survol et l'interaction avec le select */
+.form-input:focus {
+    outline: none;
+    border-color: #282828; /* Bordure changée lors du focus */
+}
+
+.form-label {
+    color: #ffffff; /* Couleur du texte des labels en blanc */
+    margin-bottom: 5px;
+}
+
+footer.footer-classic {
+    padding-bottom: 10px; /* Ajuste cette valeur à ton goût */
+    margin-bottom: 0; /* S'assure qu'il n'y a pas de marge inutile */
+}
+
+
+.loader {
+  border: 4px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 4px solid #3498db;
+  width: 20px;
+  height: 20px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+#side-menu {
+  z-index: 1000; /* Assure-toi que le menu est au-dessus des autres éléments */
+}
