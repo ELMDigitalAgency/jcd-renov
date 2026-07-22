@@ -1,4 +1,16 @@
-/** Stub — remplacé en Phase 5/6. */
+import { CityPageTemplate } from "@/components/villes/CityPageTemplate";
+import { getVille } from "@/content/villes";
+import { buildMetadata } from "@/lib/seo";
+
+const ville = getVille("couvreur-zingueur-montargis");
+
+export const metadata = buildMetadata({
+  title: ville.metaTitle,
+  description: ville.metaDescription,
+  path: `/${ville.slug}`,
+});
+
+/** Page ville Montargis — wrapper mince : contenu unique → template (cahier §6). */
 export default function Page() {
-  return <div className="p-8">En construction</div>;
+  return <CityPageTemplate ville={ville} />;
 }

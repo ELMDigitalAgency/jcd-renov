@@ -1,4 +1,18 @@
-/** Stub — remplacé en Phase 5/6. */
+import { PrestationPageTemplate } from "@/components/prestations/PrestationPageTemplate";
+import { getPrestation } from "@/content/prestations";
+import { getPostsForPrestation } from "@/lib/blog";
+import { buildMetadata } from "@/lib/seo";
+
+const prestation = getPrestation("zinguerie-villemandeur");
+
+export const metadata = buildMetadata({
+  title: prestation.metaTitle,
+  description: prestation.metaDescription,
+  path: `/${prestation.slug}`,
+});
+
+/** Page Zinguerie — wrapper mince : contenu + articles liés → template (cahier §5). */
 export default function Page() {
-  return <div className="p-8">En construction</div>;
+  const relatedPosts = getPostsForPrestation(prestation.slug);
+  return <PrestationPageTemplate prestation={prestation} relatedPosts={relatedPosts} />;
 }
