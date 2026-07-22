@@ -29,34 +29,36 @@ Plan approuvé : `C:\Users\cyril\.claude\plans\hashed-weaving-bonbon.md`
 - [x] Consentement RGPD + GA4 conditionnel (posture CNIL)
 - [x] A-VALIDER-CLIENT.md, DEPLOIEMENT.md, README.md (brouillons livraison)
 
-## Phase 5 — Pages
-- [ ] Accueil : 11 sections CDC §4 (hero bicolore, stats, diagnostic, fuite, process, bento, garanties, FAQ+schema, CTA, témoignages carrousel)
-- [ ] `PrestationPageTemplate` + 4 pages prestations (CDC §5 : consiste, signes, tarifs, zones, FAQ, CTA, articles liés)
-- [ ] `CityPageTemplate` + Montargis/Amilly/Chalette + `/zone-intervention`
-- [ ] `/realisations` (galerie lightbox), `/avis-clients`, `/a-propos`, `/devis-gratuit` (UI), `/mentions-legales` (hébergeur Vercel), `/politique-de-confidentialite`
+## Phase 5 — Pages ✅
+- [x] Accueil : sections CDC §4 (hero bicolore + stats, diagnostic, fuite, process, bento 6 cartes, garanties, FAQ+schema, CTA, carrousel avis)
+- [x] `PrestationPageTemplate` + 4 pages prestations (En bref GEO, consiste, signes, tarifs, zones, FAQ schema, articles liés, CTA)
+- [x] `CityPageTemplate` + Montargis/Amilly/Chalette + `/zone-intervention`
+- [x] `/realisations` (71 photos lightbox), `/avis-clients` (9 avis réels), `/a-propos`, `/mentions-legales` (Vercel), `/politique-de-confidentialite` (RGPD)
 
-## Phase 6 — Blog
-- [ ] Infra MDX (`lib/blog.ts`, mdx-components, CtaEncart/TableauPrix/FaqArticle, listing, [slug], tests registre)
-- [ ] 15 articles rédigés (sous-agents parallèles, briefs Excel : slug + mots-clés + maillage imposés)
+## Phase 6 — Blog ✅
+- [x] Infra MDX complète (blockJS:false — piège next-mdx-remote v6 !) + tests registre (rendu HTML réel)
+- [x] **15/15 articles rédigés** (13 sous-agents parallèles + 2 pilotes) — verrou de test « exactement 15 publiés »
 
-## Phase 7 — Formulaire devis
-- [ ] `devis-schema.ts` partagé, compression image canvas, DevisForm + FileInput, `api/devis/route.ts` + Resend
-- [ ] Tests : honeypot, time-trap, validation, 413, mock Resend
+## Phase 7 — Formulaire devis ✅
+- [x] Schéma Zod partagé, compression canvas, DevisForm + FileInput, API Resend (replyTo, pièce jointe, HTML échappé)
+- [x] 19 tests : honeypot silencieux, time-trap, validation, 413, 502, env manquante
 
-## Phase 8 — Finition SEO
-- [ ] `sitemap.ts`, `robots.ts` (crawlers IA autorisés), `public/llms.txt`
-- [ ] OG images `ImageResponse` (template marine/orange, TTF)
-- [ ] Table 301 complète (2 jeux d'URLs + .html + .php) + test intégrité
-- [ ] Audit metas vs Excel (chaque page = title/description/H1 exacts)
+## Phase 8 — Finition SEO ✅
+- [x] sitemap.ts, robots.ts (crawlers IA), llms.txt, OG images build-time (défaut + 4 prestations + articles)
+- [x] Table 301 complète (48 règles × variantes) + tests intégrité
+- [x] Audit metas vs Excel automatisé (`scripts/audit-build.mjs`) : 31 pages vertes
 
-## Phase 9 — QA
-- [ ] `npm run check` (typecheck + lint + tests + build SSG 31+ pages)
-- [ ] Lighthouse (perf ≥ 90, SEO ≥ 95, a11y ≥ 95) + a11y clavier
-- [ ] Revue paranoïaque + passe itération
+## Phase 9 — QA ✅
+- [x] `npm run check` vert : typecheck + lint + **132 tests** + build **59 pages statiques**
+- [x] **Lighthouse mobile 100/100/100/100** (A11y/BP/SEO/Agentic) après passe contraste (palette 2 tons : terracotta primary-ink) — LCP 191 ms, CLS 0.00
+- [x] Audit HTML généré : liens internes, titles Excel, H1 uniques, canonicals — 0 erreur
+- [x] Vérification visuelle navigateur (accueil + prestation, mobile)
 
-## Phase 10 — Livraison
-- [ ] `A-VALIDER-CLIENT.md`, `DEPLOIEMENT.md` (Vercel/DNS/Resend/GSC/GBP), `README.md`
-- [ ] Commits conventionnels par phase
+## Phase 10 — Livraison ✅
+- [x] `A-VALIDER-CLIENT.md` (10 points, rien d'inventé), `DEPLOIEMENT.md` (Vercel/DNS/Resend/GSC/GBP), `README.md`
+- [x] 10 commits conventionnels
 
-## Revue de fin de tâche
-_(à remplir à la livraison)_
+## Revue de fin de tâche (22/07/2026)
+- **Périmètre couvert** : refonte complète PHP → Next.js 15 SSG, design BuildSafe, stratégie SEO Villemandeur appliquée à la lettre (metas, 15 articles, maillage, 301), formulaire sécurisé, RGPD, GEO (llms.txt, robots IA, En bref).
+- **Reste côté humain** : actions DEPLOIEMENT.md (Vercel, DNS, Resend, GSC, GBP) + validations A-VALIDER-CLIENT.md.
+- **Dette assumée** : photos spécifiques démoussage/fuite à obtenir du client (heroes actuels = meilleures photos existantes) ; note Google absente tant que GBP inexistant (voulu).
