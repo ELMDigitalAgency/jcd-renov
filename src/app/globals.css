@@ -6,15 +6,19 @@
 @source not "../../legacy";
 
 @theme {
-  /* Palette BuildSafe (cahier des charges §2.1) */
-  --color-primary: #f2731e; /* orange — CTA, surbrillance titres, bandeau stats */
+  /* Palette BuildSafe (cahier des charges §2.1) — déclinée en 2 tons d'orange
+     pour l'accessibilité WCAG AA : le vif pour les fonds/icônes/décor, le
+     terracotta (« tuile terre cuite », l'esprit même du CDC) pour le texte
+     orange sur fond clair et les bandeaux porteurs de texte blanc. */
+  --color-primary: #f2731e; /* orange vif — icônes, décor, hovers, fonds sans texte dense */
+  --color-primary-ink: #b04a08; /* orange terracotta — texte accent (≥4,5:1 sur crème) et bandeaux à texte blanc */
   --color-primary-dark: #d95f10;
   --color-navy: #16213e; /* bleu marine — titres, boutons, footer */
   --color-navy-light: #232f52;
   --color-cream: #f8f3e9; /* fond hero et sections alternées */
   --color-blush: #f7e2dc; /* carte bento n°1 */
   --color-lavender: #e7e4f5; /* carte bento n°2 */
-  --color-body: #6b7280; /* texte courant */
+  --color-body: #5b6472; /* texte courant (≥4,5:1 sur crème) */
 
   /* Typographie (cahier des charges §2.2) */
   --font-heading: var(--font-jakarta), ui-sans-serif, system-ui, sans-serif;

@@ -17,7 +17,7 @@ export function Card({ children, variant = "white", className }: CardProps) {
         variant === "cream" && "bg-cream",
         variant === "blush" && "bg-blush",
         variant === "lavender" && "bg-lavender",
-        variant === "orange" && "bg-primary text-white",
+        variant === "orange" && "bg-primary-ink text-white",
         variant === "navy" && "bg-navy text-white",
         className,
       )}

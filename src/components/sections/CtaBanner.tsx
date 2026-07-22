@@ -17,7 +17,7 @@ export function CtaBanner({
   return (
     <section aria-label="Demander un devis">
       <Container className="py-8">
-        <div className="rounded-card flex flex-col items-start justify-between gap-6 bg-primary px-8 py-10 sm:px-12 lg:flex-row lg:items-center">
+        <div className="rounded-card flex flex-col items-start justify-between gap-6 bg-primary-ink px-8 py-10 sm:px-12 lg:flex-row lg:items-center">
           <p className="font-heading max-w-2xl text-2xl font-extrabold text-white sm:text-3xl">
             {title}
           </p>

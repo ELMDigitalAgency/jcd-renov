@@ -20,7 +20,7 @@ export function ProcessSteps() {
               <Card className="flex h-full flex-col gap-4">
                 <div className="flex items-center justify-between">
                   <IconBadge icon={step.icon} />
-                  <span className="font-heading text-sm font-extrabold text-primary" aria-hidden>
+                  <span className="font-heading text-sm font-extrabold text-primary-ink" aria-hidden>
                     0{index + 1}
                   </span>
                 </div>

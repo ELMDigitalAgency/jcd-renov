@@ -26,5 +26,5 @@ export function PageTitle({ children, className }: PageTitleProps) {
 
 /** Segment orange dans un titre bicolore (H1 comme H2) — cahier des charges §4. */
 export function TitleAccent({ children }: { children: React.ReactNode }) {
-  return <span className="text-primary">{children}</span>;
+  return <span className="text-primary-ink">{children}</span>;
 }

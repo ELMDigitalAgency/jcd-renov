@@ -52,7 +52,7 @@ export function PriceTable({ tarifs }: PriceTableProps) {
                     >
                       {row.label}
                     </th>
-                    <td className="px-6 py-4 text-sm font-semibold whitespace-nowrap text-primary sm:text-base">
+                    <td className="px-6 py-4 text-sm font-semibold whitespace-nowrap text-primary-ink sm:text-base">
                       {row.fourchette}
                     </td>
                     <td className="px-6 py-4 text-sm sm:text-base">{row.unite}</td>

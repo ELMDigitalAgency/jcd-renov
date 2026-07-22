@@ -30,7 +30,7 @@ export function CategoryBadge({
   return (
     <span
       className={cn(
-        "inline-flex items-center rounded-full px-3 py-1 text-xs font-semibold tracking-wide text-primary uppercase",
+        "inline-flex items-center rounded-full px-3 py-1 text-xs font-semibold tracking-wide text-primary-ink uppercase",
         tone === "cream" ? "bg-cream" : "bg-white",
       )}
     >
@@ -68,7 +68,7 @@ export function BlogCard({ post }: BlogCardProps) {
           {post.title}
         </h2>
         <p className="text-sm leading-relaxed">{post.description}</p>
-        <span className="mt-auto inline-flex items-center gap-2 pt-2 text-sm font-semibold text-primary">
+        <span className="mt-auto inline-flex items-center gap-2 pt-2 text-sm font-semibold text-primary-ink">
           Lire l’article
           <ArrowRight
             className="size-4 transition-transform duration-200 group-hover:translate-x-1"

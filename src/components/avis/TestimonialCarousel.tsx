@@ -105,13 +105,19 @@ export function TestimonialCarousel({ avis }: TestimonialCarouselProps) {
               onClick={() => scrollTo(index)}
               aria-label={`Aller à l’avis ${index + 1}`}
               aria-current={index === selectedIndex ? "true" : undefined}
-              className={cn(
-                "h-2.5 rounded-full transition-all duration-300",
-                index === selectedIndex
-                  ? "w-6 bg-primary"
-                  : "w-2.5 bg-navy/20 hover:bg-navy/40",
-              )}
-            />
+              className="group flex size-6 items-center justify-center"
+            >
+              {/* Cible tactile 24px (WCAG target-size), dot visuel plus petit */}
+              <span
+                aria-hidden
+                className={cn(
+                  "h-2.5 rounded-full transition-all duration-300",
+                  index === selectedIndex
+                    ? "w-6 bg-primary-ink"
+                    : "w-2.5 bg-navy/20 group-hover:bg-navy/40",
+                )}
+              />
+            </button>
           ))}
         </div>
 

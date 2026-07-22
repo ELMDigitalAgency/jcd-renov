@@ -132,7 +132,7 @@ export function CityPageTemplate({ ville }: CityPageTemplateProps) {
                       {prestation.ancre}
                     </Link>
                   </h3>
-                  <span className="mt-auto inline-flex items-center gap-2 pt-4 text-sm font-semibold text-primary">
+                  <span className="mt-auto inline-flex items-center gap-2 pt-4 text-sm font-semibold text-primary-ink">
                     Découvrir
                     <ArrowRight
                       className="size-4 transition-transform group-hover:translate-x-0.5"

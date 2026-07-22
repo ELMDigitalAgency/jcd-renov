@@ -48,7 +48,6 @@ export function ServicesBento() {
           <Link
             href={`/${demoussage.slug}`}
             className="group block sm:col-span-2"
-            aria-label="Démoussage et traitement de toiture à Villemandeur"
           >
             <Card
               variant="blush"
@@ -80,7 +79,7 @@ export function ServicesBento() {
             <span className="font-heading text-4xl font-extrabold tracking-tight text-navy">
               JCD
             </span>
-            <span className="font-heading text-base font-extrabold tracking-[0.25em] text-primary">
+            <span className="font-heading text-base font-extrabold tracking-[0.25em] text-primary-ink">
               RÉNOVATION
             </span>
           </Card>
@@ -89,7 +88,6 @@ export function ServicesBento() {
           <Link
             href={`/${zinguerie.slug}`}
             className="group block"
-            aria-label="Zinguerie à Villemandeur : gouttières, solins, chéneaux"
           >
             <Card
               variant="lavender"
@@ -116,7 +114,6 @@ export function ServicesBento() {
           <Link
             href={`/${fuite.slug}`}
             className="group block sm:col-span-2"
-            aria-label="Recherche de fuite en toiture à Villemandeur"
           >
             <Card
               variant="orange"
@@ -124,7 +121,7 @@ export function ServicesBento() {
             >
               <div className="flex flex-1 flex-col gap-4 p-6 sm:p-8">
                 <h3 className="font-heading text-xl font-bold sm:text-2xl">Recherche de fuite</h3>
-                <p className="text-sm leading-relaxed text-white/85">
+                <p className="text-sm leading-relaxed text-white">
                   Une tache au plafond signale rarement le point d’entrée réel de l’eau. Nous
                   localisons l’origine exacte de l’infiltration avant de réparer.
                 </p>
@@ -147,7 +144,6 @@ export function ServicesBento() {
           <Link
             href="/devis-gratuit"
             className="group block"
-            aria-label="Une question ? Contactez-nous pour un devis gratuit"
           >
             <Card className="flex h-full flex-col justify-between gap-6 transition-transform duration-300 group-hover:-translate-y-1">
               <h3 className="font-heading text-xl font-bold text-navy">

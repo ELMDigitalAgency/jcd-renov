@@ -37,7 +37,7 @@ export function Header() {
       <div className="mx-auto flex h-16 w-full max-w-6xl items-center justify-between gap-4 px-4 sm:px-6 lg:h-[4.5rem] lg:px-8">
         {/* Logo typographique bicolore (maquette BuildSafe) */}
         <Link href="/" className="font-heading text-lg font-extrabold tracking-tight lg:text-xl" aria-label="JCD Rénovation — accueil">
-          <span className="text-navy">JCD</span> <span className="text-primary">RÉNOVATION</span>
+          <span className="text-navy">JCD</span> <span className="text-primary-ink">RÉNOVATION</span>
         </Link>
 
         {/* Navigation desktop */}
@@ -46,7 +46,7 @@ export function Header() {
             href="/"
             className={cn(
               "text-sm font-semibold transition-colors hover:text-primary",
-              pathname === "/" ? "text-primary" : "text-navy",
+              pathname === "/" ? "text-primary-ink" : "text-navy",
             )}
           >
             Accueil
@@ -58,7 +58,7 @@ export function Header() {
               type="button"
               className={cn(
                 "flex items-center gap-1 text-sm font-semibold transition-colors group-hover:text-primary",
-                prestations.some((p) => pathname === `/${p.slug}`) ? "text-primary" : "text-navy",
+                prestations.some((p) => pathname === `/${p.slug}`) ? "text-primary-ink" : "text-navy",
               )}
               aria-haspopup="true"
             >
@@ -87,7 +87,7 @@ export function Header() {
               href={link.href}
               className={cn(
                 "text-sm font-semibold transition-colors hover:text-primary",
-                pathname === link.href ? "text-primary" : "text-navy",
+                pathname === link.href ? "text-primary-ink" : "text-navy",
               )}
             >
               {link.label}
