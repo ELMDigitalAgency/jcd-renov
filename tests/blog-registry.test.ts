@@ -41,12 +41,20 @@ function stripCodeFences(markdown: string): string {
 }
 
 describe("registre blog", () => {
-  it("au moins 2 articles publiés (non-draft)", () => {
+  it("les 15 articles du calendrier éditorial sont publiés (non-draft)", () => {
     const published = entries.filter((entry) => {
       const parsed = frontmatterSchema.safeParse(entry.data);
       return parsed.success && !parsed.data.draft;
     });
-    expect(published.length).toBeGreaterThanOrEqual(2);
+    // Verrou : le calendrier SEO définit exactement 15 articles (blogSlugs).
+    expect(published.length).toBe(15);
+  });
+
+  it("chaque slug du calendrier éditorial a son fichier .mdx", () => {
+    const fileSlugs = new Set(entries.map((entry) => entry.slug));
+    for (const slug of blogSlugs) {
+      expect(fileSlugs.has(slug), `article manquant : ${slug}.mdx`).toBe(true);
+    }
   });
 
   it("les slugs sont uniques", () => {
