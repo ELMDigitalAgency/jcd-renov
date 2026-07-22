@@ -1,5 +1,4 @@
-import "server-only";
-
+// Module serveur uniquement (fs) : ne jamais l'importer depuis un composant client.
 import fs from "node:fs";
 import path from "node:path";
 
@@ -12,6 +11,7 @@ const BLOG_DIR = path.join(process.cwd(), "src", "content", "blog");
 
 /** Slug = nom de fichier (jamais dans le frontmatter → pas de désynchronisation). */
 export function getPostSlugs(): BlogSlug[] {
+  if (!fs.existsSync(BLOG_DIR)) return [];
   return fs
     .readdirSync(BLOG_DIR)
     .filter((file) => file.endsWith(".mdx"))
