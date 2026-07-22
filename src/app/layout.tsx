@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Inter, Plus_Jakarta_Sans } from "next/font/google";
 
+import { ConsentBanner } from "@/components/consent/ConsentBanner";
+import { GoogleAnalytics } from "@/components/consent/GoogleAnalytics";
 import { Footer } from "@/components/layout/Footer";
 import { Header } from "@/components/layout/Header";
 import { JsonLd } from "@/components/ui/JsonLd";
@@ -42,6 +44,9 @@ export default function RootLayout({
         <Header />
         <main id="contenu">{children}</main>
         <Footer />
+        {/* RGPD : rien ne se charge sans NEXT_PUBLIC_GA_ID + consentement */}
+        <ConsentBanner />
+        <GoogleAnalytics />
       </body>
     </html>
   );

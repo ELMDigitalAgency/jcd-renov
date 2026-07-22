@@ -2,25 +2,32 @@
 
 Plan approuvé : `C:\Users\cyril\.claude\plans\hashed-weaving-bonbon.md`
 
-## Phase 1 — Setup
+## Phase 1 — Setup ✅
 - [x] Archiver l'ancien site dans `legacy/`, documents dans `docs/`
 - [x] Créer `tasks/` (project-context, todo, lessons, bugs)
-- [ ] Scaffold Next.js 15 + TS strict + Tailwind 4 + configs qualité (ESLint 9 + règle anti-H1, Prettier LF, Vitest)
-- [ ] `npm run check` vert (smoke)
+- [x] Scaffold Next.js 15 + TS strict + Tailwind 4 + configs qualité (ESLint 9 + règle anti-H1, Prettier LF, Vitest)
+- [x] `npm run check` vert (smoke)
 
-## Phase 2 — Design system
-- [ ] `globals.css` : `@theme` (couleurs/typo/radius/shadow) + `@source not "../../legacy"`
-- [ ] next/font : Plus Jakarta Sans (700/800) + Inter (400/500)
-- [ ] Primitives `ui/` : PageTitle (seul H1), ButtonLink pill, Card, SectionHeading, IconBadge, ServiceIcon, Accordion, StatsBand, Breadcrumbs, JsonLd, PhoneLink, StarRating + tests
+## Phase 2 — Design system ✅
+- [x] `globals.css` : `@theme` + `@source not "../../legacy"`
+- [x] next/font : Plus Jakarta Sans (700/800) + Inter (400/500/600)
+- [x] Primitives `ui/` complètes (PageTitle seul H1 + verrou ESLint)
 
-## Phase 3 — Données & lib
-- [ ] `site.config.ts` (NAP réel + stats flaguées + CLIENT_TODOS)
-- [ ] `content/` : types, prestations (4), villes (3), communes, faq-home (6 questions CDC), avis (9 réels), process (4 étapes), garanties (3)
-- [ ] `lib/` : seo (buildMetadata), schema (JSON-LD typés + tests), routes, blog (Zod frontmatter)
+## Phase 3 — Données & lib ✅
+- [x] `site.config.ts` (NAP réel + stats flaguées + CLIENT_TODOS)
+- [x] `content/` : types, prestations (4, metas Excel), villes (3), communes, faq-home, avis (9 réels), process, garanties
+- [x] `lib/` : seo, schema (+ tests 6/6), routes, blog (Zod), redirects (table complète + tests 8/8)
 
-## Phase 4 — Shell + images
-- [ ] `layout.tsx` (fonts, metadataBase, RoofingContractor sitewide), Header sticky + dropdown, Footer marine, not-found
-- [ ] Script import images legacy (dédoublonnage MD5, renommage SEO) + manifest `realisations.ts` avec alt rédigés + heroes dans `src/assets`
+## Phase 4 — Shell + images ✅
+- [x] layout (fonts, metadataBase, RoofingContractor sitewide, consent), Header sticky + dropdown, Footer marine, not-found, favicon + apple-icon
+- [x] Import images : 7 heroes choisis visuellement + 71 photos galerie (9 doublons MD5 éliminés), manifest realisations.ts
+
+## Phase 8 (avancée en parallèle des agents) — SEO technique
+- [x] robots.ts (crawlers IA autorisés), sitemap.ts (+ tests), public/llms.txt
+- [x] OG images par code : template Satori + défaut + 4 prestations + blog/[slug] dynamique
+- [x] Table 301 complète (2 jeux d'URLs + .html + .php + filet) + test intégrité renforcé
+- [x] Consentement RGPD + GA4 conditionnel (posture CNIL)
+- [x] A-VALIDER-CLIENT.md, DEPLOIEMENT.md, README.md (brouillons livraison)
 
 ## Phase 5 — Pages
 - [ ] Accueil : 11 sections CDC §4 (hero bicolore, stats, diagnostic, fuite, process, bento, garanties, FAQ+schema, CTA, témoignages carrousel)

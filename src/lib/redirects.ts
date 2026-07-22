@@ -1,13 +1,15 @@
 /**
  * Table de redirections 301 des anciennes URLs vers le nouveau site.
  *
- * Deux jeux d'URLs sont couverts :
- * 1. Le site historiquement EN LIGNE sur www.jcd-renovation.fr (Webkom)
+ * Deux jeux d'URLs sont couverts (audit du 22/07/2026) :
+ * 1. Le site historiquement EN LIGNE sur www.jcd-renovation.fr (Webkom) —
+ *    URLs relevées dans son sitemap réel ;
  * 2. Le dossier local .com (ELM Digital) — atteignable si jcd-renovation.com
- *    est rattaché au projet Vercel avec redirection de domaine
+ *    est rattaché au projet Vercel avec redirection de domaine (chemin
+ *    préservé), cf. DEPLOIEMENT.md.
  *
- * La table est complétée en Phase 8 (finition SEO) et testée par
- * tests/redirects.test.ts (chaque destination existe, zéro chaîne).
+ * Testée par tests/redirects.test.ts : chaque destination existe dans le
+ * registre de routes, zéro chaîne, zéro collision avec une route réelle.
  */
 
 export type RedirectRule = {
@@ -16,11 +18,60 @@ export type RedirectRule = {
   permanent: boolean;
 };
 
+const anciennesVillesSecondaires = ["nemours-77140", "sens-89100", "sully-sur-loire-45600"];
+const anciennesVillesArticles = ["montargis", "nemours", "orleans", "sens", "sully-sur-loire"];
+
 /** Entrées « métier » : ancienne URL (sans extension) → nouvelle URL. */
 export const legacyRedirectMap: ReadonlyArray<{
   source: string;
   destination: string;
-}> = [];
+}> = [
+  // ── Jeu 1 : site en ligne jcd-renovation.fr (Webkom) ────────────────────
+  { source: "/nettoyage-et-demoussage-de-toiture-45", destination: "/demoussage-toiture-villemandeur" },
+  { source: "/urgence-fuite-de-toiture-45", destination: "/recherche-de-fuite-toiture-villemandeur" },
+  { source: "/couverture-a-montargis-45200", destination: "/couvreur-zingueur-montargis" },
+  { source: "/couverture-a-nemours-77140", destination: "/zone-intervention" },
+  { source: "/couverture-a-sens-89100", destination: "/zone-intervention" },
+  { source: "/couverture-a-sully-sur-loire-45600", destination: "/zone-intervention" },
+  { source: "/contact", destination: "/devis-gratuit" },
+  // Prestations abandonnées (peinture, espaces verts, ravalement) → accueil
+  { source: "/peinture-interieur-et-exterieur-45", destination: "/" },
+  { source: "/entretien-espace-vert-45", destination: "/" },
+  { source: "/ravalement-de-facade-45", destination: "/" },
+
+  // ── Jeu 2 : dossier local jcd-renovation.com (ELM) ──────────────────────
+  { source: "/nettoyage-demoussage-45", destination: "/demoussage-toiture-villemandeur" },
+  { source: "/fuite-toiture-45", destination: "/recherche-de-fuite-toiture-villemandeur" },
+  { source: "/ravalement-facade-45", destination: "/" },
+  { source: "/couverture-montargis-45200", destination: "/couvreur-zingueur-montargis" },
+  ...anciennesVillesSecondaires.map((ville) => ({
+    source: `/couverture-${ville}`,
+    destination: "/zone-intervention",
+  })),
+  { source: "/realisation", destination: "/realisations" },
+  // Hubs blog par ville → hub blog unique
+  { source: "/blog-montargis-45200", destination: "/blog" },
+  { source: "/blog-nemours-77140", destination: "/blog" },
+  { source: "/blog-sens-89100", destination: "/blog" },
+  { source: "/blog-sully-sur-loire", destination: "/blog" },
+  // Articles par ville → équivalents thématiques du nouveau blog
+  ...anciennesVillesArticles.map((ville) => ({
+    source: `/article-couverture-${ville}`,
+    destination: "/blog",
+  })),
+  ...anciennesVillesArticles.map((ville) => ({
+    source: `/article-renovation-${ville}`,
+    destination: "/blog",
+  })),
+  ...anciennesVillesArticles.map((ville) => ({
+    source: `/guide-entretien-toiture-${ville}`,
+    destination: "/blog/entretien-toiture-tuile-ardoise-zinc",
+  })),
+  ...anciennesVillesArticles.map((ville) => ({
+    source: `/guide-ravalement-facade-${ville}`,
+    destination: "/blog",
+  })),
+];
 
 /**
  * Génère les règles Next.js : pour chaque entrée, la variante nue ET la
