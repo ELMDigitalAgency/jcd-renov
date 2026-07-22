@@ -1,0 +1,310 @@
+
+JCD RÉNOVATION
+Refonte du site jcd-renovation.fr
+Cahier des charges Design & Développement — Couvreur / Zingueur à Villemandeur
+Document à destination du développeur / intégrateur
+Juillet 2026
+
+1. Contexte & objectifs
+JCD Rénovation est une entreprise de couverture / zinguerie basée dans le Loiret (45). Le site actuel (jcd-renovation.fr) cible une zone large (Orléans, Nemours, Sully-sur-Loire, Montargis, Sens). Le client souhaite désormais recentrer la stratégie sur Villemandeur (45700) comme ville principale, avec un focus prestations sur :
+Démoussage de couverture (nettoyage + traitement hydrofuge)
+Zinguerie (gouttières, solins, chéneaux, noues)
+Recherche de fuite / diagnostic d'infiltration
+Le client a fourni une maquette de référence (template "BuildSafe", un thème vitrine pour la sécurité des chantiers) dont il souhaite reprendre la structure, le style et la mise en page à la lettre, adaptés au métier de couvreur-zingueur. Ce document traduit chaque section de cette maquette en équivalent JCD Rénovation, avec les textes, images et composants attendus.
+⚠ Hypothèse de travail : la maquette fournie est une capture d'écran (pas le fichier source). Les couleurs et polices ci-dessous sont donc des estimations visuelles fidèles, à valider/affiner au pixel près si le fichier Figma / le thème HTML original (ThemeForest ou équivalent) est disponible. Si le client a acheté ce template, demandez-lui le fichier source : cela évitera toute réinterprétation.
+⚠ Le client dit vouloir « focus sur Villemandeur » : ce document part du principe que Villemandeur devient la ville n°1 (H1, title, Google Business Profile) et que Montargis / Amilly / Chalette-sur-Loing / Cepoy (agglomération Montargoise et Rives du Loing) deviennent des zones secondaires. Orléans / Nemours / Sully-sur-Loire / Sens (zone de l'ancien site) sont à conserver uniquement si le client confirme qu'il continue à intervenir là-bas — sinon, à retirer pour ne pas diluer le référencement local. Voir le fichier Excel SEO joint pour le détail des zones.
+2. Charte graphique (design system)
+2.1 Palette de couleurs
+Palette relevée sur la maquette de référence, conservée telle quelle : le duo bleu marine / orange fonctionne particulièrement bien pour un couvreur (orange = tuile terre cuite, marine = sérieux / confiance).
+Rôle
+Couleur
+Code Hex (estimé)
+Usage
+Orange principal
+■
+#F2731E
+CTA, mots clés en surbrillance dans les titres, bandeau stats, icônes
+Bleu marine
+■
+#16213E
+Titres forts, boutons secondaires, footer, texte de navigation
+Crème / fond clair
+■
+#F8F3E9
+Fond du hero et sections alternées (au lieu du blanc pur)
+Blanc
+■
+#FFFFFF
+Fond principal, cartes
+Gris texte
+■
+#6B7280
+Texte courant, sous-titres, descriptions
+Rose pâle
+■
+#F7E2DC
+Fond de carte "feature" n°1 (bento grid)
+Lavande pâle
+■
+#E7E4F5
+Fond de carte "feature" n°2 (bento grid)
+2.2 Typographie
+La maquette utilise une sans-serif géométrique arrondie, en graisse Bold/ExtraBold sur les titres. Sans le fichier source, la paire Google Fonts la plus proche visuellement est :
+Titres (H1-H3) : Plus Jakarta Sans, graisses 700/800 (alternative : Sora, Poppins)
+Texte courant / boutons : Inter ou Plus Jakarta Sans, graisse 400/500
+Tailles indicatives : H1 44-56px, H2 32-36px, H3 20-24px, texte courant 16-17px, mentions/labels 13-14px
+⚠ Si le client obtient le fichier source du template, vérifier la police exacte via l'inspecteur du navigateur (font-family calculée) et la substituer ici.
+2.3 Composants UI récurrents
+Composant
+Style à reproduire
+Bouton principal
+Pill (border-radius 999px), fond bleu marine, texte blanc, icône flèche à droite ; hover → fond orange
+Bouton secondaire
+Pill, fond orange, texte blanc
+Cartes (features, FAQ, blog)
+Border-radius 20-24px, ombre douce (0 10px 30px rgba(22,33,62,0.08)), fond blanc ou couleur pastel selon la carte
+Icônes
+Style outline (trait fin), monochrome orange, dans un cercle ou carré à coins arrondis en fond clair
+Bandeau statistiques
+Plein fond orange, 3 colonnes séparées par un filet vertical fin blanc/transparent, chiffres en gras 32-40px
+Images
+Coins arrondis 24px, parfois recadrées en cercle (avatars témoignages)
+Accordéon FAQ
+Carte blanche, icône + / − à droite, ligne de séparation fine
+3. Arborescence du site (multi-pages)
+La maquette "BuildSafe" est une landing page one-page. Pour un objectif SEO local (viser la 1ère page Google sur plusieurs requêtes : couvreur, zingueur, démoussage, recherche de fuite, à Villemandeur et villes voisines), une seule page ne suffit pas : chaque prestation et chaque ville importante doit avoir sa propre page, capable de se positionner indépendamment. La page d'accueil garde l'esthétique et le storytelling de la maquette, mais chaque carte / section renvoie vers une page dédiée détaillée.
+Page
+Rôle SEO
+Accueil (/)
+Vitrine complète, reprend la structure de la maquette (voir §4), cible « couvreur Villemandeur » + « zingueur Villemandeur »
+Démoussage de toiture (/demoussage-toiture-villemandeur)
+Page prestation phare n°1
+Recherche de fuite (/recherche-de-fuite-toiture-villemandeur)
+Page prestation phare n°2
+Zinguerie (/zinguerie-villemandeur)
+Gouttières, solins, chéneaux, noues
+Couverture (/couvreur-villemandeur)
+Pose, rénovation, réparation de toiture
+Zone d'intervention (/zone-intervention + sous-pages villes)
+1 page par ville secondaire (Montargis, Amilly, Chalette-sur-Loing, Cepoy…)
+Réalisations (/realisations)
+Portfolio avant/après, preuve sociale locale
+Avis clients (/avis-clients)
+Reprend + enrichit les 10 avis existants
+À propos (/a-propos)
+Histoire, certifications, garantie décennale
+Blog (/blog + articles)
+Voir Excel SEO joint pour le calendrier éditorial complet
+Contact / Devis gratuit (/devis-gratuit)
+Formulaire, téléphone, zone d'intervention, horaires
+Mentions légales / Confidentialité
+Obligatoire (conservé de l'ancien site)
+
+4. Page d'accueil — détail section par section
+Pour chaque section de la maquette de référence : ce qu'elle montre dans le template original → ce qu'il faut faire pour JCD Rénovation, à la lettre.
+4.1 En-tête / navigation
+Dans la maquette : Fond blanc fixe, logo à gauche ("BUILD" en marine + "SAFE" en orange), menu horizontal (Home, About, Products, Features), bouton "Contact" en pill marine à droite.
+Adaptation JCD Rénovation : Même structure exacte, logo « JCD » en marine + « RÉNOVATION » en orange (ou logo existant du client si fourni).
+Élément
+Contenu / instruction
+Logo
+Reprendre le logo JCD Rénovation existant ; si absent, typographier « JCD » (marine, bold) + « RÉNOVATION » (orange)
+Menu
+Accueil / Nos prestations (menu déroulant : Couverture, Zinguerie, Démoussage, Recherche de fuite) / Réalisations / Zone d'intervention / Avis clients / Contact
+Bouton CTA
+« Devis Gratuit » — pill marine, lien vers /devis-gratuit
+Sticky
+Header fixe au scroll comme dans la maquette
+4.2 Hero (bloc d'accroche)
+Dans la maquette : Fond crème, à gauche un grand titre 2 couleurs + sous-titre gris + bouton "Explore more", à droite une photo d'un ouvrier + un visuel main tenant une tablette avec grue/casque en incrustation. En dessous : bandeau orange plein largeur avec 3 statistiques séparées par des filets verticaux.
+Adaptation JCD Rénovation : Même mise en page (texte gauche / photo droite, bandeau stats orange en dessous).
+Élément
+Contenu / instruction
+Titre (H1)
+« Protégez votre toiture à Villemandeur » — « Protégez votre toiture » en orange, « à Villemandeur » en bleu marine
+Sous-titre
+« Couvreur et zingueur qualifié : démoussage, zinguerie et recherche de fuite. Intervention rapide dans le 45700 et ses environs. »
+CTA principal
+« Devis Gratuit » (pill marine) — lien /devis-gratuit
+CTA secondaire
+Numéro de téléphone affiché en clair à côté du bouton (cliquable, click-to-call mobile)
+Photo
+Réutiliser une photo existante d'un couvreur JCD sur toit, ou photo fournie par le client ; à défaut prévoir un shooting (voir §6)
+Bandeau stats (orange)
+3 chiffres réels à faire valider par le client, ex. : « X ans d'expérience », « X toitures rénovées », « Garantie décennale 10 ans ». Ne jamais inventer de chiffres non confirmés — placeholder à remplacer avant mise en ligne.
+4.3 Bloc "vidéo / démo"
+Dans la maquette : Petit label orange "Watch our AI in action", titre 2 couleurs "Safer & Less Human Involvement", bouton "Get demo", à droite un mockup d'ordinateur portable affichant un dashboard.
+Adaptation JCD Rénovation : Rejoue le même bloc mais autour du diagnostic / de l'intervention plutôt que d'un logiciel.
+Élément
+Contenu / instruction
+Label
+« Diagnostic avant/après »
+Titre (H2)
+« Un diagnostic précis, une intervention rapide » — « diagnostic précis » en orange
+Texte
+Explication courte : visite sur site, devis gratuit sous 24-48h, intervention planifiée rapidement
+CTA
+« Demander un devis » → /devis-gratuit
+Visuel droite
+Remplacer le mockup dashboard par un photomontage avant/après toiture démoussée, ou une photo de toit avant/après sur tablette
+4.4 Section "Recherche de fuite" (ex "AI-based Safety Monitoring")
+Dans la maquette : Titre centré 2 couleurs, sous-titre centré gris, puis un visuel plein largeur (vue de drone d'un chantier) avec un bouton play centré par-dessus.
+Adaptation JCD Rénovation : Devient la vitrine de la prestation phare « recherche de fuite ».
+Élément
+Contenu / instruction
+Titre (H2), centré
+« Recherche de fuite & diagnostic toiture » — « Recherche de fuite » en orange
+Sous-titre
+« Localisez précisément l'origine d'une infiltration avant qu'elle n'aggrave les dégâts, grâce à une inspection méthodique de votre toiture. »
+Visuel
+Photo grand format d'une inspection de toiture (couvreur sur le toit, ou vue drone si le client en a) + bouton lecture si une vidéo existe, sinon retirer le bouton play et garder la photo seule
+4.5 4 cartes process (ex "Data Collection / Labelling / Training / Auto Object Detection")
+Dans la maquette : Titre centré "What is Image Processing & Training?", puis 4 cartes en ligne (icône orange outline + titre + description courte), fond gris clair.
+Adaptation JCD Rénovation : Devient le déroulé d'une intervention type, en 4 étapes.
+Élément
+Contenu / instruction
+Titre (H2), centré
+« Comment se déroule une intervention JCD Rénovation ? »
+Carte 1
+Icône loupe/œil — « Diagnostic gratuit » — visite sur place, évaluation de l'état de la toiture
+Carte 2
+Icône document — « Devis détaillé » — devis clair sous 24-48h, sans engagement
+Carte 3
+Icône brosse/toiture — « Intervention » — démoussage, zinguerie, réparation selon le besoin
+Carte 4
+Icône bouclier — « Contrôle qualité & garantie » — vérification finale, garantie décennale
+4.6 "Our Top Features" — grille bento (6 cartes)
+Dans la maquette : Titre centré, puis une grille en bento box : carte rose (icône + photo, "AI based Safety Monitoring"), carte blanche (logo), carte lavande ("Multi-Camera Tracking"), carte blanche ("Active Sites 2.1k+"), grande carte orange ("Real-time Monitoring", mockup tablette), carte blanche ("Having any doubt? Let's connect").
+Adaptation JCD Rénovation : Devient la présentation des 4 prestations principales + 1 chiffre clé + 1 CTA contact, dans le même agencement visuel bento.
+Élément
+Contenu / instruction
+Titre (H2), centré
+« Nos prestations »
+Carte 1 (fond rose)
+« Démoussage & traitement toiture » + photo d'un toit démoussé
+Carte 2 (fond blanc)
+Logo JCD Rénovation centré
+Carte 3 (fond lavande)
+« Zinguerie » (gouttières, solins, chéneaux) + icônes outils
+Carte 4 (fond blanc)
+Chiffre clé réel, ex. « X toitures rénovées » + icône bâtiment
+Carte 5 (fond orange, large)
+« Recherche de fuite » + photo d'inspection de toiture
+Carte 6 (fond blanc)
+« Une question ? Contactez-nous » + flèche → /devis-gratuit
+4.7 "Who Choose Us" — section 2 colonnes
+Dans la maquette : À gauche un grand titre 2 couleurs "Your Trustworthy Construction Safety Partner", à droite 3 items (icône + titre + description courte) sur une grille 2 colonnes.
+Adaptation JCD Rénovation : Reprend le même agencement pour présenter les garanties JCD Rénovation.
+Élément
+Contenu / instruction
+Titre gauche (H2)
+« Votre artisan couvreur de confiance à Villemandeur » — « de confiance » en orange
+Item 1
+« Intervention rapide » — devis sous 24-48h, chantiers planifiés vite
+Item 2
+« Garantie décennale » — 10 ans de garantie sur les travaux de couverture
+Item 3
+« Tarifs compétitifs » — devis gratuit et transparent, sans surprise
+4.8 FAQ (accordéon)
+Dans la maquette : Titre centré "Frequently Asked Questions", liste de 6 questions en accordéon (icône +).
+Adaptation JCD Rénovation : Questions réécrites pour coller aux vraies recherches des clients de couvreur/zingueur (voir aussi l'onglet Mots-clés de l'Excel SEO — ces questions doublent comme contenu FAQPage schema.org).
+Élément
+Contenu / instruction
+Q1
+« Quel est le prix d'un démoussage de toiture au m² ? »
+Q2
+« Comment savoir d'où vient une fuite dans ma toiture ? »
+Q3
+« Intervenez-vous en urgence en cas de fuite ? »
+Q4
+« Quelles villes couvrez-vous autour de Villemandeur ? »
+Q5
+« Le devis est-il vraiment gratuit et sans engagement ? »
+Q6
+« Quelles garanties sur vos travaux de couverture et zinguerie ? »
+4.9 Bandeau CTA (orange plein largeur)
+Dans la maquette : Bandeau orange arrondi, titre blanc en gras à gauche, bouton "Let's connect" marine à droite.
+Adaptation JCD Rénovation : Même bandeau, message orienté urgence/démoussage.
+Élément
+Contenu / instruction
+Titre
+« Une fuite ? Une toiture envahie par la mousse ? On s'occupe de tout. »
+Bouton
+« Devis Gratuit » (pill marine) → /devis-gratuit
+4.10 Témoignages clients
+Dans la maquette : Label "Client Words", titre "What Our Client Say About Us", 3 avatars (celui du centre en couleur, les côtés en nuances de gris), citation centrée, 5 étoiles oranges, points de pagination (carrousel).
+Adaptation JCD Rénovation : Réutiliser les avis clients réels déjà présents sur l'ancien site (10 avis disponibles), même mise en forme carrousel.
+Élément
+Contenu / instruction
+Titre (H2), centré
+« Ce que disent nos clients »
+Contenu
+Reprendre mot pour mot les 10 avis existants (ex. : « Très bonne entreprise travail soigné ») + note Google si disponible
+Note
+Si un profil Google Business existe, afficher la note moyenne réelle (ex. « 4,8/5 sur Google ») — ne pas inventer de note
+4.11 Footer
+Dans la maquette : Fond bleu marine plein, logo + baseline, 3 colonnes de liens (Produits, Liens rapides, Réseaux sociaux), ligne de copyright en bas avec Terms of Use / Privacy Policy.
+Adaptation JCD Rénovation : Structure identique, contenu adapté.
+Élément
+Contenu / instruction
+Colonne 1
+« Nos prestations » : Couverture, Zinguerie, Démoussage, Recherche de fuite
+Colonne 2
+« Liens rapides » : Accueil, Réalisations, Zone d'intervention, Avis clients, Contact
+Colonne 3
+« Nous suivre » : réseaux sociaux réels du client (à demander) + coordonnées (téléphone, email, adresse)
+Bas de page
+© JCD Rénovation — Mentions légales / Politique de confidentialité
+
+5. Pages de prestations dédiées
+Chaque page de prestation (Démoussage, Recherche de fuite, Zinguerie, Couverture) reprend le même design system (§2) avec cette structure type, plus longue et plus détaillée que la section homepage correspondante — c'est ce contenu qui doit se positionner sur Google, pas seulement la homepage :
+Mini-hero : H1 avec mot-clé exact (ex. « Démoussage de toiture à Villemandeur »), photo, CTA devis
+Bloc "En quoi consiste la prestation" : explication détaillée, méthode, matériel utilisé
+Bloc "Pourquoi le faire / signes qu'il faut intervenir"
+Bloc tarifs indicatifs (fourchette de prix, facteurs qui font varier le prix) — cf. Excel SEO pour les données de marché
+Bloc "Zones d'intervention" avec liens vers les pages villes
+FAQ spécifique à la prestation (schema.org FAQPage)
+CTA final + formulaire de devis
+2-4 liens internes vers articles de blog liés (voir maillage interne, Excel SEO)
+6. Photos & assets à réunir
+Besoin
+Source
+Photos couvreur au travail, chantiers, avant/après
+Réutiliser les photos de l'ancien site jcd-renovation.fr (accord client confirmé)
+Photos démoussage / traitement hydrofuge
+Le client a indiqué qu'il enverra de nouvelles photos si besoin — à relancer avant le début de l'intégration
+Photos recherche de fuite / inspection
+Idem — prestation mise en avant, donc photos prioritaires à obtenir
+Logo JCD Rénovation en haute définition (vecteur si possible)
+À demander au client
+Avis clients (texte + note Google si disponible)
+Déjà présents sur l'ancien site (10 avis) — à récupérer intégralement
+Certifications / assurances (RGE, Qualibat, assurance décennale)
+À demander au client pour les badges de confiance
+7. Notes techniques pour le développeur
+7.1 Responsive & performance
+Mobile-first obligatoire : le bandeau stats, la grille bento et les 2 colonnes "Who choose us" doivent passer en 1 colonne sur mobile
+Numéro de téléphone cliquable (tel:) partout où il apparaît sur mobile
+Images compressées / servies en WebP, lazy-loading sous la ligne de flottaison
+Viser Core Web Vitals corrects (LCP < 2,5s) : la photo hero doit être optimisée en priorité
+7.2 SEO technique (voir aussi l'Excel SEO joint pour la stratégie de contenu)
+1 seul H1 par page, contenant le mot-clé principal de la page (ex. « Couvreur à Villemandeur »)
+Balises title et meta description uniques par page (cf. onglet "Architecture du site" de l'Excel)
+URLs courtes et descriptives en français sans accents (ex. /demoussage-toiture-villemandeur)
+Attributs alt descriptifs sur toutes les images (ex. « Démoussage de toiture à Villemandeur par JCD Rénovation »)
+Données structurées schema.org : LocalBusiness / RoofingContractor (NAP cohérent avec Google Business Profile), FAQPage sur les sections FAQ, BreadcrumbList sur les pages internes
+Sitemap.xml + robots.txt + soumission Google Search Console dès la mise en ligne
+Fiche Google Business Profile à créer/mettre à jour avec Villemandeur comme adresse principale
+Bandeau de consentement cookies (RGPD) si un outil d'analytics/tracking est utilisé
+7.3 Formulaire de devis
+Champs : Nom, Téléphone, Email, Ville, Type de prestation (menu déroulant : Couverture / Zinguerie / Démoussage / Recherche de fuite / Urgence), Message, Photo (upload optionnel)
+Envoi par email au client + éventuel enregistrement dans un tableur/CRM simple pour suivi
+Page de confirmation ou message de succès clair après envoi
+8. Informations à valider avec le client avant mise en ligne
+Points explicitement laissés en placeholder dans ce document, à ne pas inventer :
+Confirmer si les zones "historiques" (Orléans, Nemours, Sully-sur-Loire, Sens) sont conservées en zones secondaires ou totalement abandonnées au profit de Villemandeur/Montargis
+Chiffres réels pour le bandeau statistiques (années d'expérience, nombre de chantiers, etc.)
+Certifications exactes (RGE Qualibat mentionné par des concurrents locaux — JCD en dispose-t-il ?)
+Note Google Business réelle si un profil existe
+Nouvelles photos démoussage / zinguerie / recherche de fuite annoncées par le client
+Coordonnées à jour (téléphone, email, adresse) — l'ancien site les affichait comme indisponibles au moment de l'analyse

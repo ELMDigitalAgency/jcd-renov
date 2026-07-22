@@ -1,0 +1,202 @@
+
+================================================================================
+SHEET 1: Résumé
+================================================================================
+JCD Rénovation — Stratégie SEO Villemandeur
+Couvreur / Zingueur à Villemandeur (45700) — Focus démoussage, zinguerie, recherche de fuite
+Objectif : atteindre la 1ère page Google sur les requêtes locales couvreur / zingueur / démoussage / recherche de fuite à Villemandeur et son agglomération. |  |  |  |  | 
+Contenu de ce classeur
+Onglet | Contenu
+Concurrence | Analyse de 6 concurrents réels positionnés sur « couvreur / zingueur Villemandeur »
+Mots-clés | Liste de mots-clés à cibler, intention, page cible, priorité (volumes en estimation qualitative — voir note méthodologique)
+Architecture du site | Toutes les pages du futur site avec title, meta description, H1, mot-clé principal
+Blog - Calendrier éditorial | 15 articles de blog réels et utiles, avec angle, mots-clés et calendrier de publication sur 12 mois
+Maillage interne | Qui doit linker vers qui, avec quelle ancre de lien
+Zones géographiques | Communes à cibler autour de Villemandeur, avec priorité
+Checklist SEO technique | Tout ce qui doit être fait côté technique (balises, structured data, GBP, etc.)
+Suivi & KPIs | Modèle de suivi mensuel des positions, du trafic et des devis générés
+Note méthodologique importante
+Cette session n'a pas d'accès à un outil de type Google Keyword Planner / SEMrush / Ahrefs pour sortir des volumes de recherche exacts. La colonne "Volume estimé" de l'onglet Mots-clés est donc une estimation QUALITATIVE (Faible / Moyen / Fort), basée sur : la taille de la ville (Villemandeur ~7 100 hab., agglomération Montargoise ~50 000 hab.), le nombre de concurrents déjà positionnés sur chaque requête, et les schémas de recherche observés chez les concurrents locaux. Avant de figer les priorités budgétaires, faites vérifier ces volumes avec Google Keyword Planner, Google Search Console (après quelques mois) ou un outil payant (Ahrefs, Semrush, SE Ranking) — l'écart entre l'estimation et la réalité peut être significatif sur des requêtes très locales à faible volume. |  |  |  |  | 
+
+================================================================================
+SHEET 2: Concurrence
+================================================================================
+Analyse concurrentielle — couvreur/zingueur Villemandeur & Montargis
+Sites réels identifiés sur les requêtes cibles (recherche Google, juillet 2026)
+Concurrent | URL | Ville / zone | Positionné sur | Structure de page observée | Points forts SEO | Faiblesses / opportunités pour JCD
+Couvreur Langlois | couvreur-45-langlois.fr | Amilly (siège), Villemandeur, Gien, Montargis, Orléans | couvreur Villemandeur, couvreur zingueur, urgence couvreur, couvreur pas cher | 1 page dédiée /couvreur-a-villemandeur-45700 avec H1 exact + 6 H2 en variantes de mots-clés (devis, zingueur, urgence, pas cher) | Title et meta très optimisés sur la requête exacte ; H2 multiples pour capter les variantes longue traîne | Pas de blog identifié ; contenu assez générique/dupliqué probable sur les autres villes ⇒ JCD peut se différencier avec du vrai contenu (méthode, prix, avant/après)
+Pro Habitat 45 Couverture | pro-habitat-45.fr | Zone large Centre (30+ communes dont Villemandeur) | démoussage toiture, urgence fuite Villemandeur, pose Velux, devis gratuit | 1 page ville avec H2 par prestation (démoussage, gouttière, réparation, urgence fuite, velux, devis) | Couvre un maximum de communes (approche "1 page par ville" à grande échelle) ; met en avant l'urgence 24h/24 7j/7 | Approche très volumique / peu différenciée ⇒ JCD peut gagner en se concentrant sur moins de villes mais avec un contenu plus riche et plus crédible (vrais avis, vraies photos)
+Gérard Leboeuf Couverture | gerardleboeuf-couverture.fr | Montargis, Amilly, Villemandeur, Lorris, Chalette-sur-Loing | couvreur Montargis, zinguerie, ramonage, isolation, Velux | Navigation classique par prestation (Couverture / Zinguerie / Velux / Isolation-Entretien / Contact), certifications RGE Qualibat affichées | Certifications visibles (RGE Qualibat, Velux), galerie avant/après, offre élargie (ramonage, isolation) | Pas de blog ; peu de contenu textuel détaillé par prestation ⇒ opportunité de contenu long format sur démoussage / recherche de fuite
+Auguste Couverture Martin (Zingueur Montargis) | couvreur-montargis-martin.com | 45700 Villemandeur (adresse), Montargis, Loiret | zingueur Montargis, toiture zinc, ardoisier, nettoyage toiture, dépannage fuite | Pages dédiées par métier (zinguerie/ardoisier, nettoyage toiture, isolation/étanchéité), CTA devis répétés | Entreprise basée à Villemandeur même (adresse 60 Av. de la Libération) ; expertise zinc/ardoise mise en avant, 20+ ans d'expérience | Concurrent direct implanté physiquement à Villemandeur ⇒ JCD doit absolument avoir une fiche Google Business Profile à Villemandeur et un maillage de contenu plus complet (blog, FAQ) pour rivaliser
+ATTILA Montargis-Gien | attila.fr/nos-agences/attila-montargis | Agence à Villemandeur (45700), réseau national ATTILA | couvreur zingueur étancheur, recherche de fuite en toiture (diagnostic non-destructif) | Site national avec pages "solutions" détaillées (diagnostic, recherche de fuite avec méthodes techniques : fumée, gaz traceur, électro-acoustique, épreuve à l'eau) | Contenu très technique et rassurant sur la recherche de fuite (méthodes nommées, étapes de diagnostic) ; poids de marque national + implantation locale à Villemandeur | Site national donc moins "local" dans le ton ⇒ JCD peut gagner en proximité/authenticité (avis clients réels, visage humain) tout en reprenant le niveau de détail technique sur la page recherche de fuite
+JCD Rénovation (site actuel) | jcd-renovation.fr | Orléans (siège), Nemours, Sully-sur-Loire, Montargis, Sens | couverture 45 Orléans (title actuel) | 1 page par ville sur une zone large, 6 pages prestations, page réalisations, 10 avis clients, mentions Dalep/Seigneurie | 10 avis clients réels déjà en stock, garantie décennale, expérience terrain, zone déjà couverte incluant Montargis | Aucune page dédiée à Villemandeur actuellement ; coordonnées marquées indisponibles sur le site analysé ⇒ à corriger en priorité avant tout lancement de campagne SEO
+
+================================================================================
+SHEET 3: Mots-clés
+================================================================================
+Mots-clés à cibler
+Volume = estimation qualitative (Faible/Moyen/Fort) — à valider avec Google Keyword Planner / Search Console (voir note onglet Résumé)
+Mot-clé | Cluster | Intention | Volume estimé | Concurrence observée | Page cible | Priorité
+couvreur Villemandeur | Couverture | Transactionnelle locale | Moyen | Forte (5 concurrents directs identifiés) | Accueil + /couvreur-villemandeur | Très haute
+zingueur Villemandeur | Zinguerie | Transactionnelle locale | Faible-Moyen | Moyenne (Auguste Couverture Martin, Attila) | Accueil + /zinguerie-villemandeur | Très haute
+zinguerie Villemandeur | Zinguerie | Transactionnelle locale | Faible-Moyen | Moyenne | /zinguerie-villemandeur | Très haute
+démoussage toiture Villemandeur | Démoussage | Transactionnelle locale | Faible-Moyen | Faible (peu de pages ultra-ciblées trouvées) | /demoussage-toiture-villemandeur | Très haute
+recherche de fuite toiture Villemandeur | Recherche de fuite | Transactionnelle locale, urgente | Faible | Faible (surtout Attila au niveau national) | /recherche-de-fuite-toiture-villemandeur | Très haute
+recherche de fuite toiture Montargis | Recherche de fuite | Transactionnelle locale, urgente | Faible-Moyen | Faible-Moyenne | /recherche-de-fuite-toiture-villemandeur (zone élargie) | Haute
+devis couvreur Villemandeur | Couverture | Transactionnelle | Faible-Moyen | Forte | /devis-gratuit | Haute
+couvreur pas cher Villemandeur | Couverture | Transactionnelle, sensible prix | Faible | Moyenne (Langlois cible ce terme) | /couvreur-villemandeur | Moyenne
+urgence fuite toit Villemandeur | Recherche de fuite | Transactionnelle, urgente | Faible | Moyenne | /recherche-de-fuite-toiture-villemandeur | Haute
+prix démoussage toiture m2 | Démoussage | Informationnelle (comparateur de prix) | Fort (requête nationale) | Forte au niveau national, faible au niveau local | Article de blog : Prix du démoussage de toiture au m² | Haute
+comment savoir d'où vient une fuite de toit | Recherche de fuite | Informationnelle | Moyen (national) | Faible au niveau local | Article de blog : Détecter une fuite de toiture | Haute
+garantie décennale couvreur | Confiance / réassurance | Informationnelle | Moyen (national) | Moyenne | Article de blog + page À propos | Moyenne
+couvreur zingueur Montargis | Couverture / Zinguerie | Transactionnelle locale | Moyen | Forte (Gérard Leboeuf, Auguste Martin, Attila) | Page zone Montargis | Haute
+couvreur Amilly | Couverture | Transactionnelle locale | Faible-Moyen | Moyenne | Page zone Amilly | Moyenne
+couvreur Chalette-sur-Loing | Couverture | Transactionnelle locale | Faible | Faible-Moyenne | Page zone Chalette-sur-Loing | Moyenne
+zingueur Cepoy | Zinguerie | Transactionnelle locale | Faible | Faible | Page zone Cepoy / mention dans zone Montargis | Basse
+nettoyage toiture mousse Villemandeur | Démoussage | Transactionnelle locale | Faible | Faible | /demoussage-toiture-villemandeur | Haute
+traitement hydrofuge toiture | Démoussage | Informationnelle / transactionnelle | Moyen (national) | Moyenne | /demoussage-toiture-villemandeur + article dédié | Moyenne
+gouttière bouchée que faire | Zinguerie | Informationnelle | Moyen (national) | Faible au niveau local | Article de blog : Gouttières bouchées | Moyenne
+prix recherche de fuite toiture | Recherche de fuite | Informationnelle (comparateur de prix) | Faible-Moyen (national) | Faible | Article de blog : Prix recherche de fuite | Haute
+artisan couvreur 45700 | Couverture | Transactionnelle locale | Faible | Moyenne | Accueil | Moyenne
+entreprise zinguerie Loiret | Zinguerie | Transactionnelle | Faible-Moyen | Moyenne | /zinguerie-villemandeur | Moyenne
+avis JCD Rénovation | Marque / réassurance | Navigationnelle | Faible | Nulle (marque propre) | Page Avis clients | Basse (mais facile à obtenir)
+aide subvention rénovation toiture 2026 | Informationnel / financement | Informationnelle | Moyen (national, saisonnier) | Moyenne | Article de blog : Aides et subventions toiture | Moyenne
+
+================================================================================
+SHEET 4: Architecture du site
+================================================================================
+Architecture du site & balises SEO
+Une ligne = une page. À reprendre telle quelle par le développeur/rédacteur.
+Page | URL | Meta Title (≤60 car.) | Meta Description (≤155 car.) | H1 | Mot-clé principal | Priorité
+Accueil | / | Couvreur Zingueur à Villemandeur (45700) | JCD Rénovation | JCD Rénovation, couvreur et zingueur qualifié à Villemandeur : démoussage, zinguerie, recherche de fuite. Devis gratuit sous 24-48h. | Couvreur & Zingueur à Villemandeur | couvreur Villemandeur | Très haute
+Démoussage toiture | /demoussage-toiture-villemandeur | Démoussage de Toiture à Villemandeur | JCD Rénovation | Démoussage et traitement hydrofuge de toiture à Villemandeur et alentours. Diagnostic et devis gratuits, intervention rapide. | Démoussage de toiture à Villemandeur | démoussage toiture Villemandeur | Très haute
+Recherche de fuite | /recherche-de-fuite-toiture-villemandeur | Recherche de Fuite Toiture à Villemandeur | JCD Rénovation | Localisez l'origine d'une fuite ou d'une infiltration sur votre toiture à Villemandeur. Diagnostic précis, intervention rapide. | Recherche de fuite en toiture à Villemandeur | recherche de fuite toiture Villemandeur | Très haute
+Zinguerie | /zinguerie-villemandeur | Zinguerie à Villemandeur : Gouttières, Solins | JCD Rénovation | Travaux de zinguerie à Villemandeur : gouttières, chéneaux, solins, noues. Pose et réparation par un artisan qualifié. | Zinguerie à Villemandeur | zinguerie Villemandeur | Haute
+Couverture | /couvreur-villemandeur | Couvreur à Villemandeur : Pose & Rénovation Toiture | Pose, rénovation et réparation de toiture à Villemandeur avec JCD Rénovation. Garantie décennale, devis gratuit. | Couvreur à Villemandeur | couvreur Villemandeur | Haute
+Zone d'intervention — Montargis | /couvreur-zingueur-montargis | Couvreur Zingueur à Montargis | JCD Rénovation | JCD Rénovation intervient à Montargis pour vos travaux de couverture, zinguerie, démoussage et recherche de fuite. | Couvreur zingueur à Montargis | couvreur zingueur Montargis | Haute
+Zone d'intervention — Amilly | /couvreur-amilly | Couvreur à Amilly | JCD Rénovation | Couvreur qualifié à Amilly : couverture, zinguerie, démoussage, recherche de fuite. Devis gratuit sous 48h. | Couvreur à Amilly | couvreur Amilly | Moyenne
+Zone d'intervention — Chalette-sur-Loing | /couvreur-chalette-sur-loing | Couvreur à Chalette-sur-Loing | JCD Rénovation | JCD Rénovation, votre couvreur zingueur à Chalette-sur-Loing. Démoussage, zinguerie, recherche de fuite. | Couvreur à Chalette-sur-Loing | couvreur Chalette-sur-Loing | Moyenne
+Zone d'intervention — Cepoy / Corquilleroy / Paucourt | /zone-intervention | Zone d'Intervention | JCD Rénovation Villemandeur | Découvrez toutes les communes où intervient JCD Rénovation autour de Villemandeur : Montargis, Amilly, Cepoy, Corquilleroy... | Notre zone d'intervention autour de Villemandeur | couvreur zone Montargoise | Basse
+Réalisations | /realisations | Nos Réalisations : Toitures & Zinguerie | JCD Rénovation | Découvrez nos chantiers de couverture, zinguerie et démoussage réalisés à Villemandeur et dans le Loiret. | Nos réalisations | réalisations couvreur Villemandeur | Moyenne
+Avis clients | /avis-clients | Avis Clients JCD Rénovation | Couvreur Villemandeur | Découvrez les avis de nos clients à Villemandeur et dans le Loiret sur nos travaux de couverture et zinguerie. | Avis de nos clients | avis JCD Rénovation | Basse
+À propos | /a-propos | À Propos de JCD Rénovation | Couvreur Villemandeur | JCD Rénovation : artisan couvreur zingueur qualifié, garantie décennale, intervention rapide à Villemandeur et alentours. | Qui sommes-nous | JCD Rénovation Villemandeur | Basse
+Blog (index) | /blog | Conseils Toiture, Zinguerie & Démoussage | Blog JCD Rénovation | Conseils d'experts sur l'entretien de toiture, la zinguerie, le démoussage et la recherche de fuite. Par JCD Rénovation. | Nos conseils toiture & zinguerie | conseils entretien toiture | Haute
+Devis gratuit / Contact | /devis-gratuit | Devis Gratuit Couvreur Villemandeur | JCD Rénovation | Demandez votre devis gratuit pour vos travaux de couverture, zinguerie, démoussage ou recherche de fuite à Villemandeur. | Votre devis gratuit | devis couvreur Villemandeur | Très haute
+Mentions légales | /mentions-legales | Mentions Légales | JCD Rénovation | Mentions légales du site JCD Rénovation. | Mentions légales | - | Basse
+
+================================================================================
+SHEET 5: Blog - Calendrier éditorial
+================================================================================
+Calendrier éditorial — 15 articles réels et utiles
+Choisis pour répondre aux vraies questions des clients (prix, méthodes, urgence) et renforcer le maillage interne vers les pages prestations.
+# | Titre de l'article | Mot-clé principal | Mots-clés secondaires | Angle éditorial | Maillage interne (lien vers) | Mois de publication | Priorité
+1 | Démoussage de toiture : prix au m² en 2026 (guide complet) | prix démoussage toiture m2 | démoussage toiture prix, tarif démoussage | Grille de prix par matériau (tuile, ardoise, zinc), facteurs qui font varier le devis, mise en garde sur les devis anormalement bas. | /demoussage-toiture-villemandeur, /devis-gratuit | Mois 1 | Haute
+2 | Comment savoir d'où vient une fuite de toiture ? Les signes qui ne trompent pas | comment savoir d'où vient une fuite de toit | détecter fuite toiture, tache infiltration plafond | Signes visibles (taches, moisissures, tuiles déplacées), pourquoi le point d'entrée réel est souvent ailleurs que la tache, quand appeler un pro. | /recherche-de-fuite-toiture-villemandeur | Mois 1 | Haute
+3 | Recherche de fuite en toiture : quelles méthodes utilise un professionnel ? | recherche de fuite toiture méthode | diagnostic fuite toiture, inspection toiture professionnelle | Explication pédagogique des méthodes de diagnostic (inspection visuelle, test à l'eau, fumée, détection électronique) et déroulé d'une intervention JCD. | /recherche-de-fuite-toiture-villemandeur | Mois 2 | Haute
+4 | Mousse, lichen, algues : comment reconnaître ce qui abîme votre toiture | mousse toiture | lichen toiture, algues toit entretien | Différencier les organismes qui colonisent un toit, pourquoi c'est un problème (rétention d'humidité, poids, dégradation des tuiles), quand agir. | /demoussage-toiture-villemandeur | Mois 2 | Moyenne
+5 | Faut-il un traitement hydrofuge après un démoussage de toiture ? | traitement hydrofuge toiture | hydrofuge toit utilité, démoussage sans traitement | Rôle du traitement hydrofuge, durée de vie réelle (3-5 ans), cas où il est indispensable (tuiles poreuses) vs superflu. | /demoussage-toiture-villemandeur | Mois 3 | Moyenne
+6 | Zinguerie : à quoi servent les solins, noues et chéneaux ? | zinguerie définition | solin toiture, noue toiture, chéneau | Lexique illustré des éléments de zinguerie, leur rôle dans l'étanchéité, signes d'usure à surveiller. | /zinguerie-villemandeur | Mois 3 | Moyenne
+7 | Gouttières bouchées : causes, risques et solutions | gouttière bouchée que faire | nettoyage gouttière, entretien gouttière | Causes fréquentes (feuilles, mousse, nid), risques si négligé (infiltration, dégât des eaux en façade), fréquence d'entretien recommandée. | /zinguerie-villemandeur | Mois 4 | Haute
+8 | Tuile, ardoise, zinc : quel entretien pour quelle toiture ? | entretien toiture par matériau | entretien toit ardoise, entretien toit zinc, entretien toit tuile | Tableau comparatif d'entretien selon le matériau de couverture, fréquence, précautions spécifiques (ardoise fragile, zinc electrolyse...). | /couvreur-villemandeur, /demoussage-toiture-villemandeur | Mois 4 | Moyenne
+9 | Garantie décennale couvreur : ce que vous devez savoir avant de signer un devis | garantie décennale couvreur | assurance décennale toiture, devis couvreur vérifier | Explication de la garantie décennale, comment vérifier qu'un artisan est couvert, ce que ça change en cas de malfaçon. | /couvreur-villemandeur, /a-propos | Mois 5 | Moyenne
+10 | Entretien de toiture à Villemandeur : le calendrier saisonnier | entretien toiture Villemandeur | calendrier entretien toit, entretien toiture automne | Calendrier pratique (inspection après l'hiver, démoussage au printemps/automne, vérification gouttières avant l'automne) adapté au climat local. | /demoussage-toiture-villemandeur, /zinguerie-villemandeur | Mois 5 | Haute
+11 | Arnaque au démoussage de toiture : les signaux d'alerte à connaître | arnaque démoussage toiture | démarchage toiture arnaque, devis démoussage pas cher suspect | Signaux d'alerte (démarchage à domicile, prix cassé, produit "miracle", pression à la signature), comment vérifier un artisan sérieusement. | /demoussage-toiture-villemandeur, /avis-clients | Mois 6 | Haute
+12 | Combien coûte une recherche de fuite de toiture en 2026 ? | prix recherche de fuite toiture | tarif diagnostic fuite toit, cout recherche de fuite | Fourchette de prix selon la méthode utilisée et la complexité, ce qui est inclus dans un diagnostic sérieux, pourquoi ça peut éviter des travaux inutiles. | /recherche-de-fuite-toiture-villemandeur, /devis-gratuit | Mois 6 | Haute
+13 | Fenêtre de toit Velux : entretien et étanchéité, ce qu'il faut vérifier | entretien Velux étanchéité | fuite autour Velux, joint Velux | Points de vigilance autour des fenêtres de toit (joints, solins), cause fréquente de fuites localisées, entretien recommandé. | /recherche-de-fuite-toiture-villemandeur, /couvreur-villemandeur | Mois 7 | Basse
+14 | Que faire en cas d'infiltration d'eau après un orage ? | infiltration eau toiture orage | urgence fuite toit orage, dégât des eaux toiture | Réflexes immédiats (bâchage, protection des biens, photos pour l'assurance), quand appeler en urgence, différence entre une fuite ponctuelle et un problème structurel. | /recherche-de-fuite-toiture-villemandeur, /devis-gratuit | Mois 8 | Haute
+15 | Aides et subventions pour la rénovation de toiture en 2026 | aide subvention rénovation toiture 2026 | MaPrimeRénov toiture, aide isolation toiture | Panorama des dispositifs d'aide existants pour les travaux de toiture/isolation (à vérifier/actualiser à la publication, les dispositifs changent chaque année), conditions générales d'éligibilité. | /couvreur-villemandeur, /devis-gratuit | Mois 9 | Moyenne
+Note : pour l'article #15 (aides/subventions), vérifier les dispositifs en vigueur à la date de rédaction — ces programmes évoluent souvent d'une année sur l'autre (ne pas publier de montants ou de noms de dispositifs sans les avoir revérifiés). |  |  |  |  |  |  | 
+
+================================================================================
+SHEET 6: Maillage interne
+================================================================================
+Maillage interne
+Depuis chaque page, vers quelles pages créer un lien, et avec quelle ancre de texte.
+Page source | Lien vers | Ancre de texte suggérée | Emplacement
+Accueil | /demoussage-toiture-villemandeur | démoussage de couverture | Carte "Nos prestations" (bento grid)
+Accueil | /recherche-de-fuite-toiture-villemandeur | recherche de fuite | Carte "Nos prestations" + section dédiée
+Accueil | /zinguerie-villemandeur | travaux de zinguerie | Carte "Nos prestations"
+Accueil | /couvreur-villemandeur | pose et rénovation de toiture | Carte "Nos prestations"
+Accueil | /devis-gratuit | devis gratuit | Header, hero, bandeau CTA (plusieurs occurrences)
+Démoussage toiture | Article : Prix du démoussage au m² | voir notre guide des prix du démoussage | Bloc "tarifs indicatifs"
+Démoussage toiture | Article : Mousse, lichen, algues | en savoir plus sur les signes d'un toit encrassé | Bloc "pourquoi le faire"
+Démoussage toiture | /zinguerie-villemandeur | vérifier aussi l'état de vos gouttières | Bloc "prestations complémentaires"
+Recherche de fuite | Article : Comment savoir d'où vient une fuite | identifier les signes d'une fuite | Bloc "pourquoi le faire"
+Recherche de fuite | Article : Combien coûte une recherche de fuite | voir nos tarifs de diagnostic | Bloc "tarifs indicatifs"
+Recherche de fuite | /devis-gratuit | demander une intervention en urgence | CTA final
+Zinguerie | Article : Solins, noues, chéneaux | comprendre les éléments de zinguerie | Bloc "en quoi ça consiste"
+Zinguerie | Article : Gouttières bouchées | gouttières bouchées : nos conseils | Bloc "pourquoi le faire"
+Couverture | Article : Garantie décennale | en savoir plus sur notre garantie décennale | Bloc réassurance
+Couverture | Article : Tuile, ardoise, zinc, quel entretien | guide d'entretien selon votre matériau | Bloc "conseils"
+Chaque article de blog | Page prestation correspondante (voir colonne "Maillage interne" de l'onglet Blog) | demandez votre devis gratuit | Fin d'article + bandeau CTA
+Chaque page ville (zone d'intervention) | /couvreur-villemandeur (page pilier) | notre agence de Villemandeur | Bloc "à propos de notre zone d'intervention"
+Toutes les pages | /avis-clients | voir les avis de nos clients | Footer + section témoignages
+
+================================================================================
+SHEET 7: Zones géographiques
+================================================================================
+Zones géographiques ciblées
+Villemandeur = ville principale (H1, Google Business Profile). Communes de la CA Montargoise et Rives du Loing = zones secondaires.
+Commune | Statut | Population (ordre de grandeur) | Action SEO recommandée | Priorité
+Villemandeur (45700) | Ville principale | ≈ 7 100 hab. (2023) | H1/title sitewide, Google Business Profile centré ici, page /couvreur-villemandeur en page pilier | Très haute
+Montargis (45200) | Zone secondaire | Sous-préfecture, cœur de l'agglomération | Page dédiée /couvreur-zingueur-montargis, très concurrentielle (Gérard Leboeuf, Auguste Martin, Attila y sont déjà) | Haute
+Amilly (45200) | Zone secondaire | Commune limitrophe, plusieurs milliers d'habitants | Page dédiée /couvreur-amilly | Moyenne
+Chalette-sur-Loing (45120) | Zone secondaire | Une des plus grandes communes de l'agglomération | Page dédiée /couvreur-chalette-sur-loing | Moyenne
+Corquilleroy | Zone tertiaire | Petite commune, agglomération Montargoise | Mention dans la page "Zone d'intervention" (pas de page dédiée dans un premier temps) | Basse
+Cepoy | Zone tertiaire | Petite commune, agglomération Montargoise | Mention dans la page "Zone d'intervention" | Basse
+Paucourt | Zone tertiaire | Petite commune, agglomération Montargoise | Mention dans la page "Zone d'intervention" | Basse
+Solterre | Zone tertiaire | Petite commune, agglomération Montargoise | Mention dans la page "Zone d'intervention" | Basse
+Vimory | Zone tertiaire | Petite commune, agglomération Montargoise | Mention dans la page "Zone d'intervention" | Basse
+Fontenay-sur-Loing / Ferrières-en-Gâtinais / Château-Renard | Zone tertiaire (à confirmer avec le client) | Communes du bassin Montargois élargi | À n'ajouter que si le client confirme s'y déplacer réellement | Basse
+Orléans / Nemours / Sully-sur-Loire / Sens | Zone historique (ancien site) — à trancher avec le client | Zone large déjà couverte sur l'ancien site | Décision à prendre : conserver en zones secondaires "aussi disponible sur" en footer, ou abandonner totalement pour concentrer 100% du budget SEO sur Villemandeur/Montargis | À décider avec le client
+
+================================================================================
+SHEET 8: Checklist SEO technique
+================================================================================
+Checklist SEO technique
+À cocher au fur et à mesure de l'intégration / mise en ligne.
+Fait ? | Catégorie | Action | Détail
+☐ | On-page | 1 seul H1 par page | Contenant le mot-clé principal de la page (cf. onglet Architecture du site)
+☐ | On-page | Title & meta description uniques | Aucune page ne doit dupliquer le title/meta d'une autre (cf. onglet Architecture du site)
+☐ | On-page | URLs propres | Minuscules, tirets, sans accents, sans paramètres inutiles
+☐ | On-page | Attributs alt sur toutes les images | Descriptifs et incluant la ville quand pertinent (ex. "Démoussage toiture Villemandeur")
+☐ | On-page | Maillage interne mis en place | Voir onglet Maillage interne
+☐ | Données structurées | Schema.org LocalBusiness / RoofingContractor | NAP (Nom/Adresse/Téléphone) strictement identique au Google Business Profile
+☐ | Données structurées | Schema.org FAQPage | Sur toutes les sections FAQ (accueil + pages prestations)
+☐ | Données structurées | Schema.org BreadcrumbList | Sur les pages internes (prestations, villes, blog)
+☐ | Données structurées | Schema.org Article | Sur chaque article de blog (date de publication, auteur)
+☐ | Indexation | Sitemap.xml | Généré et soumis à la Google Search Console
+☐ | Indexation | Robots.txt | Vérifier qu'aucune page utile n'est bloquée
+☐ | Indexation | Google Search Console + Bing Webmaster Tools | Propriété vérifiée dès la mise en ligne
+☐ | Local SEO | Google Business Profile | Créer/mettre à jour avec adresse à Villemandeur, horaires, photos, catégories (Couvreur, Entreprise de zinguerie)
+☐ | Local SEO | Cohérence NAP | Même nom/adresse/téléphone partout : site, GBP, annuaires (PagesJaunes, Hoodspot, etc.)
+☐ | Local SEO | Avis Google | Mettre en place une routine de demande d'avis après chaque chantier
+☐ | Local SEO | Netlinking local | Inscription sur annuaires locaux/professionnels pertinents (chambre des métiers, annuaires BTP, PagesJaunes)
+☐ | Performance | Images optimisées (WebP, lazy-load) | Notamment la photo hero, priorité au LCP
+☐ | Performance | Core Web Vitals corrects | LCP < 2,5s, CLS faible, mobile en priorité
+☐ | Conformité | Bandeau cookies RGPD | Si outils d'analytics/tracking utilisés
+☐ | Conformité | Mentions légales / Politique de confidentialité à jour | Conserver/adapter celles de l'ancien site
+☐ | Conversion | Formulaire de devis fonctionnel | Champs prestation + ville + upload photo, testé sur mobile
+☐ | Conversion | Numéro de téléphone cliquable (tel:) | Sur toutes les pages, en particulier mobile
+☐ | Suivi | Google Analytics 4 + suivi des conversions (devis envoyés, appels) | Voir onglet Suivi & KPIs
+
+================================================================================
+SHEET 9: Suivi &amp; KPIs
+================================================================================
+Suivi mensuel des KPIs
+À compléter chaque mois à partir de Google Search Console / Analytics / Google Business Profile.
+Mois | Trafic organique (sessions) | Impressions Search Console | Clics Search Console | CTR moyen | Position moyenne « couvreur Villemandeur » | Position moyenne « zingueur Villemandeur » | Devis demandés via le site | Appels reçus | Avis Google reçus
+Mois 1 |  |  |  |  |  |  |  |  | 
+Mois 2 |  |  |  |  |  |  |  |  | 
+Mois 3 |  |  |  |  |  |  |  |  | 
+Mois 4 |  |  |  |  |  |  |  |  | 
+Mois 5 |  |  |  |  |  |  |  |  | 
+Mois 6 |  |  |  |  |  |  |  |  | 
+Mois 7 |  |  |  |  |  |  |  |  | 
+Mois 8 |  |  |  |  |  |  |  |  | 
+Mois 9 |  |  |  |  |  |  |  |  | 
+Mois 10 |  |  |  |  |  |  |  |  | 
+Mois 11 |  |  |  |  |  |  |  |  | 
+Mois 12 |  |  |  |  |  |  |  |  | 
+Total / moyenne année 1 |  |  |  |  |  |  |  |  | 
+Cellules vides = à compléter manuellement chaque mois (Search Console / Analytics / GBP / CRM). Le CTR et les totaux se calculent automatiquement. |  |  |  |  |  |  |  |  | 
