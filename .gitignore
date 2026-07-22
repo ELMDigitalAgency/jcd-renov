@@ -1,11 +1,26 @@
-node_modules/
+# Dependencies
+/node_modules
+
+# Next.js
+/.next/
+/out/
+next-env.d.ts
+
+# Env — jamais de secrets dans le code
 .env
 .env.local
-.env.production
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Vercel
+.vercel
+
+# Divers
+*.tsbuildinfo
 .DS_Store
 Thumbs.db
 *.log
-.next/
-dist/
-build/
-.cache/
+
+# Vitest
+/coverage

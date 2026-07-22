@@ -1,0 +1,41 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+/* CRITIQUE : legacy/ n'est pas gitignoré — sans cette ligne, Tailwind v4
+   scannerait les 30 pages HTML Bootstrap de l'ancien site et polluerait le CSS. */
+@source not "../../legacy";
+
+@theme {
+  /* Palette BuildSafe (cahier des charges §2.1) */
+  --color-primary: #f2731e; /* orange — CTA, surbrillance titres, bandeau stats */
+  --color-primary-dark: #d95f10;
+  --color-navy: #16213e; /* bleu marine — titres, boutons, footer */
+  --color-navy-light: #232f52;
+  --color-cream: #f8f3e9; /* fond hero et sections alternées */
+  --color-blush: #f7e2dc; /* carte bento n°1 */
+  --color-lavender: #e7e4f5; /* carte bento n°2 */
+  --color-body: #6b7280; /* texte courant */
+
+  /* Typographie (cahier des charges §2.2) */
+  --font-heading: var(--font-jakarta), ui-sans-serif, system-ui, sans-serif;
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+
+  /* Composants récurrents (cahier des charges §2.3) */
+  --radius-card: 1.5rem; /* cartes et images arrondies 24px */
+  --shadow-card: 0 10px 30px rgba(22, 33, 62, 0.08);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-white font-sans text-body antialiased;
+  }
+
+  ::selection {
+    background-color: var(--color-primary);
+    color: white;
+  }
+}
