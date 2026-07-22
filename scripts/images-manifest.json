@@ -1,0 +1,474 @@
+{
+  "heroes": [
+    {
+      "src": "/images/realisations/couvreurs-chantier-villemandeur-01.jpeg",
+      "width": 1600,
+      "height": 1200,
+      "legacyName": "jcd-renov (11).jpeg"
+    },
+    {
+      "src": "/images/realisations/demoussage-toiture-villemandeur-01.jpeg",
+      "width": 1179,
+      "height": 655,
+      "legacyName": "photo_renov_toiture.jpeg"
+    },
+    {
+      "src": "/images/realisations/recherche-fuite-toiture-villemandeur-01.jpeg",
+      "width": 738,
+      "height": 1600,
+      "legacyName": "jcd-renovation-60.jpeg"
+    },
+    {
+      "src": "/images/realisations/zinguerie-gouttiere-villemandeur-01.jpeg",
+      "width": 1200,
+      "height": 1600,
+      "legacyName": "jcd-renov (26).jpeg"
+    },
+    {
+      "src": "/images/realisations/renovation-toiture-villemandeur-01.jpeg",
+      "width": 1179,
+      "height": 862,
+      "legacyName": "image_toiture.jpeg"
+    },
+    {
+      "src": "/images/realisations/renovation-toiture-avant-apres-02.jpeg",
+      "width": 1600,
+      "height": 756,
+      "legacyName": "image_toiture_acc.jpeg"
+    },
+    {
+      "src": "/images/realisations/remaniement-toiture-loiret-01.jpeg",
+      "width": 1600,
+      "height": 1200,
+      "legacyName": "jcd-renov (40).jpeg"
+    }
+  ],
+  "gallery": [
+    {
+      "src": "/images/realisations/chantier-couverture-loiret-01.jpeg",
+      "width": 1600,
+      "height": 1200,
+      "legacyName": "image_acc_2.jpg"
+    },
+    {
+      "src": "/images/realisations/chantier-couverture-loiret-02.jpeg",
+      "width": 1600,
+      "height": 1200,
+      "legacyName": "image_acc.jpeg"
+    },
+    {
+      "src": "/images/realisations/chantier-couverture-loiret-03.jpeg",
+      "width": 1600,
+      "height": 1200,
+      "legacyName": "jcd-renov (1).jpeg"
+    },
+    {
+      "src": "/images/realisations/chantier-couverture-loiret-04.jpeg",
+      "width": 1600,
+      "height": 1200,
+      "legacyName": "jcd-renov (2).jpeg"
+    },
+    {
+      "src": "/images/realisations/chantier-couverture-loiret-05.jpeg",
+      "width": 1600,
+      "height": 1200,
+      "legacyName": "jcd-renov (4).jpeg"
+    },
+    {
+      "src": "/images/realisations/chantier-couverture-loiret-06.jpeg",
+      "width": 1600,
+      "height": 1200,
+      "legacyName": "jcd-renov (6).jpeg"
+    },
+    {
+      "src": "/images/realisations/chantier-couverture-loiret-07.jpeg",
+      "width": 1200,
+      "height": 1600,
+      "legacyName": "jcd-renov (8).jpeg"
+    },
+    {
+      "src": "/images/realisations/chantier-couverture-loiret-08.jpeg",
+      "width": 1600,
+      "height": 1200,
+      "legacyName": "jcd-renov (9).jpeg"
+    },
+    {
+      "src": "/images/realisations/chantier-couverture-loiret-09.jpeg",
+      "width": 1200,
+      "height": 1600,
+      "legacyName": "jcd-renov (12).jpeg"
+    },
+    {
+      "src": "/images/realisations/chantier-couverture-loiret-10.jpeg",
+      "width": 1200,
+      "height": 1600,
+      "legacyName": "jcd-renov (13).jpeg"
+    },
+    {
+      "src": "/images/realisations/chantier-couverture-loiret-11.jpeg",
+      "width": 1200,
+      "height": 1600,
+      "legacyName": "jcd-renov (14).jpeg"
+    },
+    {
+      "src": "/images/realisations/chantier-couverture-loiret-12.jpeg",
+      "width": 1200,
+      "height": 1600,
+      "legacyName": "jcd-renov (15).jpeg"
+    },
+    {
+      "src": "/images/realisations/chantier-couverture-loiret-13.jpeg",
+      "width": 1200,
+      "height": 1600,
+      "legacyName": "jcd-renov (19).jpeg"
+    },
+    {
+      "src": "/images/realisations/chantier-couverture-loiret-14.jpeg",
+      "width": 1200,
+      "height": 1600,
+      "legacyName": "jcd-renov (21).jpeg"
+    },
+    {
+      "src": "/images/realisations/chantier-couverture-loiret-15.jpeg",
+      "width": 1200,
+      "height": 1600,
+      "legacyName": "jcd-renov (22).jpeg"
+    },
+    {
+      "src": "/images/realisations/chantier-couverture-loiret-16.jpeg",
+      "width": 1600,
+      "height": 1200,
+      "legacyName": "jcd-renov (23).jpeg"
+    },
+    {
+      "src": "/images/realisations/chantier-couverture-loiret-17.jpeg",
+      "width": 1600,
+      "height": 1200,
+      "legacyName": "jcd-renov (24).jpeg"
+    },
+    {
+      "src": "/images/realisations/chantier-couverture-loiret-18.jpeg",
+      "width": 1600,
+      "height": 1200,
+      "legacyName": "jcd-renov (25).jpeg"
+    },
+    {
+      "src": "/images/realisations/chantier-couverture-loiret-19.jpeg",
+      "width": 1200,
+      "height": 1600,
+      "legacyName": "jcd-renov (27).jpeg"
+    },
+    {
+      "src": "/images/realisations/chantier-couverture-loiret-20.jpeg",
+      "width": 1200,
+      "height": 1600,
+      "legacyName": "jcd-renov (28).jpeg"
+    },
+    {
+      "src": "/images/realisations/chantier-couverture-loiret-21.jpeg",
+      "width": 1600,
+      "height": 1200,
+      "legacyName": "jcd-renov (31).jpeg"
+    },
+    {
+      "src": "/images/realisations/chantier-couverture-loiret-22.jpeg",
+      "width": 1600,
+      "height": 1200,
+      "legacyName": "jcd-renov (33).jpeg"
+    },
+    {
+      "src": "/images/realisations/chantier-couverture-loiret-23.jpeg",
+      "width": 1200,
+      "height": 1600,
+      "legacyName": "jcd-renov (34).jpeg"
+    },
+    {
+      "src": "/images/realisations/chantier-couverture-loiret-24.jpeg",
+      "width": 1600,
+      "height": 1200,
+      "legacyName": "jcd-renov (35).jpeg"
+    },
+    {
+      "src": "/images/realisations/chantier-couverture-loiret-25.jpeg",
+      "width": 1600,
+      "height": 1200,
+      "legacyName": "jcd-renov (36).jpeg"
+    },
+    {
+      "src": "/images/realisations/chantier-couverture-loiret-26.jpeg",
+      "width": 1200,
+      "height": 1600,
+      "legacyName": "jcd-renov (37).jpeg"
+    },
+    {
+      "src": "/images/realisations/chantier-couverture-loiret-27.jpeg",
+      "width": 1200,
+      "height": 1600,
+      "legacyName": "jcd-renov (38).jpeg"
+    },
+    {
+      "src": "/images/realisations/chantier-couverture-loiret-28.jpeg",
+      "width": 1200,
+      "height": 1600,
+      "legacyName": "jcd-renov (39).jpeg"
+    },
+    {
+      "src": "/images/realisations/chantier-couverture-loiret-29.jpeg",
+      "width": 1600,
+      "height": 1200,
+      "legacyName": "jcd-renov (41).jpeg"
+    },
+    {
+      "src": "/images/realisations/chantier-couverture-loiret-30.jpeg",
+      "width": 1200,
+      "height": 1600,
+      "legacyName": "jcd-renov (42).jpeg"
+    },
+    {
+      "src": "/images/realisations/chantier-couverture-loiret-31.jpeg",
+      "width": 1200,
+      "height": 1600,
+      "legacyName": "jcd-renov (43).jpeg"
+    },
+    {
+      "src": "/images/realisations/chantier-couverture-loiret-32.jpeg",
+      "width": 1200,
+      "height": 1600,
+      "legacyName": "jcd-renov (46).jpeg"
+    },
+    {
+      "src": "/images/realisations/chantier-couverture-loiret-33.jpeg",
+      "width": 1600,
+      "height": 1200,
+      "legacyName": "jcd-renov (47).jpeg"
+    },
+    {
+      "src": "/images/realisations/chantier-couverture-loiret-34.jpeg",
+      "width": 1200,
+      "height": 1600,
+      "legacyName": "jcd-renov (48).jpeg"
+    },
+    {
+      "src": "/images/realisations/chantier-couverture-loiret-35.jpeg",
+      "width": 1600,
+      "height": 1200,
+      "legacyName": "jcd-renov-3.jpeg"
+    },
+    {
+      "src": "/images/realisations/chantier-couverture-loiret-36.jpeg",
+      "width": 1600,
+      "height": 1200,
+      "legacyName": "jcd-renov-5.jpeg"
+    },
+    {
+      "src": "/images/realisations/chantier-couverture-loiret-37.jpeg",
+      "width": 1600,
+      "height": 1200,
+      "legacyName": "jcd-renov-7.jpeg"
+    },
+    {
+      "src": "/images/realisations/chantier-couverture-loiret-38.jpeg",
+      "width": 1600,
+      "height": 1200,
+      "legacyName": "jcd-renov-10.jpeg"
+    },
+    {
+      "src": "/images/realisations/chantier-couverture-loiret-39.jpeg",
+      "width": 1200,
+      "height": 1600,
+      "legacyName": "jcd-renov-16.jpeg"
+    },
+    {
+      "src": "/images/realisations/chantier-couverture-loiret-40.jpeg",
+      "width": 1600,
+      "height": 1200,
+      "legacyName": "jcd-renov-17.jpeg"
+    },
+    {
+      "src": "/images/realisations/chantier-couverture-loiret-41.jpeg",
+      "width": 1200,
+      "height": 1600,
+      "legacyName": "jcd-renov-18.jpeg"
+    },
+    {
+      "src": "/images/realisations/chantier-couverture-loiret-42.jpeg",
+      "width": 1200,
+      "height": 1600,
+      "legacyName": "jcd-renov-20.jpeg"
+    },
+    {
+      "src": "/images/realisations/chantier-couverture-loiret-43.jpeg",
+      "width": 1600,
+      "height": 1200,
+      "legacyName": "jcd-renov-29.jpeg"
+    },
+    {
+      "src": "/images/realisations/chantier-couverture-loiret-44.jpeg",
+      "width": 1600,
+      "height": 1200,
+      "legacyName": "jcd-renov-44.jpeg"
+    },
+    {
+      "src": "/images/realisations/chantier-couverture-loiret-45.jpeg",
+      "width": 1600,
+      "height": 1200,
+      "legacyName": "jcd-renov-45.jpeg"
+    },
+    {
+      "src": "/images/realisations/chantier-couverture-loiret-46.jpeg",
+      "width": 1200,
+      "height": 1600,
+      "legacyName": "jcd-renovation-46.jpeg"
+    },
+    {
+      "src": "/images/realisations/chantier-couverture-loiret-47.jpeg",
+      "width": 1200,
+      "height": 1600,
+      "legacyName": "jcd-renovation-47.jpeg"
+    },
+    {
+      "src": "/images/realisations/chantier-couverture-loiret-48.jpeg",
+      "width": 1600,
+      "height": 1200,
+      "legacyName": "jcd-renovation-48.jpeg"
+    },
+    {
+      "src": "/images/realisations/chantier-couverture-loiret-49.jpeg",
+      "width": 1600,
+      "height": 1200,
+      "legacyName": "jcd-renovation-49.jpeg"
+    },
+    {
+      "src": "/images/realisations/chantier-couverture-loiret-50.jpeg",
+      "width": 1600,
+      "height": 1200,
+      "legacyName": "jcd-renovation-50.jpeg"
+    },
+    {
+      "src": "/images/realisations/chantier-couverture-loiret-51.jpeg",
+      "width": 1200,
+      "height": 1600,
+      "legacyName": "jcd-renovation-51.jpeg"
+    },
+    {
+      "src": "/images/realisations/chantier-couverture-loiret-52.jpeg",
+      "width": 1600,
+      "height": 1200,
+      "legacyName": "jcd-renovation-55.jpeg"
+    },
+    {
+      "src": "/images/realisations/chantier-couverture-loiret-53.jpeg",
+      "width": 1600,
+      "height": 1200,
+      "legacyName": "jcd-renovation-59.jpeg"
+    },
+    {
+      "src": "/images/realisations/chantier-couverture-loiret-54.jpeg",
+      "width": 1200,
+      "height": 1600,
+      "legacyName": "jcd-renovation-61.jpeg"
+    },
+    {
+      "src": "/images/realisations/chantier-couverture-loiret-55.jpeg",
+      "width": 1600,
+      "height": 1200,
+      "legacyName": "jcd-renovation-62.jpeg"
+    },
+    {
+      "src": "/images/realisations/chantier-couverture-loiret-56.jpeg",
+      "width": 1600,
+      "height": 1200,
+      "legacyName": "jcd-renovation-63.jpeg"
+    },
+    {
+      "src": "/images/realisations/chantier-couverture-loiret-57.jpeg",
+      "width": 1600,
+      "height": 1200,
+      "legacyName": "jcd-renovation-64.jpeg"
+    },
+    {
+      "src": "/images/realisations/chantier-couverture-loiret-58.jpeg",
+      "width": 1600,
+      "height": 1200,
+      "legacyName": "jcd-renovation-65.jpeg"
+    },
+    {
+      "src": "/images/realisations/chantier-couverture-loiret-59.jpeg",
+      "width": 1200,
+      "height": 1600,
+      "legacyName": "jcd-renovation-66.jpeg"
+    },
+    {
+      "src": "/images/realisations/chantier-couverture-loiret-60.jpeg",
+      "width": 1200,
+      "height": 1600,
+      "legacyName": "jcd-renovation-67.jpeg"
+    },
+    {
+      "src": "/images/realisations/chantier-couverture-loiret-61.jpeg",
+      "width": 1600,
+      "height": 1200,
+      "legacyName": "jcd-renovation-68.jpeg"
+    },
+    {
+      "src": "/images/realisations/chantier-couverture-loiret-62.jpeg",
+      "width": 1600,
+      "height": 1200,
+      "legacyName": "jcd-renovation-69.jpeg"
+    },
+    {
+      "src": "/images/realisations/chantier-couverture-loiret-63.jpeg",
+      "width": 1200,
+      "height": 1600,
+      "legacyName": "jcd-renovation-70.jpeg"
+    },
+    {
+      "src": "/images/realisations/chantier-couverture-loiret-64.jpeg",
+      "width": 1600,
+      "height": 1200,
+      "legacyName": "jcd-renovation-71.jpeg"
+    },
+    {
+      "src": "/images/realisations/chantier-couverture-loiret-65.jpeg",
+      "width": 1200,
+      "height": 1600,
+      "legacyName": "jcd-renovation-72.jpeg"
+    },
+    {
+      "src": "/images/realisations/chantier-couverture-loiret-66.jpeg",
+      "width": 1200,
+      "height": 1600,
+      "legacyName": "jcd-renovation-73.jpeg"
+    },
+    {
+      "src": "/images/realisations/chantier-couverture-loiret-67.jpeg",
+      "width": 1200,
+      "height": 1600,
+      "legacyName": "jcd-renovation-74.jpeg"
+    },
+    {
+      "src": "/images/realisations/chantier-couverture-loiret-68.jpeg",
+      "width": 1200,
+      "height": 1600,
+      "legacyName": "jcd-renovation-75.jpeg"
+    },
+    {
+      "src": "/images/realisations/chantier-couverture-loiret-69.jpeg",
+      "width": 1200,
+      "height": 1600,
+      "legacyName": "jcd-renovation-76.jpeg"
+    },
+    {
+      "src": "/images/realisations/chantier-couverture-loiret-70.jpeg",
+      "width": 1600,
+      "height": 1200,
+      "legacyName": "jcd-renovation-77.jpeg"
+    },
+    {
+      "src": "/images/realisations/chantier-couverture-loiret-71.jpeg",
+      "width": 1600,
+      "height": 1200,
+      "legacyName": "jcd-renovation-78.jpeg"
+    }
+  ]
+}

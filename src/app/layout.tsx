@@ -1,6 +1,13 @@
 import type { Metadata } from "next";
 import { Inter, Plus_Jakarta_Sans } from "next/font/google";
 
+import { Footer } from "@/components/layout/Footer";
+import { Header } from "@/components/layout/Header";
+import { JsonLd } from "@/components/ui/JsonLd";
+import { SkipLink } from "@/components/ui/SkipLink";
+import { roofingContractorSchema } from "@/lib/schema";
+import { siteConfig } from "@/site.config";
+
 import "./globals.css";
 
 const jakarta = Plus_Jakarta_Sans({
@@ -18,7 +25,9 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "JCD Rénovation",
+  metadataBase: new URL(siteConfig.url),
+  title: `Couvreur Zingueur à Villemandeur (45700) | ${siteConfig.name}`,
+  description: siteConfig.description,
 };
 
 export default function RootLayout({
@@ -26,7 +35,14 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="fr" className={`${jakarta.variable} ${inter.variable}`}>
-      <body>{children}</body>
+      <body>
+        {/* Schéma LocalBusiness/RoofingContractor sitewide — NAP unique (site.config) */}
+        <JsonLd data={roofingContractorSchema()} />
+        <SkipLink />
+        <Header />
+        <main id="contenu">{children}</main>
+        <Footer />
+      </body>
     </html>
   );
 }
