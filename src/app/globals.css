@@ -29,6 +29,13 @@
   --shadow-card: 0 10px 30px rgba(22, 33, 62, 0.08);
 }
 
+/* Texture signature : trame de points très discrète sur les fonds crème,
+   casse l'aplat « template » sans nuire à la lisibilité. */
+@utility bg-dots {
+  background-image: radial-gradient(rgba(22, 33, 62, 0.05) 1px, transparent 1px);
+  background-size: 22px 22px;
+}
+
 @layer base {
   html {
     scroll-behavior: smooth;

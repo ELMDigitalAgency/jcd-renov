@@ -66,9 +66,16 @@ export function TestimonialCarousel({ avis }: TestimonialCarouselProps) {
               aria-label={`Avis ${index + 1} sur ${avis.length}`}
               className="min-w-0 flex-[0_0_100%] px-4"
             >
-              <figure className="mx-auto flex max-w-2xl flex-col items-center gap-5 text-center">
-                <blockquote className="text-lg leading-relaxed text-navy sm:text-xl">
-                  «&nbsp;{item.text}&nbsp;»
+              <figure className="relative mx-auto flex max-w-2xl flex-col items-center gap-5 pt-12 text-center">
+                {/* Guillemet décoratif géant, signature de la section */}
+                <span
+                  aria-hidden
+                  className="font-heading pointer-events-none absolute top-0 left-1/2 -translate-x-1/2 text-[7rem] leading-none font-extrabold text-primary/15 select-none"
+                >
+                  “
+                </span>
+                <blockquote className="text-lg leading-relaxed font-medium text-navy sm:text-2xl sm:leading-snug">
+                  {item.text}
                 </blockquote>
                 <StarRating rating={item.rating} />
                 <figcaption className="flex flex-col items-center gap-2">

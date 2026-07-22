@@ -44,7 +44,7 @@ export default function Page() {
             </PageTitle>
             <p className="mt-5 text-base leading-relaxed sm:text-lg">
               Couvreur zingueur basé à Villemandeur, nous nous déplaçons dans toute l’agglomération
-              Montargoise — diagnostic sur place et devis gratuits, sans frais de déplacement.
+              Montargoise : diagnostic sur place et devis gratuits, sans frais de déplacement.
             </p>
             <Card variant="white" className="mt-6 border-l-4 border-primary p-5 sm:p-6">
               <p className="leading-relaxed">

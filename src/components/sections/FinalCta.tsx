@@ -10,7 +10,7 @@ type FinalCtaProps = {
 /** CTA final des pages internes : devis + téléphone (réduction de friction). */
 export function FinalCta({
   title = "Parlons de votre toiture",
-  text = "Diagnostic sur place et devis détaillé sous 24-48 h — gratuits et sans engagement.",
+  text = "Diagnostic sur place et devis détaillé sous 24-48 h, gratuits et sans engagement.",
 }: FinalCtaProps) {
   return (
     <section aria-label="Contact" className="bg-navy">

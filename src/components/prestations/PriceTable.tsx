@@ -20,7 +20,7 @@ export function PriceTable({ tarifs }: PriceTableProps) {
         <div className="mx-auto mt-10 max-w-3xl">
           <div className="overflow-x-auto rounded-card shadow-card">
             <table className="w-full min-w-[30rem]">
-              <caption className="sr-only">{tarifs.title} — fourchettes indicatives</caption>
+              <caption className="sr-only">{tarifs.title} (fourchettes indicatives)</caption>
               <thead>
                 <tr className="bg-navy text-white">
                   <th

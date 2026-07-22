@@ -28,7 +28,7 @@ export default function PolitiqueDeConfidentialitePage() {
           </PageTitle>
           <p className="mt-5 max-w-2xl text-base leading-relaxed sm:text-lg">
             Ce site collecte le strict minimum de données, uniquement pour répondre à votre demande
-            de devis. Voici, en toute transparence, ce que nous faisons — et ne faisons pas — de vos
+            de devis. Voici, en toute transparence, ce que nous faisons (et ne faisons pas) de vos
             informations.
           </p>
         </Container>
@@ -61,17 +61,17 @@ export default function PolitiqueDeConfidentialitePage() {
           </p>
           <ul>
             <li>
-              <strong>Vercel</strong> — hébergement du site ;
+              <strong>Vercel</strong> : hébergement du site ;
             </li>
             <li>
-              <strong>Resend</strong> — acheminement des emails du formulaire de devis.
+              <strong>Resend</strong> : acheminement des emails du formulaire de devis.
             </li>
           </ul>
 
           <h2>Durée de conservation</h2>
           <p>
             Les données issues du formulaire sont conservées 12 mois après le dernier contact, puis
-            supprimées — sauf si une relation contractuelle est engagée (devis signé), auquel cas
+            supprimées, sauf si une relation contractuelle est engagée (devis signé), auquel cas
             elles sont conservées le temps requis par les obligations légales et comptables.
           </p>
 

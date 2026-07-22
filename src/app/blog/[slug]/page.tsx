@@ -30,7 +30,7 @@ type ArticlePageProps = {
   params: Promise<{ slug: string }>;
 };
 
-/** Narrowing BlogSlug — inatteignable en pratique (dynamicParams = false). */
+/** Narrowing BlogSlug, inatteignable en pratique (dynamicParams = false). */
 function resolveSlug(slug: string): BlogSlug {
   if (!(getPostSlugs() as readonly string[]).includes(slug)) {
     notFound();

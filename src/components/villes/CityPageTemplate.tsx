@@ -117,7 +117,7 @@ export function CityPageTemplate({ ville }: CityPageTemplateProps) {
                 Nos prestations à <TitleAccent>{ville.name}</TitleAccent>
               </>
             }
-            subtitle="Quatre expertises complémentaires, un seul artisan — et un devis gratuit pour chacune."
+            subtitle="Quatre expertises complémentaires, un seul artisan, et un devis gratuit pour chacune."
           />
           <ul className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {prestations.map((prestation) => (

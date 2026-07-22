@@ -1,6 +1,6 @@
 import type { Garantie } from "@/content/types";
 
-/** Section « votre artisan de confiance » — cahier des charges §4.7 (3 items). */
+/** Section « votre artisan de confiance », cahier des charges §4.7 (3 items). */
 export const garanties: readonly Garantie[] = [
   {
     icon: "clock",

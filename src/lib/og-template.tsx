@@ -104,7 +104,7 @@ export async function buildOgImage({ title, subtitle, eyebrow }: OgTemplateProps
               borderRadius: "999px",
             }}
           >
-            Devis gratuit — 07 49 10 06 56
+            Devis gratuit : 07 49 10 06 56
           </div>
         </div>
       </div>

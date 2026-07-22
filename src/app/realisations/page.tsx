@@ -25,8 +25,8 @@ export default function RealisationsPage() {
             Nos <TitleAccent>réalisations</TitleAccent>
           </PageTitle>
           <p className="mt-5 max-w-2xl text-base leading-relaxed sm:text-lg">
-            {realisationsPhotos.length} photos de chantiers réels — rénovation de toiture, pose de
-            tuiles, zinguerie, démoussage — réalisés dans le Loiret et l’agglomération Montargoise.
+            {realisationsPhotos.length} photos de chantiers réels (rénovation de toiture, pose de
+            tuiles, zinguerie, démoussage) réalisés dans le Loiret et l’agglomération Montargoise.
             Cliquez sur une vignette pour l’agrandir.
           </p>
         </Container>

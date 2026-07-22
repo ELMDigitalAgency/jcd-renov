@@ -10,9 +10,11 @@ export function StatsBand() {
     <div className="bg-primary-ink">
       <dl className="mx-auto grid w-full max-w-6xl grid-cols-1 divide-y divide-white/25 px-4 sm:grid-cols-3 sm:divide-x sm:divide-y-0">
         {siteConfig.stats.map((stat) => (
-          <div key={stat.label} className="flex flex-col items-center gap-1 px-6 py-6 text-center sm:py-8">
-            <dt className="order-2 text-sm font-medium text-white">{stat.label}</dt>
-            <dd className="order-1 font-heading text-3xl font-extrabold text-white sm:text-4xl">
+          <div key={stat.label} className="flex flex-col items-center gap-1.5 px-6 py-7 text-center sm:py-9">
+            <dt className="order-2 text-xs font-semibold tracking-wider text-white uppercase sm:text-sm">
+              {stat.label}
+            </dt>
+            <dd className="order-1 font-heading text-4xl font-extrabold tracking-tight text-white sm:text-5xl">
               {stat.value}
             </dd>
           </div>

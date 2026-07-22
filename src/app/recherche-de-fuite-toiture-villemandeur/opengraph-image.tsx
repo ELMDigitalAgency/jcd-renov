@@ -1,6 +1,6 @@
 import { buildOgImage, OG_SIZE } from "@/lib/og-template";
 
-export const alt = "Recherche de fuite en toiture à Villemandeur — JCD Rénovation";
+export const alt = "Recherche de fuite en toiture à Villemandeur par JCD Rénovation";
 export const size = OG_SIZE;
 export const contentType = "image/png";
 

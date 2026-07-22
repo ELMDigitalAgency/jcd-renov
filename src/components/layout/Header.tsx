@@ -34,18 +34,25 @@ export function Header() {
 
   return (
     <header className="sticky top-0 z-50 border-b border-navy/5 bg-white/95 backdrop-blur">
-      <div className="mx-auto flex h-16 w-full max-w-6xl items-center justify-between gap-4 px-4 sm:px-6 lg:h-[4.5rem] lg:px-8">
+      <div className="mx-auto flex h-16 w-full max-w-6xl flex-nowrap items-center justify-between gap-3 px-4 sm:px-6 lg:h-[4.5rem] lg:px-6 xl:px-8">
         {/* Logo typographique bicolore (maquette BuildSafe) */}
-        <Link href="/" className="font-heading text-lg font-extrabold tracking-tight lg:text-xl" aria-label="JCD Rénovation — accueil">
+        <Link
+          href="/"
+          className="font-heading shrink-0 text-lg font-extrabold tracking-tight whitespace-nowrap lg:text-xl"
+          aria-label="JCD Rénovation, accueil"
+        >
           <span className="text-navy">JCD</span> <span className="text-primary-ink">RÉNOVATION</span>
         </Link>
 
-        {/* Navigation desktop */}
-        <nav aria-label="Navigation principale" className="hidden items-center gap-6 lg:flex">
+        {/* Navigation desktop : une seule ligne, jamais de retour */}
+        <nav
+          aria-label="Navigation principale"
+          className="hidden flex-nowrap items-center gap-x-4 lg:flex xl:gap-x-6"
+        >
           <Link
             href="/"
             className={cn(
-              "text-sm font-semibold transition-colors hover:text-primary",
+              "text-sm font-semibold whitespace-nowrap transition-colors hover:text-primary",
               pathname === "/" ? "text-primary-ink" : "text-navy",
             )}
           >
@@ -57,7 +64,7 @@ export function Header() {
             <button
               type="button"
               className={cn(
-                "flex items-center gap-1 text-sm font-semibold transition-colors group-hover:text-primary",
+                "flex items-center gap-1 text-sm font-semibold whitespace-nowrap transition-colors group-hover:text-primary",
                 prestations.some((p) => pathname === `/${p.slug}`) ? "text-primary-ink" : "text-navy",
               )}
               aria-haspopup="true"
@@ -86,7 +93,7 @@ export function Header() {
               key={link.href}
               href={link.href}
               className={cn(
-                "text-sm font-semibold transition-colors hover:text-primary",
+                "text-sm font-semibold whitespace-nowrap transition-colors hover:text-primary",
                 pathname === link.href ? "text-primary-ink" : "text-navy",
               )}
             >
@@ -95,17 +102,18 @@ export function Header() {
           ))}
         </nav>
 
-        <div className="hidden items-center gap-4 lg:flex">
+        <div className="hidden shrink-0 flex-nowrap items-center gap-4 lg:flex">
+          {/* Le numéro n'apparaît qu'en xl : garantit la nav sur UNE ligne en lg */}
           <a
             href={siteConfig.phoneHref}
-            className="flex items-center gap-2 text-sm font-semibold text-navy transition-colors hover:text-primary"
+            className="hidden items-center gap-2 text-sm font-semibold whitespace-nowrap text-navy transition-colors hover:text-primary xl:flex"
           >
             <Phone className="size-4 text-primary" aria-hidden />
             {siteConfig.phone}
           </a>
           <Link
             href="/devis-gratuit"
-            className="rounded-full bg-navy px-6 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-primary"
+            className="rounded-full bg-navy px-5 py-2.5 text-sm font-semibold whitespace-nowrap text-white transition-colors hover:bg-primary xl:px-6"
           >
             Devis Gratuit
           </Link>

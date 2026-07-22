@@ -11,7 +11,7 @@ export const metadata = buildMetadata({
   path: `/${prestation.slug}`,
 });
 
-/** Page Démoussage — wrapper mince : contenu + articles liés → template (cahier §5). */
+/** Page Démoussage, wrapper mince : contenu + articles liés → template (cahier §5). */
 export default function Page() {
   const relatedPosts = getPostsForPrestation(prestation.slug);
   return <PrestationPageTemplate prestation={prestation} relatedPosts={relatedPosts} />;

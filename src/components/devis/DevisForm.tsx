@@ -287,7 +287,7 @@ export function DevisForm() {
           <span aria-hidden="true" className="text-primary">
             *
           </span>{" "}
-          Champs obligatoires — réponse sous 24 à 48 h, sans engagement.
+          Champs obligatoires. Réponse sous 24 à 48 h, sans engagement.
         </p>
       </form>
     </Card>

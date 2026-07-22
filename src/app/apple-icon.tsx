@@ -1,6 +1,6 @@
 import { ImageResponse } from "next/og";
 
-/** Icône Apple touch générée au build — carré marine, monogramme bicolore. */
+/** Icône Apple touch générée au build : carré marine, monogramme bicolore. */
 export const size = { width: 180, height: 180 };
 export const contentType = "image/png";
 

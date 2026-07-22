@@ -18,7 +18,7 @@ export const metadata = buildMetadata({
   path: "/devis-gratuit",
 });
 
-/** FAQ propre à la page devis — le schema FAQPage principal est émis ailleurs. */
+/** FAQ propre à la page devis. Le schema FAQPage principal est émis ailleurs. */
 const devisFaq: readonly FaqItem[] = [
   {
     question: "Le devis est-il vraiment gratuit ?",

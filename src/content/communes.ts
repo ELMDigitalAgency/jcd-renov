@@ -1,7 +1,7 @@
 import type { Commune } from "@/content/types";
 
 /**
- * Zones géographiques ciblées — stratégie SEO (Excel, onglet Zones
+ * Zones géographiques ciblées : stratégie SEO (Excel, onglet Zones
  * géographiques). Villemandeur = ville principale ; communes de la CA
  * Montargoise et Rives du Loing = zones secondaires/tertiaires.
  */

@@ -10,7 +10,7 @@ export const metadata = buildMetadata({
   path: `/${ville.slug}`,
 });
 
-/** Page ville Amilly — wrapper mince : contenu unique → template (cahier §6). */
+/** Page ville Amilly, wrapper mince : contenu unique → template (cahier §6). */
 export default function Page() {
   return <CityPageTemplate ville={ville} />;
 }

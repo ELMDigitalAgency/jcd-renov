@@ -3,7 +3,7 @@ import { getPostSlugs, getPostSource } from "@/lib/blog";
 import { buildOgImage, OG_SIZE } from "@/lib/og-template";
 
 /** OG dynamique par article — générée au build pour chaque slug existant. */
-export const alt = "Conseil toiture — Blog JCD Rénovation";
+export const alt = "Conseil toiture du blog JCD Rénovation";
 export const size = OG_SIZE;
 export const contentType = "image/png";
 
@@ -16,6 +16,6 @@ export default async function OgImage({ params }: { params: Promise<{ slug: stri
   const { meta } = getPostSource(slug as BlogSlug);
   return buildOgImage({
     title: meta.title,
-    eyebrow: "Conseils toiture — Blog JCD Rénovation",
+    eyebrow: "Conseils toiture · Blog JCD Rénovation",
   });
 }

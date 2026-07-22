@@ -136,7 +136,7 @@ export async function POST(request: Request): Promise<Response> {
       from: FROM,
       to,
       replyTo: parsed.data.email,
-      subject: `Nouvelle demande de devis — ${parsed.data.prestation} (${parsed.data.ville})`,
+      subject: `Nouvelle demande de devis : ${parsed.data.prestation} (${parsed.data.ville})`,
       text: buildText(parsed.data, attachment !== null),
       html: buildHtml(parsed.data, attachment !== null),
       ...(attachment ? { attachments: [attachment] } : {}),

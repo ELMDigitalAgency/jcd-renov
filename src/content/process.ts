@@ -1,6 +1,6 @@
 import type { ProcessStep } from "@/content/types";
 
-/** Déroulé d'une intervention type — cahier des charges §4.5 (4 cartes). */
+/** Déroulé d'une intervention type, cahier des charges §4.5 (4 cartes). */
 export const processSteps: readonly ProcessStep[] = [
   {
     icon: "search",

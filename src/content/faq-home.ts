@@ -1,7 +1,7 @@
 import type { FaqItem } from "@/content/types";
 
 /**
- * FAQ de la page d'accueil — les 6 questions du cahier des charges §4.8,
+ * FAQ de la page d'accueil : les 6 questions du cahier des charges §4.8,
  * réponses factuelles et autonomes (extraction GEO + schema.org FAQPage).
  */
 export const faqHome: readonly FaqItem[] = [
@@ -23,12 +23,12 @@ export const faqHome: readonly FaqItem[] = [
   {
     question: "Quelles villes couvrez-vous autour de Villemandeur ?",
     answer:
-      "JCD Rénovation intervient à Villemandeur (45700) et dans toute l'agglomération Montargoise : Montargis, Amilly, Chalette-sur-Loing, Cepoy, Corquilleroy, Paucourt, Pannes, Solterre et Vimory — soit un rayon d'environ 20 km.",
+      "JCD Rénovation intervient à Villemandeur (45700) et dans toute l'agglomération Montargoise : Montargis, Amilly, Chalette-sur-Loing, Cepoy, Corquilleroy, Paucourt, Pannes, Solterre et Vimory, soit un rayon d'environ 20 km.",
   },
   {
     question: "Le devis est-il vraiment gratuit et sans engagement ?",
     answer:
-      "Oui. Le diagnostic sur place et le devis sont entièrement gratuits et sans engagement. Vous recevez un devis détaillé sous 24 à 48 h après la visite, valable pour comparer sereinement — aucun paiement n'est demandé avant votre accord écrit.",
+      "Oui. Le diagnostic sur place et le devis sont entièrement gratuits et sans engagement. Vous recevez un devis détaillé sous 24 à 48 h après la visite, valable pour comparer sereinement. Aucun paiement n'est demandé avant votre accord écrit.",
   },
   {
     question: "Quelles garanties sur vos travaux de couverture et zinguerie ?",

@@ -28,7 +28,7 @@ export const devisSchema = z.object({
   telephone: z
     .string({ error: "Indiquez votre numéro de téléphone." })
     .regex(PHONE_FR_REGEX, {
-      error: "Numéro de téléphone invalide — format français attendu (ex. 06 12 34 56 78).",
+      error: "Numéro de téléphone invalide. Format français attendu (ex. 06 12 34 56 78).",
     }),
   email: z.email({ error: "Adresse email invalide." }),
   ville: z

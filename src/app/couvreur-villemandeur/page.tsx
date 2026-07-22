@@ -11,7 +11,7 @@ export const metadata = buildMetadata({
   path: `/${prestation.slug}`,
 });
 
-/** Page pilier Couvreur à Villemandeur — wrapper mince : contenu + articles liés → template. */
+/** Page pilier Couvreur à Villemandeur, wrapper mince : contenu + articles liés → template. */
 export default function Page() {
   const relatedPosts = getPostsForPrestation(prestation.slug);
   return <PrestationPageTemplate prestation={prestation} relatedPosts={relatedPosts} />;

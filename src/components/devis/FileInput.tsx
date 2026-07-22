@@ -60,7 +60,7 @@ export function FileInput({ onChange }: FileInputProps) {
         Photo de votre toiture (optionnel)
       </label>
       <p id={hintId} className="mt-1 text-sm text-body">
-        Une photo du problème nous aide à préparer le devis — 3,5 Mo max.
+        Une photo du problème nous aide à préparer le devis (3,5 Mo max).
       </p>
       <input
         ref={inputRef}

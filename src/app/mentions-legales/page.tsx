@@ -51,11 +51,11 @@ export default function MentionsLegalesPage() {
           <h2>Hébergement</h2>
           <p>
             Le site est hébergé par <strong>Vercel Inc.</strong>, 340 S Lemon Ave #4133, Walnut, CA
-            91789, États-Unis —{" "}
+            91789, États-Unis (
             <a href="https://vercel.com" rel="noopener noreferrer">
               vercel.com
             </a>
-            .
+            ).
           </p>
 
           <h2>Propriété intellectuelle</h2>
@@ -68,7 +68,7 @@ export default function MentionsLegalesPage() {
 
           <h2>Responsabilité</h2>
           <p>
-            Les informations publiées sur ce site — en particulier les fourchettes de prix — sont
+            Les informations publiées sur ce site, en particulier les fourchettes de prix, sont
             données à titre indicatif et ne constituent pas un engagement contractuel. Seules les
             conditions figurant sur le devis signé font foi. {siteConfig.legalName} ne saurait être
             tenue responsable d’une décision prise sur la seule base des informations de ce site.

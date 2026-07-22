@@ -3,7 +3,7 @@
  * composants consomment ces structures, jamais de texte en dur dans l'UI.
  */
 
-/** Clés d'icônes — mappées vers lucide-react dans ServiceIcon (jamais de
+/** Clés d'icônes, mappées vers lucide-react dans ServiceIcon (jamais de
  * composant React dans les données : non sérialisable vers les îlots client). */
 export type IconKey =
   | "search"
@@ -67,11 +67,11 @@ export type Prestation = {
   name: string;
   /** Libellé complet pour la nav déroulante. */
   nav: string;
-  /** H1 exact — stratégie SEO (Excel, onglet Architecture). */
+  /** H1 exact : stratégie SEO (Excel, onglet Architecture). */
   h1: string;
   metaTitle: string;
   metaDescription: string;
-  /** Résumé "En bref" en haut de page — extraction GEO (IA). */
+  /** Résumé "En bref" en haut de page : extraction GEO (IA). */
   enBref: string;
   intro: string;
   heroImage: string;
@@ -112,7 +112,7 @@ export type Ville = {
   metaTitle: string;
   metaDescription: string;
   enBref: string;
-  /** Paragraphes d'ancrage local — contenu unique par ville, jamais dupliqué. */
+  /** Paragraphes d'ancrage local : contenu unique par ville, jamais dupliqué. */
   intro: string[];
   atouts: { title: string; text: string }[];
   faq: FaqItem[];

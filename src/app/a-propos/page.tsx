@@ -67,13 +67,13 @@ export default function AProposPage() {
               <div className="mt-6 space-y-4 leading-relaxed">
                 <p>
                   Quand vous contactez JCD Rénovation, vous échangez directement avec l’artisan qui
-                  interviendra sur votre toit — pas avec un commercial ni une plateforme de mise en
+                  interviendra sur votre toit, pas avec un commercial ni une plateforme de mise en
                   relation.
                 </p>
                 <p>
                   Cette relation directe change tout : un diagnostic expliqué simplement, des
-                  conseils francs — si un démoussage suffit, nous ne vous vendrons pas une
-                  rénovation complète — et un devis honnête, détaillé poste par poste, gratuit et
+                  conseils francs (si un démoussage suffit, nous ne vous vendrons pas une
+                  rénovation complète) et un devis honnête, détaillé poste par poste, gratuit et
                   sans engagement.
                 </p>
                 <p>

@@ -98,7 +98,7 @@ export function Footer() {
       <div className="border-t border-white/10">
         <div className="mx-auto flex w-full max-w-6xl flex-col items-center justify-between gap-3 px-4 py-6 text-xs text-white/60 sm:flex-row sm:px-6 lg:px-8">
           <p>
-            © {year} {siteConfig.name} — Tous droits réservés
+            © {year} {siteConfig.name}. Tous droits réservés
           </p>
           <p className="flex gap-4">
             <Link href="/mentions-legales" className="transition-colors hover:text-primary">

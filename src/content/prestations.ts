@@ -1,7 +1,7 @@
 import type { Prestation, PrestationSlug } from "@/content/types";
 
 /**
- * Les 4 prestations — contenu des pages dédiées (cahier des charges §5,
+ * Les 4 prestations : contenu des pages dédiées (cahier des charges §5,
  * metas exactes de la stratégie SEO, onglet « Architecture du site »).
  * Fourchettes de prix = données de marché France 2026 (indicatives, avec
  * disclaimer) ; jamais de chiffre présenté comme un engagement du client.
@@ -24,13 +24,13 @@ export const prestations: readonly Prestation[] = [
     consiste: {
       title: "En quoi consiste un démoussage de toiture ?",
       paragraphs: [
-        "Un démoussage complet se déroule en trois temps : le nettoyage de la couverture (manuel ou basse pression selon la fragilité des tuiles), l'application d'un traitement anti-mousse curatif qui élimine les organismes en profondeur, puis — selon l'état de vos tuiles — un traitement hydrofuge qui imperméabilise la surface et retarde la repousse.",
+        "Un démoussage complet se déroule en trois temps : le nettoyage de la couverture (manuel ou basse pression selon la fragilité des tuiles), l'application d'un traitement anti-mousse curatif qui élimine les organismes en profondeur, puis, selon l'état de vos tuiles, un traitement hydrofuge qui imperméabilise la surface et retarde la repousse.",
         "Nous adaptons systématiquement la méthode au matériau : une tuile terre cuite ancienne ne se nettoie pas comme une tuile béton ou une ardoise. Le nettoyage des gouttières est inclus dans l'intervention : les mousses délogées ne doivent jamais y stagner.",
       ],
       points: [
         {
           title: "Nettoyage complet de la couverture",
-          text: "Élimination des mousses, lichens et débris, méthode adaptée au matériau (manuel ou basse pression — jamais de haute pression sur tuiles fragiles).",
+          text: "Élimination des mousses, lichens et débris, méthode adaptée au matériau (manuel ou basse pression, jamais de haute pression sur tuiles fragiles).",
         },
         {
           title: "Traitement anti-mousse curatif et préventif",
@@ -53,7 +53,7 @@ export const prestations: readonly Prestation[] = [
         "Les tuiles noircissent ou verdissent par zones (algues, lichens)",
         "Des granulats ou morceaux de mousse s'accumulent dans les gouttières",
         "Les tuiles restent sombres longtemps après la pluie (porosité : elles se gorgent d'eau)",
-        "Le dernier démoussage date de plus de 10 ans — ou n'a jamais été fait",
+        "Le dernier démoussage date de plus de 10 ans, ou n'a jamais été fait",
       ],
     },
     tarifs: {
@@ -65,7 +65,7 @@ export const prestations: readonly Prestation[] = [
           fourchette: "25 à 35 €",
           unite: "par m²",
         },
-        { label: "Nettoyage de gouttières seul", fourchette: "sur devis", unite: "—" },
+        { label: "Nettoyage de gouttières seul", fourchette: "sur devis", unite: "" },
       ],
       facteurs: [
         "Surface et pente de la toiture",
@@ -95,7 +95,7 @@ export const prestations: readonly Prestation[] = [
       {
         question: "Combien de temps dure l'intervention ?",
         answer:
-          "Une demi-journée à une journée pour un pavillon standard (80 à 120 m² de toiture). Si un traitement hydrofuge est prévu, il s'applique sur toiture propre et sèche — parfois lors d'un second passage.",
+          "Une demi-journée à une journée pour un pavillon standard (80 à 120 m² de toiture). Si un traitement hydrofuge est prévu, il s'applique sur toiture propre et sèche, parfois lors d'un second passage.",
       },
       {
         question: "Le démoussage abîme-t-il les tuiles ?",
@@ -123,13 +123,13 @@ export const prestations: readonly Prestation[] = [
     enBref:
       "Une recherche de fuite de toiture coûte généralement entre 150 et 600 € selon la complexité. JCD Rénovation localise l'origine exacte de l'infiltration à Villemandeur et dans l'agglomération Montargoise (inspection complète, test d'arrosage si nécessaire), puis propose la réparation. Intervention rapide en cas de fuite active.",
     intro:
-      "Une tache d'humidité au plafond signale rarement l'endroit réel où l'eau entre : elle circule le long de la charpente avant de traverser. Localiser précisément l'origine évite de refaire des travaux au mauvais endroit — et d'aggraver les dégâts.",
+      "Une tache d'humidité au plafond signale rarement l'endroit réel où l'eau entre : elle circule le long de la charpente avant de traverser. Localiser précisément l'origine évite de refaire des travaux au mauvais endroit, et d'aggraver les dégâts.",
     heroImage: "/images/realisations/recherche-fuite-toiture-villemandeur-01.jpeg",
     heroImageAlt: "Recherche de fuite en toiture à Villemandeur par JCD Rénovation",
     consiste: {
       title: "Comment se déroule une recherche de fuite ?",
       paragraphs: [
-        "Nous procédons méthodiquement, de l'intérieur vers l'extérieur : inspection des combles (traces sur la charpente, l'isolant, l'écran sous-toiture), puis examen complet de la couverture en insistant sur les points singuliers — solins, noues, faîtage, arêtiers, pourtour de cheminée et de fenêtres de toit. Ce sont eux qui causent la majorité des infiltrations.",
+        "Nous procédons méthodiquement, de l'intérieur vers l'extérieur : inspection des combles (traces sur la charpente, l'isolant, l'écran sous-toiture), puis examen complet de la couverture en insistant sur les points singuliers : solins, noues, faîtage, arêtiers, pourtour de cheminée et de fenêtres de toit. Ce sont eux qui causent la majorité des infiltrations.",
         "Si l'origine reste incertaine, nous réalisons un test d'arrosage ciblé : la toiture est arrosée zone par zone pendant qu'un contrôle est effectué à l'intérieur, jusqu'à reproduire la fuite. Vous recevez ensuite un diagnostic clair et un devis de réparation détaillé.",
       ],
       points: [
@@ -147,7 +147,7 @@ export const prestations: readonly Prestation[] = [
         },
         {
           title: "Rapport et devis de réparation",
-          text: "Explication claire de l'origine, photos à l'appui — utilisable pour votre assurance habitation — et chiffrage de la réparation.",
+          text: "Explication claire de l'origine, photos à l'appui (utilisable pour votre assurance habitation) et chiffrage de la réparation.",
         },
       ],
     },
@@ -189,7 +189,7 @@ export const prestations: readonly Prestation[] = [
       {
         question: "Intervenez-vous en urgence en cas de fuite active ?",
         answer:
-          "Oui. En cas d'infiltration active, nous intervenons en priorité à Villemandeur et dans l'agglomération Montargoise pour mettre la toiture hors d'eau — bâchage d'urgence si nécessaire — puis nous planifions la réparation durable. Appelez le 07 49 10 06 56.",
+          "Oui. En cas d'infiltration active, nous intervenons en priorité à Villemandeur et dans l'agglomération Montargoise pour mettre la toiture hors d'eau (bâchage d'urgence si nécessaire), puis nous planifions la réparation durable. Appelez le 07 49 10 06 56.",
       },
       {
         question: "Pourquoi la fuite n'est-elle pas là où je vois la tache ?",
@@ -199,7 +199,7 @@ export const prestations: readonly Prestation[] = [
       {
         question: "Mon assurance habitation prend-elle en charge la fuite ?",
         answer:
-          "Les dégâts intérieurs causés par une infiltration sont généralement couverts par la garantie dégâts des eaux ; la réparation de la toiture elle-même l'est plus rarement. Vérifiez votre contrat — nous fournissons un rapport avec photos, utilisable pour votre déclaration de sinistre.",
+          "Les dégâts intérieurs causés par une infiltration sont généralement couverts par la garantie dégâts des eaux ; la réparation de la toiture elle-même l'est plus rarement. Vérifiez votre contrat. Nous fournissons un rapport avec photos, utilisable pour votre déclaration de sinistre.",
       },
       {
         question: "Combien de temps prend une recherche de fuite ?",
@@ -225,7 +225,7 @@ export const prestations: readonly Prestation[] = [
     metaDescription:
       "Travaux de zinguerie à Villemandeur : gouttières, chéneaux, solins, noues. Pose et réparation par un artisan qualifié.",
     enBref:
-      "La zinguerie regroupe les ouvrages métalliques qui assurent l'étanchéité et l'évacuation des eaux de votre toit : gouttières, descentes, solins, chéneaux, noues. JCD Rénovation pose et répare votre zinguerie à Villemandeur — zinc ou aluminium, travaux couverts par la garantie décennale. Une gouttière zinc posée coûte en moyenne 60 à 120 € le mètre linéaire.",
+      "La zinguerie regroupe les ouvrages métalliques qui assurent l'étanchéité et l'évacuation des eaux de votre toit : gouttières, descentes, solins, chéneaux, noues. JCD Rénovation pose et répare votre zinguerie à Villemandeur : zinc ou aluminium, travaux couverts par la garantie décennale. Une gouttière zinc posée coûte en moyenne 60 à 120 € le mètre linéaire.",
     intro:
       "Gouttières, solins, chéneaux, noues : ces éléments métalliques discrets protègent votre maison en guidant l'eau de pluie loin des murs et des fondations. Un seul solin fissuré ou une gouttière qui déborde suffit à provoquer des infiltrations coûteuses.",
     heroImage: "/images/realisations/zinguerie-gouttiere-villemandeur-01.jpeg",
@@ -275,7 +275,7 @@ export const prestations: readonly Prestation[] = [
           unite: "par mètre linéaire",
         },
         { label: "Solin (fourniture + pose)", fourchette: "40 à 90 €", unite: "par mètre linéaire" },
-        { label: "Chéneaux, noues, habillages", fourchette: "sur devis", unite: "—" },
+        { label: "Chéneaux, noues, habillages", fourchette: "sur devis", unite: "" },
       ],
       facteurs: [
         "Matériau choisi (zinc, aluminium, PVC)",
@@ -290,7 +290,7 @@ export const prestations: readonly Prestation[] = [
       {
         question: "Zinc, aluminium ou PVC : que choisir pour mes gouttières ?",
         answer:
-          "Le zinc dure 30 à 50 ans, se soude (étanchéité durable) et se patine naturellement : c'est le meilleur rapport longévité/prix. L'aluminium laqué (20 à 30 ans) est plus économique et existe en plusieurs coloris. Le PVC est le moins cher mais vieillit mal aux UV et se déforme — nous le déconseillons en remplacement définitif.",
+          "Le zinc dure 30 à 50 ans, se soude (étanchéité durable) et se patine naturellement : c'est le meilleur rapport longévité/prix. L'aluminium laqué (20 à 30 ans) est plus économique et existe en plusieurs coloris. Le PVC est le moins cher mais vieillit mal aux UV et se déforme : nous le déconseillons en remplacement définitif.",
       },
       {
         question: "À quelle fréquence faut-il nettoyer ses gouttières ?",
@@ -325,11 +325,11 @@ export const prestations: readonly Prestation[] = [
     intro:
       "Tuiles cassées après un coup de vent, toiture qui a dépassé les 30 ans, projet de rénovation complète : votre toit est la première protection de votre maison. Nous intervenons de la simple réparation à la réfection totale.",
     heroImage: "/images/realisations/renovation-toiture-villemandeur-01.jpeg",
-    heroImageAlt: "Couvreur sur une rénovation de toiture à Villemandeur — JCD Rénovation",
+    heroImageAlt: "Couvreur sur une rénovation de toiture à Villemandeur (JCD Rénovation)",
     consiste: {
       title: "Nos travaux de couverture",
       paragraphs: [
-        "Nous réalisons tous les travaux de couverture en tuile terre cuite, tuile béton et ardoise : réparations ponctuelles (remplacement de tuiles cassées ou déplacées, reprise de faîtage), remaniement (tri complet de la couverture avec remplacement des éléments défectueux), et rénovation complète — dépose de l'ancienne couverture, pose d'un écran de sous-toiture, liteaunage neuf et couverture neuve.",
+        "Nous réalisons tous les travaux de couverture en tuile terre cuite, tuile béton et ardoise : réparations ponctuelles (remplacement de tuiles cassées ou déplacées, reprise de faîtage), remaniement (tri complet de la couverture avec remplacement des éléments défectueux), et rénovation complète (dépose de l'ancienne couverture, pose d'un écran de sous-toiture, liteaunage neuf et couverture neuve).",
         "Chaque chantier commence par un diagnostic gratuit : nous vous disons honnêtement si une réparation suffit ou si la rénovation s'impose, chiffrage détaillé à l'appui. Tous nos travaux de couverture sont couverts par la garantie décennale.",
       ],
       points: [
@@ -343,11 +343,11 @@ export const prestations: readonly Prestation[] = [
         },
         {
           title: "Rénovation complète",
-          text: "Dépose totale, écran de sous-toiture HPV, liteaux neufs, couverture neuve — avec conseils sur le choix du matériau.",
+          text: "Dépose totale, écran de sous-toiture HPV, liteaux neufs, couverture neuve, avec conseils sur le choix du matériau.",
         },
         {
           title: "Faîtage & points singuliers",
-          text: "Scellement ou pose à sec du faîtage, étanchéité des rives, arêtiers et abouts — en lien avec la zinguerie.",
+          text: "Scellement ou pose à sec du faîtage, étanchéité des rives, arêtiers et abouts, en lien avec la zinguerie.",
         },
       ],
     },
@@ -399,7 +399,7 @@ export const prestations: readonly Prestation[] = [
       {
         question: "Réparation ou rénovation complète : comment décider ?",
         answer:
-          "Si les défauts sont localisés (quelques tuiles, un solin), la réparation est le bon choix. La rénovation complète s'impose quand les tuiles sont poreuses en masse, que les infiltrations se multiplient ou que le liteaunage est fatigué. Notre diagnostic gratuit tranche honnêtement — réparer ce qui peut l'être coûte toujours moins cher.",
+          "Si les défauts sont localisés (quelques tuiles, un solin), la réparation est le bon choix. La rénovation complète s'impose quand les tuiles sont poreuses en masse, que les infiltrations se multiplient ou que le liteaunage est fatigué. Notre diagnostic gratuit tranche honnêtement : réparer ce qui peut l'être coûte toujours moins cher.",
       },
       {
         question: "Existe-t-il des aides pour rénover sa toiture en 2026 ?",

@@ -10,7 +10,7 @@ export const metadata = buildMetadata({
   path: `/${ville.slug}`,
 });
 
-/** Page ville Chalette-sur-Loing — wrapper mince : contenu unique → template (cahier §6). */
+/** Page ville Chalette-sur-Loing, wrapper mince : contenu unique → template (cahier §6). */
 export default function Page() {
   return <CityPageTemplate ville={ville} />;
 }

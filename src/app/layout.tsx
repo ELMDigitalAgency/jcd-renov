@@ -38,7 +38,7 @@ export default function RootLayout({
   return (
     <html lang="fr" className={`${jakarta.variable} ${inter.variable}`}>
       <body>
-        {/* Schéma LocalBusiness/RoofingContractor sitewide — NAP unique (site.config) */}
+        {/* Schéma LocalBusiness/RoofingContractor sitewide, NAP unique (site.config) */}
         <JsonLd data={roofingContractorSchema()} />
         <SkipLink />
         <Header />
