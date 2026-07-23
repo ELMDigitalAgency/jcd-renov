@@ -20,9 +20,9 @@
   --color-lavender: #e7e4f5; /* carte bento n°2 */
   --color-body: #5b6472; /* texte courant (≥4,5:1 sur crème) */
 
-  /* Typographie (cahier des charges §2.2) */
+  /* Typographie : Plus Jakarta Sans (titres) + Urbanist (texte courant) */
   --font-heading: var(--font-jakarta), ui-sans-serif, system-ui, sans-serif;
-  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-sans: var(--font-urbanist), ui-sans-serif, system-ui, sans-serif;
 
   /* Composants récurrents (cahier des charges §2.3) */
   --radius-card: 1.5rem; /* cartes et images arrondies 24px */

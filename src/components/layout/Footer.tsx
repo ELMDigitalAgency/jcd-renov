@@ -1,7 +1,7 @@
 import { Mail, MapPin, Phone } from "lucide-react";
 import Link from "next/link";
 
-import { BrandBadge } from "@/components/ui/BrandBadge";
+import { BrandLogo } from "@/components/ui/BrandLogo";
 import { prestations } from "@/content/prestations";
 import { siteConfig } from "@/site.config";
 
@@ -23,7 +23,10 @@ export function Footer() {
       <div className="mx-auto grid w-full max-w-6xl gap-10 px-4 py-14 sm:grid-cols-2 sm:px-6 lg:grid-cols-4 lg:px-8">
         <div className="space-y-4">
           <div className="flex items-center gap-3">
-            <BrandBadge className="size-14" />
+            {/* Fond blanc : le badge reste lisible sur le footer marine */}
+            <span className="inline-flex shrink-0 rounded-full bg-white p-0.5">
+              <BrandLogo size={64} className="size-16" />
+            </span>
             <p className="font-heading text-lg font-extrabold">
               <span className="text-white">JCD</span>{" "}
               <span className="text-primary">RÉNOVATION</span>

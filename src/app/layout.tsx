@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, Plus_Jakarta_Sans } from "next/font/google";
+import { Plus_Jakarta_Sans, Urbanist } from "next/font/google";
 
 import { ConsentBanner } from "@/components/consent/ConsentBanner";
 import { GoogleAnalytics } from "@/components/consent/GoogleAnalytics";
@@ -20,10 +20,10 @@ const jakarta = Plus_Jakarta_Sans({
   display: "swap",
 });
 
-const inter = Inter({
+const urbanist = Urbanist({
   subsets: ["latin"],
-  weight: ["400", "500", "600"],
-  variable: "--font-inter",
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-urbanist",
   display: "swap",
 });
 
@@ -37,7 +37,7 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="fr" className={`${jakarta.variable} ${inter.variable}`}>
+    <html lang="fr" className={`${jakarta.variable} ${urbanist.variable}`}>
       <body>
         {/* Schéma LocalBusiness/RoofingContractor sitewide, NAP unique (site.config) */}
         <JsonLd data={roofingContractorSchema()} />

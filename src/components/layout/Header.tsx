@@ -5,7 +5,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 
-import { BrandBadge } from "@/components/ui/BrandBadge";
+import { BrandLogo } from "@/components/ui/BrandLogo";
 import { prestations } from "@/content/prestations";
 import { cn } from "@/lib/utils";
 import { siteConfig } from "@/site.config";
@@ -36,17 +36,9 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 border-b border-navy/5 bg-white/95 backdrop-blur">
       <div className="mx-auto flex h-16 w-full max-w-6xl flex-nowrap items-center justify-between gap-3 px-4 sm:px-6 lg:h-[4.5rem] lg:px-6 xl:px-8">
-        {/* Logo officiel (badge) + wordmark */}
-        <Link
-          href="/"
-          className="flex shrink-0 items-center gap-2.5 whitespace-nowrap"
-          aria-label="JCD Rénovation, accueil"
-        >
-          <BrandBadge className="size-10 lg:size-11" />
-          <span className="font-heading text-lg font-extrabold tracking-tight lg:text-xl">
-            <span className="text-navy">JCD</span>{" "}
-            <span className="text-primary-ink">RÉNOVATION</span>
-          </span>
+        {/* Logo officiel seul (demande client : pas de texte dans la navbar) */}
+        <Link href="/" className="shrink-0" aria-label="JCD Rénovation, accueil">
+          <BrandLogo size={52} priority className="size-11 lg:size-13" />
         </Link>
 
         {/* Navigation desktop : une seule ligne, jamais de retour */}
