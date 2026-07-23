@@ -1,5 +1,8 @@
+import { Phone } from "lucide-react";
+
 import { ButtonLink } from "@/components/ui/ButtonLink";
 import { Card } from "@/components/ui/Card";
+import { siteConfig } from "@/site.config";
 
 type CtaEncartProps = {
   title?: string;
@@ -8,8 +11,8 @@ type CtaEncartProps = {
 
 /**
  * Encart CTA inséré dans le corps des articles MDX :
- * `<CtaEncart title="…">texte…</CtaEncart>`. Carte marine + bouton orange
- * vers /devis-gratuit (conversion au cœur de la lecture, sans popup).
+ * `<CtaEncart title="…">texte…</CtaEncart>`. Carte marine, bouton devis ET
+ * numéro cliquable : le trafic SEO du blog doit se transformer en appels.
  */
 export function CtaEncart({
   title = "Besoin de l'avis d'un couvreur ?",
@@ -21,9 +24,18 @@ export function CtaEncart({
       {children ? (
         <div className="mt-3 leading-relaxed text-white/80">{children}</div>
       ) : null}
-      <ButtonLink href="/devis-gratuit" variant="accent" withArrow className="mt-6">
-        Devis gratuit
-      </ButtonLink>
+      <div className="mt-6 flex flex-col items-start gap-4 sm:flex-row sm:items-center sm:gap-6">
+        <ButtonLink href="/devis-gratuit" variant="accent" withArrow>
+          Devis gratuit
+        </ButtonLink>
+        <a
+          href={siteConfig.phoneHref}
+          className="inline-flex items-center gap-2 font-semibold text-white transition-colors hover:text-primary"
+        >
+          <Phone className="size-4 text-primary" aria-hidden />
+          ou appelez le {siteConfig.phone}
+        </a>
+      </div>
     </Card>
   );
 }

@@ -1,5 +1,8 @@
+import { Phone } from "lucide-react";
+
 import { ButtonLink } from "@/components/ui/ButtonLink";
 import { Container } from "@/components/ui/Container";
+import { siteConfig } from "@/site.config";
 
 type CtaBannerProps = {
   title?: string;
@@ -21,9 +24,18 @@ export function CtaBanner({
           <p className="font-heading max-w-2xl text-2xl font-extrabold text-white sm:text-3xl">
             {title}
           </p>
-          <ButtonLink href="/devis-gratuit" variant="primary" withArrow className="shrink-0">
-            {buttonLabel}
-          </ButtonLink>
+          <div className="flex shrink-0 flex-col items-start gap-3 lg:items-end">
+            <ButtonLink href="/devis-gratuit" variant="primary" withArrow>
+              {buttonLabel}
+            </ButtonLink>
+            <a
+              href={siteConfig.phoneHref}
+              className="inline-flex items-center gap-2 text-sm font-bold text-white transition-opacity hover:opacity-80"
+            >
+              <Phone className="size-4" aria-hidden />
+              {siteConfig.phone}
+            </a>
+          </div>
         </div>
       </Container>
     </section>

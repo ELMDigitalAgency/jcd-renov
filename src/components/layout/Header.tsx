@@ -119,17 +119,26 @@ export function Header() {
           </Link>
         </div>
 
-        {/* Burger mobile */}
-        <button
-          type="button"
-          className="inline-flex size-10 items-center justify-center rounded-full text-navy lg:hidden"
-          aria-expanded={mobileOpen}
-          aria-controls="menu-mobile"
-          aria-label={mobileOpen ? "Fermer le menu" : "Ouvrir le menu"}
-          onClick={() => setMobileOpen((open) => !open)}
-        >
-          {mobileOpen ? <X className="size-6" aria-hidden /> : <Menu className="size-6" aria-hidden />}
-        </button>
+        {/* Mobile : appel direct + burger */}
+        <div className="flex items-center gap-1 lg:hidden">
+          <a
+            href={siteConfig.phoneHref}
+            aria-label={`Appeler JCD Rénovation au ${siteConfig.phone}`}
+            className="inline-flex size-10 items-center justify-center rounded-full bg-primary-ink text-white"
+          >
+            <Phone className="size-5" aria-hidden />
+          </a>
+          <button
+            type="button"
+            className="inline-flex size-10 items-center justify-center rounded-full text-navy"
+            aria-expanded={mobileOpen}
+            aria-controls="menu-mobile"
+            aria-label={mobileOpen ? "Fermer le menu" : "Ouvrir le menu"}
+            onClick={() => setMobileOpen((open) => !open)}
+          >
+            {mobileOpen ? <X className="size-6" aria-hidden /> : <Menu className="size-6" aria-hidden />}
+          </button>
+        </div>
       </div>
 
       {/* Panneau mobile */}

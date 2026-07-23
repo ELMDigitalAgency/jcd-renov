@@ -39,6 +39,13 @@ export function roofingContractorSchema(): WithContext<RoofingContractor> {
       "@type": "City" as const,
       name: city,
     })),
+    contactPoint: {
+      "@type": "ContactPoint",
+      telephone: siteConfig.phoneInternational,
+      contactType: "customer service",
+      availableLanguage: "French",
+      areaServed: "FR",
+    },
     priceRange: "€€",
     image: `${siteConfig.url}/images/logo-jcd-renovation.png`,
   };

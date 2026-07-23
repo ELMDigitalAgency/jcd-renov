@@ -5,6 +5,7 @@ import { ConsentBanner } from "@/components/consent/ConsentBanner";
 import { GoogleAnalytics } from "@/components/consent/GoogleAnalytics";
 import { Footer } from "@/components/layout/Footer";
 import { Header } from "@/components/layout/Header";
+import { MobileCallBar } from "@/components/layout/MobileCallBar";
 import { JsonLd } from "@/components/ui/JsonLd";
 import { SkipLink } from "@/components/ui/SkipLink";
 import { roofingContractorSchema } from "@/lib/schema";
@@ -44,6 +45,8 @@ export default function RootLayout({
         <Header />
         <main id="contenu">{children}</main>
         <Footer />
+        {/* Mobile : appel ou devis toujours à portée de pouce */}
+        <MobileCallBar />
         {/* RGPD : rien ne se charge sans NEXT_PUBLIC_GA_ID + consentement */}
         <ConsentBanner />
         <GoogleAnalytics />
