@@ -2,6 +2,7 @@ import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
+import { BrandBadge } from "@/components/ui/BrandBadge";
 import { Card } from "@/components/ui/Card";
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
@@ -74,14 +75,12 @@ export function ServicesBento() {
             </Card>
           </Link>
 
-          {/* 2 — Logo typographique JCD Rénovation */}
-          <Card className="flex h-full flex-col items-center justify-center gap-1 text-center">
-            <span className="font-heading text-4xl font-extrabold tracking-tight text-navy">
-              JCD
-            </span>
-            <span className="font-heading text-base font-extrabold tracking-[0.25em] text-primary-ink">
-              RÉNOVATION
-            </span>
+          {/* 2 — Logo officiel JCD Rénovation */}
+          <Card className="flex h-full items-center justify-center">
+            <BrandBadge
+              className="size-36 sm:size-40"
+              title="JCD Rénovation, couverture et zinguerie"
+            />
           </Card>
 
           {/* 3 — Zinguerie (lavender) */}

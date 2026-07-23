@@ -5,6 +5,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 
+import { BrandBadge } from "@/components/ui/BrandBadge";
 import { prestations } from "@/content/prestations";
 import { cn } from "@/lib/utils";
 import { siteConfig } from "@/site.config";
@@ -35,13 +36,17 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 border-b border-navy/5 bg-white/95 backdrop-blur">
       <div className="mx-auto flex h-16 w-full max-w-6xl flex-nowrap items-center justify-between gap-3 px-4 sm:px-6 lg:h-[4.5rem] lg:px-6 xl:px-8">
-        {/* Logo typographique bicolore (maquette BuildSafe) */}
+        {/* Logo officiel (badge) + wordmark */}
         <Link
           href="/"
-          className="font-heading shrink-0 text-lg font-extrabold tracking-tight whitespace-nowrap lg:text-xl"
+          className="flex shrink-0 items-center gap-2.5 whitespace-nowrap"
           aria-label="JCD Rénovation, accueil"
         >
-          <span className="text-navy">JCD</span> <span className="text-primary-ink">RÉNOVATION</span>
+          <BrandBadge className="size-10 lg:size-11" />
+          <span className="font-heading text-lg font-extrabold tracking-tight lg:text-xl">
+            <span className="text-navy">JCD</span>{" "}
+            <span className="text-primary-ink">RÉNOVATION</span>
+          </span>
         </Link>
 
         {/* Navigation desktop : une seule ligne, jamais de retour */}

@@ -6,6 +6,7 @@ import { GuaranteesSection } from "@/components/home/GuaranteesSection";
 import { HomeHero } from "@/components/home/HomeHero";
 import { LeakSpotlight } from "@/components/home/LeakSpotlight";
 import { ProcessSteps } from "@/components/home/ProcessSteps";
+import { RealisationsStrip } from "@/components/home/RealisationsStrip";
 import { ServicesBento } from "@/components/home/ServicesBento";
 import { TestimonialCarousel } from "@/components/avis/TestimonialCarousel";
 import { CtaBanner } from "@/components/sections/CtaBanner";
@@ -33,6 +34,7 @@ export default function HomePage() {
       <ProcessSteps />
       <ServicesBento />
       <GuaranteesSection />
+      <RealisationsStrip />
       <FaqSection
         items={faqHome}
         title={

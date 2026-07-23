@@ -1,8 +1,8 @@
 import { CheckCircle2, ShieldCheck } from "lucide-react";
 
+import { HeroCarousel, type HeroSlide } from "@/components/home/HeroCarousel";
 import { ButtonLink } from "@/components/ui/ButtonLink";
 import { Container } from "@/components/ui/Container";
-import { FramedImage } from "@/components/ui/FramedImage";
 import { PageTitle, TitleAccent } from "@/components/ui/PageTitle";
 import { PhoneLink } from "@/components/ui/PhoneLink";
 import { StatsBand } from "@/components/ui/StatsBand";
@@ -10,6 +10,26 @@ import { StatsBand } from "@/components/ui/StatsBand";
 const heroPoints = [
   "Diagnostic et devis gratuits sous 24-48 h",
   "Intervention rapide dans toute l'agglomération Montargoise",
+] as const;
+
+/** Chantiers réels mis en avant dans le carrousel du hero. */
+const heroSlides: readonly HeroSlide[] = [
+  {
+    src: "/images/realisations/couvreurs-chantier-villemandeur-01.jpeg",
+    alt: "Couvreurs JCD Rénovation posant un écran de sous-toiture sur un chantier à Villemandeur",
+  },
+  {
+    src: "/images/realisations/renovation-toiture-villemandeur-01.jpeg",
+    alt: "Rénovation complète de toiture en tuiles terre cuite par JCD Rénovation",
+  },
+  {
+    src: "/images/realisations/remaniement-toiture-loiret-01.jpeg",
+    alt: "Remaniement de toiture dans le Loiret : tuiles triées et liteaunage neuf",
+  },
+  {
+    src: "/images/realisations/demoussage-toiture-villemandeur-01.jpeg",
+    alt: "Traitement de démoussage appliqué sur une toiture, contraste avant après",
+  },
 ] as const;
 
 /**
@@ -53,14 +73,14 @@ export function HomeHero() {
             </div>
           </div>
 
-          <FramedImage
-            src="/images/realisations/couvreurs-chantier-villemandeur-01.jpeg"
-            alt="Couvreurs JCD Rénovation posant un écran de sous-toiture sur un chantier à Villemandeur"
-            width={1600}
-            height={1200}
-            priority
-            sizes="(min-width: 1024px) 520px, calc(100vw - 2rem)"
-            badge={
+          {/* Carrousel de chantiers dans le cadre photo signature */}
+          <div className="relative mb-8">
+            <div
+              aria-hidden
+              className="rounded-card absolute inset-x-0 top-0 bottom-9 -z-10 translate-x-3 translate-y-3 bg-primary/20 sm:translate-x-5 sm:translate-y-5"
+            />
+            <HeroCarousel slides={heroSlides} />
+            <div className="absolute -bottom-2 left-4 sm:left-6">
               <div className="shadow-card flex items-center gap-3 rounded-2xl bg-navy px-5 py-3.5 text-white">
                 <ShieldCheck className="size-8 shrink-0 text-primary" aria-hidden />
                 <div className="leading-tight">
@@ -70,8 +90,8 @@ export function HomeHero() {
                   <p className="text-xs text-white/75">10 ans sur tous nos travaux</p>
                 </div>
               </div>
-            }
-          />
+            </div>
+          </div>
         </Container>
       </div>
 
