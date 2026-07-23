@@ -56,6 +56,7 @@ export const prestations: readonly Prestation[] = [
         "Le dernier démoussage date de plus de 10 ans, ou n'a jamais été fait",
       ],
     },
+    sections: [],
     tarifs: {
       title: "Prix d'un démoussage de toiture en 2026",
       rows: [
@@ -161,6 +162,7 @@ export const prestations: readonly Prestation[] = [
         "Bois de charpente ou isolant humide au toucher",
       ],
     },
+    sections: [],
     tarifs: {
       title: "Prix d'une recherche de fuite de toiture",
       rows: [
@@ -265,6 +267,7 @@ export const prestations: readonly Prestation[] = [
         "La gouttière s'affaisse ou se détache par endroits",
       ],
     },
+    sections: [],
     tarifs: {
       title: "Prix des travaux de zinguerie",
       rows: [
@@ -361,6 +364,7 @@ export const prestations: readonly Prestation[] = [
         "La charpente ou les liteaux montrent des signes d'affaissement",
       ],
     },
+    sections: [],
     tarifs: {
       title: "Prix des travaux de couverture en 2026",
       rows: [

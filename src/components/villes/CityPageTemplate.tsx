@@ -2,6 +2,7 @@ import ArrowForwardRoundedIcon from "@mui/icons-material/ArrowForwardRounded";
 import Image from "next/image";
 import Link from "next/link";
 
+import { ContentSections } from "@/components/sections/ContentSections";
 import { FaqSection } from "@/components/sections/FaqSection";
 import { FinalCta } from "@/components/sections/FinalCta";
 import { Breadcrumbs } from "@/components/ui/Breadcrumbs";
@@ -105,6 +106,9 @@ export function CityPageTemplate({ ville }: CityPageTemplateProps) {
           </div>
         </Container>
       </section>
+
+      {/* Contenu de fond unique à la ville (bâti, climat, interventions types…) */}
+      <ContentSections sections={ville.sections} startOn="cream" />
 
       {/* 3. Les 4 prestations — maillage interne avec les ancres recommandées. */}
       <section className="bg-cream">

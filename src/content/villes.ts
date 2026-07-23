@@ -20,6 +20,7 @@ export const villes: readonly Ville[] = [
       "Sous-préfecture du Loiret et cœur de l'agglomération Montargoise, Montargis mêle un centre ancien traversé de canaux (la « Venise du Gâtinais ») et des quartiers pavillonnaires plus récents. Deux types de bâti, deux réalités pour un couvreur : toitures anciennes à forte pente en cœur de ville, pavillons des années 60 à 90 en périphérie.",
       "Installés à quelques minutes, nous intervenons à Montargis pour toutes les prestations : démoussage de toitures exposées à l'humidité des canaux et du Loing, reprise de zinguerie sur le bâti ancien, recherche de fuite et rénovation complète de couverture. La proximité fait la différence : un diagnostic peut être planifié rapidement, sans frais de déplacement.",
     ],
+    sections: [],
     atouts: [
       {
         title: "Un artisan local, pas un réseau national",
@@ -61,6 +62,7 @@ export const villes: readonly Ville[] = [
       "Commune résidentielle limitrophe de Villemandeur et Montargis, Amilly s'est largement développée à partir des années 1970 : ses quartiers pavillonnaires alignent des toitures en tuiles mécaniques qui atteignent aujourd'hui 40 à 50 ans : l'âge où le démoussage régulier et la surveillance des points d'étanchéité deviennent indispensables.",
       "Voisins directs, nous intervenons à Amilly aussi facilement qu'à Villemandeur : nettoyage et traitement de toiture, remplacement de gouttières, recherche de fuite, remaniement ou rénovation complète. Les environnements arborés du bourg et des bords du Loing favorisent la mousse : un contrôle tous les deux ans évite les mauvaises surprises.",
     ],
+    sections: [],
     atouts: [
       {
         title: "Voisin immédiat",
@@ -102,6 +104,7 @@ export const villes: readonly Ville[] = [
       "Parmi les plus grandes communes de l'agglomération Montargoise, Chalette-sur-Loing longe le Loing et le canal de Briare : un environnement humide qui accélère le développement des mousses et lichens sur les toitures, particulièrement dans les quartiers proches de l'eau et du lac de Chalette.",
       "Nous intervenons dans toute la commune, du Bourg à Vésines en passant par les quartiers pavillonnaires, pour le démoussage et le traitement des couvertures, la réparation ou le remplacement de gouttières, la recherche de fuite et les travaux de couverture. Un habitat souvent construit entre les années 50 et 80, dont les toitures méritent aujourd'hui une vraie attention.",
     ],
+    sections: [],
     atouts: [
       {
         title: "Proximité de l'agglomération",

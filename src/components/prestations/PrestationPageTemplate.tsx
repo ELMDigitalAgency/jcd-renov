@@ -1,6 +1,7 @@
 import { PriceTable } from "@/components/prestations/PriceTable";
 import { RelatedArticles } from "@/components/prestations/RelatedArticles";
 import { ServiceExplainer } from "@/components/prestations/ServiceExplainer";
+import { ContentSections } from "@/components/sections/ContentSections";
 import { ServiceHero } from "@/components/prestations/ServiceHero";
 import { ServiceZones } from "@/components/prestations/ServiceZones";
 import { WarningSigns } from "@/components/prestations/WarningSigns";
@@ -25,6 +26,8 @@ export function PrestationPageTemplate({ prestation, relatedPosts }: PrestationP
     <>
       <ServiceHero prestation={prestation} />
       <ServiceExplainer consiste={prestation.consiste} icon={prestation.icon} />
+      {/* Contenu de fond unique à la prestation (méthode, contexte local…) */}
+      <ContentSections sections={prestation.sections} startOn="cream" />
       <WarningSigns signes={prestation.signes} />
       <PriceTable tarifs={prestation.tarifs} />
       <ServiceZones currentPath={`/${prestation.slug}`} />

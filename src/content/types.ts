@@ -61,6 +61,17 @@ export type TarifRow = {
   unite: string;
 };
 
+/**
+ * Section éditoriale longue d'une page prestation/ville : H2 avec mot-clé,
+ * 2 à 4 paragraphes, liste à puces optionnelle. C'est ce contenu unique et
+ * approfondi qui permet à chaque page de se positionner seule sur Google.
+ */
+export type ContentSection = {
+  title: string;
+  paragraphs: string[];
+  bullets?: string[];
+};
+
 export type Prestation = {
   slug: PrestationSlug;
   /** Libellé court pour le menu et les cartes ("Démoussage"). */
@@ -85,6 +96,8 @@ export type Prestation = {
     title: string;
     items: string[];
   };
+  /** Sections longues uniques (méthode détaillée, contexte local, choix techniques…). */
+  sections: ContentSection[];
   tarifs: {
     title: string;
     rows: TarifRow[];
@@ -114,6 +127,8 @@ export type Ville = {
   enBref: string;
   /** Paragraphes d'ancrage local : contenu unique par ville, jamais dupliqué. */
   intro: string[];
+  /** Sections longues uniques (bâti local, climat, interventions types…). */
+  sections: ContentSection[];
   atouts: { title: string; text: string }[];
   faq: FaqItem[];
 };
