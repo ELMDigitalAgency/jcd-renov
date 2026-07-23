@@ -1,4 +1,5 @@
-import { CheckCircle2, ShieldCheck } from "lucide-react";
+import CheckCircleRoundedIcon from "@mui/icons-material/CheckCircleRounded";
+import VerifiedUserRoundedIcon from "@mui/icons-material/VerifiedUserRounded";
 
 import { HeroCarousel, type HeroSlide } from "@/components/home/HeroCarousel";
 import { ButtonLink } from "@/components/ui/ButtonLink";
@@ -59,7 +60,7 @@ export function HomeHero() {
             <ul className="space-y-2.5">
               {heroPoints.map((point) => (
                 <li key={point} className="flex items-start gap-2.5 text-sm font-medium text-navy sm:text-base">
-                  <CheckCircle2 className="mt-0.5 size-5 shrink-0 text-primary" aria-hidden />
+                  <CheckCircleRoundedIcon fontSize="inherit" className="mt-0.5 text-[20px] shrink-0 text-primary" aria-hidden />
                   {point}
                 </li>
               ))}
@@ -82,7 +83,7 @@ export function HomeHero() {
             <HeroCarousel slides={heroSlides} />
             <div className="absolute -bottom-2 left-4 sm:left-6">
               <div className="shadow-card flex items-center gap-3 rounded-2xl bg-navy px-5 py-3.5 text-white">
-                <ShieldCheck className="size-8 shrink-0 text-primary" aria-hidden />
+                <VerifiedUserRoundedIcon fontSize="inherit" className="text-[32px] shrink-0 text-primary" aria-hidden />
                 <div className="leading-tight">
                   <p className="font-heading text-sm font-extrabold sm:text-base">
                     Garantie décennale

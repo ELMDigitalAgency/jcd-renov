@@ -1,4 +1,4 @@
-import { ArrowLeft } from "lucide-react";
+import ArrowBackRoundedIcon from "@mui/icons-material/ArrowBackRounded";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -77,7 +77,7 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
             href="/blog"
             className="inline-flex items-center gap-2 font-semibold text-navy transition-colors hover:text-primary"
           >
-            <ArrowLeft className="size-4" aria-hidden />
+            <ArrowBackRoundedIcon fontSize="inherit" className="text-base" aria-hidden />
             Tous les conseils
           </Link>
         </Container>

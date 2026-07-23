@@ -1,4 +1,4 @@
-import { ArrowRight } from "lucide-react";
+import ArrowForwardRoundedIcon from "@mui/icons-material/ArrowForwardRounded";
 import type { Route } from "next";
 import Link from "next/link";
 
@@ -117,8 +117,9 @@ export default function Page() {
                   {commune.cp ? <p className="mt-1 text-sm">{commune.cp}</p> : null}
                   <span className="mt-auto inline-flex items-center gap-2 pt-4 text-sm font-semibold text-primary">
                     Voir nos services à {commune.name}
-                    <ArrowRight
-                      className="size-4 transition-transform group-hover:translate-x-0.5"
+                    <ArrowForwardRoundedIcon
+                      fontSize="inherit"
+                      className="text-base transition-transform group-hover:translate-x-0.5"
                       aria-hidden
                     />
                   </span>

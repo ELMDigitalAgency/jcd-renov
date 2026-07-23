@@ -1,6 +1,7 @@
 "use client";
 
-import { Minus, Plus } from "lucide-react";
+import AddRoundedIcon from "@mui/icons-material/AddRounded";
+import RemoveRoundedIcon from "@mui/icons-material/RemoveRounded";
 import { useId, useState } from "react";
 
 import type { FaqItem } from "@/content/types";
@@ -38,9 +39,9 @@ export function Accordion({ items, className }: AccordionProps) {
               >
                 {item.question}
                 {isOpen ? (
-                  <Minus className="size-5 shrink-0 text-primary" aria-hidden />
+                  <RemoveRoundedIcon fontSize="inherit" className="text-[20px] shrink-0 text-primary" aria-hidden />
                 ) : (
-                  <Plus className="size-5 shrink-0 text-primary" aria-hidden />
+                  <AddRoundedIcon fontSize="inherit" className="text-[20px] shrink-0 text-primary" aria-hidden />
                 )}
               </button>
             </h3>

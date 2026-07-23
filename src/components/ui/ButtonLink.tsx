@@ -1,5 +1,5 @@
+import ArrowForwardRoundedIcon from "@mui/icons-material/ArrowForwardRounded";
 import Link from "next/link";
-import { ArrowRight } from "lucide-react";
 import type { ComponentProps } from "react";
 
 import { cn } from "@/lib/utils";
@@ -38,8 +38,9 @@ export function ButtonLink({
     >
       {children}
       {withArrow ? (
-        <ArrowRight
-          className="size-4 transition-transform duration-200 group-hover:translate-x-1"
+        <ArrowForwardRoundedIcon
+          fontSize="inherit"
+          className="text-base transition-transform duration-200 group-hover:translate-x-1"
           aria-hidden
         />
       ) : null}

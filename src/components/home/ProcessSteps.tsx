@@ -27,7 +27,7 @@ export function ProcessSteps() {
                 >
                   {index + 1}
                 </span>
-                <ServiceIcon icon={step.icon} className="size-9 text-primary-ink" />
+                <ServiceIcon icon={step.icon} className="text-4xl text-primary-ink" />
                 <h3 className="font-heading text-lg font-bold text-navy">{step.title}</h3>
                 <p className="text-sm leading-relaxed">{step.text}</p>
               </div>

@@ -1,6 +1,9 @@
 "use client";
 
-import { ChevronDown, Menu, Phone, X } from "lucide-react";
+import CloseRoundedIcon from "@mui/icons-material/CloseRounded";
+import ExpandMoreRoundedIcon from "@mui/icons-material/ExpandMoreRounded";
+import MenuRoundedIcon from "@mui/icons-material/MenuRounded";
+import PhoneRoundedIcon from "@mui/icons-material/PhoneRounded";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
@@ -67,7 +70,7 @@ export function Header() {
               aria-haspopup="true"
             >
               Nos prestations
-              <ChevronDown className="size-4 transition-transform group-hover:rotate-180" aria-hidden />
+              <ExpandMoreRoundedIcon fontSize="inherit" className="text-base transition-transform group-hover:rotate-180" aria-hidden />
             </button>
             <div className="invisible absolute top-full left-1/2 -translate-x-1/2 pt-3 opacity-0 transition-all group-focus-within:visible group-focus-within:opacity-100 group-hover:visible group-hover:opacity-100">
               <ul className="rounded-card shadow-card w-64 border border-navy/5 bg-white p-2">
@@ -105,7 +108,7 @@ export function Header() {
             href={siteConfig.phoneHref}
             className="hidden items-center gap-2 text-sm font-semibold whitespace-nowrap text-navy transition-colors hover:text-primary xl:flex"
           >
-            <Phone className="size-4 text-primary" aria-hidden />
+            <PhoneRoundedIcon fontSize="inherit" className="text-base text-primary" aria-hidden />
             {siteConfig.phone}
           </a>
           <Link
@@ -123,7 +126,7 @@ export function Header() {
             aria-label={`Appeler JCD Rénovation au ${siteConfig.phone}`}
             className="inline-flex size-10 items-center justify-center rounded-full bg-primary-ink text-white"
           >
-            <Phone className="size-5" aria-hidden />
+            <PhoneRoundedIcon fontSize="inherit" className="text-[20px]" aria-hidden />
           </a>
           <button
             type="button"
@@ -133,7 +136,11 @@ export function Header() {
             aria-label={mobileOpen ? "Fermer le menu" : "Ouvrir le menu"}
             onClick={() => setMobileOpen((open) => !open)}
           >
-            {mobileOpen ? <X className="size-6" aria-hidden /> : <Menu className="size-6" aria-hidden />}
+            {mobileOpen ? (
+              <CloseRoundedIcon fontSize="inherit" className="text-2xl" aria-hidden />
+            ) : (
+              <MenuRoundedIcon fontSize="inherit" className="text-2xl" aria-hidden />
+            )}
           </button>
         </div>
       </div>
@@ -155,8 +162,9 @@ export function Header() {
             className="flex w-full items-center justify-between rounded-2xl px-4 py-3 font-semibold text-navy hover:bg-cream"
           >
             Nos prestations
-            <ChevronDown
-              className={cn("size-4 transition-transform", mobilePrestationsOpen && "rotate-180")}
+            <ExpandMoreRoundedIcon
+              fontSize="inherit"
+              className={cn("text-base transition-transform", mobilePrestationsOpen && "rotate-180")}
               aria-hidden
             />
           </button>
@@ -188,7 +196,7 @@ export function Header() {
               href={siteConfig.phoneHref}
               className="flex items-center justify-center gap-2 rounded-full border border-navy/10 px-6 py-3 font-semibold text-navy"
             >
-              <Phone className="size-4 text-primary" aria-hidden />
+              <PhoneRoundedIcon fontSize="inherit" className="text-base text-primary" aria-hidden />
               {siteConfig.phone}
             </a>
             <Link

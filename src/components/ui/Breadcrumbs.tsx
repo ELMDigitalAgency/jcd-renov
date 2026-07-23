@@ -1,4 +1,4 @@
-import { ChevronRight } from "lucide-react";
+import ChevronRightRoundedIcon from "@mui/icons-material/ChevronRightRounded";
 import Link from "next/link";
 import type { Route } from "next";
 
@@ -27,7 +27,9 @@ export function Breadcrumbs({ crumbs, className }: BreadcrumbsProps) {
           const isLast = index === all.length - 1;
           return (
             <li key={crumb.path} className="flex items-center gap-1.5">
-              {index > 0 ? <ChevronRight className="size-3.5 text-body/60" aria-hidden /> : null}
+              {index > 0 ? (
+                <ChevronRightRoundedIcon fontSize="inherit" className="text-sm text-body/60" aria-hidden />
+              ) : null}
               {isLast ? (
                 <span aria-current="page" className="font-medium text-navy">
                   {crumb.name}

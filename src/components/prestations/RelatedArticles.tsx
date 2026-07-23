@@ -1,4 +1,4 @@
-import { ArrowRight } from "lucide-react";
+import ArrowForwardRoundedIcon from "@mui/icons-material/ArrowForwardRounded";
 import Link from "next/link";
 
 import { Card } from "@/components/ui/Card";
@@ -47,8 +47,9 @@ export function RelatedArticles({ posts }: RelatedArticlesProps) {
                   <p className="mt-2 flex-1 text-sm leading-relaxed">{post.description}</p>
                   <span className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-primary-ink">
                     Lire l’article
-                    <ArrowRight
-                      className="size-4 transition-transform group-hover:translate-x-0.5"
+                    <ArrowForwardRoundedIcon
+                      fontSize="inherit"
+                      className="text-base transition-transform group-hover:translate-x-0.5"
                       aria-hidden
                     />
                   </span>

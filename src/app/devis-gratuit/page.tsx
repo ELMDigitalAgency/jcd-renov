@@ -1,4 +1,6 @@
-import { BadgeCheck, MapPin, ShieldCheck } from "lucide-react";
+import PlaceRoundedIcon from "@mui/icons-material/PlaceRounded";
+import VerifiedRoundedIcon from "@mui/icons-material/VerifiedRounded";
+import VerifiedUserRoundedIcon from "@mui/icons-material/VerifiedUserRounded";
 import Link from "next/link";
 
 import { DevisForm } from "@/components/devis/DevisForm";
@@ -44,17 +46,17 @@ const devisFaq: readonly FaqItem[] = [
 /** Preuves vérifiables affichées près du formulaire (confiance). */
 const trustBadges = [
   {
-    icon: ShieldCheck,
+    icon: VerifiedUserRoundedIcon,
     title: "Garantie décennale",
     text: "Attestation d'assurance fournie avec le devis sur demande",
   },
   {
-    icon: BadgeCheck,
+    icon: VerifiedRoundedIcon,
     title: "Entreprise déclarée",
     text: `SIRET ${siteConfig.siret}`,
   },
   {
-    icon: MapPin,
+    icon: PlaceRoundedIcon,
     title: "Artisan local",
     text: "Villemandeur et agglomération Montargoise, pas un réseau national",
   },
@@ -116,7 +118,7 @@ export default function DevisGratuitPage() {
                   {trustBadges.map((badge) => (
                     <li key={badge.title} className="flex items-start gap-3">
                       <span className="inline-flex size-10 shrink-0 items-center justify-center rounded-xl bg-cream">
-                        <badge.icon className="size-5 text-primary-ink" aria-hidden />
+                        <badge.icon fontSize="inherit" className="text-[20px] text-primary-ink" aria-hidden />
                       </span>
                       <div>
                         <p className="font-heading font-bold text-navy">{badge.title}</p>

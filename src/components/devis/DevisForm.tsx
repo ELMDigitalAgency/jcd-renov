@@ -1,6 +1,6 @@
 "use client";
 
-import { CircleCheckBig } from "lucide-react";
+import TaskAltRoundedIcon from "@mui/icons-material/TaskAltRounded";
 import Link from "next/link";
 import { useId, useState } from "react";
 import { z } from "zod";
@@ -124,7 +124,7 @@ export function DevisForm() {
     return (
       <Card variant="cream" className="text-center">
         <span className="inline-flex size-14 items-center justify-center rounded-full bg-primary/10">
-          <CircleCheckBig className="size-7 text-primary" aria-hidden />
+          <TaskAltRoundedIcon fontSize="inherit" className="text-[28px] text-primary" aria-hidden />
         </span>
         <p role="status" className="mt-5 font-heading text-2xl font-extrabold text-navy">
           Votre demande est bien partie.

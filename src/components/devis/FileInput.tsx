@@ -1,6 +1,7 @@
 "use client";
 
-import { ImageIcon, X } from "lucide-react";
+import CloseRoundedIcon from "@mui/icons-material/CloseRounded";
+import ImageRoundedIcon from "@mui/icons-material/ImageRounded";
 import { useId, useRef, useState } from "react";
 
 import { compressImage, MAX_UPLOAD_BYTES } from "@/lib/image-compress";
@@ -76,7 +77,7 @@ export function FileInput({ onChange }: FileInputProps) {
       {busy ? <p className="mt-2 text-sm text-body">Compression de la photo…</p> : null}
       {file ? (
         <p className="mt-2 flex items-center gap-2 text-sm text-navy">
-          <ImageIcon className="size-4 shrink-0 text-primary" aria-hidden />
+          <ImageRoundedIcon fontSize="inherit" className="text-base shrink-0 text-primary" aria-hidden />
           <span className="min-w-0 truncate font-medium">{file.name}</span>
           <span className="shrink-0 text-body">({formatSize(file.size)})</span>
           <button
@@ -84,7 +85,7 @@ export function FileInput({ onChange }: FileInputProps) {
             onClick={reset}
             className="inline-flex shrink-0 items-center gap-1 rounded-full px-2 py-1 font-semibold text-navy transition-colors hover:text-primary focus-visible:outline-2 focus-visible:outline-primary"
           >
-            <X className="size-3.5" aria-hidden />
+            <CloseRoundedIcon fontSize="inherit" className="text-sm" aria-hidden />
             Retirer<span className="sr-only"> la photo {file.name}</span>
           </button>
         </p>

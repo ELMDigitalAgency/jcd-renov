@@ -1,4 +1,4 @@
-import { Phone } from "lucide-react";
+import PhoneRoundedIcon from "@mui/icons-material/PhoneRounded";
 
 import { ButtonLink } from "@/components/ui/ButtonLink";
 import { Container } from "@/components/ui/Container";
@@ -32,7 +32,7 @@ export function CtaBanner({
               href={siteConfig.phoneHref}
               className="inline-flex items-center gap-2 text-sm font-bold text-white transition-opacity hover:opacity-80"
             >
-              <Phone className="size-4" aria-hidden />
+              <PhoneRoundedIcon fontSize="inherit" className="text-base" aria-hidden />
               {siteConfig.phone}
             </a>
           </div>

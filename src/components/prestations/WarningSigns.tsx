@@ -23,7 +23,7 @@ export function WarningSigns({ signes }: WarningSignsProps) {
               className="flex items-center gap-4 rounded-2xl bg-white px-5 py-4 shadow-card sm:px-6"
             >
               <span className="inline-flex size-9 shrink-0 items-center justify-center rounded-full bg-primary/10">
-                <ServiceIcon icon="alert-triangle" className="size-5 text-primary" />
+                <ServiceIcon icon="alert-triangle" className="text-[20px] text-primary" />
               </span>
               <p className="font-medium text-navy">{item}</p>
             </li>

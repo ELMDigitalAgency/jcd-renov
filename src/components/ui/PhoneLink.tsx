@@ -1,4 +1,4 @@
-import { Phone } from "lucide-react";
+import PhoneRoundedIcon from "@mui/icons-material/PhoneRounded";
 
 import { siteConfig } from "@/site.config";
 import { cn } from "@/lib/utils";
@@ -20,7 +20,7 @@ export function PhoneLink({ className, withLabel = false }: PhoneLinkProps) {
       )}
     >
       <span className="inline-flex size-11 items-center justify-center rounded-full bg-primary/10 text-primary transition-colors group-hover:bg-primary group-hover:text-white">
-        <Phone className="size-5" aria-hidden />
+        <PhoneRoundedIcon fontSize="inherit" className="text-[20px]" aria-hidden />
       </span>
       <span className="flex flex-col leading-tight">
         {withLabel ? (

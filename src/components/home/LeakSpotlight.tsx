@@ -1,4 +1,4 @@
-import { ArrowRight } from "lucide-react";
+import ArrowForwardRoundedIcon from "@mui/icons-material/ArrowForwardRounded";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -40,7 +40,7 @@ export function LeakSpotlight() {
           </span>
           <span className="absolute bottom-4 left-4 inline-flex items-center gap-2 rounded-full bg-white/95 px-5 py-2.5 text-sm font-semibold text-navy shadow-card transition-colors group-hover:bg-primary group-hover:text-white sm:bottom-6 sm:left-6">
             Découvrir la recherche de fuite
-            <ArrowRight className="size-4" aria-hidden />
+            <ArrowForwardRoundedIcon fontSize="inherit" className="text-base" aria-hidden />
           </span>
         </Link>
       </Container>

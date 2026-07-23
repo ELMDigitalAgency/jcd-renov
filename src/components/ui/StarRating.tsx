@@ -1,4 +1,4 @@
-import { Star } from "lucide-react";
+import StarRoundedIcon from "@mui/icons-material/StarRounded";
 
 import { cn } from "@/lib/utils";
 
@@ -16,9 +16,10 @@ export function StarRating({ rating, className }: StarRatingProps) {
       aria-label={`Note : ${rating} sur 5`}
     >
       {Array.from({ length: 5 }, (_, i) => (
-        <Star
+        <StarRoundedIcon
           key={i}
-          className={cn("size-4", i < rating ? "fill-primary text-primary" : "text-navy/20")}
+          fontSize="inherit"
+          className={cn("text-base", i < rating ? "text-primary" : "text-navy/20")}
           aria-hidden
         />
       ))}

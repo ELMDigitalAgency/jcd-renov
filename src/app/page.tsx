@@ -1,4 +1,4 @@
-import { ArrowRight } from "lucide-react";
+import ArrowForwardRoundedIcon from "@mui/icons-material/ArrowForwardRounded";
 import Link from "next/link";
 
 import { DiagnosticSection } from "@/components/home/DiagnosticSection";
@@ -57,7 +57,7 @@ export default function HomePage() {
               className="inline-flex items-center gap-2 font-semibold text-navy transition-colors hover:text-primary"
             >
               Voir tous les avis
-              <ArrowRight className="size-4" aria-hidden />
+              <ArrowForwardRoundedIcon fontSize="inherit" className="text-base" aria-hidden />
             </Link>
           </div>
         </Container>

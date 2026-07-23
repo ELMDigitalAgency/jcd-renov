@@ -1,4 +1,4 @@
-import { ArrowRight } from "lucide-react";
+import ArrowForwardRoundedIcon from "@mui/icons-material/ArrowForwardRounded";
 import type { Route } from "next";
 import Link from "next/link";
 
@@ -66,7 +66,7 @@ export function ServiceZones({ currentPath }: ServiceZonesProps) {
               className="inline-flex items-center gap-2 font-semibold text-navy transition-colors hover:text-primary"
             >
               Voir toute notre zone d’intervention
-              <ArrowRight className="size-4" aria-hidden />
+              <ArrowForwardRoundedIcon fontSize="inherit" className="text-base" aria-hidden />
             </Link>
           </p>
         </div>

@@ -1,4 +1,4 @@
-import { Phone } from "lucide-react";
+import PhoneRoundedIcon from "@mui/icons-material/PhoneRounded";
 import Link from "next/link";
 
 import { siteConfig } from "@/site.config";
@@ -19,7 +19,7 @@ export function MobileCallBar() {
             href={siteConfig.phoneHref}
             className="inline-flex items-center justify-center gap-2 rounded-full bg-primary-ink px-4 py-3 text-sm font-bold text-white"
           >
-            <Phone className="size-4" aria-hidden />
+            <PhoneRoundedIcon fontSize="inherit" className="text-base" aria-hidden />
             Appeler
           </a>
           <Link

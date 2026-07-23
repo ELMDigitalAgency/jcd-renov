@@ -1,4 +1,4 @@
-import { CheckCircle2 } from "lucide-react";
+import CheckCircleRoundedIcon from "@mui/icons-material/CheckCircleRounded";
 
 import { ButtonLink } from "@/components/ui/ButtonLink";
 import { Container } from "@/components/ui/Container";
@@ -44,7 +44,7 @@ export function DiagnosticSection() {
           <ul className="space-y-4">
             {engagements.map((item) => (
               <li key={item.title} className="flex items-start gap-3">
-                <CheckCircle2 className="mt-0.5 size-6 shrink-0 text-primary" aria-hidden />
+                <CheckCircleRoundedIcon fontSize="inherit" className="mt-0.5 text-2xl shrink-0 text-primary" aria-hidden />
                 <div>
                   <p className="font-heading font-bold text-navy">{item.title}</p>
                   <p className="text-sm leading-relaxed">{item.text}</p>

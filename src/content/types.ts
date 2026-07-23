@@ -3,7 +3,7 @@
  * composants consomment ces structures, jamais de texte en dur dans l'UI.
  */
 
-/** Clés d'icônes, mappées vers lucide-react dans ServiceIcon (jamais de
+/** Clés d'icônes, mappées vers @mui/icons-material dans ServiceIcon (jamais de
  * composant React dans les données : non sérialisable vers les îlots client). */
 export type IconKey =
   | "search"

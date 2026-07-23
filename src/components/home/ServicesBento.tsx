@@ -1,4 +1,4 @@
-import { ArrowRight } from "lucide-react";
+import ArrowForwardRoundedIcon from "@mui/icons-material/ArrowForwardRounded";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -20,8 +20,9 @@ function CardLinkLabel({ children, light = false }: { children: React.ReactNode;
       }
     >
       {children}
-      <ArrowRight
-        className="size-4 transition-transform duration-300 group-hover:translate-x-1"
+      <ArrowForwardRoundedIcon
+        fontSize="inherit"
+        className="text-base transition-transform duration-300 group-hover:translate-x-1"
         aria-hidden
       />
     </span>
@@ -146,7 +147,7 @@ export function ServicesBento() {
                 Une question ?<span className="block">Contactez-nous</span>
               </h3>
               <span className="inline-flex size-12 items-center justify-center rounded-full bg-navy text-white transition-colors group-hover:bg-primary">
-                <ArrowRight className="size-5" aria-hidden />
+                <ArrowForwardRoundedIcon fontSize="inherit" className="text-[20px]" aria-hidden />
               </span>
             </Card>
           </Link>

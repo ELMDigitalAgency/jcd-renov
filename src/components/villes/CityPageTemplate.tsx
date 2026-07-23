@@ -1,4 +1,4 @@
-import { ArrowRight } from "lucide-react";
+import ArrowForwardRoundedIcon from "@mui/icons-material/ArrowForwardRounded";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -134,8 +134,9 @@ export function CityPageTemplate({ ville }: CityPageTemplateProps) {
                   </h3>
                   <span className="mt-auto inline-flex items-center gap-2 pt-4 text-sm font-semibold text-primary-ink">
                     Découvrir
-                    <ArrowRight
-                      className="size-4 transition-transform group-hover:translate-x-0.5"
+                    <ArrowForwardRoundedIcon
+                      fontSize="inherit"
+                      className="text-base transition-transform group-hover:translate-x-0.5"
                       aria-hidden
                     />
                   </span>

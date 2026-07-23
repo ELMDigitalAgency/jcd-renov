@@ -1,7 +1,8 @@
 "use client";
 
+import ChevronLeftRoundedIcon from "@mui/icons-material/ChevronLeftRounded";
+import ChevronRightRoundedIcon from "@mui/icons-material/ChevronRightRounded";
 import useEmblaCarousel from "embla-carousel-react";
-import { ChevronLeft, ChevronRight } from "lucide-react";
 import { useCallback, useEffect, useState } from "react";
 
 import { StarRating } from "@/components/ui/StarRating";
@@ -101,7 +102,7 @@ export function TestimonialCarousel({ avis }: TestimonialCarouselProps) {
           aria-label="Avis précédent"
           className="inline-flex size-11 items-center justify-center rounded-full border border-navy/15 text-navy transition-colors hover:border-navy hover:bg-navy hover:text-white"
         >
-          <ChevronLeft className="size-5" aria-hidden />
+          <ChevronLeftRoundedIcon fontSize="inherit" className="text-[20px]" aria-hidden />
         </button>
 
         <div className="flex items-center gap-2">
@@ -134,7 +135,7 @@ export function TestimonialCarousel({ avis }: TestimonialCarouselProps) {
           aria-label="Avis suivant"
           className="inline-flex size-11 items-center justify-center rounded-full border border-navy/15 text-navy transition-colors hover:border-navy hover:bg-navy hover:text-white"
         >
-          <ChevronRight className="size-5" aria-hidden />
+          <ChevronRightRoundedIcon fontSize="inherit" className="text-[20px]" aria-hidden />
         </button>
       </div>
     </div>

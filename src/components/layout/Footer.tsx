@@ -1,4 +1,6 @@
-import { Mail, MapPin, Phone } from "lucide-react";
+import EmailRoundedIcon from "@mui/icons-material/EmailRounded";
+import PhoneRoundedIcon from "@mui/icons-material/PhoneRounded";
+import PlaceRoundedIcon from "@mui/icons-material/PlaceRounded";
 import Link from "next/link";
 
 import { BrandLogo } from "@/components/ui/BrandLogo";
@@ -79,7 +81,7 @@ export function Footer() {
                 href={siteConfig.phoneHref}
                 className="flex items-center gap-2.5 transition-colors hover:text-primary"
               >
-                <Phone className="size-4 shrink-0 text-primary" aria-hidden />
+                <PhoneRoundedIcon fontSize="inherit" className="text-base shrink-0 text-primary" aria-hidden />
                 {siteConfig.phone}
               </a>
             </li>
@@ -88,12 +90,12 @@ export function Footer() {
                 href={`mailto:${siteConfig.email}`}
                 className="flex items-center gap-2.5 transition-colors hover:text-primary"
               >
-                <Mail className="size-4 shrink-0 text-primary" aria-hidden />
+                <EmailRoundedIcon fontSize="inherit" className="text-base shrink-0 text-primary" aria-hidden />
                 {siteConfig.email}
               </a>
             </li>
             <li className="flex items-start gap-2.5">
-              <MapPin className="mt-0.5 size-4 shrink-0 text-primary" aria-hidden />
+              <PlaceRoundedIcon fontSize="inherit" className="mt-0.5 text-base shrink-0 text-primary" aria-hidden />
               <span>
                 Intervient à Villemandeur, Montargis, Amilly, Chalette-sur-Loing et dans toute
                 l&apos;agglomération Montargoise

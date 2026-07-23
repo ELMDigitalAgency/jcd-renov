@@ -1,4 +1,4 @@
-import { ArrowRight } from "lucide-react";
+import ArrowForwardRoundedIcon from "@mui/icons-material/ArrowForwardRounded";
 import type { Route } from "next";
 import Link from "next/link";
 
@@ -35,7 +35,7 @@ export function RelatedServices({ services }: RelatedServicesProps) {
                 className="mt-1 inline-flex items-center gap-1.5 text-sm font-semibold text-primary transition-colors hover:text-primary-dark"
               >
                 {prestation.ancre}
-                <ArrowRight className="size-4" aria-hidden />
+                <ArrowForwardRoundedIcon fontSize="inherit" className="text-base" aria-hidden />
               </Link>
             </div>
           </Card>

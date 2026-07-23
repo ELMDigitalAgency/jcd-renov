@@ -1,4 +1,4 @@
-import { Check } from "lucide-react";
+import CheckRoundedIcon from "@mui/icons-material/CheckRounded";
 
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
@@ -68,7 +68,7 @@ export function PriceTable({ tarifs }: PriceTableProps) {
           <ul className="mt-4 space-y-2.5">
             {tarifs.facteurs.map((facteur) => (
               <li key={facteur} className="flex items-start gap-3">
-                <Check className="mt-0.5 size-5 shrink-0 text-primary" aria-hidden />
+                <CheckRoundedIcon fontSize="inherit" className="mt-0.5 text-[20px] shrink-0 text-primary" aria-hidden />
                 <span>{facteur}</span>
               </li>
             ))}

@@ -1,4 +1,4 @@
-import { ArrowRight } from "lucide-react";
+import ArrowForwardRoundedIcon from "@mui/icons-material/ArrowForwardRounded";
 import type { Route } from "next";
 import Link from "next/link";
 
@@ -70,8 +70,9 @@ export function BlogCard({ post }: BlogCardProps) {
         <p className="text-sm leading-relaxed">{post.description}</p>
         <span className="mt-auto inline-flex items-center gap-2 pt-2 text-sm font-semibold text-primary-ink">
           Lire l’article
-          <ArrowRight
-            className="size-4 transition-transform duration-200 group-hover:translate-x-1"
+          <ArrowForwardRoundedIcon
+            fontSize="inherit"
+            className="text-base transition-transform duration-200 group-hover:translate-x-1"
             aria-hidden
           />
         </span>

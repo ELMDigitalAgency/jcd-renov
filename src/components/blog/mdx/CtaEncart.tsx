@@ -1,4 +1,4 @@
-import { Phone } from "lucide-react";
+import PhoneRoundedIcon from "@mui/icons-material/PhoneRounded";
 
 import { ButtonLink } from "@/components/ui/ButtonLink";
 import { Card } from "@/components/ui/Card";
@@ -32,7 +32,7 @@ export function CtaEncart({
           href={siteConfig.phoneHref}
           className="inline-flex items-center gap-2 font-semibold text-white transition-colors hover:text-primary"
         >
-          <Phone className="size-4 text-primary" aria-hidden />
+          <PhoneRoundedIcon fontSize="inherit" className="text-base text-primary" aria-hidden />
           ou appelez le {siteConfig.phone}
         </a>
       </div>
