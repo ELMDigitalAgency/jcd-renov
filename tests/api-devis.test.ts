@@ -92,7 +92,7 @@ describe("POST /api/devis", () => {
     expect(sendMock).toHaveBeenCalledTimes(1);
 
     const payload = sendMock.mock.calls[0]?.[0];
-    expect(payload?.subject).toBe("Nouvelle demande de devis — Démoussage (Villemandeur)");
+    expect(payload?.subject).toBe("Nouvelle demande de devis : Démoussage (Villemandeur)");
     expect(payload?.replyTo).toBe("jean.dupont@example.com");
     expect(payload?.attachments).toBeUndefined();
   });

@@ -279,15 +279,31 @@ export function DevisForm() {
         <button
           type="submit"
           disabled={status === "pending"}
-          className="inline-flex w-full items-center justify-center rounded-full bg-primary px-7 py-3.5 font-semibold text-white transition-colors hover:bg-primary-dark focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary disabled:cursor-not-allowed disabled:opacity-60 sm:w-auto"
+          className="inline-flex w-full items-center justify-center rounded-full bg-primary-ink px-7 py-3.5 font-semibold text-white transition-colors hover:bg-primary-dark focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary disabled:cursor-not-allowed disabled:opacity-60 sm:w-auto"
         >
           {status === "pending" ? "Envoi en cours…" : "Envoyer ma demande de devis"}
         </button>
+
+        {/* Rangée de confiance : lève les dernières hésitations au moment du clic */}
+        <ul className="flex flex-wrap gap-x-5 gap-y-1.5 text-xs font-medium text-navy">
+          <li className="flex items-center gap-1.5">
+            <span aria-hidden className="size-1.5 rounded-full bg-primary" />
+            Gratuit et sans engagement
+          </li>
+          <li className="flex items-center gap-1.5">
+            <span aria-hidden className="size-1.5 rounded-full bg-primary" />
+            Réponse sous 24-48 h
+          </li>
+          <li className="flex items-center gap-1.5">
+            <span aria-hidden className="size-1.5 rounded-full bg-primary" />
+            Vos données restent privées
+          </li>
+        </ul>
         <p className="text-xs text-body">
           <span aria-hidden="true" className="text-primary">
             *
           </span>{" "}
-          Champs obligatoires. Réponse sous 24 à 48 h, sans engagement.
+          Champs obligatoires.
         </p>
       </form>
     </Card>
