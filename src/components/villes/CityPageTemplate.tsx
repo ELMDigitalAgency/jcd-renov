@@ -82,7 +82,6 @@ export function CityPageTemplate({ ville }: CityPageTemplateProps) {
             <div>
               <SectionHeading
                 align="left"
-                eyebrow="Artisan de proximité"
                 title={
                   <>
                     Un couvreur qui connaît <TitleAccent>{ville.name}</TitleAccent>
@@ -111,7 +110,6 @@ export function CityPageTemplate({ ville }: CityPageTemplateProps) {
       <section className="bg-cream">
         <Container className="py-16 sm:py-20">
           <SectionHeading
-            eyebrow="Nos services"
             title={
               <>
                 Nos prestations à <TitleAccent>{ville.name}</TitleAccent>
@@ -151,7 +149,6 @@ export function CityPageTemplate({ ville }: CityPageTemplateProps) {
       <section aria-label="Nos atouts">
         <Container className="py-16 sm:py-20">
           <SectionHeading
-            eyebrow="Pourquoi nous"
             title={
               <>
                 Pourquoi choisir <TitleAccent>JCD Rénovation</TitleAccent> ?

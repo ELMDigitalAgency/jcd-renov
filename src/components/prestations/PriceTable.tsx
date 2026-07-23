@@ -16,7 +16,7 @@ export function PriceTable({ tarifs }: PriceTableProps) {
   return (
     <section aria-label="Tarifs">
       <Container className="py-16 sm:py-20">
-        <SectionHeading eyebrow="Tarifs indicatifs" title={tarifs.title} />
+        <SectionHeading title={tarifs.title} />
         <div className="mx-auto mt-10 max-w-3xl">
           <div className="overflow-x-auto rounded-card shadow-card">
             <table className="w-full min-w-[30rem]">

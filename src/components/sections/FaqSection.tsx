@@ -8,7 +8,6 @@ import { faqPageSchema } from "@/lib/schema";
 type FaqSectionProps = {
   items: readonly FaqItem[];
   title?: React.ReactNode;
-  eyebrow?: string;
   subtitle?: string;
   /** N'émettre le schema FAQPage qu'une fois par page. */
   withSchema?: boolean;
@@ -21,7 +20,6 @@ type FaqSectionProps = {
 export function FaqSection({
   items,
   title = "Questions fréquentes",
-  eyebrow = "FAQ",
   subtitle,
   withSchema = true,
 }: FaqSectionProps) {
@@ -29,7 +27,7 @@ export function FaqSection({
     <section aria-label="Questions fréquentes" className="bg-cream">
       <Container className="py-16 sm:py-20">
         {withSchema ? <JsonLd data={faqPageSchema(items)} /> : null}
-        <SectionHeading eyebrow={eyebrow} title={title} subtitle={subtitle} />
+        <SectionHeading title={title} subtitle={subtitle} />
         <Accordion items={items} className="mx-auto mt-10 max-w-3xl" />
       </Container>
     </section>

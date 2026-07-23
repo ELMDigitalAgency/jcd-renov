@@ -44,10 +44,6 @@ export function HomeHero() {
       <div className="bg-cream bg-dots">
         <Container className="grid items-center gap-12 py-14 sm:py-16 lg:grid-cols-[1.05fr_1fr] lg:gap-16 lg:py-24">
           <div className="flex flex-col items-start gap-6">
-            <p className="flex items-center gap-3 text-xs font-bold tracking-[0.18em] text-primary-ink uppercase sm:text-sm">
-              <span aria-hidden className="h-0.5 w-8 rounded-full bg-primary" />
-              Protégez votre toiture
-            </p>
             <PageTitle className="lg:text-[3.9rem] xl:text-[4.3rem]">
               <TitleAccent>Couvreur &amp; Zingueur</TitleAccent>
               <span className="block">à Villemandeur</span>

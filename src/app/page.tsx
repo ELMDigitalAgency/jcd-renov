@@ -47,7 +47,7 @@ export default function HomePage() {
       <CtaBanner />
       <section aria-label="Avis clients" className="bg-white">
         <Container className="py-16 sm:py-20">
-          <SectionHeading eyebrow="Avis clients" title="Ce que disent nos clients" />
+          <SectionHeading title="Ce que disent nos clients" />
           <div className="mt-10">
             <TestimonialCarousel avis={avisClients} />
           </div>

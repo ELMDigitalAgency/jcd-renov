@@ -15,7 +15,7 @@ export function WarningSigns({ signes }: WarningSignsProps) {
   return (
     <section className="bg-cream">
       <Container className="py-16 sm:py-20">
-        <SectionHeading eyebrow="Signes d’alerte" title={signes.title} />
+        <SectionHeading title={signes.title} />
         <ul className="mx-auto mt-10 max-w-3xl space-y-3">
           {signes.items.map((item) => (
             <li

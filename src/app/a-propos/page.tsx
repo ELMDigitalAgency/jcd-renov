@@ -57,7 +57,6 @@ export default function AProposPage() {
             <div>
               <SectionHeading
                 align="left"
-                eyebrow="Notre approche"
                 title={
                   <>
                     Un artisan, pas un <TitleAccent>intermédiaire</TitleAccent>
@@ -107,7 +106,6 @@ export default function AProposPage() {
       <section aria-label="Notre façon de travailler" className="bg-cream">
         <Container className="py-14 sm:py-20">
           <SectionHeading
-            eyebrow="Méthode"
             title={
               <>
                 Notre façon de <TitleAccent>travailler</TitleAccent>
@@ -140,7 +138,6 @@ export default function AProposPage() {
       <section aria-label="Nos engagements">
         <Container className="py-14 sm:py-20">
           <SectionHeading
-            eyebrow="Confiance"
             title={
               <>
                 Nos <TitleAccent>engagements</TitleAccent>

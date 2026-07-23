@@ -12,7 +12,6 @@ export function ProcessSteps() {
     <section aria-label="Déroulé d'une intervention" className="bg-white">
       <Container className="py-16 sm:py-20">
         <SectionHeading
-          eyebrow="Notre méthode"
           title="Comment se déroule une intervention JCD Rénovation ?"
         />
 

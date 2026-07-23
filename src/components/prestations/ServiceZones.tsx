@@ -24,7 +24,6 @@ export function ServiceZones({ currentPath }: ServiceZonesProps) {
       <Container className="py-16 sm:py-20">
         <div className="rounded-card bg-lavender px-6 py-12 sm:px-10 sm:py-14 lg:px-14">
           <SectionHeading
-            eyebrow="Proximité"
             title={
               <>
                 Où <TitleAccent>intervenons-nous</TitleAccent> ?

@@ -38,7 +38,6 @@ export function RealisationsStrip() {
     <section aria-label="Nos réalisations" className="bg-cream bg-dots">
       <Container className="py-16 sm:py-20">
         <SectionHeading
-          eyebrow="Chantiers réels"
           title={
             <>
               Nos <TitleAccent>réalisations</TitleAccent> parlent pour nous

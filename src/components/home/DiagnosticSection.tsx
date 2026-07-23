@@ -33,7 +33,6 @@ export function DiagnosticSection() {
         <div className="flex flex-col items-start gap-6">
           <SectionHeading
             align="left"
-            eyebrow="Diagnostic avant/après"
             title={
               <>
                 Un <TitleAccent>diagnostic précis</TitleAccent>, une intervention rapide

@@ -96,7 +96,6 @@ export default function Page() {
       <section className="bg-cream" aria-label="Zones secondaires">
         <Container className="py-16 sm:py-20">
           <SectionHeading
-            eyebrow="Zones secondaires"
             title={
               <>
                 Les grandes villes <TitleAccent>voisines</TitleAccent>
@@ -134,7 +133,6 @@ export default function Page() {
       <section aria-label="Autres communes desservies">
         <Container className="py-16 sm:py-20">
           <SectionHeading
-            eyebrow="À proximité"
             title={
               <>
                 Les autres communes <TitleAccent>desservies</TitleAccent>

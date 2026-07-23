@@ -25,7 +25,6 @@ export function RelatedArticles({ posts }: RelatedArticlesProps) {
     <section aria-label="Articles liés">
       <Container className="py-16 sm:py-20">
         <SectionHeading
-          eyebrow="Blog"
           title={
             <>
               Pour aller <TitleAccent>plus loin</TitleAccent>

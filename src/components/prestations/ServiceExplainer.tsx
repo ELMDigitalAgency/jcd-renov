@@ -18,7 +18,7 @@ export function ServiceExplainer({ consiste, icon }: ServiceExplainerProps) {
   return (
     <section aria-label="Déroulé de la prestation">
       <Container className="py-16 sm:py-20">
-        <SectionHeading eyebrow="Notre méthode" title={consiste.title} />
+        <SectionHeading title={consiste.title} />
         <div className="mx-auto mt-8 max-w-3xl space-y-4 leading-relaxed">
           {consiste.paragraphs.map((paragraph) => (
             <p key={paragraph}>{paragraph}</p>
