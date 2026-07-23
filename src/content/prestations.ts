@@ -56,7 +56,32 @@ export const prestations: readonly Prestation[] = [
         "Le dernier démoussage date de plus de 10 ans, ou n'a jamais été fait",
       ],
     },
-    sections: [],
+    sections: [
+      {
+        title: "Comment se déroule un chantier de démoussage chez vous ?",
+        paragraphs: [
+          "Avant de monter sur le toit, nous préparons le chantier au sol. Les massifs, la terrasse et les menuiseries situés sous les zones de travail sont bâchés. Si vous récupérez l'eau de pluie, la cuve est déconnectée le temps de l'intervention afin qu'aucun résidu de nettoyage n'y pénètre. Nous repérons enfin les accès, les points d'appui et l'emplacement de l'échelle ou de l'échafaudage.",
+          "Le nettoyage s'effectue toujours du faîtage vers l'égout, autrement dit du haut du toit vers les gouttières. Travailler dans ce sens suit le recouvrement naturel des tuiles : l'eau ne peut pas s'engouffrer sous les rangs. Les mousses délogées et les eaux de rinçage sont canalisées vers les gouttières, que nous curons ensuite, puis vers les descentes. Rien ne stagne dans les évacuations en fin de journée.",
+          "Le traitement anti-mousse s'applique uniquement sur une couverture propre et sèche. Selon la météo, il intervient dans la foulée du nettoyage ou lors d'un second passage. Ce délai de séchage n'est pas du temps perdu : un produit posé sur des tuiles gorgées d'eau se dilue et perd une grande partie de son efficacité. Nous vérifions la météo des jours suivants avant d'appliquer.",
+        ],
+      },
+      {
+        title: "Pourquoi les toitures s'encrassent-elles vite dans le Montargois ?",
+        paragraphs: [
+          "Le Gâtinais connaît un climat océanique dégradé : hivers doux et humides, pluies réparties sur toute l'année, périodes sèches assez courtes. Les tuiles restent mouillées de longues semaines d'affilée, exactement les conditions que recherchent mousses et lichens pour s'installer. Les brouillards fréquents de la vallée du Loing entretiennent cette humidité au niveau des toits, notamment à Villemandeur, Amilly et Chalette-sur-Loing.",
+          "Sur une même maison, tous les pans ne vieillissent pas à la même vitesse. Le pan orienté nord, moins exposé au soleil, sèche lentement et verdit en premier. Les arbres proches aggravent le phénomène : ils portent ombre, déposent feuilles et débris, et leurs abords favorisent la colonisation des tuiles. Deux maisons voisines peuvent ainsi présenter des toitures dans des états très différents.",
+          "Le bon rythme d'entretien découle de cette exposition. Un contrôle visuel depuis le sol chaque année, après l'automne, suffit pour surveiller l'évolution. Une toiture dégagée et bien exposée peut attendre, tandis qu'un pavillon entouré de chênes ou proche du Loing demandera un démoussage plus rapproché. Nous vous indiquons un rythme personnalisé à l'issue du premier diagnostic.",
+        ],
+      },
+      {
+        title: "Karcher, javel, produits miracles : trois idées reçues à oublier",
+        paragraphs: [
+          "Première idée reçue : le nettoyeur haute pression ferait gagner du temps. En réalité, le jet décape la surface des tuiles terre cuite et le grain des tuiles béton. La couverture ressort propre en apparence, mais poreuse : elle se gorge d'eau et reverdit plus vite qu'avant. Sur une toiture ancienne, la haute pression peut aussi déplacer des tuiles et créer des fuites.",
+          "Deuxième idée reçue : l'eau de javel serait un anti-mousse économique. Elle blanchit les mousses en surface sans détruire leurs racines, attaque les gouttières et les éléments de zinguerie, brûle la végétation en contrebas et finit dans les eaux de pluie. Le résultat visuel disparaît en quelques mois et la toiture en sort fragilisée.",
+          "Troisième idée reçue : certains démarcheurs promettent un produit qui protégerait la toiture dix ans ou plus, sans aucun entretien. Aucun traitement ne bloque la repousse aussi longtemps : l'exposition, l'ombre et l'humidité finissent toujours par reprendre le dessus. Méfiez-vous des promesses invérifiables faites en porte-à-porte : un artisan sérieux annonce des durées réalistes et les écrit sur son devis.",
+        ],
+      },
+    ],
     tarifs: {
       title: "Prix d'un démoussage de toiture en 2026",
       rows: [
@@ -102,6 +127,16 @@ export const prestations: readonly Prestation[] = [
         question: "Le démoussage abîme-t-il les tuiles ?",
         answer:
           "Non, à condition d'utiliser la bonne méthode. C'est la haute pression mal maîtrisée qui abîme les tuiles (elle décape la surface et les rend poreuses). Nous privilégions le nettoyage manuel ou la basse pression, adaptés à l'état de votre couverture.",
+      },
+      {
+        question: "Peut-on démousser sa toiture soi-même ?",
+        answer:
+          "Nous vous le déconseillons. Marcher sur une couverture demande de savoir où poser le pied : une tuile fendue sous le pas devient un futur point de fuite. S'ajoutent le risque de chute, réel même sur un toit peu pentu, et le choix du produit comme de son dosage. Le coût d'un démoussage professionnel reste faible comparé à celui d'une tuile traversée ou d'un accident.",
+      },
+      {
+        question: "Un démoussage redonne-t-il sa couleur d'origine à la toiture ?",
+        answer:
+          "En grande partie, oui. Le nettoyage retire mousses, lichens et voile noir, et la teinte des tuiles réapparaît. Une couverture ancienne conserve toutefois sa patine : des tuiles décolorées par des années d'UV ne retrouvent pas leur teinte de sortie d'usine. Le traitement hydrofuge ravive l'aspect et homogénéise le rendu, sans jamais masquer l'âge réel des matériaux.",
       },
     ],
     linkedArticles: [
@@ -162,7 +197,39 @@ export const prestations: readonly Prestation[] = [
         "Bois de charpente ou isolant humide au toucher",
       ],
     },
-    sections: [],
+    sections: [
+      {
+        title: "Par où l'eau entre-t-elle le plus souvent dans une toiture ?",
+        paragraphs: [
+          "Sur la plupart des toitures que nous inspectons, l'eau n'entre pas au milieu d'un pan mais par un point singulier, là où deux éléments se rejoignent. Chacun de ces points a sa propre façon de vieillir et de fuir. Les connaître oriente la recherche et évite de suspecter toute la couverture.",
+          "Le solin de cheminée arrive en tête : son joint se fissure avec les cycles de gel et la dilatation du métal. Vient ensuite la noue, ce canal où deux pans se rencontrent et où l'eau se concentre à chaque pluie. Un faîtage descellé laisse le vent pousser la pluie sous les tuiles du haut. Plus discrets, l'abergement d'une fenêtre de toit ou une simple tuile fissurée peuvent laisser passer l'eau pendant des mois avant la première tache au plafond.",
+        ],
+        bullets: [
+          "Solin de cheminée : joint fissuré ou métal décollé du conduit",
+          "Noue : métal percé par la corrosion ou débordement en cas de forte pluie",
+          "Faîtage descellé : mortier fissuré, pluie poussée par le vent sous les tuiles",
+          "Abergement de fenêtre de toit : joints et raccords fatigués par les années",
+          "Tuile fissurée ou déplacée : entrée d'eau discrète et très localisée",
+          "Écran de sous-toiture percé : la dernière barrière ne joue plus son rôle",
+        ],
+      },
+      {
+        title: "Comment se déroule une inspection JCD, minute par minute ?",
+        paragraphs: [
+          "L'inspection commence à l'intérieur, dans vos combles. Lampe en main, nous suivons la sous-face de la couverture à la recherche de traces : bois noirci le long d'un chevron, isolant tassé par l'eau, point de lumière anormal, auréole sur l'écran de sous-toiture. Cette première lecture, qui prend vingt à trente minutes, délimite déjà la zone du toit à examiner en priorité.",
+          "Nous montons ensuite sur la couverture et remontons le cheminement supposé de l'eau, de la gouttière vers le faîtage. Chaque point singulier de la zone suspecte est contrôlé : jeu d'une tuile, joint d'un solin, état d'une noue. Dans la majorité des cas, l'origine est identifiée à ce stade et photographiée avant tout démontage.",
+          "Si le doute persiste, place au test d'arrosage. Une personne arrose le toit zone par zone, en commençant par le bas du pan et en remontant, pendant qu'une autre observe l'intérieur. Dès que l'eau réapparaît dans les combles, la zone arrosée à ce moment précis désigne le point d'entrée. Le test s'arrête là et le devis de réparation peut être établi au plus juste.",
+        ],
+      },
+      {
+        title: "Fuite de toiture et assurance habitation : les bonnes démarches",
+        paragraphs: [
+          "Dès qu'un dégât intérieur apparaît (plafond taché, peinture cloquée, parquet gondolé), prévenez votre assureur sans attendre. La déclaration de sinistre doit être faite dans un délai de cinq jours ouvrés après la découverte des dommages. Elle peut s'effectuer par téléphone, depuis votre espace client ou par courrier recommandé, selon les modalités de votre contrat.",
+          "Photographiez les dégâts avant toute remise en état et conservez si possible les éléments endommagés : l'expert mandaté par l'assurance peut demander à les voir. Faites en parallèle stopper la fuite rapidement, car votre contrat vous impose de limiter l'aggravation des dommages. Un bâchage d'urgence ou une réparation provisoire ne compromet jamais votre indemnisation, au contraire.",
+          "Notre rapport de recherche de fuite vous sert de pièce justificative : il décrit l'origine exacte de l'infiltration, photos à l'appui, et distingue la cause (le défaut de toiture) des conséquences (les dégâts intérieurs). Ce document facilite l'échange avec votre assureur et accélère souvent le traitement du dossier. Nous vous le remettons avec le devis de réparation.",
+        ],
+      },
+    ],
     tarifs: {
       title: "Prix d'une recherche de fuite de toiture",
       rows: [
@@ -207,6 +274,16 @@ export const prestations: readonly Prestation[] = [
         question: "Combien de temps prend une recherche de fuite ?",
         answer:
           "Une à trois heures pour une inspection standard d'un pavillon. Un test d'arrosage complet peut demander une demi-journée. Vous recevez le diagnostic et le devis de réparation sous 24 à 48 h.",
+      },
+      {
+        question: "Une fuite de toiture peut-elle s'arrêter toute seule ?",
+        answer:
+          "Non. Une fuite peut sembler disparaître parce qu'elle est intermittente : elle ne se manifeste que par pluie battante, par vent d'ouest ou à la fonte d'un givre. Le défaut d'étanchéité, lui, reste en place et s'aggrave lentement. Entre deux épisodes, l'eau continue souvent d'humidifier charpente et isolant sans signe visible. Faites contrôler dès la première tache.",
+      },
+      {
+        question: "Faut-il repeindre le plafond immédiatement après la réparation ?",
+        answer:
+          "Patientez. Un plafond ou un mur imbibé met plusieurs semaines à sécher à cœur, parfois davantage quand l'isolation est épaisse. Repeindre trop tôt emprisonne l'humidité : la tache réapparaît et la peinture cloque. Attendez que le support soit parfaitement sec, traitez les auréoles avec une sous-couche adaptée, puis refaites la finition.",
       },
     ],
     linkedArticles: [
@@ -267,7 +344,38 @@ export const prestations: readonly Prestation[] = [
         "La gouttière s'affaisse ou se détache par endroits",
       ],
     },
-    sections: [],
+    sections: [
+      {
+        title: "Zinc, aluminium, cuivre ou PVC : quel matériau pour vos évacuations ?",
+        paragraphs: [
+          "Le zinc reste le matériau de référence des couvreurs zingueurs. Il se soude à l'étain : les jonctions forment un ensemble continu, sans joint susceptible de sécher puis de fuir. Sa patine gris clair le protège naturellement de la corrosion et il tient 30 à 50 ans. C'est le choix cohérent pour une maison ancienne ou une toiture que l'on veut équiper pour longtemps.",
+          "L'aluminium laqué se pose par emboîtement, avec un large choix de coloris qui s'accorde aux menuiseries. Plus léger et un peu moins cher que le zinc, il convient bien aux pavillons récents. Le cuivre, plus rare dans le Montargois, est le plus durable des quatre et développe une patine brune puis verdie très recherchée ; son budget le réserve aux belles demeures et au bâti de caractère.",
+          "Le PVC est le plus économique à l'achat, mais ses joints en caoutchouc sèchent, le matériau se déforme au soleil et devient cassant avec les années. Nous l'acceptons en dépannage ou sur une annexe, rarement en remplacement définitif. Le bon choix dépend de votre toiture, de l'esthétique recherchée et du temps que vous voulez laisser passer avant d'y revenir.",
+        ],
+      },
+      {
+        title: "Comment dimensionner une évacuation d'eaux pluviales ?",
+        paragraphs: [
+          "Une gouttière se choisit d'abord par son développé, c'est-à-dire la largeur de la feuille de métal avant pliage. Plus le pan de toiture qu'elle dessert est grand, plus le développé doit être important pour absorber l'eau d'un orage sans déborder. Une gouttière trop petite fonctionne par temps calme et déborde précisément le jour où l'on en a le plus besoin.",
+          "Le nombre et le diamètre des descentes comptent tout autant. En règle courante, on prévoit environ un centimètre carré de section de descente par mètre carré de toiture desservie : un grand pan appelle deux descentes plutôt qu'une seule surdimensionnée. Leur position se réfléchit aussi : chaque descente doit rejoindre une évacuation au sol ou un regard, jamais le pied du mur.",
+          "Reste la pente. Une gouttière se pose avec une pente d'environ 5 mm par mètre vers la descente : suffisante pour que l'eau s'écoule sans stagner, assez discrète pour rester invisible depuis la rue. Une pente nulle ou inversée, fréquente après un affaissement de fixations, laisse l'eau croupir et corroder le fond de la gouttière.",
+        ],
+      },
+      {
+        title: "Quel entretien pour votre zinguerie au fil des saisons ?",
+        paragraphs: [
+          "À l'automne, la priorité va aux feuilles mortes : une vérification des gouttières après leur chute évite les débordements des pluies d'hiver. En hiver, surveillez les épisodes de neige et de gel : la glace qui se forme dans une gouttière pleine peut déformer le métal et arracher des fixations. Un simple coup d'œil après chaque épisode suffit.",
+          "Au printemps, contrôlez les jonctions et les fixations depuis le sol : une gouttière qui a bougé pendant l'hiver se repère à son alignement. L'été, par forte chaleur, le métal se dilate ; c'est la saison où une soudure fatiguée ou un joint sec se mettent à goutter. Ces petits signes, traités tôt, évitent le remplacement complet de l'ouvrage.",
+        ],
+        bullets: [
+          "Jonction qui goutte : reprise de soudure sur le zinc, remplacement du joint sur l'aluminium ou le PVC",
+          "Fixation arrachée ou distendue : repose de crochets et contrôle de la pente",
+          "Percement ponctuel de corrosion : pièce soudée ou portion de gouttière remplacée",
+          "Descente désolidarisée : remboîtement et pose de nouveaux colliers",
+          "Solin dont le joint s'effrite : dégarnissage puis réfection du mastic ou du mortier",
+        ],
+      },
+    ],
     tarifs: {
       title: "Prix des travaux de zinguerie",
       rows: [
@@ -309,6 +417,16 @@ export const prestations: readonly Prestation[] = [
         question: "Vos travaux de zinguerie sont-ils garantis ?",
         answer:
           "Oui : la pose et le remplacement d'ouvrages de zinguerie participent à l'étanchéité du bâti et sont couverts par notre garantie décennale (10 ans), en plus de la responsabilité civile professionnelle.",
+      },
+      {
+        question: "Quelle différence entre un chéneau et une gouttière ?",
+        answer:
+          "La gouttière est fixée en rive de toit, à l'extérieur, suspendue à des crochets. Le chéneau est un canal intégré à la construction : il repose sur une corniche ou s'insère entre deux pans, souvent invisible depuis le sol. Cette position le rend plus délicat : un chéneau qui fuit déverse l'eau directement dans le bâti, d'où l'intérêt d'un contrôle régulier.",
+      },
+      {
+        question: "Les crapaudines et grilles pare-feuilles sont-elles utiles ?",
+        answer:
+          "Oui, comme complément et non comme dispense d'entretien. La crapaudine, placée en tête de descente, empêche feuilles et débris d'obstruer le tuyau : c'est la protection la plus utile. Les grilles posées sur toute la gouttière limitent l'accumulation mais se colmatent elles-mêmes ; il faut toujours les nettoyer. Le bon équipement dépend surtout des arbres autour de chez vous.",
       },
     ],
     linkedArticles: ["zinguerie-solins-noues-cheneaux", "gouttieres-bouchees-causes-solutions"],
@@ -364,7 +482,32 @@ export const prestations: readonly Prestation[] = [
         "La charpente ou les liteaux montrent des signes d'affaissement",
       ],
     },
-    sections: [],
+    sections: [
+      {
+        title: "Tuile mécanique, tuile plate, ardoise : que trouve-t-on sur les toits du Montargois ?",
+        paragraphs: [
+          "La tuile mécanique en terre cuite, dite à emboîtement, domine sur les pavillons de Villemandeur et de l'agglomération Montargoise. Ses rainures s'emboîtent les unes dans les autres : la pose est rapide, le remaniement aisé, et le remplacement d'une tuile cassée se fait à l'unité. Son entretien se limite à un démoussage régulier et au contrôle des emboîtements après les coups de vent.",
+          "La tuile plate en terre cuite habille les maisons plus anciennes du Gâtinais et les longères. Petite et posée en fort recouvrement, elle exige une pente prononcée et une densité d'éléments bien supérieure au mètre carré : la rénovation demande plus de temps et de matériaux, mais le cachet est incomparable. Sur ces couvertures, nous trions les tuiles saines pour les reposer et préserver l'aspect d'origine.",
+          "L'ardoise est plus rare dans le secteur, présente surtout sur des maisons de bourg et quelques bâtisses. Posée aux crochets ou aux clous, elle vieillit très bien mais ne se répare pas comme la tuile : remplacer une ardoise demande un outillage et un geste spécifiques. Notre diagnostic distingue aussi l'ardoise naturelle, très durable, des plaques en fibrociment qui vieillissent différemment.",
+        ],
+      },
+      {
+        title: "Comment se déroule une rénovation complète de toiture, étape par étape ?",
+        paragraphs: [
+          "Le chantier commence par la dépose de l'ancienne couverture, pan par pan, avec tri et évacuation des gravats. La charpente et les liteaux, enfin visibles, sont examinés pièce par pièce : un bois sain est conservé, une section fatiguée est remplacée ou renforcée avant d'aller plus loin. C'est la seule occasion de traiter la structure à découvert, nous ne la laissons jamais passer.",
+          "Vient ensuite l'écran de sous-toiture HPV, hautement perméable à la vapeur d'eau : il protège les combles des infiltrations et des poussières tout en laissant respirer l'isolant. Par-dessus, contre-lattes et liteaux neufs sont posés à l'entraxe exact du modèle de tuile choisi. Ce quadrillage régulier conditionne l'alignement de toute la couverture.",
+          "La pose des tuiles démarre en bas du pan, à l'égout, et remonte rang par rang jusqu'au faîtage, scellé ou posé à sec selon la configuration. Les finitions closent le chantier : rives, arêtiers, raccords aux cheminées et fenêtres de toit, puis la zinguerie (gouttières, solins, noues). La toiture est mise hors d'eau à chaque étape : votre maison n'est jamais exposée à une pluie imprévue.",
+        ],
+      },
+      {
+        title: "Quelles démarches administratives avant de refaire sa toiture ?",
+        paragraphs: [
+          "Une rénovation à l'identique (mêmes tuiles, même teinte, même aspect) ne nécessite en général aucune formalité. Dès que l'aspect extérieur change (couleur ou matériau différent, création d'une fenêtre de toit), une déclaration préalable de travaux doit être déposée en mairie avant le début du chantier. Le délai d'instruction courant est d'un mois.",
+          "Le plan local d'urbanisme (PLU) de votre commune peut imposer des teintes ou des matériaux, en particulier dans les centres anciens. À proximité d'un monument historique, l'avis de l'architecte des bâtiments de France peut s'ajouter et allonger l'instruction. Avant tout projet qui modifie l'aspect de votre toit, un passage par le service urbanisme de votre mairie lève le doute en quelques minutes.",
+          "Nous vous accompagnons dans la constitution du dossier : descriptif des travaux et des matériaux prévus, références des tuiles, ainsi que les pièces qui rassurent votre mairie et votre assureur : devis détaillé, attestation d'assurance décennale et responsabilité civile professionnelle. Vous déposez un dossier complet du premier coup et le chantier démarre sans mauvaise surprise administrative.",
+        ],
+      },
+    ],
     tarifs: {
       title: "Prix des travaux de couverture en 2026",
       rows: [
@@ -409,6 +552,16 @@ export const prestations: readonly Prestation[] = [
         question: "Existe-t-il des aides pour rénover sa toiture en 2026 ?",
         answer:
           "Oui, principalement lorsque la rénovation s'accompagne d'une isolation de la toiture (MaPrimeRénov', éco-PTZ, TVA réduite selon conditions). Les dispositifs évoluent chaque année : consultez notre article dédié aux aides 2026 ou demandez-nous conseil lors du devis.",
+      },
+      {
+        question: "Peut-on changer de matériau de couverture lors d'une rénovation ?",
+        answer:
+          "C'est possible, sous deux conditions. Techniquement, la charpente doit supporter le poids du nouveau matériau : passer d'une couverture légère à la tuile terre cuite peut demander un renforcement, et chaque matériau impose sa pente minimale. Administrativement, le changement d'aspect exige une déclaration préalable en mairie et le respect du PLU. Nous validons ces deux points avant tout devis.",
+      },
+      {
+        question: "Peut-on habiter la maison pendant la rénovation de la toiture ?",
+        answer:
+          "Oui, dans la grande majorité des cas. Le chantier se déroule à l'extérieur et la toiture est mise hors d'eau chaque soir : bâchage ou avancement pan par pan, jamais une maison ouverte à la pluie. Les principales gênes se limitent au bruit en journée et à l'emprise de l'échafaudage. Nous convenons ensemble des accès à préserver.",
       },
     ],
     linkedArticles: [
