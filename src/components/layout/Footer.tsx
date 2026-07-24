@@ -1,6 +1,7 @@
 import EmailRoundedIcon from "@mui/icons-material/EmailRounded";
 import PhoneRoundedIcon from "@mui/icons-material/PhoneRounded";
 import PlaceRoundedIcon from "@mui/icons-material/PlaceRounded";
+import ScheduleRoundedIcon from "@mui/icons-material/ScheduleRounded";
 import Link from "next/link";
 
 import { BrandLogo } from "@/components/ui/BrandLogo";
@@ -35,8 +36,9 @@ export function Footer() {
             </p>
           </div>
           <p className="text-sm leading-relaxed text-white/70">
-            Couvreur et zingueur qualifié à Villemandeur (45700) : démoussage, zinguerie, recherche
-            de fuite et rénovation de toiture dans toute l&apos;agglomération Montargoise.
+            Couvreur et zingueur qualifié à Villemandeur (45700) : couverture, charpente, démoussage,
+            zinguerie, recherche de fuite et peinture dans le Loiret, l&apos;Yonne et la
+            Seine-et-Marne.
           </p>
         </div>
 
@@ -97,9 +99,13 @@ export function Footer() {
             <li className="flex items-start gap-2.5">
               <PlaceRoundedIcon fontSize="inherit" className="mt-0.5 text-base shrink-0 text-primary" aria-hidden />
               <span>
-                Intervient à Villemandeur, Montargis, Amilly, Chalette-sur-Loing et dans toute
-                l&apos;agglomération Montargoise
+                {siteConfig.address.street}, {siteConfig.address.postalCode}{" "}
+                {siteConfig.address.city}
               </span>
+            </li>
+            <li className="flex items-start gap-2.5">
+              <ScheduleRoundedIcon fontSize="inherit" className="mt-0.5 text-base shrink-0 text-primary" aria-hidden />
+              <span>{siteConfig.openingHours}</span>
             </li>
           </ul>
         </div>

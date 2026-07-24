@@ -12,14 +12,14 @@ import { PageTitle, TitleAccent } from "@/components/ui/PageTitle";
 import { PhoneLink } from "@/components/ui/PhoneLink";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { IconBadge } from "@/components/ui/ServiceIcon";
-import { communes } from "@/content/communes";
+import { communes, departements } from "@/content/communes";
 import type { Commune } from "@/content/types";
 import { buildMetadata } from "@/lib/seo";
 
 export const metadata = buildMetadata({
-  title: "Zone d'Intervention | JCD Rénovation Villemandeur",
+  title: "Zone d'Intervention : Loiret, Yonne, Seine-et-Marne | JCD Rénovation",
   description:
-    "Découvrez toutes les communes où intervient JCD Rénovation autour de Villemandeur : Montargis, Amilly, Cepoy, Corquilleroy...",
+    "Couvreur zingueur basé à Villemandeur, JCD Rénovation intervient dans le Loiret (45), l'Yonne (89) et la Seine-et-Marne (77).",
   path: "/zone-intervention",
 });
 
@@ -28,7 +28,6 @@ const secondaires = communes.filter(
   (commune): commune is Commune & { href: string } =>
     commune.statut === "secondaire" && commune.href !== undefined,
 );
-const tertiaires = communes.filter((commune) => commune.statut === "tertiaire");
 
 /** Page hub de la zone d'intervention : communes par statut + maillage vers les pages locales. */
 export default function Page() {
@@ -43,15 +42,17 @@ export default function Page() {
               Notre zone d’intervention autour de <TitleAccent>Villemandeur</TitleAccent>
             </PageTitle>
             <p className="mt-5 text-base leading-relaxed sm:text-lg">
-              Couvreur zingueur basé à Villemandeur, nous nous déplaçons dans toute l’agglomération
-              Montargoise : diagnostic sur place et devis gratuits, sans frais de déplacement.
+              Couvreur zingueur basé à Villemandeur, nous rayonnons sur trois départements :
+              diagnostic sur place et devis gratuits, sans frais de déplacement dans l’agglomération
+              Montargoise.
             </p>
             <Card variant="white" className="mt-6 border-l-4 border-primary p-5 sm:p-6">
               <p className="leading-relaxed">
                 <strong className="font-semibold text-navy">En bref :</strong> JCD Rénovation
-                intervient dans un rayon d’environ 20 km autour de Villemandeur (45700), dans toute
-                l’agglomération Montargoise : Montargis, Amilly, Chalette-sur-Loing, Cepoy,
-                Corquilleroy, Paucourt, Pannes, Solterre et Vimory.
+                intervient depuis Villemandeur (45700) dans le Loiret (45), l’Yonne (89) et la
+                Seine-et-Marne (77). Notre cœur d’activité reste l’agglomération Montargoise
+                (Montargis, Amilly, Chalette-sur-Loing) où nous intervenons le plus rapidement, et
+                nous nous déplaçons jusqu’à Gien, Sens et Nemours.
               </p>
             </Card>
           </div>
@@ -129,30 +130,48 @@ export default function Page() {
         </Container>
       </section>
 
-      {/* Autres communes desservies : chips + phrase honnête. */}
-      <section aria-label="Autres communes desservies">
+      {/* Communes desservies, regroupées par département (45 / 89 / 77). */}
+      <section aria-label="Communes desservies par département">
         <Container className="py-16 sm:py-20">
           <SectionHeading
             title={
               <>
-                Les autres communes <TitleAccent>desservies</TitleAccent>
+                Nos trois <TitleAccent>départements</TitleAccent> d’intervention
               </>
             }
+            subtitle="Loiret, Yonne et Seine-et-Marne : voici quelques communes où nous nous déplaçons régulièrement."
           />
-          <ul className="mx-auto mt-10 flex max-w-3xl flex-wrap justify-center gap-3">
-            {tertiaires.map((commune) => (
-              <li key={commune.name}>
-                <span className="inline-block rounded-full border border-navy/10 bg-cream px-4 py-2 text-sm font-medium text-navy">
-                  {commune.name}
-                  {commune.cp ? ` (${commune.cp})` : ""}
-                </span>
-              </li>
-            ))}
-          </ul>
-          <div className="mx-auto mt-10 flex max-w-2xl flex-col items-center gap-5 text-center">
+          <div className="mt-12 grid gap-6 lg:grid-cols-3">
+            {departements.map((dep) => {
+              const villes = communes.filter(
+                (commune) => commune.departement === dep.code && commune.statut !== "principale",
+              );
+              return (
+                <Card key={dep.code} variant="cream" className="flex h-full flex-col">
+                  <div className="flex items-center gap-3">
+                    <IconBadge icon="map-pin" tone="white" />
+                    <h3 className="font-heading text-xl font-bold text-navy">
+                      {dep.nom}{" "}
+                      <span className="text-primary-ink">({dep.code})</span>
+                    </h3>
+                  </div>
+                  <ul className="mt-5 flex flex-wrap gap-2">
+                    {villes.map((commune) => (
+                      <li key={commune.name}>
+                        <span className="inline-block rounded-full border border-navy/10 bg-white px-3 py-1.5 text-sm font-medium text-navy">
+                          {commune.name}
+                        </span>
+                      </li>
+                    ))}
+                  </ul>
+                </Card>
+              );
+            })}
+          </div>
+          <div className="mx-auto mt-12 flex max-w-2xl flex-col items-center gap-5 text-center">
             <p className="font-medium text-navy">
-              Votre commune n’est pas listée ? Appelez-nous : si le chantier est à moins de 30
-              minutes, nous étudions toute demande.
+              Votre commune n’est pas listée ? Appelez-nous : nous intervenons dans tout le Loiret,
+              l’Yonne et la Seine-et-Marne, et nous étudions chaque demande.
             </p>
             <PhoneLink withLabel />
           </div>

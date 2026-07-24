@@ -158,10 +158,14 @@ export type Garantie = {
 
 export type CommuneStatut = "principale" | "secondaire" | "tertiaire";
 
+/** Département d'intervention : Loiret (45), Yonne (89), Seine-et-Marne (77). */
+export type Departement = "45" | "89" | "77";
+
 export type Commune = {
   name: string;
   cp?: string;
   statut: CommuneStatut;
+  departement: Departement;
   /** Route de la page dédiée si elle existe. */
   href?: string;
 };

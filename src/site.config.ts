@@ -38,7 +38,10 @@ export const siteConfig = {
   mainCity: "Villemandeur",
   mainCityCp: "45700",
 
-  /** Zone d'intervention affichée (agglomération Montargoise et Rives du Loing). */
+  /** Départements couverts (affichage + areaServed du schéma LocalBusiness). */
+  departments: ["Loiret (45)", "Yonne (89)", "Seine-et-Marne (77)"],
+
+  /** Villes clés de la zone (agglomération Montargoise + villes des 3 départements). */
   serviceArea: [
     "Villemandeur",
     "Montargis",
@@ -46,10 +49,16 @@ export const siteConfig = {
     "Chalette-sur-Loing",
     "Cepoy",
     "Corquilleroy",
-    "Paucourt",
     "Pannes",
-    "Solterre",
-    "Vimory",
+    "Ferrières-en-Gâtinais",
+    "Gien",
+    "Château-Renard",
+    "Sens",
+    "Villeneuve-sur-Yonne",
+    "Joigny",
+    "Nemours",
+    "Souppes-sur-Loing",
+    "Montereau-Fault-Yonne",
   ],
 
   /**

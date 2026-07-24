@@ -23,7 +23,7 @@ export const faqHome: readonly FaqItem[] = [
   {
     question: "Quelles villes couvrez-vous autour de Villemandeur ?",
     answer:
-      "JCD Rénovation intervient à Villemandeur (45700) et dans toute l'agglomération Montargoise : Montargis, Amilly, Chalette-sur-Loing, Cepoy, Corquilleroy, Paucourt, Pannes, Solterre et Vimory, soit un rayon d'environ 20 km.",
+      "JCD Rénovation est basé à Villemandeur (45700) et intervient sur trois départements : le Loiret (45), l'Yonne (89) et la Seine-et-Marne (77). Notre cœur d'activité reste l'agglomération Montargoise (Montargis, Amilly, Chalette-sur-Loing), et nous nous déplaçons jusqu'à Gien, Sens et Nemours.",
   },
   {
     question: "Le devis est-il vraiment gratuit et sans engagement ?",
