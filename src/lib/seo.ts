@@ -15,7 +15,7 @@ type BuildMetadataInput = {
  * Helper unique de métadonnées : impose un canonical sur CHAQUE page
  * (l'oubli de canonical était un des défauts de l'ancien site).
  * `metadataBase` est défini dans le root layout → les chemins relatifs
- * deviennent des URLs absolues https://www.jcd-renovation.fr/...
+ * deviennent des URLs absolues https://jcdrenovation.fr/...
  */
 export function buildMetadata({ title, description, path, ogType = "website" }: BuildMetadataInput): Metadata {
   return {

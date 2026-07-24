@@ -11,7 +11,7 @@ export const siteConfig = {
   name: "JCD Rénovation",
   legalName: "JCD Rénovation",
   siret: "535 075 337 00035",
-  url: "https://www.jcd-renovation.fr",
+  url: "https://jcdrenovation.fr",
   /** Baseline courte (footer, OG par défaut). */
   tagline: "Couvreur & zingueur à Villemandeur (45700)",
   description:
@@ -20,7 +20,7 @@ export const siteConfig = {
   phone: "07 49 10 06 56",
   phoneHref: "tel:+33749100656",
   phoneInternational: "+33749100656",
-  email: "contact@jcd-renovation.fr",
+  email: "contact@jcdrenovation.fr",
 
   /** Adresse réelle confirmée par le client (siège à Villemandeur). */
   address: {
@@ -95,7 +95,7 @@ export type SiteConfig = typeof siteConfig;
  * Repris et détaillés dans A-VALIDER-CLIENT.md à la racine.
  */
 export const CLIENT_TODOS: readonly string[] = [
-  "Créer la boîte email contact@jcd-renovation.fr (hébergeur du domaine) et vérifier le domaine dans Resend, voir DEPLOIEMENT.md",
+  "Créer la boîte email contact@jcdrenovation.fr (hébergeur du domaine) et vérifier le domaine dans Resend, voir DEPLOIEMENT.md",
   "Créer/valider la fiche Google Business Profile à l'adresse 3 bis rue des Plantes, 45700 Villemandeur (justificatif de domicile disponible)",
   "Récupérer et intégrer le book photos complet envoyé par le client (démoussage, zinguerie, recherche de fuite, peinture, charpente)",
   "Note Google réelle une fois la fiche créée et les premiers avis obtenus (sinon aucune note affichée)",

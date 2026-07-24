@@ -92,7 +92,7 @@ export async function buildOgImage({ title, subtitle, eyebrow }: OgTemplateProps
           }}
         >
           <div style={{ display: "flex", fontSize: "26px", color: "#C7CBD8" }}>
-            www.jcd-renovation.fr
+            jcdrenovation.fr
           </div>
           <div
             style={{

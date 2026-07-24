@@ -2,7 +2,7 @@
  * Table de redirections 301 des anciennes URLs vers le nouveau site.
  *
  * Deux jeux d'URLs sont couverts (audit du 22/07/2026) :
- * 1. Le site historiquement EN LIGNE sur www.jcd-renovation.fr (Webkom) —
+ * 1. Le site historiquement EN LIGNE sur jcdrenovation.fr (Webkom) —
  *    URLs relevées dans son sitemap réel ;
  * 2. Le dossier local .com (ELM Digital) — atteignable si jcd-renovation.com
  *    est rattaché au projet Vercel avec redirection de domaine (chemin
@@ -26,7 +26,7 @@ export const legacyRedirectMap: ReadonlyArray<{
   source: string;
   destination: string;
 }> = [
-  // ── Jeu 1 : site en ligne jcd-renovation.fr (Webkom) ────────────────────
+  // ── Jeu 1 : site en ligne jcdrenovation.fr (Webkom) ────────────────────
   { source: "/nettoyage-et-demoussage-de-toiture-45", destination: "/demoussage-toiture-villemandeur" },
   { source: "/urgence-fuite-de-toiture-45", destination: "/recherche-de-fuite-toiture-villemandeur" },
   { source: "/couverture-a-montargis-45200", destination: "/couvreur-zingueur-montargis" },

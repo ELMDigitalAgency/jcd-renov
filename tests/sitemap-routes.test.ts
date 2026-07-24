@@ -22,9 +22,9 @@ describe("sitemap.xml", () => {
     }
   });
 
-  it("URLs absolues en https://www.jcd-renovation.fr, jamais de .html", () => {
+  it("URLs absolues sur le domaine canonique, jamais de .html", () => {
     for (const url of urls) {
-      expect(url.startsWith("https://www.jcd-renovation.fr")).toBe(true);
+      expect(url.startsWith(siteConfig.url)).toBe(true);
       expect(url.endsWith(".html")).toBe(false);
     }
   });

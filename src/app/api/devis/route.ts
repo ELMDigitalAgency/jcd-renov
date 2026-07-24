@@ -7,10 +7,10 @@ export const runtime = "nodejs";
 export const preferredRegion = ["cdg1"];
 
 /**
- * Expéditeur — le domaine jcd-renovation.fr doit être vérifié dans Resend
+ * Expéditeur — le domaine jcdrenovation.fr doit être vérifié dans Resend
  * (DNS SPF + DKIM) avant la mise en production, cf. DEPLOIEMENT.md.
  */
-const FROM = "JCD Rénovation <devis@jcd-renovation.fr>";
+const FROM = "JCD Rénovation <devis@jcdrenovation.fr>";
 
 /** Limite serveur pour la photo (la limite body Vercel serverless est de 4,5 Mo). */
 const MAX_PHOTO_BYTES = 4_000_000;
@@ -29,7 +29,7 @@ function escapeHtml(value: string): string {
 
 function buildText(data: DevisInput, hasPhoto: boolean): string {
   return [
-    "Nouvelle demande de devis reçue depuis jcd-renovation.fr",
+    "Nouvelle demande de devis reçue depuis jcdrenovation.fr",
     "",
     `Nom : ${data.nom}`,
     `Téléphone : ${data.telephone}`,
