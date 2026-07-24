@@ -2,8 +2,10 @@ import type { SvgIconComponent } from "@mui/icons-material";
 import ApartmentRoundedIcon from "@mui/icons-material/ApartmentRounded";
 import AutoAwesomeRoundedIcon from "@mui/icons-material/AutoAwesomeRounded";
 import BrushRoundedIcon from "@mui/icons-material/BrushRounded";
+import CarpenterRoundedIcon from "@mui/icons-material/CarpenterRounded";
 import DescriptionRoundedIcon from "@mui/icons-material/DescriptionRounded";
 import EuroRoundedIcon from "@mui/icons-material/EuroRounded";
+import FormatPaintRoundedIcon from "@mui/icons-material/FormatPaintRounded";
 import HandymanRoundedIcon from "@mui/icons-material/HandymanRounded";
 import HomeRoundedIcon from "@mui/icons-material/HomeRounded";
 import PhoneRoundedIcon from "@mui/icons-material/PhoneRounded";
@@ -37,6 +39,8 @@ const iconMap: Record<IconKey, SvgIconComponent> = {
   "map-pin": PlaceRoundedIcon,
   sparkles: AutoAwesomeRoundedIcon,
   "alert-triangle": WarningAmberRoundedIcon,
+  paint: FormatPaintRoundedIcon,
+  carpenter: CarpenterRoundedIcon,
 };
 
 type ServiceIconProps = {

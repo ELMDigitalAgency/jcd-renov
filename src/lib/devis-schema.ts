@@ -9,9 +9,11 @@ import { z } from "zod";
 
 export const PRESTATION_OPTIONS = [
   "Couverture",
+  "Charpente",
   "Zinguerie",
   "Démoussage",
   "Recherche de fuite",
+  "Peinture",
   "Urgence",
 ] as const;
 

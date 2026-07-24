@@ -19,7 +19,9 @@ export type IconKey =
   | "building"
   | "map-pin"
   | "sparkles"
-  | "alert-triangle";
+  | "alert-triangle"
+  | "paint"
+  | "carpenter";
 
 export type FaqItem = {
   question: string;
@@ -31,6 +33,8 @@ export const prestationSlugs = [
   "recherche-de-fuite-toiture-villemandeur",
   "zinguerie-villemandeur",
   "couvreur-villemandeur",
+  "peinture-villemandeur",
+  "charpente-villemandeur",
 ] as const;
 
 export type PrestationSlug = (typeof prestationSlugs)[number];
