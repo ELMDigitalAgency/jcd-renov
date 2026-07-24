@@ -1,0 +1,291 @@
+{
+  "hero": [
+    {
+      "src": "/images/hero/hero-chantier-01.jpeg",
+      "width": 1600,
+      "height": 1200
+    },
+    {
+      "src": "/images/hero/hero-chantier-02.jpeg",
+      "width": 1600,
+      "height": 1200
+    },
+    {
+      "src": "/images/hero/hero-chantier-03.jpeg",
+      "width": 1600,
+      "height": 1200
+    }
+  ],
+  "gallery": [
+    {
+      "src": "/images/realisations/chantier-jcd-01.jpeg",
+      "width": 1200,
+      "height": 1600
+    },
+    {
+      "src": "/images/realisations/chantier-jcd-02.jpeg",
+      "width": 1200,
+      "height": 1600
+    },
+    {
+      "src": "/images/realisations/chantier-jcd-03.jpeg",
+      "width": 1200,
+      "height": 1600
+    },
+    {
+      "src": "/images/realisations/chantier-jcd-04.jpeg",
+      "width": 1200,
+      "height": 1600
+    },
+    {
+      "src": "/images/realisations/chantier-jcd-05.jpeg",
+      "width": 1200,
+      "height": 1600
+    },
+    {
+      "src": "/images/realisations/chantier-jcd-06.jpeg",
+      "width": 1200,
+      "height": 1600
+    },
+    {
+      "src": "/images/realisations/chantier-jcd-07.jpeg",
+      "width": 1200,
+      "height": 1600
+    },
+    {
+      "src": "/images/realisations/chantier-jcd-08.jpeg",
+      "width": 1600,
+      "height": 1200
+    },
+    {
+      "src": "/images/realisations/chantier-jcd-09.jpeg",
+      "width": 1200,
+      "height": 1600
+    },
+    {
+      "src": "/images/realisations/chantier-jcd-10.jpeg",
+      "width": 1200,
+      "height": 1600
+    },
+    {
+      "src": "/images/realisations/chantier-jcd-11.jpeg",
+      "width": 1200,
+      "height": 1600
+    },
+    {
+      "src": "/images/realisations/chantier-jcd-12.jpeg",
+      "width": 1200,
+      "height": 1600
+    },
+    {
+      "src": "/images/realisations/chantier-jcd-13.jpeg",
+      "width": 1200,
+      "height": 1600
+    },
+    {
+      "src": "/images/realisations/chantier-jcd-14.jpeg",
+      "width": 1600,
+      "height": 1200
+    },
+    {
+      "src": "/images/realisations/chantier-jcd-15.jpeg",
+      "width": 1200,
+      "height": 1600
+    },
+    {
+      "src": "/images/realisations/chantier-jcd-16.jpeg",
+      "width": 1200,
+      "height": 1600
+    },
+    {
+      "src": "/images/realisations/chantier-jcd-17.jpeg",
+      "width": 1600,
+      "height": 1200
+    },
+    {
+      "src": "/images/realisations/chantier-jcd-18.jpeg",
+      "width": 1600,
+      "height": 1200
+    },
+    {
+      "src": "/images/realisations/chantier-jcd-19.jpeg",
+      "width": 1200,
+      "height": 1600
+    },
+    {
+      "src": "/images/realisations/chantier-jcd-20.jpeg",
+      "width": 1600,
+      "height": 1200
+    },
+    {
+      "src": "/images/realisations/chantier-jcd-21.jpeg",
+      "width": 1200,
+      "height": 1600
+    },
+    {
+      "src": "/images/realisations/chantier-jcd-22.jpeg",
+      "width": 1600,
+      "height": 1200
+    },
+    {
+      "src": "/images/realisations/chantier-jcd-23.jpeg",
+      "width": 1200,
+      "height": 1600
+    },
+    {
+      "src": "/images/realisations/chantier-jcd-24.jpeg",
+      "width": 1200,
+      "height": 1600
+    },
+    {
+      "src": "/images/realisations/chantier-jcd-25.jpeg",
+      "width": 1200,
+      "height": 1600
+    },
+    {
+      "src": "/images/realisations/chantier-jcd-26.jpeg",
+      "width": 1600,
+      "height": 1200
+    },
+    {
+      "src": "/images/realisations/chantier-jcd-27.jpeg",
+      "width": 1600,
+      "height": 1200
+    },
+    {
+      "src": "/images/realisations/chantier-jcd-28.jpeg",
+      "width": 1600,
+      "height": 1200
+    },
+    {
+      "src": "/images/realisations/chantier-jcd-29.jpeg",
+      "width": 1600,
+      "height": 1200
+    },
+    {
+      "src": "/images/realisations/chantier-jcd-30.jpeg",
+      "width": 1200,
+      "height": 1600
+    },
+    {
+      "src": "/images/realisations/chantier-jcd-31.jpeg",
+      "width": 1200,
+      "height": 1600
+    },
+    {
+      "src": "/images/realisations/chantier-jcd-32.jpeg",
+      "width": 1600,
+      "height": 1200
+    },
+    {
+      "src": "/images/realisations/chantier-jcd-33.jpeg",
+      "width": 1200,
+      "height": 1600
+    },
+    {
+      "src": "/images/realisations/chantier-jcd-34.jpeg",
+      "width": 1200,
+      "height": 1600
+    },
+    {
+      "src": "/images/realisations/chantier-jcd-35.jpeg",
+      "width": 1600,
+      "height": 1200
+    },
+    {
+      "src": "/images/realisations/chantier-jcd-36.jpeg",
+      "width": 1200,
+      "height": 1600
+    },
+    {
+      "src": "/images/realisations/chantier-jcd-37.jpeg",
+      "width": 1200,
+      "height": 1600
+    },
+    {
+      "src": "/images/realisations/chantier-jcd-38.jpeg",
+      "width": 1200,
+      "height": 1600
+    },
+    {
+      "src": "/images/realisations/chantier-jcd-39.jpeg",
+      "width": 1200,
+      "height": 1600
+    },
+    {
+      "src": "/images/realisations/chantier-jcd-40.jpeg",
+      "width": 1600,
+      "height": 1200
+    },
+    {
+      "src": "/images/realisations/chantier-jcd-41.jpeg",
+      "width": 1200,
+      "height": 1600
+    },
+    {
+      "src": "/images/realisations/chantier-jcd-42.jpeg",
+      "width": 1600,
+      "height": 1200
+    },
+    {
+      "src": "/images/realisations/chantier-jcd-43.jpeg",
+      "width": 1600,
+      "height": 1200
+    },
+    {
+      "src": "/images/realisations/chantier-jcd-44.jpeg",
+      "width": 1200,
+      "height": 1600
+    },
+    {
+      "src": "/images/realisations/chantier-jcd-45.jpeg",
+      "width": 1600,
+      "height": 1200
+    },
+    {
+      "src": "/images/realisations/chantier-jcd-46.jpeg",
+      "width": 1600,
+      "height": 1200
+    },
+    {
+      "src": "/images/realisations/chantier-jcd-47.jpeg",
+      "width": 1200,
+      "height": 1600
+    },
+    {
+      "src": "/images/realisations/chantier-jcd-48.jpeg",
+      "width": 1600,
+      "height": 1200
+    },
+    {
+      "src": "/images/realisations/chantier-jcd-49.jpeg",
+      "width": 1600,
+      "height": 1200
+    },
+    {
+      "src": "/images/realisations/chantier-jcd-50.jpeg",
+      "width": 1600,
+      "height": 1200
+    },
+    {
+      "src": "/images/realisations/chantier-jcd-51.jpeg",
+      "width": 1600,
+      "height": 1200
+    },
+    {
+      "src": "/images/realisations/chantier-jcd-52.jpeg",
+      "width": 1600,
+      "height": 1200
+    },
+    {
+      "src": "/images/realisations/chantier-jcd-53.jpeg",
+      "width": 1200,
+      "height": 1600
+    },
+    {
+      "src": "/images/realisations/chantier-jcd-54.jpeg",
+      "width": 1600,
+      "height": 1200
+    }
+  ]
+}
