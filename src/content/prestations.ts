@@ -573,6 +573,274 @@ export const prestations: readonly Prestation[] = [
     icon: "home",
     ancre: "pose et rénovation de toiture",
   },
+  {
+    slug: "peinture-villemandeur",
+    name: "Peinture",
+    nav: "Peinture & façade",
+    h1: "Peinture & ravalement de façade à Villemandeur",
+    metaTitle: "Peinture & Ravalement de Façade à Villemandeur | JCD Rénovation",
+    metaDescription:
+      "Peinture intérieure et extérieure, ravalement de façade à Villemandeur et dans le Loiret. Travail soigné, devis gratuit.",
+    enBref:
+      "Le ravalement d'une façade coûte en moyenne 30 à 90 € par m² en 2026 selon l'état du support et la finition choisie ; la peinture intérieure se situe entre 25 et 45 € par m², préparation et deux couches comprises. JCD Rénovation réalise vos travaux de peinture et de ravalement à Villemandeur (45700) et dans le Loiret : diagnostic du support et devis gratuits.",
+    intro:
+      "Une façade propre protège vos murs des intempéries autant qu'elle valorise votre maison. En intérieur comme en extérieur, une peinture bien préparée tient des années là où un travail bâclé s'écaille dès le premier hiver.",
+    heroImage: "/images/realisations/peinture-facade-villemandeur-01.jpeg",
+    heroImageAlt: "Ravalement de façade à Villemandeur par JCD Rénovation",
+    consiste: {
+      title: "En quoi consistent des travaux de peinture et de ravalement ?",
+      paragraphs: [
+        "Nos interventions couvrent deux domaines complémentaires. À l'extérieur, le ravalement de façade rend à vos murs leur étanchéité et leur aspect : nettoyage, traitement, réparation des fissures puis application d'un revêtement adapté au support. À l'intérieur, nous peignons murs, plafonds et boiseries, de la pièce unique à la maison complète, avec la même exigence de préparation.",
+        "Une peinture ne vaut que par ce qui se passe avant le premier coup de rouleau. La préparation du support représente l'essentiel du travail : c'est elle qui décide si la finition tiendra cinq ans ou vingt. Un mur mal préparé écaille la plus belle des peintures, alors qu'un support soigné garde son revêtement des années. Chaque chantier commence donc par un diagnostic du support à traiter.",
+      ],
+      points: [
+        {
+          title: "Ravalement de façade",
+          text: "Nettoyage, traitement, réparation des fissures et application d'un revêtement extérieur adapté à la maçonnerie.",
+        },
+        {
+          title: "Peinture intérieure",
+          text: "Murs et plafonds remis à neuf, des combles aux pièces de vie, avec préparation complète du support avant application.",
+        },
+        {
+          title: "Boiseries et menuiseries",
+          text: "Mise en peinture ou en lasure des portes, plinthes, encadrements et éléments bois, en intérieur comme en extérieur.",
+        },
+        {
+          title: "Traitement des supports",
+          text: "Nettoyage en profondeur, traitement anti-mousse des façades et pontage des fissures avant toute mise en peinture.",
+        },
+      ],
+    },
+    signes: {
+      title: "Quand envisager un ravalement ou une remise en peinture ?",
+      items: [
+        "La façade est noircie, verdie ou marquée de coulures sous les appuis de fenêtres",
+        "Des fissures apparaissent ou s'élargissent sur l'enduit extérieur",
+        "La peinture cloque, s'écaille ou farine au toucher sur les murs ou les boiseries",
+        "Des traces d'humidité ou des auréoles persistent sur un mur intérieur",
+        "La façade n'a pas été rénovée depuis plus de dix à quinze ans",
+      ],
+    },
+    sections: [
+      {
+        title: "Comment se déroule un ravalement de façade, étape par étape ?",
+        paragraphs: [
+          "Tout commence par le diagnostic du support. Nous identifions le matériau, enduit, crépi, pierre ou béton, repérons les fissures, les cloques et les zones d'humidité, et contrôlons la présence de mousses ou d'algues. Ce relevé conditionne le choix des produits et de la méthode : une façade fissurée ne se traite pas comme une façade simplement encrassée.",
+          "Vient le nettoyage. Selon l'état et la nature du mur, il se fait par lavage basse pression, brossage ou traitement chimique doux, suivi d'un produit anti-mousse quand la façade est colonisée. Un support propre et sain conditionne l'accroche du revêtement : une peinture posée sur une façade encrassée se décolle en quelques saisons.",
+          "Les réparations suivent. Les fissures sont ouvertes puis rebouchées, les parties d'enduit décollées sont reprises, les points sensibles autour des appuis et des encadrements sont consolidés. La façade retrouve une surface homogène avant l'application. Le revêtement final, peinture de façade ou enduit, est posé en une ou deux couches selon le produit, une fois le support parfaitement sec.",
+        ],
+      },
+      {
+        title: "Quel revêtement de façade choisir, et lequel dure le plus longtemps ?",
+        paragraphs: [
+          "Le choix d'un revêtement extérieur dépend d'abord du support et de son exposition. Les peintures de façade se répartissent en grandes familles aux comportements différents. La peinture acrylique, la plus courante, est économique et respirante mais protège moins longtemps. La peinture pliolite pénètre bien les supports poreux et résiste à la pluie. Les revêtements siloxanes offrent la meilleure résistance à l'eau tout en laissant le mur respirer.",
+          "La respirabilité est un point central sur une maison ancienne. Un mur en pierre ou en enduit à la chaux doit pouvoir évacuer l'humidité qu'il contient. Un revêtement trop étanche piège cette humidité et fait éclater l'enduit de l'intérieur. Nous adaptons le produit à la nature du mur plutôt que d'appliquer partout la même solution.",
+          "L'entretien dépend ensuite du produit et de l'exposition. Une façade au nord, humide et peu ensoleillée, verdit plus vite qu'une façade plein sud. Un simple nettoyage tous les quelques années prolonge nettement la durée d'un revêtement et retarde le prochain ravalement. Nous vous indiquons le rythme d'entretien adapté à votre façade à la fin du chantier.",
+        ],
+        bullets: [
+          "Peinture acrylique : économique, respirante, protection plus courte, à renouveler plus souvent",
+          "Peinture pliolite : bonne pénétration des supports poreux, tenue à la pluie, application possible par temps frais",
+          "Revêtement siloxane : forte résistance à l'eau et bonne respirabilité, adapté aux façades exposées",
+          "Enduit de façade : couche épaisse qui masque les défauts et protège durablement la maçonnerie",
+        ],
+      },
+      {
+        title: "Ravalement de façade : quelles règles et quelles autorisations ?",
+        paragraphs: [
+          "Le ravalement n'est pas qu'une question d'esthétique. Dans certaines communes, il constitue une obligation légale : la loi permet aux municipalités d'imposer un ravalement périodique, souvent tous les dix ans, pour maintenir les façades en bon état. Un passage par le service urbanisme de votre mairie vous indique si votre commune applique cette règle.",
+          "Sur le plan administratif, un ravalement à l'identique ne demande en général aucune formalité. Dès que les travaux modifient l'aspect extérieur, un changement de couleur ou de matériau par exemple, une déclaration préalable de travaux doit être déposée en mairie avant le début du chantier. Le délai d'instruction courant est d'un mois.",
+          "Le plan local d'urbanisme peut également encadrer les teintes autorisées, en particulier dans les centres anciens ou à proximité d'un bâtiment protégé. Se renseigner en amont évite de repeindre une façade dans une couleur non conforme. Nous vous orientons sur ces démarches et fournissons les pièces utiles à votre dossier : devis détaillé et attestations d'assurance.",
+        ],
+      },
+    ],
+    tarifs: {
+      title: "Prix de la peinture et du ravalement en 2026",
+      rows: [
+        { label: "Ravalement de façade", fourchette: "30 à 90 €", unite: "par m²" },
+        {
+          label: "Peinture intérieure (préparation + 2 couches)",
+          fourchette: "25 à 45 €",
+          unite: "par m²",
+        },
+        { label: "Peinture de boiseries et menuiseries", fourchette: "sur devis", unite: "" },
+      ],
+      facteurs: [
+        "État du support et importance de la préparation",
+        "Type de revêtement et finition choisie",
+        "Surface à traiter et accessibilité (hauteur, échafaudage)",
+        "Nombre de couches nécessaires selon la couleur d'origine",
+      ],
+      disclaimer:
+        "Fourchettes indicatives du marché en 2026. Chaque support est différent : le prix exact est établi après diagnostic gratuit sur place, sans engagement.",
+    },
+    faq: [
+      {
+        question: "Faut-il une autorisation pour ravaler sa façade ?",
+        answer:
+          "Un ravalement à l'identique ne demande le plus souvent aucune formalité. Dès que l'aspect extérieur change (nouvelle couleur, matériau différent), une déclaration préalable de travaux est à déposer en mairie avant le chantier. Certaines communes imposent aussi un ravalement périodique : renseignez-vous auprès de votre service urbanisme.",
+      },
+      {
+        question: "Combien de temps dure une peinture de façade ?",
+        answer:
+          "Une façade correctement préparée et peinte tient en général dix à quinze ans, parfois davantage selon le produit et l'exposition. Une façade orientée au nord ou soumise aux intempéries verdit et se salit plus vite. Un nettoyage régulier prolonge nettement la durée du revêtement.",
+      },
+      {
+        question: "Peut-on peindre par-dessus une ancienne peinture ?",
+        answer:
+          "Cela dépend de son état. Si l'ancienne couche adhère bien, un nettoyage et une sous-couche suffisent. Si elle cloque, s'écaille ou farine, il faut d'abord la décaper : peindre par-dessus une peinture qui se décolle revient à faire tomber la nouvelle avec l'ancienne. Le diagnostic du support tranche.",
+      },
+      {
+        question: "Quelle est la meilleure saison pour un ravalement ?",
+        answer:
+          "Le printemps et l'automne sont idéals : les températures douces et l'absence de gel favorisent le séchage des produits. Nous évitons les périodes de gel, de pluie et de forte chaleur, qui compromettent l'accroche et le séchage des revêtements de façade. La météo des jours suivants est toujours vérifiée avant application.",
+      },
+      {
+        question: "Le prix comprend-il la préparation du support ?",
+        answer:
+          "Oui, et c'est l'essentiel du travail. Nos devis incluent le nettoyage, le traitement et la réparation des fissures avant toute mise en peinture. Une préparation soignée représente une grande part du temps passé : c'est elle qui garantit la tenue de la finition dans le temps.",
+      },
+    ],
+    linkedArticles: [],
+    icon: "paint",
+    ancre: "peinture et ravalement",
+  },
+  {
+    slug: "charpente-villemandeur",
+    name: "Charpente",
+    nav: "Charpente",
+    h1: "Charpente à Villemandeur : réparation et rénovation",
+    metaTitle: "Charpente à Villemandeur : Réparation & Traitement | JCD Rénovation",
+    metaDescription:
+      "Réparation, renforcement et traitement de charpente à Villemandeur et dans le Loiret. Diagnostic sérieux, garantie décennale.",
+    enBref:
+      "La réparation ou le renfort ponctuel d'une charpente coûte généralement entre 500 et 2 000 € selon l'ampleur, et son traitement contre les insectes et les champignons se situe autour de 15 à 40 € par m². JCD Rénovation diagnostique, répare et traite les charpentes à Villemandeur (45700) et dans le Loiret. Ces travaux touchent à la solidité de l'ouvrage : la garantie décennale s'applique.",
+    intro:
+      "La charpente est le squelette de votre toiture : tant qu'elle est saine, la couverture tient. Un bois qui fléchit, s'humidifie ou se creuse sous l'action des insectes doit être diagnostiqué tôt, avant que le problème ne gagne toute la structure.",
+    heroImage: "/images/realisations/charpente-villemandeur-01.jpeg",
+    heroImageAlt: "Charpente en cours de rénovation à Villemandeur par JCD Rénovation",
+    consiste: {
+      title: "En quoi consistent des travaux de charpente ?",
+      paragraphs: [
+        "Nos interventions commencent toujours par un diagnostic de la charpente. Nous examinons l'état du bois pièce par pièce : chevrons, pannes, entraits, arbalétriers. Nous recherchons les signes de fléchissement, les traces d'humidité, les galeries d'insectes et les zones ramollies par un champignon. Ce relevé détermine s'il faut réparer, renforcer, traiter ou remplacer une partie de la structure.",
+        "Selon le diagnostic, nous réparons ou renforçons les pièces fatiguées, traitons le bois contre les insectes xylophages et les champignons, et remplaçons les éléments trop atteints pour être conservés. La charpente étant étroitement liée à la couverture, nous intervenons souvent en coordination avec les travaux de toiture : une charpente saine est la condition d'une toiture durable.",
+      ],
+      points: [
+        {
+          title: "Diagnostic de charpente",
+          text: "Examen du bois pièce par pièce : fléchissement, humidité, galeries d'insectes et zones attaquées par les champignons.",
+        },
+        {
+          title: "Réparation et renfort",
+          text: "Reprise ou renforcement des pièces fatiguées, chevrons, pannes et entraits, avec pose de renforts adaptés.",
+        },
+        {
+          title: "Traitement du bois",
+          text: "Traitement curatif et préventif contre les insectes xylophages et les champignons, appliqué sur l'ensemble de la charpente.",
+        },
+        {
+          title: "Remplacement partiel",
+          text: "Dépose et remplacement des éléments trop atteints pour être conservés, en lien avec la couverture.",
+        },
+      ],
+    },
+    signes: {
+      title: "Quand faire appel pour votre charpente ?",
+      items: [
+        "Une poutre ou un chevron fléchit visiblement, la toiture semble s'affaisser",
+        "Le bois présente de la sciure fine, de petits trous ronds ou des galeries en surface",
+        "Des traces d'humidité, des taches sombres ou une odeur de moisi apparaissent dans les combles",
+        "Le bois sonne creux ou s'effrite quand on le sonde",
+        "Des fissures ou un désordre apparaissent après une infiltration prolongée",
+      ],
+    },
+    sections: [
+      {
+        title: "Comment reconnaître une charpente en souffrance ?",
+        paragraphs: [
+          "Une charpente ne se dégrade pas du jour au lendemain : elle donne des signes qu'un œil averti repère à temps. Le premier est le fléchissement. Une panne ou un entrait qui se courbe, une ligne de faîtage qui ondule, une toiture qui semble creuser sont des signaux à ne pas négliger. Le bois travaille sous une charge qu'il ne supporte plus, ou parce qu'une pièce a perdu de sa résistance.",
+          "L'humidité est le deuxième signe. Une charpente doit rester sèche. Des traces sombres sur le bois, un aspect gorgé d'eau, une odeur de moisi dans les combles trahissent une infiltration ou un défaut de ventilation. L'eau ramollit le bois et ouvre la porte aux champignons, dont la mérule, capable de dévorer une charpente entière si rien n'est fait.",
+          "Les attaques d'insectes se repèrent à la sciure fine au pied des poutres, aux petits trous ronds à la surface du bois et aux galeries que l'on découvre en grattant. Un bois qui sonne creux ou s'effrite sous la pointe d'un tournevis est déjà attaqué en profondeur. Au moindre de ces signes, un diagnostic s'impose : plus l'atteinte est prise tôt, plus la réparation reste limitée.",
+        ],
+      },
+      {
+        title: "Insectes xylophages et champignons : curatif ou préventif ?",
+        paragraphs: [
+          "Le bois de charpente a deux grands ennemis. Les insectes xylophages d'abord : le capricorne des maisons et la vrillette creusent des galeries qui vident le bois de l'intérieur, souvent sans signe visible avant plusieurs années. Les champignons ensuite, qui se développent dès que le bois reste humide. Le plus redouté est la mérule, un champignon qui se propage vite et fragilise la structure en profondeur.",
+          "Le traitement curatif s'attaque à une infestation en cours. Le bois est sondé pour évaluer la profondeur de l'atteinte, les parties trop abîmées sont retirées, puis un produit est injecté au cœur du bois et appliqué en surface pour tuer insectes ou champignons. Il s'accompagne toujours de la recherche et de la suppression de la cause, en particulier la source d'humidité qui a permis au champignon de s'installer.",
+          "Le traitement préventif protège un bois encore sain. Appliqué sur une charpente traitée ou remplacée, il crée une barrière contre les insectes et les champignons pour de longues années. C'est une précaution utile lors d'une rénovation de toiture, quand la charpente est accessible et à découvert. Traiter à ce moment coûte peu au regard de la protection obtenue.",
+        ],
+        bullets: [
+          "Capricorne et vrillette : galeries dans le bois, sciure fine, trous de sortie ronds en surface",
+          "Champignons et mérule : bois ramolli, filaments, odeur de moisi liée à une humidité persistante",
+          "Traitement curatif : sondage, retrait des parties atteintes, injection et application d'un produit",
+          "Traitement préventif : barrière longue durée sur un bois sain, idéale lors d'une rénovation",
+        ],
+      },
+      {
+        title: "Réparer, renforcer ou remplacer : le lien entre charpente et couverture",
+        paragraphs: [
+          "Toute charpente atteinte ne se remplace pas. Bien souvent, la réparation ou le renfort suffit : une pièce fléchie est soulagée par un renfort, un about de poutre attaqué en pied est remplacé sans toucher au reste, un assemblage fatigué est consolidé. Conserver ce qui est sain coûte moins cher et respecte la structure d'origine. Le remplacement complet ne s'impose que lorsque le bois est trop atteint pour être sauvé.",
+          "Le diagnostic tranche entre ces solutions. Il mesure l'étendue réelle de l'atteinte, souvent plus limitée qu'elle n'en a l'air, et vérifie que les pièces voisines sont saines. Nous privilégions toujours la solution la plus mesurée : réparer ce qui peut l'être, remplacer seulement ce qui doit l'être. Un devis détaillé accompagne chaque proposition.",
+          "Charpente et couverture forment un tout. Une charpente qui fléchit déforme la couverture et ouvre des passages à l'eau ; une infiltration prolongée, à l'inverse, pourrit la charpente. Nous traitons donc souvent les deux ensemble : reprendre une charpente sous une toiture fatiguée, ou vérifier la structure lors d'une rénovation de couverture. Parce que ces travaux touchent à la solidité de l'ouvrage, ils relèvent de la garantie décennale.",
+        ],
+      },
+    ],
+    tarifs: {
+      title: "Prix des travaux de charpente en 2026",
+      rows: [
+        {
+          label: "Traitement de charpente (insectes, champignons)",
+          fourchette: "15 à 40 €",
+          unite: "par m²",
+        },
+        {
+          label: "Réparation ou renfort ponctuel",
+          fourchette: "500 à 2 000 €",
+          unite: "selon ampleur",
+        },
+        { label: "Remplacement de charpente", fourchette: "sur devis", unite: "" },
+      ],
+      facteurs: [
+        "Ampleur de l'atteinte et nombre de pièces concernées",
+        "Type d'intervention (traitement, renfort ou remplacement)",
+        "Accessibilité de la charpente et des combles",
+        "Essence et section des bois à reprendre",
+      ],
+      disclaimer:
+        "Fourchettes indicatives du marché en 2026. L'état d'une charpente ne se juge qu'après examen : le prix exact est établi après diagnostic sur place, sans engagement.",
+    },
+    faq: [
+      {
+        question: "Comment savoir si ma charpente est attaquée par des insectes ?",
+        answer:
+          "Les signes classiques sont la sciure fine au pied des poutres, de petits trous ronds à la surface du bois et des galeries visibles en grattant. Un bois qui sonne creux ou s'effrite sous une pointe est déjà atteint en profondeur. Au moindre doute, un diagnostic sur place lève l'incertitude.",
+      },
+      {
+        question: "Le traitement de charpente est-il vraiment nécessaire ?",
+        answer:
+          "Oui dès qu'une attaque est constatée : un bois laissé sans traitement continue de se creuser jusqu'à perdre sa résistance. En préventif, le traitement protège un bois sain pour de longues années, notamment lors d'une rénovation de toiture. C'est une dépense modeste face au coût d'un remplacement de charpente.",
+      },
+      {
+        question: "Faut-il remplacer toute la charpente ou peut-on réparer ?",
+        answer:
+          "La réparation ou le renfort suffit dans la majorité des cas : on soulage une pièce fléchie, on remplace un about de poutre atteint sans toucher au reste. Le remplacement complet ne s'impose que lorsque le bois est trop dégradé. Le diagnostic mesure l'étendue réelle de l'atteinte avant de décider.",
+      },
+      {
+        question: "Les travaux de charpente sont-ils couverts par la garantie décennale ?",
+        answer:
+          "Oui. La charpente touche à la solidité de l'ouvrage : les travaux de réparation, de renfort ou de remplacement relèvent de la garantie décennale pendant dix ans, en plus de notre responsabilité civile professionnelle. L'attestation d'assurance est fournie avec le devis.",
+      },
+      {
+        question: "Qu'est-ce que la mérule et faut-il s'en inquiéter ?",
+        answer:
+          "La mérule est un champignon qui se développe sur un bois humide et mal ventilé. Elle se propage vite et fragilise la charpente en profondeur, parfois sans signe visible au début. Sa présence impose un traitement et surtout la suppression de la source d'humidité. Prise tôt, elle se traite ; ignorée, elle peut condamner une charpente entière.",
+      },
+    ],
+    linkedArticles: [],
+    icon: "carpenter",
+    ancre: "travaux de charpente",
+  },
 ] as const;
 
 export function getPrestation(slug: PrestationSlug): Prestation {
