@@ -61,7 +61,7 @@ describe("redirections 301", () => {
 });
 
 describe("registre de routes", () => {
-  it("contient les 31 pages attendues (16 pages + 15 articles)", () => {
-    expect(getAllRoutes()).toHaveLength(31);
+  it("contient les 33 pages attendues (18 pages + 15 articles)", () => {
+    expect(getAllRoutes()).toHaveLength(33);
   });
 });
