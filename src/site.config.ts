@@ -20,16 +20,19 @@ export const siteConfig = {
   phone: "07 49 10 06 56",
   phoneHref: "tel:+33749100656",
   phoneInternational: "+33749100656",
-  email: "contact@jcd-renovation.com",
+  email: "contact@jcd-renovation.fr",
 
-  /** Adresse légale (mentions légales de l'ancien site, à faire confirmer). */
+  /** Adresse réelle confirmée par le client (siège à Villemandeur). */
   address: {
-    street: "815 route de St Maurice",
-    postalCode: "45230",
-    city: "La Chapelle-sur-Aveyron",
+    street: "3 bis rue des Plantes",
+    postalCode: "45700",
+    city: "Villemandeur",
     region: "Centre-Val de Loire",
     country: "FR",
   },
+
+  /** Horaires d'ouverture confirmés par le client. */
+  openingHours: "Du lundi au samedi, 8h30 à 19h",
 
   /** Ville principale de la stratégie SEO (H1, Google Business Profile). */
   mainCity: "Villemandeur",
@@ -56,7 +59,7 @@ export const siteConfig = {
    * agences précédentes) et DOIVENT être confirmées avant mise en ligne.
    */
   stats: [
-    { value: "14 ans", label: "d'expérience en couverture", validatedByClient: false },
+    { value: "14 ans", label: "d'expérience en couverture", validatedByClient: true },
     { value: "24-48 h", label: "pour recevoir votre devis gratuit", validatedByClient: true },
     { value: "10 ans", label: "de garantie décennale", validatedByClient: true },
   ],
@@ -83,14 +86,9 @@ export type SiteConfig = typeof siteConfig;
  * Repris et détaillés dans A-VALIDER-CLIENT.md à la racine.
  */
 export const CLIENT_TODOS: readonly string[] = [
-  "Confirmer les années d'expérience réelles (l'ancien site affichait « 14 ans », non vérifié)",
-  "Confirmer l'adresse à afficher et l'adresse du futur Google Business Profile (adresse légale actuelle : La Chapelle-sur-Aveyron, stratégie SEO centrée Villemandeur)",
-  "Confirmer l'email de réception des devis (contact@jcd-renovation.com ou créer contact@jcd-renovation.fr)",
-  "Certifications : le client dispose-t-il de RGE / Qualibat ? (des concurrents locaux les affichent, ne rien afficher sans justificatif)",
-  "Note Google réelle si un profil existe (sinon en créer un, voir DEPLOIEMENT.md)",
-  "Nouvelles photos démoussage / zinguerie / recherche de fuite annoncées par le client",
-  "Réseaux sociaux réels (Facebook/Instagram) ou confirmation qu'il n'y en a pas",
-  "Horaires d'ouverture à afficher (non renseignés sur les anciens sites)",
-  "Confirmer l'abandon définitif des zones historiques (Orléans, Nemours, Sully-sur-Loire, Sens) : redirections 301 en place",
-  "L'avis client de « Julio » mentionne la taille de haies/élagage (ancienne activité espaces verts) : le conserver ?",
+  "Créer la boîte email contact@jcd-renovation.fr (hébergeur du domaine) et vérifier le domaine dans Resend, voir DEPLOIEMENT.md",
+  "Créer/valider la fiche Google Business Profile à l'adresse 3 bis rue des Plantes, 45700 Villemandeur (justificatif de domicile disponible)",
+  "Récupérer et intégrer le book photos complet envoyé par le client (démoussage, zinguerie, recherche de fuite, peinture, charpente)",
+  "Note Google réelle une fois la fiche créée et les premiers avis obtenus (sinon aucune note affichée)",
+  "Attestations décennale + RC pro à jour à tenir prêtes (fournies avec les devis)",
 ] as const;

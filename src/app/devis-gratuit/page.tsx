@@ -150,7 +150,7 @@ export default function DevisGratuitPage() {
 
               <Card variant="white">
                 <PhoneLink withLabel />
-                <p className="mt-4 text-sm">Du lundi au samedi</p>
+                <p className="mt-4 text-sm">{siteConfig.openingHours}</p>
                 <p className="mt-1 text-sm font-medium text-navy">
                   Urgence fuite&nbsp;: appelez directement.
                 </p>

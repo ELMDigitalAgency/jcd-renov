@@ -55,10 +55,4 @@ export const avisClients: readonly Avis[] = [
     rating: 5,
     source: "Site jcd-renovation.fr",
   },
-  {
-    author: "Julio",
-    text: "Rdv rapide, travaux extérieurs (taille haies, élagage...) exécutés soigneusement, laisse votre terrain propre en partant, grande confiance en cette société, patron à l'écoute de vos besoins et il donne de bons conseils sans pousser à la consommation. Les prix sont abordables pour les prestations. Sérieux.",
-    rating: 5,
-    source: "Site jcd-renovation.fr",
-  },
 ] as const;

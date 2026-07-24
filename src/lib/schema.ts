@@ -46,6 +46,12 @@ export function roofingContractorSchema(): WithContext<RoofingContractor> {
       availableLanguage: "French",
       areaServed: "FR",
     },
+    openingHoursSpecification: {
+      "@type": "OpeningHoursSpecification",
+      dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+      opens: "08:30",
+      closes: "19:00",
+    },
     priceRange: "€€",
     image: `${siteConfig.url}/images/logo-jcd-renovation.png`,
   };
