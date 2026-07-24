@@ -1,16 +1,11 @@
-import { Resend } from "resend";
+import nodemailer from "nodemailer";
 import { z } from "zod";
 
 import { devisSchema, type DevisInput } from "@/lib/devis-schema";
+import { getClientIp, rateLimit } from "@/lib/rate-limit";
 
 export const runtime = "nodejs";
 export const preferredRegion = ["cdg1"];
-
-/**
- * Expéditeur — le domaine jcdrenovation.fr doit être vérifié dans Resend
- * (DNS SPF + DKIM) avant la mise en production, cf. DEPLOIEMENT.md.
- */
-const FROM = "JCD Rénovation <devis@jcdrenovation.fr>";
 
 /** Limite serveur pour la photo (la limite body Vercel serverless est de 4,5 Mo). */
 const MAX_PHOTO_BYTES = 4_000_000;
@@ -70,7 +65,32 @@ function buildHtml(data: DevisInput, hasPhoto: boolean): string {
   );
 }
 
+/** Configuration SMTP lue depuis l'environnement (jamais en dur dans le code). */
+function readSmtpConfig() {
+  const host = process.env.SMTP_HOST;
+  const user = process.env.SMTP_USER;
+  const pass = process.env.SMTP_PASSWORD;
+  const to = process.env.CONTACT_EMAIL_TO;
+  const from = process.env.MAIL_FROM ?? user;
+  if (!host || !user || !pass || !to || !from) return null;
+  return {
+    host,
+    port: Number(process.env.SMTP_PORT ?? 465),
+    secure: process.env.SMTP_SECURE !== "false", // 465 = SSL par défaut
+    user,
+    pass,
+    to,
+    from,
+    fromName: process.env.MAIL_FROM_NAME ?? "JCD Rénovation",
+  };
+}
+
 export async function POST(request: Request): Promise<Response> {
+  // Anti-spam 0 — limite de débit par IP (best-effort, défense en profondeur).
+  if (!rateLimit(getClientIp(request))) {
+    return Response.json({ ok: false, error: "rate" }, { status: 429 });
+  }
+
   let formData: FormData;
   try {
     formData = await request.formData();
@@ -120,33 +140,41 @@ export async function POST(request: Request): Promise<Response> {
     };
   }
 
-  const apiKey = process.env.RESEND_API_KEY;
-  const to = process.env.CONTACT_EMAIL_TO;
-  if (!apiKey || !to) {
+  const smtp = readSmtpConfig();
+  if (!smtp) {
     if (process.env.NODE_ENV !== "production") {
-      console.warn("[api/devis] RESEND_API_KEY ou CONTACT_EMAIL_TO absente — envoi simulé (dev).");
+      console.warn("[api/devis] Configuration SMTP absente — envoi simulé (dev).");
       return Response.json({ ok: true, simulated: true });
     }
     return Response.json({ ok: false }, { status: 500 });
   }
 
   try {
-    const resend = new Resend(apiKey);
-    const { error } = await resend.emails.send({
-      from: FROM,
-      to,
-      replyTo: parsed.data.email,
+    const transporter = nodemailer.createTransport({
+      host: smtp.host,
+      port: smtp.port,
+      secure: smtp.secure,
+      auth: { user: smtp.user, pass: smtp.pass },
+      // Délais courts pour ne pas laisser la fonction serverless pendre.
+      connectionTimeout: 10_000,
+      greetingTimeout: 10_000,
+      socketTimeout: 15_000,
+    });
+
+    await transporter.sendMail({
+      // From = compte SMTP authentifié (IONOS l'exige) ; réponses vers le visiteur.
+      from: `"${smtp.fromName}" <${smtp.from}>`,
+      to: smtp.to,
+      replyTo: `"${parsed.data.nom}" <${parsed.data.email}>`,
       subject: `Nouvelle demande de devis : ${parsed.data.prestation} (${parsed.data.ville})`,
       text: buildText(parsed.data, attachment !== null),
       html: buildHtml(parsed.data, attachment !== null),
       ...(attachment ? { attachments: [attachment] } : {}),
     });
-    if (error) {
-      return Response.json({ ok: false }, { status: 502 });
-    }
+
     return Response.json({ ok: true });
   } catch {
-    // Jamais de détail d'erreur Resend renvoyé au client (pas de fuite d'infos).
+    // Jamais de détail d'erreur SMTP renvoyé au client (pas de fuite d'infos).
     return Response.json({ ok: false }, { status: 502 });
   }
 }

@@ -5,8 +5,8 @@ import { devisSchema } from "@/lib/devis-schema";
 
 /**
  * Tests de la route POST /api/devis : anti-spam silencieux, validation Zod,
- * limites photo, configuration Resend. L'environnement node (pragma ci-dessus)
- * garantit des Request/FormData/File natifs undici, sans interop jsdom.
+ * limites photo, envoi SMTP (Nodemailer mocké). L'environnement node (pragma
+ * ci-dessus) garantit des Request/FormData/File natifs undici, sans interop jsdom.
  */
 
 type SendPayload = {
@@ -19,16 +19,12 @@ type SendPayload = {
   attachments?: { filename: string; content: Buffer }[];
 };
 
-type SendResult = { data: { id: string } | null; error: { message: string } | null };
-
-const { sendMock } = vi.hoisted(() => ({
-  sendMock: vi.fn<(payload: SendPayload) => Promise<SendResult>>(),
+const { sendMailMock } = vi.hoisted(() => ({
+  sendMailMock: vi.fn<(payload: SendPayload) => Promise<{ messageId: string }>>(),
 }));
 
-vi.mock("resend", () => ({
-  Resend: class {
-    emails = { send: sendMock };
-  },
+vi.mock("nodemailer", () => ({
+  default: { createTransport: () => ({ sendMail: sendMailMock }) },
 }));
 
 // Import APRÈS le vi.mock (hoisté) pour que la route reçoive le mock.
@@ -67,16 +63,26 @@ function buildFormData(overrides: Partial<Record<string, string | File>> = {}): 
   return formData;
 }
 
+// IP unique par requête : chaque test a son propre compteur de rate-limit.
+let ipCounter = 0;
 function makeRequest(formData: FormData): Request {
-  return new Request("http://localhost/api/devis", { method: "POST", body: formData });
+  ipCounter += 1;
+  return new Request("http://localhost/api/devis", {
+    method: "POST",
+    body: formData,
+    headers: { "x-forwarded-for": `10.0.0.${ipCounter}` },
+  });
 }
 
 describe("POST /api/devis", () => {
   beforeEach(() => {
-    vi.stubEnv("RESEND_API_KEY", "re_test_key");
-    vi.stubEnv("CONTACT_EMAIL_TO", "contact@jcd-renovation.com");
-    sendMock.mockReset();
-    sendMock.mockResolvedValue({ data: { id: "email_test" }, error: null });
+    vi.stubEnv("SMTP_HOST", "smtp.test");
+    vi.stubEnv("SMTP_USER", "relay@example.com");
+    vi.stubEnv("SMTP_PASSWORD", "secret");
+    vi.stubEnv("MAIL_FROM", "relay@example.com");
+    vi.stubEnv("CONTACT_EMAIL_TO", "client@example.com");
+    sendMailMock.mockReset();
+    sendMailMock.mockResolvedValue({ messageId: "test-id" });
   });
 
   afterEach(() => {
@@ -89,11 +95,12 @@ describe("POST /api/devis", () => {
 
     expect(response.status).toBe(200);
     expect(body.ok).toBe(true);
-    expect(sendMock).toHaveBeenCalledTimes(1);
+    expect(sendMailMock).toHaveBeenCalledTimes(1);
 
-    const payload = sendMock.mock.calls[0]?.[0];
+    const payload = sendMailMock.mock.calls[0]?.[0];
     expect(payload?.subject).toBe("Nouvelle demande de devis : Démoussage (Villemandeur)");
-    expect(payload?.replyTo).toBe("jean.dupont@example.com");
+    expect(payload?.replyTo).toContain("jean.dupont@example.com");
+    expect(payload?.to).toBe("client@example.com");
     expect(payload?.attachments).toBeUndefined();
   });
 
@@ -103,7 +110,7 @@ describe("POST /api/devis", () => {
 
     expect(response.status).toBe(200);
     expect(body.ok).toBe(true);
-    expect(sendMock).not.toHaveBeenCalled();
+    expect(sendMailMock).not.toHaveBeenCalled();
   });
 
   it("soumission trop rapide (< 3 s) → 200 silencieux, aucun email envoyé", async () => {
@@ -112,7 +119,7 @@ describe("POST /api/devis", () => {
 
     expect(response.status).toBe(200);
     expect(body.ok).toBe(true);
-    expect(sendMock).not.toHaveBeenCalled();
+    expect(sendMailMock).not.toHaveBeenCalled();
   });
 
   it("timestamp absent → 200 silencieux, aucun email envoyé", async () => {
@@ -121,7 +128,7 @@ describe("POST /api/devis", () => {
     const response = await POST(makeRequest(formData));
 
     expect(response.status).toBe(200);
-    expect(sendMock).not.toHaveBeenCalled();
+    expect(sendMailMock).not.toHaveBeenCalled();
   });
 
   it("email invalide → 400 avec l'erreur du champ", async () => {
@@ -131,7 +138,7 @@ describe("POST /api/devis", () => {
     expect(response.status).toBe(400);
     expect(body.ok).toBe(false);
     expect(body.errors?.email).toBeDefined();
-    expect(sendMock).not.toHaveBeenCalled();
+    expect(sendMailMock).not.toHaveBeenCalled();
   });
 
   it("message trop court → 400", async () => {
@@ -140,7 +147,7 @@ describe("POST /api/devis", () => {
 
     expect(response.status).toBe(400);
     expect(body.errors?.message).toBeDefined();
-    expect(sendMock).not.toHaveBeenCalled();
+    expect(sendMailMock).not.toHaveBeenCalled();
   });
 
   it("photo de plus de 4 Mo → 413", async () => {
@@ -152,7 +159,7 @@ describe("POST /api/devis", () => {
 
     expect(response.status).toBe(413);
     expect(body).toEqual({ ok: false, error: "photo" });
-    expect(sendMock).not.toHaveBeenCalled();
+    expect(sendMailMock).not.toHaveBeenCalled();
   });
 
   it("photo valide → jointe en attachment", async () => {
@@ -160,13 +167,13 @@ describe("POST /api/devis", () => {
     const response = await POST(makeRequest(buildFormData({ photo })));
 
     expect(response.status).toBe(200);
-    const payload = sendMock.mock.calls[0]?.[0];
+    const payload = sendMailMock.mock.calls[0]?.[0];
     expect(payload?.attachments).toHaveLength(1);
     expect(payload?.attachments?.[0]?.filename).toBe("gouttiere.jpg");
   });
 
-  it("RESEND_API_KEY absente en production → 500", async () => {
-    vi.stubEnv("RESEND_API_KEY", "");
+  it("configuration SMTP absente en production → 500", async () => {
+    vi.stubEnv("SMTP_HOST", "");
     vi.stubEnv("NODE_ENV", "production");
 
     const response = await POST(makeRequest(buildFormData()));
@@ -174,11 +181,11 @@ describe("POST /api/devis", () => {
 
     expect(response.status).toBe(500);
     expect(body.ok).toBe(false);
-    expect(sendMock).not.toHaveBeenCalled();
+    expect(sendMailMock).not.toHaveBeenCalled();
   });
 
-  it("erreur Resend → 502 sans détail sensible", async () => {
-    sendMock.mockResolvedValue({ data: null, error: { message: "API down" } });
+  it("erreur SMTP → 502 sans détail sensible", async () => {
+    sendMailMock.mockRejectedValue(new Error("SMTP down"));
 
     const response = await POST(makeRequest(buildFormData()));
     const body = (await response.json()) as ApiResponse;
@@ -209,7 +216,7 @@ describe("devisSchema — formats de téléphone", () => {
     expect(devisSchema.safeParse({ ...base, telephone }).success).toBe(false);
   });
 
-  it("accepte le consentement en string \"true\" (FormData) mais pas false", () => {
+  it('accepte le consentement en string "true" (FormData) mais pas false', () => {
     const valid = { ...base, telephone: "06 12 34 56 78" };
     expect(devisSchema.safeParse({ ...valid, consentement: "true" }).success).toBe(true);
     expect(devisSchema.safeParse({ ...valid, consentement: false }).success).toBe(false);
