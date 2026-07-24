@@ -2,7 +2,6 @@ import ArrowForwardRoundedIcon from "@mui/icons-material/ArrowForwardRounded";
 import Image from "next/image";
 import Link from "next/link";
 
-import { BrandLogo } from "@/components/ui/BrandLogo";
 import { Card } from "@/components/ui/Card";
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
@@ -39,6 +38,9 @@ export function ServicesBento() {
   const demoussage = getPrestation("demoussage-toiture-villemandeur");
   const zinguerie = getPrestation("zinguerie-villemandeur");
   const fuite = getPrestation("recherche-de-fuite-toiture-villemandeur");
+  const couverture = getPrestation("couvreur-villemandeur");
+  const peinture = getPrestation("peinture-villemandeur");
+  const charpente = getPrestation("charpente-villemandeur");
 
   return (
     <section aria-label="Nos prestations" className="bg-cream">
@@ -76,10 +78,20 @@ export function ServicesBento() {
             </Card>
           </Link>
 
-          {/* 2 — Logo officiel JCD Rénovation */}
-          <Card className="flex h-full items-center justify-center">
-            <BrandLogo size={176} className="size-36 sm:size-44" />
-          </Card>
+          {/* 2 — Couverture */}
+          <Link href={`/${couverture.slug}`} className="group block">
+            <Card
+              variant="white"
+              className="flex h-full flex-col gap-4 transition-transform duration-300 group-hover:-translate-y-1"
+            >
+              <IconBadge icon={couverture.icon} />
+              <h3 className="font-heading text-xl font-bold text-navy">Couverture</h3>
+              <p className="text-sm leading-relaxed">
+                Pose, rénovation et réparation de toiture, en tuile comme en ardoise.
+              </p>
+              <CardLinkLabel>Voir la couverture de toiture</CardLinkLabel>
+            </Card>
+          </Link>
 
           {/* 3 — Zinguerie (lavender) */}
           <Link
@@ -100,12 +112,21 @@ export function ServicesBento() {
             </Card>
           </Link>
 
-          {/* 4 — Garantie décennale */}
-          <Card className="flex h-full flex-col gap-4">
-            <IconBadge icon="shield" />
-            <h3 className="font-heading text-xl font-bold text-navy">Garantie décennale</h3>
-            <p className="text-sm leading-relaxed">10 ans sur tous nos travaux de couverture.</p>
-          </Card>
+          {/* 4 — Peinture */}
+          <Link href={`/${peinture.slug}`} className="group block">
+            <Card
+              variant="white"
+              className="flex h-full flex-col gap-4 transition-transform duration-300 group-hover:-translate-y-1"
+            >
+              <IconBadge icon={peinture.icon} />
+              <h3 className="font-heading text-xl font-bold text-navy">Peinture &amp; façade</h3>
+              <p className="text-sm leading-relaxed">
+                Ravalement de façade et peinture intérieure, préparation soignée et finitions
+                nettes.
+              </p>
+              <CardLinkLabel>Voir la peinture et le ravalement</CardLinkLabel>
+            </Card>
+          </Link>
 
           {/* 5 — Recherche de fuite (orange, large, photo portrait) */}
           <Link
@@ -137,16 +158,31 @@ export function ServicesBento() {
             </Card>
           </Link>
 
-          {/* 6 — Contact */}
-          <Link
-            href="/devis-gratuit"
-            className="group block"
-          >
-            <Card className="flex h-full flex-col justify-between gap-6 transition-transform duration-300 group-hover:-translate-y-1">
-              <h3 className="font-heading text-xl font-bold text-navy">
+          {/* 6 — Charpente */}
+          <Link href={`/${charpente.slug}`} className="group block">
+            <Card
+              variant="white"
+              className="flex h-full flex-col gap-4 transition-transform duration-300 group-hover:-translate-y-1"
+            >
+              <IconBadge icon={charpente.icon} />
+              <h3 className="font-heading text-xl font-bold text-navy">Charpente</h3>
+              <p className="text-sm leading-relaxed">
+                Diagnostic, réparation, renfort et traitement du bois de charpente.
+              </p>
+              <CardLinkLabel>Voir les travaux de charpente</CardLinkLabel>
+            </Card>
+          </Link>
+
+          {/* 7 — Contact */}
+          <Link href="/devis-gratuit" className="group block">
+            <Card
+              variant="navy"
+              className="flex h-full flex-col justify-between gap-6 transition-transform duration-300 group-hover:-translate-y-1"
+            >
+              <h3 className="font-heading text-xl font-bold text-white">
                 Une question ?<span className="block">Contactez-nous</span>
               </h3>
-              <span className="inline-flex size-12 items-center justify-center rounded-full bg-navy text-white transition-colors group-hover:bg-primary">
+              <span className="inline-flex size-12 items-center justify-center rounded-full bg-primary text-white">
                 <ArrowForwardRoundedIcon fontSize="inherit" className="text-[20px]" aria-hidden />
               </span>
             </Card>

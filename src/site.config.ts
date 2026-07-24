@@ -15,7 +15,7 @@ export const siteConfig = {
   /** Baseline courte (footer, OG par défaut). */
   tagline: "Couvreur & zingueur à Villemandeur (45700)",
   description:
-    "JCD Rénovation, couvreur et zingueur qualifié à Villemandeur : démoussage, zinguerie, recherche de fuite. Devis gratuit sous 24-48h.",
+    "JCD Rénovation, couvreur zingueur à Villemandeur : couverture, charpente, démoussage, zinguerie, recherche de fuite, peinture. Loiret, Yonne, Seine-et-Marne. Devis gratuit.",
 
   phone: "07 49 10 06 56",
   phoneHref: "tel:+33749100656",

@@ -1,5 +1,29 @@
 # À valider avec le client avant mise en ligne
 
+> **Mise à jour (réponses client reçues)** : infos intégrées au site.
+> - 14 ans d'expérience ✅ confirmé et affiché
+> - Adresse **3 bis rue des Plantes, 45700 Villemandeur** ✅ (NAP + mentions légales + fiche Google)
+> - Email de réception des devis → **contact@jcd-renovation.fr** (à créer chez l'hébergeur du domaine + vérifier dans Resend)
+> - Aucune certification RGE/Qualibat → rien affiché ✅
+> - Décennale + RC pro à jour ✅
+> - Horaires **lun-sam 8h30-19h** ✅ affichés
+> - Avis « Julio » (élagage) → **retiré** ✅ (activité espaces verts abandonnée)
+> - Métiers : ajout de **Peinture** et **Charpente** → 2 nouvelles pages complètes ✅
+> - Zone élargie aux départements **45 / 89 / 77** ✅ (Villemandeur/Montargis restent le cœur SEO)
+> - Book photos : **à recevoir du client** puis à intégrer (remplacer les photos hero peinture/charpente actuelles, reprises de chantiers existants)
+> - Réseaux sociaux : aucun compte ✅
+
+## Reste à faire (client / mise en ligne)
+
+1. Créer la boîte **contact@jcd-renovation.fr** et la vérifier dans Resend (SPF/DKIM).
+2. Créer la **fiche Google Business Profile** au 3 bis rue des Plantes, 45700 Villemandeur.
+3. Envoyer le **book photos** (démoussage, zinguerie, fuite, peinture, charpente) pour remplacer les visuels provisoires des 2 nouvelles pages.
+4. Tenir prêtes les **attestations décennale + RC pro** (fournies avec les devis).
+
+---
+
+## Historique (points d'origine, conservés pour mémoire)
+
 > Règle suivie pendant toute la refonte (cahier des charges §8) : **rien n'a été
 > inventé**. Chaque élément ci-dessous est soit un placeholder à confirmer, soit
 > une donnée reprise de l'ancien site à faire valider. Fichier de référence

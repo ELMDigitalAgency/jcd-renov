@@ -20,6 +20,7 @@ const routes = new Set([
   "/blog", "/devis-gratuit", "/mentions-legales", "/politique-de-confidentialite",
   "/demoussage-toiture-villemandeur", "/recherche-de-fuite-toiture-villemandeur",
   "/zinguerie-villemandeur", "/couvreur-villemandeur",
+  "/peinture-villemandeur", "/charpente-villemandeur",
   "/couvreur-zingueur-montargis", "/couvreur-amilly", "/couvreur-chalette-sur-loing",
 ]);
 const blogDir = path.join(ROOT, "src", "content", "blog");
@@ -38,7 +39,7 @@ const expectedTitles = {
   "couvreur-zingueur-montargis.html": "Couvreur Zingueur à Montargis | JCD Rénovation",
   "couvreur-amilly.html": "Couvreur à Amilly | JCD Rénovation",
   "couvreur-chalette-sur-loing.html": "Couvreur à Chalette-sur-Loing | JCD Rénovation",
-  "zone-intervention.html": "Zone d'Intervention | JCD Rénovation Villemandeur",
+  "zone-intervention.html": "Zone d'Intervention : Loiret, Yonne, Seine-et-Marne | JCD Rénovation",
   "realisations.html": "Nos Réalisations : Toitures & Zinguerie | JCD Rénovation",
   "avis-clients.html": "Avis Clients JCD Rénovation | Couvreur Villemandeur",
   "a-propos.html": "À Propos de JCD Rénovation | Couvreur Villemandeur",
