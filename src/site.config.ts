@@ -20,7 +20,7 @@ export const siteConfig = {
   phone: "07 49 10 06 56",
   phoneHref: "tel:+33749100656",
   phoneInternational: "+33749100656",
-  email: "contact@jcdrenovation.fr",
+  email: "jcdtoiture@gmail.com",
 
   /** Adresse réelle confirmée par le client (siège à Villemandeur). */
   address: {
@@ -95,7 +95,7 @@ export type SiteConfig = typeof siteConfig;
  * Repris et détaillés dans A-VALIDER-CLIENT.md à la racine.
  */
 export const CLIENT_TODOS: readonly string[] = [
-  "Créer la boîte email contact@jcdrenovation.fr (hébergeur du domaine) et vérifier le domaine dans Resend, voir DEPLOIEMENT.md",
+"Devis livrés sur jcdtoiture@gmail.com via relais SMTP IONOS (ELM) : penser à changer le mot de passe SMTP partagé et surveiller le dossier spam Gmail au début",
   "Créer/valider la fiche Google Business Profile à l'adresse 3 bis rue des Plantes, 45700 Villemandeur (justificatif de domicile disponible)",
   "Récupérer et intégrer le book photos complet envoyé par le client (démoussage, zinguerie, recherche de fuite, peinture, charpente)",
   "Note Google réelle une fois la fiche créée et les premiers avis obtenus (sinon aucune note affichée)",
