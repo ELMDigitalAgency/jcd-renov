@@ -285,6 +285,208 @@ export const villes: readonly Ville[] = [
       },
     ],
   },
+  {
+    slug: "couvreur-gien",
+    name: "Gien",
+    cp: "45500",
+    h1: "Couvreur à Gien",
+    metaTitle: "Couvreur à Gien (45500) - JCD Rénovation",
+    metaDescription:
+      "Couvreur à Gien : couverture, zinguerie, démoussage, recherche de fuite. Garantie décennale. Devis gratuit. Intervention Loiret.",
+    enBref:
+      "JCD Rénovation intervient à Gien (45500) pour tous vos travaux de toiture : couverture, zinguerie, démoussage, recherche de fuite, charpente et ravalement. Artisan du Loiret, devis gratuit sous 24-48 h, travaux couverts par la garantie décennale.",
+    intro: [
+      "Reconstruite après les bombardements de 1940, Gien présente un bâti d'une homogénéité rare dans le Loiret : le centre a été relevé dans les années 1940-1950 selon un plan d'ensemble, avec ses briques rouges et noires caractéristiques et ses toitures en ardoise à forte pente. Autour de ce cœur reconstruit s'étendent des quartiers pavillonnaires plus récents, en tuile mécanique, et les hameaux des coteaux qui dominent la Loire.",
+      "Ces deux mondes n'appellent pas les mêmes gestes. L'ardoise du centre demande un travail au crochet, un contrôle régulier des fixations et une vigilance particulière sur les rives et les souches de cheminée. Les pavillons de périphérie relèvent, eux, d'un entretien plus classique : démoussage, reprise de faîtage, remplacement de gouttières. Nous intervenons sur les deux, depuis notre base de Villemandeur.",
+    ],
+    sections: [
+      {
+        title: "Toitures en ardoise du centre reconstruit : ce qu'elles réclament",
+        paragraphs: [
+          "Les toitures du centre de Gien relevées après-guerre ont aujourd'hui soixante-dix à quatre-vingts ans. L'ardoise naturelle, elle, vieillit remarquablement bien : c'est rarement le matériau qui lâche en premier, mais ses fixations. Les crochets et les clous se corrodent, l'ardoise glisse, et une seule pièce déchaussée ouvre un passage à l'eau. Le contrôle porte donc d'abord sur les fixations et sur les zones où le vent s'engouffre : rives, égouts, arêtiers.",
+          "Le second point de vigilance concerne les souches de cheminée et les lucarnes, nombreuses sur ce bâti. Les solins qui raccordent l'ardoise à la maçonnerie subissent des dilatations différentielles saison après saison ; le mortier se fissure, l'eau s'infiltre le long du conduit et ressort parfois plusieurs mètres plus loin, dans une chambre à l'étage. Reprendre un solin est une intervention courte, sans commune mesure avec les dégâts qu'elle évite.",
+          "Sur ces couvertures, nous remplaçons à l'identique : une ardoise naturelle de format et d'épaisseur comparables, jamais un panneau imitation qui trahirait l'ensemble. C'est plus long, cela coûte un peu plus cher à la pièce, mais c'est la seule façon de conserver la cohérence d'un centre-ville reconstruit d'un seul tenant — et souvent, la seule que le règlement d'urbanisme autorise.",
+        ],
+        bullets: [
+          "Fixations corrodées : première cause de désordre sur une couverture ardoise ancienne",
+          "Solins de cheminée et lucarnes : contrôle prioritaire, réfection rapide",
+          "Remplacement à l'identique en ardoise naturelle, jamais en imitation",
+          "Fortes pentes : intervention sur échafaudage sécurisé systématique",
+        ],
+      },
+      {
+        title: "Vents de Loire et exposition : pourquoi les toits giennois souffrent",
+        paragraphs: [
+          "Gien s'étire le long de la Loire, dans un couloir où le vent s'engouffre sans obstacle. Les maisons du quai et celles des coteaux exposées à l'ouest encaissent des rafales que les communes abritées du Gâtinais ne connaissent pas. Sur une couverture, cela se traduit par des tuiles ou des ardoises soulevées, des faîtages descellés et des rives arrachées — des désordres qui apparaissent brutalement après un coup de vent, pas progressivement.",
+          "Ce contexte justifie deux réflexes. Le premier : faire contrôler la toiture après chaque épisode venteux marqué, même sans dégât visible depuis le sol. Une tuile déplacée de quelques centimètres ne se voit pas d'en bas mais laisse entrer l'eau à chaque pluie, pendant des mois. Le second : privilégier, lors d'une réfection, les fixations mécaniques renforcées en rives et en faîtage plutôt qu'un simple scellement au mortier.",
+          "L'humidité de la vallée joue le rôle inverse, plus lent mais tout aussi réel : elle entretient mousses et lichens sur les pans nord et sur les couvertures ombragées par les coteaux boisés. Dans ces situations, un démoussage avec traitement préventif tous les cinq à sept ans suffit généralement à maintenir la couverture saine.",
+        ],
+      },
+      {
+        title: "Rénover une toiture à Gien : les règles à connaître avant de commencer",
+        paragraphs: [
+          "Le centre reconstruit de Gien fait l'objet d'une attention patrimoniale particulière, et le château qui domine la ville place une partie du bâti dans le périmètre de protection d'un monument historique. Concrètement, une réfection de toiture peut y être soumise à l'avis de l'Architecte des Bâtiments de France, en plus de la déclaration préalable de travaux exigée dans tous les cas dès lors que l'aspect extérieur est modifié.",
+          "Ces contraintes portent le plus souvent sur le matériau et sa teinte : conserver l'ardoise là où elle existe, respecter un format, éviter les finitions trop brillantes. Elles ne sont pas un obstacle, mais elles allongent l'instruction et doivent être anticipées : déposer le dossier après avoir commandé les matériaux est le meilleur moyen de bloquer un chantier. Le service urbanisme de la mairie de Gien est la seule source fiable pour savoir ce qui s'applique à votre adresse.",
+        ],
+        bullets: [
+          "Déclaration préalable exigée même à matériau identique",
+          "Avis de l'ABF possible dans le périmètre du château",
+          "Prescriptions fréquentes sur le matériau et la teinte",
+          "Notre appui : descriptif technique, références matériaux et photos pour le dossier",
+        ],
+      },
+      {
+        title: "Zinguerie et évacuation des eaux sur les coteaux de Gien",
+        paragraphs: [
+          "Les maisons bâties sur les coteaux giennois posent une question que l'on rencontre peu en terrain plat : où va l'eau une fois descendue de la toiture ? Une descente qui déverse au pied d'un mur en pente amont sature le terrain et remonte par capillarité dans la maçonnerie. Le désordre se manifeste en bas de mur, à l'intérieur, et l'on cherche longtemps une fuite de toiture qui n'existe pas.",
+          "Nous vérifions donc systématiquement le raccordement des descentes : dauphin en fonte en pied, rejet éloigné de la façade, connexion au réseau lorsqu'elle existe. C'est un point de contrôle rapide qui évite des diagnostics coûteux et des reprises de maçonnerie inutiles.",
+          "Sur le bâti ancien du centre, la configuration change : chéneaux encaissés derrière une corniche, noues entre pans, jonctions en mitoyenneté. Ces ouvrages collectent l'eau de surfaces importantes et la moindre fissure décharge directement dans le bâti, sans signe visible depuis la rue pendant des mois. Leur contrôle régulier reste l'un des entretiens les plus rentables sur ce type de maison.",
+        ],
+      },
+    ],
+    atouts: [
+      {
+        title: "Habitués à l'ardoise",
+        text: "Le centre reconstruit de Gien impose un travail soigné en ardoise naturelle : fixations, rives, solins de cheminée. Nous remplaçons à l'identique.",
+      },
+      {
+        title: "Diagnostic après coup de vent",
+        text: "L'exposition aux vents de Loire déplace tuiles et ardoises. Nous contrôlons la couverture et chiffrons la reprise, sans vous vendre une réfection inutile.",
+      },
+      {
+        title: "Un seul interlocuteur",
+        text: "Vous traitez directement avec l'artisan qui monte sur le toit : devis honnête, chantier suivi de bout en bout, garantie décennale.",
+      },
+    ],
+    faq: [
+      {
+        question: "Intervenez-vous à Gien depuis Villemandeur ?",
+        answer:
+          "Oui. Gien est dans notre zone d'intervention habituelle dans le Loiret, au même titre que Château-Renard ou Nogent-sur-Vernisson. Le diagnostic sur place et le devis restent gratuits ; nous convenons simplement d'un créneau qui permet de grouper le déplacement.",
+      },
+      {
+        question: "Faut-il une autorisation pour refaire une toiture à Gien ?",
+        answer:
+          "Une déclaration préalable de travaux est nécessaire dès lors que l'aspect extérieur change, même à matériau identique. Dans le centre reconstruit et dans le périmètre du château, l'avis de l'Architecte des Bâtiments de France peut s'ajouter et porter sur le matériau et sa teinte. Renseignez-vous auprès du service urbanisme de la mairie avant d'engager quoi que ce soit.",
+      },
+      {
+        question: "Une toiture en ardoise ancienne doit-elle être entièrement refaite ?",
+        answer:
+          "Rarement. L'ardoise naturelle dure souvent un siècle : ce sont ses fixations qui lâchent en premier. Tant que les ardoises restent saines, une reprise des crochets et des zones déchaussées suffit et coûte une fraction d'une réfection complète. Notre diagnostic vous dit lequel des deux cas s'applique, sans vous pousser vers le plus cher.",
+      },
+      {
+        question: "Que faire après un coup de vent à Gien ?",
+        answer:
+          "Ne montez pas sur le toit. Regardez depuis le sol si des tuiles ou des ardoises manquent, se sont déplacées ou sont tombées, et vérifiez les combles à la recherche de traces d'humidité ou de points de lumière. Appelez-nous ensuite : une couverture ouverte prend l'eau à chaque pluie, et nous traitons ces situations en priorité.",
+      },
+      {
+        question: "À quel rythme démousser une toiture à Gien ?",
+        answer:
+          "Tous les cinq à sept ans environ pour une toiture exposée à l'humidité de la vallée ou ombragée par les coteaux boisés. Les pans plein sud, bien ventilés, peuvent attendre davantage. Un contrôle visuel annuel depuis le sol suffit à ajuster ce rythme à votre maison.",
+      },
+    ],
+  },
+  {
+    slug: "couvreur-sens",
+    name: "Sens",
+    cp: "89100",
+    h1: "Couvreur à Sens",
+    metaTitle: "Couvreur à Sens (89100) - JCD Rénovation",
+    metaDescription:
+      "Couvreur à Sens : couverture, zinguerie, démoussage, recherche de fuite. Garantie décennale. Devis gratuit 24-48h. Intervention Yonne.",
+    enBref:
+      "JCD Rénovation intervient à Sens (89100) et dans le nord de l'Yonne pour la couverture, la zinguerie, le démoussage, la recherche de fuite, la charpente et le ravalement de façade. Devis gratuit sous 24-48 h, travaux couverts par la garantie décennale.",
+    intro: [
+      "Première ville de l'Yonne, Sens juxtapose un centre médiéval dense — maisons à pans de bois, toitures à forte pente serrées autour de la cathédrale Saint-Étienne — et de vastes quartiers pavillonnaires développés à partir des années 1960 le long des axes vers Paris et Auxerre. Entre les deux, des faubourgs du XIXe siècle en tuile plate mécanique.",
+      "Nous intervenons sur ces trois types de bâti depuis notre base de l'agglomération Montargoise, dont Sens est voisine par la vallée de l'Yonne. Le cœur ancien demande une approche patrimoniale et une logistique préparée ; les pavillons relèvent d'un entretien plus courant, où le démoussage et la reprise de zinguerie représentent l'essentiel des demandes.",
+    ],
+    sections: [
+      {
+        title: "Le centre ancien de Sens : forte pente, mitoyenneté et accès contraints",
+        paragraphs: [
+          "Autour de la cathédrale, le tissu urbain sénonais est serré : maisons mitoyennes, rues étroites, toitures à forte pente couvertes de tuiles plates ou d'ardoise. Chaque chantier y commence par une question logistique avant même la technique — où poser l'échafaudage, comment monter les matériaux, comment protéger le passage des piétons. Nous repérons ces contraintes lors du diagnostic, parce qu'elles pèsent sur le délai autant que sur le prix.",
+          "La mitoyenneté ajoute une difficulté propre à ce bâti. Une noue commune à deux maisons, un chéneau partagé, un solin appuyé contre le mur du voisin : le désordre naît chez l'un et se manifeste chez l'autre. Nous établissons d'abord l'origine réelle de l'infiltration avant toute intervention, ce qui clarifie les responsabilités de chacun et évite de refaire une couverture qui n'était pas en cause.",
+          "Sur ces toitures anciennes, la règle reste la conservation. Une tuile plate encore dense est remise en œuvre ; seuls les éléments gélifs, fendus ou feuilletés sont remplacés, dans une teinte proche de l'existant. Un remaniement bien mené redonne quinze à vingt ans à une couverture sénonaise pour une fraction du coût d'une réfection totale.",
+        ],
+        bullets: [
+          "Rues étroites : échafaudage et accès préparés avant le chantier",
+          "Noues et chéneaux mitoyens : diagnostic de l'origine avant travaux",
+          "Tuile plate et ardoise : remplacement à l'identique des éléments abîmés",
+          "Fortes pentes du centre médiéval : sécurisation systématique",
+        ],
+      },
+      {
+        title: "Pavillons des années 1960-1980 : l'âge où la toiture se rappelle à vous",
+        paragraphs: [
+          "Les quartiers pavillonnaires qui ceinturent Sens ont aujourd'hui quarante à soixante ans. C'est précisément l'âge charnière d'une couverture en tuile mécanique : les tuiles elles-mêmes tiennent souvent encore, mais les points singuliers fatiguent. Faîtages scellés au mortier qui se descellent, closoirs absents ou dégradés, gouttières en fin de vie, écrans de sous-toiture inexistants sur les constructions les plus anciennes.",
+          "À ce stade, le remaniement est presque toujours la bonne réponse : on dépose, on trie, on remplace les tuiles défectueuses, on reprend le faîtage et la zinguerie, et l'on repose sur un support assaini. Comptez 40 à 70 €/m² selon la surface et la complexité, contre 180 à 280 €/m² pour une réfection complète en tuiles. La différence est suffisamment importante pour justifier un vrai diagnostic avant de trancher.",
+          "Le signal qui doit alerter n'est pas l'âge affiché mais l'état de la tuile : si elle s'effrite sous les doigts, sonne creux ou casse en série au démontage, la terre cuite est devenue poreuse et le remaniement n'a plus de sens. Nous vous le disons franchement — reposer des matériaux en fin de vie ne rend service à personne.",
+        ],
+      },
+      {
+        title: "Démoussage et humidité de la vallée de l'Yonne",
+        paragraphs: [
+          "La vallée de l'Yonne entretient une humidité de l'air qui favorise nettement l'installation des mousses et des lichens, en particulier sur les pans nord et sur les maisons bordées d'arbres. Une couverture colonisée retient l'eau contre la tuile, la maintient humide en permanence et accélère sa porosité ; le gel hivernal fait ensuite éclater la surface des éléments gorgés d'eau.",
+          "Le démoussage se déroule en trois temps : nettoyage adapté au matériau — manuel ou basse pression selon la fragilité, jamais de haute pression sur une tuile ancienne —, traitement anti-mousse curatif, puis hydrofuge lorsque l'état de la couverture le justifie. Comptez 15 à 35 €/m² selon la surface, la pente et l'état de départ. Le nettoyage des gouttières est compris : les mousses délogées ne doivent jamais y stagner.",
+          "Dans ce contexte, un démoussage avec traitement préventif tous les cinq ans environ constitue un bon rythme pour une maison exposée, à espacer si la toiture est bien ventilée et dégagée. Méfiez-vous du démarchage à domicile, fréquent sur ce type de prestation dans l'Yonne : un devis établi sans être monté sur le toit ne vaut rien.",
+        ],
+      },
+      {
+        title: "Travaux de toiture à Sens : démarches et secteur sauvegardé",
+        paragraphs: [
+          "Comme partout, une réfection de toiture modifiant l'aspect extérieur relève de la déclaration préalable de travaux. Sens ajoute une contrainte spécifique : une partie du centre historique se situe dans le périmètre de protection de la cathédrale Saint-Étienne et des monuments qui l'entourent, ce qui déclenche l'avis de l'Architecte des Bâtiments de France.",
+          "Les prescriptions portent alors sur le matériau, son format, sa teinte et parfois sur l'aspect des ouvrages de zinguerie visibles depuis l'espace public. Chaque parcelle est un cas particulier : seul le service urbanisme de la mairie de Sens peut vous indiquer ce qui s'applique chez vous. Cette démarche se fait avant de commander les matériaux, jamais après. Nous préparons de notre côté le volet technique du dossier : descriptif, références et photos de l'existant.",
+        ],
+        bullets: [
+          "Déclaration préalable systématique dès que l'aspect extérieur change",
+          "Avis de l'ABF dans le périmètre de la cathédrale Saint-Étienne",
+          "Prescriptions possibles sur matériau, format, teinte et zinguerie apparente",
+          "Instruction à anticiper : plusieurs semaines avant le démarrage",
+        ],
+      },
+    ],
+    atouts: [
+      {
+        title: "Deux bâtis, deux méthodes",
+        text: "Toitures anciennes à forte pente du centre ou pavillons en tuile mécanique : nous adaptons la technique et les matériaux, jamais l'inverse.",
+      },
+      {
+        title: "Diagnostic avant chiffrage",
+        text: "Remaniement ou réfection complète ? Nous montons sur le toit avant de chiffrer et vous disons franchement ce que votre couverture réclame.",
+      },
+      {
+        title: "Artisan, pas démarcheur",
+        text: "Aucun démarchage à domicile, aucun devis établi depuis le sol. Diagnostic gratuit, devis détaillé sous 24-48 h, garantie décennale.",
+      },
+    ],
+    faq: [
+      {
+        question: "Intervenez-vous à Sens et dans le nord de l'Yonne ?",
+        answer:
+          "Oui. L'Yonne fait partie de nos trois départements d'intervention, avec le Loiret et la Seine-et-Marne. Nous nous déplaçons à Sens (89100) ainsi qu'à Villeneuve-sur-Yonne, Joigny et Charny. Diagnostic sur place et devis restent gratuits.",
+      },
+      {
+        question: "Faut-il une autorisation pour refaire sa toiture à Sens ?",
+        answer:
+          "Une déclaration préalable est nécessaire dès que l'aspect extérieur est modifié, même à matériau identique. Dans le périmètre de protection de la cathédrale Saint-Étienne, l'avis de l'Architecte des Bâtiments de France s'ajoute et peut porter sur le matériau, le format et la teinte. Le service urbanisme de la mairie est la seule source fiable pour votre parcelle.",
+      },
+      {
+        question: "Mon pavillon des années 1970 : remaniement ou réfection complète ?",
+        answer:
+          "Cela dépend de l'état des tuiles, pas de l'âge de la toiture. Si elles restent denses et se démontent sans casser en série, un remaniement (40 à 70 €/m²) redonne quinze à vingt ans à la couverture. Si elles s'effritent ou sonnent creux, la terre cuite est poreuse et la réfection complète (180 à 280 €/m² en tuiles) devient le seul choix raisonnable.",
+      },
+      {
+        question: "À quelle fréquence démousser une toiture à Sens ?",
+        answer:
+          "L'humidité de la vallée de l'Yonne accélère le développement des mousses. Sur une toiture exposée ou ombragée, un démoussage avec traitement préventif tous les cinq ans environ constitue un bon rythme ; une couverture bien ventilée et dégagée peut attendre plus longtemps.",
+      },
+      {
+        question: "Comment reconnaître un devis de démoussage douteux ?",
+        answer:
+          "Trois signaux doivent vous arrêter : un démarchage à domicile non sollicité, un devis établi sans que personne ne soit monté sur le toit, et une pression à signer immédiatement au prétexte d'une offre limitée. Un artisan sérieux monte, constate, chiffre, puis vous laisse le temps de réfléchir — et vous remet son attestation de garantie décennale sans se faire prier.",
+      },
+    ],
+  },
 ] as const;
 
 export function getVille(slug: VilleSlug): Ville {

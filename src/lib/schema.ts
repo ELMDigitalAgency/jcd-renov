@@ -3,10 +3,12 @@ import type {
   BreadcrumbList,
   FAQPage,
   RoofingContractor,
+  Service,
+  WebSite,
   WithContext,
 } from "schema-dts";
 
-import type { FaqItem } from "@/content/types";
+import type { FaqItem, Prestation } from "@/content/types";
 import type { PostMeta } from "@/lib/blog-types";
 import { siteConfig } from "@/site.config";
 
@@ -62,6 +64,68 @@ export function roofingContractorSchema(): WithContext<RoofingContractor> {
       "@type": "AggregateRating",
       ratingValue: siteConfig.googleRating.value,
       reviewCount: siteConfig.googleRating.count,
+    };
+  }
+
+  return schema;
+}
+
+/**
+ * Nœud WebSite du site, rattaché à l'entreprise par `publisher`.
+ *
+ * Pas de `potentialAction`/SearchAction : le site n'a pas de recherche interne,
+ * en déclarer une serait un balisage mensonger. Pas d'`Organization` distinct
+ * non plus — `RoofingContractor` en est déjà un sous-type, en ajouter un second
+ * portant le même nom créerait deux entités concurrentes aux yeux de Google.
+ */
+export function websiteSchema(): WithContext<WebSite> {
+  return {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "@id": `${siteConfig.url}/#website`,
+    url: siteConfig.url,
+    name: siteConfig.name,
+    description: siteConfig.description,
+    inLanguage: "fr-FR",
+    publisher: { "@id": `${siteConfig.url}/#roofingcontractor` },
+  };
+}
+
+/**
+ * Schéma Service d'une page prestation (stratégie SEO §5.2).
+ *
+ * `offers` n'est émis que si la prestation déclare explicitement une fourchette
+ * (`prestation.offer`) : les libellés de `tarifs.rows` sont du texte libre
+ * (« sur devis », « 150 à 500 € »), les parser reviendrait à publier un prix
+ * approximatif en données structurées. Jamais d'`aggregateRating` : aucune note
+ * réelle n'est disponible tant que la fiche Google n'existe pas (cahier §8).
+ */
+export function serviceSchema(prestation: Prestation): WithContext<Service> {
+  const schema: WithContext<Service> = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    name: prestation.serviceType,
+    serviceType: prestation.serviceType,
+    description: prestation.metaDescription,
+    url: `${siteConfig.url}/${prestation.slug}`,
+    provider: { "@id": `${siteConfig.url}/#roofingcontractor` },
+    areaServed: siteConfig.serviceArea.map((city) => ({
+      "@type": "City" as const,
+      name: city,
+    })),
+  };
+
+  if (prestation.offer) {
+    schema.offers = {
+      "@type": "Offer",
+      priceCurrency: "EUR",
+      priceSpecification: {
+        "@type": "PriceSpecification",
+        priceCurrency: "EUR",
+        minPrice: prestation.offer.minPrice,
+        maxPrice: prestation.offer.maxPrice,
+        unitText: prestation.offer.unitText,
+      },
     };
   }
 

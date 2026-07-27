@@ -11,10 +11,11 @@ export const prestations: readonly Prestation[] = [
     slug: "demoussage-toiture",
     name: "Démoussage",
     nav: "Démoussage de toiture",
-    h1: "Démoussage de toiture à Villemandeur",
-    metaTitle: "Démoussage de Toiture à Villemandeur | JCD Rénovation",
+    h1: "Démoussage de toiture : nettoyage, traitement & hydrofuge",
+    h1Accent: "nettoyage, traitement & hydrofuge",
+    metaTitle: "Démoussage Toiture - Nettoyage & Traitement Hydrofuge",
     metaDescription:
-      "Démoussage et traitement hydrofuge de toiture à Villemandeur et alentours. Diagnostic et devis gratuits, intervention rapide.",
+      "Démoussage toiture : nettoyage, traitement anti-mousse, hydrofuge. Prix 15-35 €/m². Devis gratuit. Intervention Montargis, Loiret, Yonne.",
     enBref:
       "Le démoussage d'une toiture coûte en moyenne 15 à 35 € par m² en 2026 (nettoyage + traitement anti-mousse, hydrofuge en option). JCD Rénovation intervient à Villemandeur (45700) et dans l'agglomération Montargoise : diagnostic gratuit sur place, devis sous 24-48 h.",
     intro:
@@ -139,6 +140,8 @@ export const prestations: readonly Prestation[] = [
           "En grande partie, oui. Le nettoyage retire mousses, lichens et voile noir, et la teinte des tuiles réapparaît. Une couverture ancienne conserve toutefois sa patine : des tuiles décolorées par des années d'UV ne retrouvent pas leur teinte de sortie d'usine. Le traitement hydrofuge ravive l'aspect et homogénéise le rendu, sans jamais masquer l'âge réel des matériaux.",
       },
     ],
+    serviceType: "Démoussage de toiture",
+    offer: { minPrice: 15, maxPrice: 35, unitText: "m²" },
     linkedArticles: [
       "prix-demoussage-toiture-m2",
       "mousse-lichen-algues-toiture",
@@ -152,10 +155,11 @@ export const prestations: readonly Prestation[] = [
     slug: "recherche-fuite-toiture",
     name: "Recherche de fuite",
     nav: "Recherche de fuite",
-    h1: "Recherche de fuite en toiture à Villemandeur",
-    metaTitle: "Recherche de Fuite Toiture à Villemandeur | JCD Rénovation",
+    h1: "Recherche de fuite toiture : diagnostic & réparation",
+    h1Accent: "diagnostic & réparation",
+    metaTitle: "Recherche de Fuite Toiture - Diagnostic & Réparation",
     metaDescription:
-      "Localisez l'origine d'une fuite ou d'une infiltration sur votre toiture à Villemandeur. Diagnostic précis, intervention rapide.",
+      "Recherche de fuite toiture : diagnostic, localisation, réparation. Prix 150-600 €. Devis gratuit. Intervention rapide Montargis, Loiret.",
     enBref:
       "Une recherche de fuite de toiture coûte généralement entre 150 et 600 € selon la complexité. JCD Rénovation localise l'origine exacte de l'infiltration à Villemandeur et dans l'agglomération Montargoise (inspection complète, test d'arrosage si nécessaire), puis propose la réparation. Intervention rapide en cas de fuite active.",
     intro:
@@ -286,6 +290,8 @@ export const prestations: readonly Prestation[] = [
           "Patientez. Un plafond ou un mur imbibé met plusieurs semaines à sécher à cœur, parfois davantage quand l'isolation est épaisse. Repeindre trop tôt emprisonne l'humidité : la tache réapparaît et la peinture cloque. Attendez que le support soit parfaitement sec, traitez les auréoles avec une sous-couche adaptée, puis refaites la finition.",
       },
     ],
+    serviceType: "Recherche de fuite en toiture",
+    offer: { minPrice: 150, maxPrice: 600, unitText: "intervention" },
     linkedArticles: [
       "detecter-fuite-toiture-signes",
       "methodes-recherche-fuite-toiture",
@@ -299,10 +305,11 @@ export const prestations: readonly Prestation[] = [
     slug: "zinguerie",
     name: "Zinguerie",
     nav: "Zinguerie",
-    h1: "Zinguerie à Villemandeur",
-    metaTitle: "Zinguerie à Villemandeur : Gouttières, Solins | JCD Rénovation",
+    h1: "Zinguerie : gouttières, chéneaux, solins & faîtage",
+    h1Accent: "gouttières, chéneaux, solins & faîtage",
+    metaTitle: "Zinguerie - Gouttières, Chéneaux & Solins",
     metaDescription:
-      "Travaux de zinguerie à Villemandeur : gouttières, chéneaux, solins, noues. Pose et réparation par un artisan qualifié.",
+      "Zinguerie : gouttières, chéneaux, solins, noues, faîtage. Pose et réparation zinc ou aluminium. Devis gratuit. Montargis, Loiret, Yonne.",
     enBref:
       "La zinguerie regroupe les ouvrages métalliques qui assurent l'étanchéité et l'évacuation des eaux de votre toit : gouttières, descentes, solins, chéneaux, noues. JCD Rénovation pose et répare votre zinguerie à Villemandeur : zinc ou aluminium, travaux couverts par la garantie décennale. Une gouttière zinc posée coûte en moyenne 60 à 120 € le mètre linéaire.",
     intro:
@@ -429,6 +436,8 @@ export const prestations: readonly Prestation[] = [
           "Oui, comme complément et non comme dispense d'entretien. La crapaudine, placée en tête de descente, empêche feuilles et débris d'obstruer le tuyau : c'est la protection la plus utile. Les grilles posées sur toute la gouttière limitent l'accumulation mais se colmatent elles-mêmes ; il faut toujours les nettoyer. Le bon équipement dépend surtout des arbres autour de chez vous.",
       },
     ],
+    serviceType: "Zinguerie",
+    offer: { minPrice: 60, maxPrice: 120, unitText: "ml" },
     linkedArticles: ["zinguerie-solins-noues-cheneaux", "gouttieres-bouchees-causes-solutions"],
     icon: "wrench",
     ancre: "travaux de zinguerie",
@@ -437,10 +446,11 @@ export const prestations: readonly Prestation[] = [
     slug: "couvreur-villemandeur",
     name: "Couverture",
     nav: "Couverture & toiture",
-    h1: "Couvreur à Villemandeur",
-    metaTitle: "Couvreur à Villemandeur : Pose & Rénovation Toiture",
+    h1: "Couvreur à Villemandeur : pose & rénovation de toiture",
+    h1Accent: "pose & rénovation de toiture",
+    metaTitle: "Couvreur à Villemandeur - Pose, Rénovation & Réparation",
     metaDescription:
-      "Pose, rénovation et réparation de toiture à Villemandeur avec JCD Rénovation. Garantie décennale, devis gratuit.",
+      "Couvreur à Villemandeur : pose, rénovation, réparation de toiture. Garantie décennale. Devis gratuit sous 24-48h. Intervention rapide.",
     enBref:
       "JCD Rénovation est une entreprise de couverture qui intervient à Villemandeur (45700) et dans l'agglomération Montargoise : réparation de toiture (dès 150 à 500 €), remaniement, rénovation complète (180 à 280 €/m² en tuiles). Travaux couverts par la garantie décennale, devis gratuit sous 24-48 h.",
     intro:
@@ -564,6 +574,8 @@ export const prestations: readonly Prestation[] = [
           "Oui, dans la grande majorité des cas. Le chantier se déroule à l'extérieur et la toiture est mise hors d'eau chaque soir : bâchage ou avancement pan par pan, jamais une maison ouverte à la pluie. Les principales gênes se limitent au bruit en journée et à l'emprise de l'échafaudage. Nous convenons ensemble des accès à préserver.",
       },
     ],
+    serviceType: "Couvreur",
+    offer: { minPrice: 180, maxPrice: 280, unitText: "m²" },
     linkedArticles: [
       "garantie-decennale-couvreur",
       "entretien-toiture-tuile-ardoise-zinc",
@@ -571,16 +583,183 @@ export const prestations: readonly Prestation[] = [
       "aides-renovation-toiture-2026",
     ],
     icon: "home",
-    ancre: "pose et rénovation de toiture",
+    ancre: "couvreur à Villemandeur",
+  },
+  {
+    slug: "couverture-toiture",
+    name: "Couverture",
+    nav: "Couverture de toiture",
+    h1: "Couverture de toiture : pose, rénovation & réparation",
+    h1Accent: "pose, rénovation & réparation",
+    metaTitle: "Couverture Toiture - Pose, Rénovation & Réparation",
+    metaDescription:
+      "Couverture toiture : pose, rénovation, réparation. Tuile, ardoise, zinc. Garantie décennale. Devis gratuit 24-48h. Montargis, Loiret.",
+    enBref:
+      "Une réfection complète de couverture coûte en moyenne 180 à 280 € par m² en tuiles terre cuite en 2026, écran de sous-toiture et liteaunage compris ; un remaniement se situe plutôt entre 40 et 70 € par m². JCD Rénovation réalise pose, rénovation et réparation de toiture dans le Loiret, l'Yonne et la Seine-et-Marne. Diagnostic et devis gratuits sous 24-48 h, travaux couverts par la garantie décennale.",
+    intro:
+      "Refaire une toiture n'est pas une dépense d'agrément : c'est ce qui protège la charpente, l'isolation et tout ce qu'il y a en dessous. Entre une réparation ponctuelle et une réfection complète, l'écart de budget est considérable — encore faut-il savoir laquelle des deux votre toit réclame vraiment.",
+    heroImage: "/images/realisations/remaniement-toiture-loiret-01.jpeg",
+    heroImageAlt:
+      "Remaniement de couverture en cours dans le Loiret par les couvreurs de JCD Rénovation",
+    consiste: {
+      title: "Réparation, remaniement ou rénovation complète ?",
+      paragraphs: [
+        "Trois niveaux d'intervention répondent à trois états de toiture, et les confondre coûte cher. La réparation traite un désordre localisé : quelques tuiles cassées après un coup de vent, un faîtage descellé, une rive abîmée. Le remaniement consiste à déposer la couverture pan par pan, trier les tuiles, remplacer celles qui sont gélives ou fendues, puis tout reposer sur un support assaini — la structure et une grande partie des matériaux sont conservés. La rénovation complète, elle, dépose tout : ancienne couverture, liteaux, parfois écran de sous-toiture, avant de reconstruire l'ensemble à neuf.",
+        "Le choix ne se fait pas au feeling mais sur l'état réel du matériau. Tant que les tuiles restent saines dans leur masse, le remaniement suffit et divise la facture par trois ou quatre par rapport à une réfection. Quand la terre cuite est devenue poreuse, que les tuiles s'effritent au démontage ou que le taux de casse dépasse le quart de la couverture, remanier revient à réutiliser des matériaux en fin de vie : la réfection complète devient le seul choix économiquement défendable.",
+      ],
+      points: [
+        {
+          title: "Réparation ponctuelle",
+          text: "Remplacement de tuiles cassées ou déplacées, reprise de faîtage, réfection d'une rive ou d'un solin. Intervention rapide, souvent en une demi-journée.",
+        },
+        {
+          title: "Remaniement de couverture",
+          text: "Dépose, tri et repose de la couverture existante avec remplacement des éléments défectueux. Redonne 15 à 20 ans à une toiture dont les tuiles sont encore saines.",
+        },
+        {
+          title: "Rénovation complète",
+          text: "Dépose totale, contrôle de la charpente, écran de sous-toiture HPV, liteaunage neuf et couverture neuve. La toiture repart pour plusieurs décennies.",
+        },
+        {
+          title: "Zinguerie et points singuliers",
+          text: "Faîtage, arêtiers, noues, solins, raccords de cheminée et de fenêtres de toit : c'est là que naissent la plupart des infiltrations, jamais en plein pan.",
+        },
+      ],
+    },
+    signes: {
+      title: "Quand faut-il envisager une réfection de couverture ?",
+      items: [
+        "Des tuiles cassées, déplacées ou glissées visibles depuis le sol après chaque coup de vent",
+        "Une toiture qui a dépassé les 30 à 40 ans sans jamais avoir été remaniée",
+        "Des traces d'humidité, des auréoles ou de la lumière visibles depuis les combles",
+        "Des tuiles qui s'effritent, se délitent ou sonnent creux : la terre cuite est devenue poreuse",
+        "Un faîtage descellé, des solins fissurés ou une noue corrodée",
+        "Une ligne de toiture qui ondule ou s'affaisse : le problème vient alors de la charpente",
+      ],
+    },
+    sections: [
+      {
+        title: "Tuile, ardoise ou zinc : quel matériau pour votre couverture ?",
+        paragraphs: [
+          "La tuile terre cuite domine le bâti du Loiret et du Gâtinais, et ce n'est pas un hasard : elle résiste bien au gel, se patine sans se dégrader et se remplace à l'unité. La tuile mécanique à emboîtement, majoritaire sur les pavillons construits depuis les années 1950, se pose vite et couvre de grandes surfaces à coût maîtrisé. La tuile plate, plus petite et bien plus nombreuse au m², habille les toitures anciennes à forte pente des centres-bourgs : elle demande davantage de main-d'œuvre, ce qui se retrouve dans le devis.",
+          "L'ardoise naturelle offre une longévité supérieure — souvent un siècle — et une élégance que rien n'imite vraiment. Elle réclame en revanche une pente franche et une pose au crochet ou au clou exécutée dans les règles : mal fixée, elle se déchausse. Le zinc, lui, s'impose sur les faibles pentes et les formes complexes, là où aucune tuile ne tiendrait l'étanchéité, ainsi que sur les lucarnes et les auvents.",
+          "Le bon matériau est rarement celui qu'on préfère esthétiquement : c'est celui qu'autorisent la pente de votre toit, la portance de votre charpente et les règles d'urbanisme de votre commune. Changer de matériau modifie la charge au m² — une couverture ardoise ne pèse pas comme de la tuile béton — et impose de vérifier la structure avant toute décision. Nous faisons ce contrôle avant de chiffrer, jamais après.",
+        ],
+        bullets: [
+          "Tuile mécanique terre cuite : le meilleur rapport durabilité/prix sur pavillon",
+          "Tuile plate : indispensable sur le bâti ancien à forte pente, pose plus longue",
+          "Ardoise naturelle : longévité maximale, exige une pente suffisante",
+          "Zinc : faibles pentes, lucarnes, noues et formes complexes",
+        ],
+      },
+      {
+        title: "Les étapes d'une rénovation complète de toiture",
+        paragraphs: [
+          "Un chantier de réfection suit toujours le même enchaînement, et chaque étape conditionne la suivante. L'échafaudage et les protections sont montés en premier : c'est une obligation de sécurité, pas une ligne de devis négociable. Vient ensuite la dépose de l'ancienne couverture et des liteaux, avec évacuation en benne — étape où l'on découvre souvent l'état réel de la charpente, jusque-là masqué.",
+          "La charpente est alors inspectée pièce par pièce : chevrons fléchis, bois attaqué par les insectes, entraits fendus. Les éléments douteux sont remplacés ou renforcés avant d'aller plus loin, car reconstruire une couverture neuve sur une structure fatiguée n'a aucun sens. Nous posons ensuite l'écran de sous-toiture HPV, cette membrane respirante qui laisse s'échapper la vapeur d'eau tout en bloquant l'eau et les poussières — une sécurité que les toitures anciennes n'ont presque jamais.",
+          "Le liteaunage neuf est fixé au pas exact du modèle de tuile retenu, puis la couverture est posée pan par pan. Les points singuliers ferment le chantier : faîtage scellé ou ventilé, arêtiers, noues, solins de cheminée, closoirs. Le chantier est nettoyé et les abords remis en état avant réception. Comptez une à deux semaines pour une maison individuelle courante, selon la surface, la météo et les découvertes faites à la dépose.",
+        ],
+        bullets: [
+          "Échafaudage, protections et sécurisation des accès",
+          "Dépose de la couverture et des liteaux, évacuation en benne",
+          "Inspection de la charpente et reprise des bois défectueux",
+          "Écran de sous-toiture HPV et liteaunage neuf",
+          "Pose de la couverture, puis traitement des points singuliers",
+          "Nettoyage du chantier et réception des travaux",
+        ],
+      },
+      {
+        title: "Démarches administratives avant de refaire sa toiture",
+        paragraphs: [
+          "Une réfection de couverture modifie l'aspect extérieur de la construction : elle relève en principe de la déclaration préalable de travaux, y compris lorsque vous reposez un matériau identique. Le dossier se dépose en mairie et l'instruction demande généralement un mois, davantage dans les secteurs protégés. Lancer les travaux sans cette formalité vous expose à une mise en demeure, voire à l'obligation de déposer ce qui vient d'être posé.",
+          "Certaines communes imposent des prescriptions précises sur le matériau, la teinte des tuiles ou l'aspect des ouvrages de zinguerie, en particulier à proximité d'un monument historique où l'avis de l'Architecte des Bâtiments de France s'ajoute à l'instruction. Ces règles varient d'une parcelle à l'autre : seul le service urbanisme de votre mairie peut vous dire ce qui s'applique chez vous, et c'est la première démarche à faire.",
+          "Prévenez également votre assurance habitation avant l'ouverture du chantier, et conservez le procès-verbal de réception daté : c'est lui qui fait courir le délai de la garantie décennale. Nous vous remettons le descriptif technique, les références des matériaux et les photos de l'existant nécessaires à votre dossier.",
+        ],
+      },
+      {
+        title: "Couverture de toiture à Montargis, dans le Loiret et l'Yonne",
+        paragraphs: [
+          "Basés à Villemandeur, nous intervenons sur toute l'agglomération Montargoise — Montargis, Amilly, Chalette-sur-Loing, Cepoy, Corquilleroy, Pannes — et plus largement dans le Loiret jusqu'à Gien et Château-Renard, dans l'Yonne vers Sens, Joigny et Villeneuve-sur-Yonne, et en Seine-et-Marne du côté de Nemours et Souppes-sur-Loing.",
+          "Cette implantation locale change deux choses concrètes. La première : le diagnostic est planifié rapidement, sans frais de déplacement facturés, et vous traitez directement avec l'artisan qui réalisera le chantier. La seconde : nous connaissons le bâti de la région, ses tuiles plates de centre-bourg, ses pavillons des années 1970 en tuile mécanique, ses fermes anciennes à forte pente. Un couvreur qui découvre le bâti local sur votre toit apprend à vos frais.",
+        ],
+      },
+    ],
+    tarifs: {
+      title: "Prix d'une couverture de toiture en 2026",
+      rows: [
+        { label: "Réparation ponctuelle", fourchette: "150 à 500 €", unite: "par intervention" },
+        { label: "Remaniement de couverture", fourchette: "40 à 70 €", unite: "par m²" },
+        { label: "Rénovation complète en tuiles", fourchette: "180 à 280 €", unite: "par m²" },
+        { label: "Rénovation complète en ardoise", fourchette: "250 à 400 €", unite: "par m²" },
+        { label: "Écran de sous-toiture HPV", fourchette: "10 à 20 €", unite: "par m²" },
+      ],
+      facteurs: [
+        "Surface développée et complexité de la toiture (pans, lucarnes, noues)",
+        "Matériau retenu : tuile mécanique, tuile plate, ardoise, zinc",
+        "État de la charpente découvert à la dépose",
+        "Hauteur, accessibilité et emprise possible de l'échafaudage",
+        "Dépose et évacuation en benne de l'ancienne couverture",
+      ],
+      disclaimer:
+        "Fourchettes indicatives du marché français en 2026, fourniture et pose comprises, hors échafaudage complexe et hors reprise lourde de charpente. Seul un métré sur place permet un chiffrage ferme : le devis est gratuit et détaillé.",
+    },
+    faq: [
+      {
+        question: "Quel est le prix au m² d'une réfection de toiture en 2026 ?",
+        answer:
+          "Comptez 180 à 280 €/m² pour une rénovation complète en tuiles terre cuite, écran de sous-toiture et liteaunage neufs compris, et 250 à 400 €/m² en ardoise naturelle. Un simple remaniement, qui conserve les tuiles saines, revient nettement moins cher : 40 à 70 €/m². Ces fourchettes sont indicatives et ne remplacent pas un métré sur place.",
+      },
+      {
+        question: "Combien de temps dure une rénovation de toiture ?",
+        answer:
+          "Une à deux semaines pour une maison individuelle courante, échafaudage compris. La météo pèse beaucoup : on ne dépose pas une couverture sous la pluie. Les découvertes faites à la dépose, notamment sur la charpente, peuvent aussi allonger le chantier — c'est pourquoi nous les signalons immédiatement, avec un avenant chiffré, plutôt que de les intégrer en silence.",
+      },
+      {
+        question: "Faut-il une autorisation pour refaire sa toiture ?",
+        answer:
+          "Oui, une déclaration préalable de travaux est en principe nécessaire, même à matériau identique, car la réfection modifie l'aspect extérieur de la construction. Comptez environ un mois d'instruction, davantage à proximité d'un monument historique où l'Architecte des Bâtiments de France intervient. Renseignez-vous auprès du service urbanisme de votre mairie : les règles changent d'une parcelle à l'autre.",
+      },
+      {
+        question: "Peut-on changer de matériau de couverture ?",
+        answer:
+          "Techniquement oui, sous deux conditions. La charpente doit supporter le nouveau poids au m² : passer d'une tuile légère à de l'ardoise ou à de la tuile béton n'est pas neutre, et le calcul se fait avant de commander quoi que ce soit. Et le règlement d'urbanisme de votre commune doit l'autoriser : de nombreux PLU imposent un matériau et une teinte. Nous vérifions ces deux points avant de chiffrer.",
+      },
+      {
+        question: "Quelles aides financent une rénovation de toiture ?",
+        answer:
+          "Refaire une couverture à l'identique relève de l'entretien du bâti et n'ouvre pratiquement aucun droit. Les dispositifs publics financent la performance énergétique : c'est lorsque la réfection s'accompagne d'une isolation des rampants ou des combles que MaPrimeRénov', l'éco-prêt à taux zéro et la TVA à taux réduit peuvent se déclencher. Les conditions évoluent chaque année : vérifiez-les sur france-renov.gouv.fr avant de vous engager.",
+      },
+      {
+        question: "Vos travaux de couverture sont-ils couverts par la garantie décennale ?",
+        answer:
+          "Oui. La couverture participe à la solidité et à l'étanchéité de l'ouvrage : elle relève pleinement de la garantie décennale, qui court dix ans à compter de la réception des travaux. Nous fournissons l'attestation d'assurance décennale et la RC pro avec le devis, avant signature — un artisan qui esquive cette demande doit vous alerter.",
+      },
+      {
+        question: "Comment savoir si un remaniement suffit ou s'il faut tout refaire ?",
+        answer:
+          "Le critère décisif est l'état de la tuile elle-même, pas l'âge affiché de la toiture. Si les tuiles restent denses, non gélives et se démontent sans casser en série, le remaniement redonne 15 à 20 ans à la couverture pour une fraction du prix. Si elles s'effritent, sonnent creux ou cassent massivement à la dépose, remanier revient à reposer des matériaux en fin de vie. Notre diagnostic gratuit tranche cette question avant tout chiffrage.",
+      },
+    ],
+    serviceType: "Couverture de toiture",
+    offer: { minPrice: 180, maxPrice: 280, unitText: "m²" },
+    linkedArticles: [
+      "entretien-toiture-tuile-ardoise-zinc",
+      "garantie-decennale-couvreur",
+      "aides-renovation-toiture-2026",
+      "calendrier-entretien-toiture-villemandeur",
+    ],
+    icon: "home",
+    ancre: "couverture toiture",
   },
   {
     slug: "peinture-facade",
     name: "Peinture",
     nav: "Peinture & façade",
-    h1: "Peinture & ravalement de façade à Villemandeur",
-    metaTitle: "Peinture & Ravalement de Façade à Villemandeur | JCD Rénovation",
+    h1: "Peinture de façade : ravalement, enduit & peinture extérieure",
+    h1Accent: "ravalement, enduit & peinture extérieure",
+    metaTitle: "Peinture Façade - Ravalement & Enduit Extérieur",
     metaDescription:
-      "Peinture intérieure et extérieure, ravalement de façade à Villemandeur et dans le Loiret. Travail soigné, devis gratuit.",
+      "Peinture façade : ravalement, enduit, peinture extérieure. Prix 30-90 €/m². Devis gratuit. Montargis, Loiret, Yonne, Seine-et-Marne.",
     enBref:
       "Le ravalement d'une façade coûte en moyenne 30 à 90 € par m² en 2026 selon l'état du support et la finition choisie ; la peinture intérieure se situe entre 25 et 45 € par m², préparation et deux couches comprises. JCD Rénovation réalise vos travaux de peinture et de ravalement à Villemandeur (45700) et dans le Loiret : diagnostic du support et devis gratuits.",
     intro:
@@ -701,6 +880,8 @@ export const prestations: readonly Prestation[] = [
           "Oui, et c'est l'essentiel du travail. Nos devis incluent le nettoyage, le traitement et la réparation des fissures avant toute mise en peinture. Une préparation soignée représente une grande part du temps passé : c'est elle qui garantit la tenue de la finition dans le temps.",
       },
     ],
+    serviceType: "Peinture et ravalement de façade",
+    offer: { minPrice: 30, maxPrice: 90, unitText: "m²" },
     linkedArticles: ["garantie-decennale-couvreur", "arnaque-demoussage-toiture"],
     icon: "paint",
     ancre: "peinture et ravalement",
@@ -709,10 +890,11 @@ export const prestations: readonly Prestation[] = [
     slug: "charpente",
     name: "Charpente",
     nav: "Charpente",
-    h1: "Charpente à Villemandeur : réparation et rénovation",
-    metaTitle: "Charpente à Villemandeur : Réparation & Traitement | JCD Rénovation",
+    h1: "Charpente toiture : réparation, renfort & traitement",
+    h1Accent: "réparation, renfort & traitement",
+    metaTitle: "Charpente Toiture - Réparation & Traitement du Bois",
     metaDescription:
-      "Réparation, renforcement et traitement de charpente à Villemandeur et dans le Loiret. Diagnostic sérieux, garantie décennale.",
+      "Charpente toiture : réparation, renfort, traitement du bois. Diagnostic gratuit. Garantie décennale. Montargis, Loiret, Yonne.",
     enBref:
       "La réparation ou le renfort ponctuel d'une charpente coûte généralement entre 500 et 2 000 € selon l'ampleur, et son traitement contre les insectes et les champignons se situe autour de 15 à 40 € par m². JCD Rénovation diagnostique, répare et traite les charpentes à Villemandeur (45700) et dans le Loiret. Ces travaux touchent à la solidité de l'ouvrage : la garantie décennale s'applique.",
     intro:
@@ -837,6 +1019,8 @@ export const prestations: readonly Prestation[] = [
           "La mérule est un champignon qui se développe sur un bois humide et mal ventilé. Elle se propage vite et fragilise la charpente en profondeur, parfois sans signe visible au début. Sa présence impose un traitement et surtout la suppression de la source d'humidité. Prise tôt, elle se traite ; ignorée, elle peut condamner une charpente entière.",
       },
     ],
+    serviceType: "Charpente",
+    offer: { minPrice: 15, maxPrice: 40, unitText: "m²" },
     linkedArticles: [
       "infiltration-eau-apres-orage",
       "garantie-decennale-couvreur",

@@ -8,7 +8,7 @@ import { Header } from "@/components/layout/Header";
 import { MobileCallBar } from "@/components/layout/MobileCallBar";
 import { JsonLd } from "@/components/ui/JsonLd";
 import { SkipLink } from "@/components/ui/SkipLink";
-import { roofingContractorSchema } from "@/lib/schema";
+import { roofingContractorSchema, websiteSchema } from "@/lib/schema";
 import { siteConfig } from "@/site.config";
 
 import "./globals.css";
@@ -41,6 +41,8 @@ export default function RootLayout({
       <body>
         {/* Schéma LocalBusiness/RoofingContractor sitewide, NAP unique (site.config) */}
         <JsonLd data={roofingContractorSchema()} />
+        {/* Nœud WebSite, rattaché à l'entreprise via publisher */}
+        <JsonLd data={websiteSchema()} />
         <SkipLink />
         <Header />
         <main id="contenu">{children}</main>

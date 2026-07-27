@@ -4,7 +4,7 @@ import path from "node:path";
 
 import matter from "gray-matter";
 
-import { blogSlugs, type BlogSlug } from "@/content/types";
+import { blogSlugs, type BlogSlug, type Prestation } from "@/content/types";
 import { frontmatterSchema, type PostMeta } from "@/lib/blog-types";
 
 const BLOG_DIR = path.join(process.cwd(), "src", "content", "blog");
@@ -45,4 +45,28 @@ export function getPostsForPrestation(prestationSlug: string): PostMeta[] {
   return getAllPosts().filter((post) =>
     (post.linkedServices as readonly string[]).includes(prestationSlug),
   );
+}
+
+/**
+ * Articles affichés en bas d'une page prestation : union des deux sens du
+ * maillage, dédupliquée et triée du plus récent au plus ancien.
+ *
+ * - sens article → prestation : frontmatter `linkedServices` (déclaré par l'article) ;
+ * - sens prestation → article : `linkedArticles` (choix éditorial côté prestation).
+ *
+ * Les deux sont nécessaires : sans le second, une page comme /peinture-facade
+ * n'afficherait aucun article, faute d'article dédié à la peinture — alors que
+ * le guide sur la garantie décennale y a toute sa place.
+ */
+export function getRelatedPosts(prestation: Prestation): PostMeta[] {
+  const bySlug = new Map<string, PostMeta>();
+  for (const post of getPostsForPrestation(prestation.slug)) {
+    bySlug.set(post.slug, post);
+  }
+  for (const slug of prestation.linkedArticles) {
+    if (bySlug.has(slug)) continue;
+    const { meta } = getPostSource(slug);
+    if (!meta.draft) bySlug.set(slug, meta);
+  }
+  return [...bySlug.values()].sort((a, b) => (a.date < b.date ? 1 : -1));
 }

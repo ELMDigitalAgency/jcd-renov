@@ -1,6 +1,6 @@
 import { PrestationPageTemplate } from "@/components/prestations/PrestationPageTemplate";
 import { getPrestation } from "@/content/prestations";
-import { getPostsForPrestation } from "@/lib/blog";
+import { getRelatedPosts } from "@/lib/blog";
 import { buildMetadata } from "@/lib/seo";
 
 const prestation = getPrestation("demoussage-toiture");
@@ -13,6 +13,6 @@ export const metadata = buildMetadata({
 
 /** Page Démoussage, wrapper mince : contenu + articles liés → template (cahier §5). */
 export default function Page() {
-  const relatedPosts = getPostsForPrestation(prestation.slug);
+  const relatedPosts = getRelatedPosts(prestation);
   return <PrestationPageTemplate prestation={prestation} relatedPosts={relatedPosts} />;
 }

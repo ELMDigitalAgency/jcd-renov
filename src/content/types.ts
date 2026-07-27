@@ -93,6 +93,13 @@ export type Prestation = {
   nav: string;
   /** H1 exact : stratégie SEO (Excel, onglet Architecture). */
   h1: string;
+  /**
+   * Fragment du H1 passé en orange (titre bicolore, cahier §5). DOIT être une
+   * sous-chaîne de `h1` — vérifié par tests/content-integrity.test.ts. Explicite
+   * depuis la refonte SEO : les H1 génériques n'ont plus de suffixe « à
+   * Villemandeur » sur lequel se caler.
+   */
+  h1Accent: string;
   metaTitle: string;
   metaDescription: string;
   /** Résumé "En bref" en haut de page : extraction GEO (IA). */
@@ -118,6 +125,14 @@ export type Prestation = {
     disclaimer: string;
   };
   faq: FaqItem[];
+  /** Libellé schema.org du service, ex. « Démoussage de toiture ». */
+  serviceType: string;
+  /**
+   * Fourchette de prix du schema Service, saisie EXPLICITEMENT et jamais
+   * dérivée de `tarifs.rows` (chaînes libres : les parser reviendrait à
+   * publier un prix approximatif en JSON-LD). Omise = pas d'`offers` émis.
+   */
+  offer?: { minPrice: number; maxPrice: number; unitText: string };
   /** Maillage interne vers le blog (Excel, onglet Maillage interne). */
   linkedArticles: BlogSlug[];
   icon: IconKey;

@@ -3,7 +3,7 @@ import { getPrestation } from "@/content/prestations";
 import { getRelatedPosts } from "@/lib/blog";
 import { buildMetadata } from "@/lib/seo";
 
-const prestation = getPrestation("charpente");
+const prestation = getPrestation("couverture-toiture");
 
 export const metadata = buildMetadata({
   title: prestation.metaTitle,
@@ -11,7 +11,7 @@ export const metadata = buildMetadata({
   path: `/${prestation.slug}`,
 });
 
-/** Page Charpente, wrapper mince : contenu + articles liés → template. */
+/** Page Couverture toiture, wrapper mince : contenu + articles liés → template (cahier §5). */
 export default function Page() {
   const relatedPosts = getRelatedPosts(prestation);
   return <PrestationPageTemplate prestation={prestation} relatedPosts={relatedPosts} />;

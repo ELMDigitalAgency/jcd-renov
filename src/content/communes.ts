@@ -41,11 +41,11 @@ export const communes: readonly Commune[] = [
   { name: "Vimory", cp: "45700", statut: "tertiaire", departement: "45" },
   { name: "Ferrières-en-Gâtinais", cp: "45210", statut: "tertiaire", departement: "45" },
   { name: "Château-Renard", cp: "45220", statut: "tertiaire", departement: "45" },
-  { name: "Gien", cp: "45500", statut: "tertiaire", departement: "45" },
+  { name: "Gien", cp: "45500", statut: "secondaire", departement: "45", href: "/couvreur-gien" },
   { name: "Nogent-sur-Vernisson", cp: "45290", statut: "tertiaire", departement: "45" },
 
   // Yonne (89)
-  { name: "Sens", cp: "89100", statut: "tertiaire", departement: "89" },
+  { name: "Sens", cp: "89100", statut: "secondaire", departement: "89", href: "/couvreur-sens" },
   { name: "Villeneuve-sur-Yonne", cp: "89500", statut: "tertiaire", departement: "89" },
   { name: "Joigny", cp: "89300", statut: "tertiaire", departement: "89" },
   { name: "Charny", cp: "89120", statut: "tertiaire", departement: "89" },

@@ -93,7 +93,7 @@ export default function Page() {
         </section>
       ) : null}
 
-      {/* Zones secondaires : 3 cartes cliquables vers les pages villes. */}
+      {/* Zones secondaires : une carte cliquable par ville disposant d'une page dédiée. */}
       <section className="bg-cream" aria-label="Zones secondaires">
         <Container className="py-16 sm:py-20">
           <SectionHeading
@@ -102,7 +102,7 @@ export default function Page() {
                 Les grandes villes <TitleAccent>voisines</TitleAccent>
               </>
             }
-            subtitle="Trois communes limitrophes où nous assurons toutes nos prestations, chacune avec sa page dédiée."
+            subtitle="Les villes où nous assurons toutes nos prestations, chacune avec sa page dédiée."
           />
           <ul className="mt-10 grid gap-6 md:grid-cols-3">
             {secondaires.map((commune) => (
@@ -158,9 +158,20 @@ export default function Page() {
                   <ul className="mt-5 flex flex-wrap gap-2">
                     {villes.map((commune) => (
                       <li key={commune.name}>
-                        <span className="inline-block rounded-full border border-navy/10 bg-white px-3 py-1.5 text-sm font-medium text-navy">
-                          {commune.name}
-                        </span>
+                        {/* Une commune dotée d'une page dédiée devient un lien : sans cela,
+                            Gien et Sens ne seraient liés depuis nulle part sur cette page. */}
+                        {commune.href ? (
+                          <Link
+                            href={commune.href as Route}
+                            className="inline-block rounded-full border border-navy/10 bg-white px-3 py-1.5 text-sm font-semibold text-navy transition-colors hover:border-primary hover:text-primary"
+                          >
+                            {commune.name}
+                          </Link>
+                        ) : (
+                          <span className="inline-block rounded-full border border-navy/10 bg-white px-3 py-1.5 text-sm font-medium text-navy">
+                            {commune.name}
+                          </span>
+                        )}
                       </li>
                     ))}
                   </ul>

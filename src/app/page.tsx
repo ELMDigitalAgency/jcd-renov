@@ -1,6 +1,7 @@
 import ArrowForwardRoundedIcon from "@mui/icons-material/ArrowForwardRounded";
 import Link from "next/link";
 
+import { CitiesSection } from "@/components/home/CitiesSection";
 import { DiagnosticSection } from "@/components/home/DiagnosticSection";
 import { GuaranteesSection } from "@/components/home/GuaranteesSection";
 import { HomeHero } from "@/components/home/HomeHero";
@@ -33,6 +34,7 @@ export default function HomePage() {
       <LeakSpotlight />
       <ProcessSteps />
       <ServicesBento />
+      <CitiesSection />
       <GuaranteesSection />
       <RealisationsStrip />
       <FaqSection

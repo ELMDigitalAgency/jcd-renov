@@ -7,9 +7,11 @@ import { ServiceZones } from "@/components/prestations/ServiceZones";
 import { WarningSigns } from "@/components/prestations/WarningSigns";
 import { FaqSection } from "@/components/sections/FaqSection";
 import { FinalCta } from "@/components/sections/FinalCta";
+import { JsonLd } from "@/components/ui/JsonLd";
 import { TitleAccent } from "@/components/ui/PageTitle";
 import type { Prestation } from "@/content/types";
 import type { PostMeta } from "@/lib/blog-types";
+import { serviceSchema } from "@/lib/schema";
 
 type PrestationPageTemplateProps = {
   prestation: Prestation;
@@ -17,13 +19,15 @@ type PrestationPageTemplateProps = {
 };
 
 /**
- * Template unique des 4 pages prestations — ordre imposé par le cahier des
+ * Template unique des pages prestations — ordre imposé par le cahier des
  * charges §5 : hero → explication → signes → tarifs → zones → FAQ → articles
- * liés → CTA final.
+ * liés → CTA final. Point d'émission unique du schéma Service : toute nouvelle
+ * page prestation en hérite automatiquement.
  */
 export function PrestationPageTemplate({ prestation, relatedPosts }: PrestationPageTemplateProps) {
   return (
     <>
+      <JsonLd data={serviceSchema(prestation)} />
       <ServiceHero prestation={prestation} />
       <ServiceExplainer consiste={prestation.consiste} icon={prestation.icon} />
       {/* Contenu de fond unique à la prestation (méthode, contexte local…) */}

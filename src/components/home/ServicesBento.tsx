@@ -38,7 +38,9 @@ export function ServicesBento() {
   const demoussage = getPrestation("demoussage-toiture");
   const zinguerie = getPrestation("zinguerie");
   const fuite = getPrestation("recherche-fuite-toiture");
-  const couverture = getPrestation("couvreur-villemandeur");
+  // La carte Couverture vise la page service générique ; la page pilier locale
+  // /couvreur-villemandeur est liée depuis la section « Nos villes » (CitiesSection).
+  const couverture = getPrestation("couverture-toiture");
   const peinture = getPrestation("peinture-facade");
   const charpente = getPrestation("charpente");
 

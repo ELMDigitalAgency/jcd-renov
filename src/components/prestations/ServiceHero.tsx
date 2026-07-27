@@ -9,19 +9,25 @@ import { PhoneLink } from "@/components/ui/PhoneLink";
 import type { Prestation } from "@/content/types";
 
 /**
- * Découpe le H1 pour passer « à Villemandeur » (ou, à défaut, le dernier mot)
- * en orange — titre bicolore du cahier des charges §5.
+ * Découpe le H1 sur le fragment d'accent déclaré dans les données pour le
+ * passer en orange — titre bicolore du cahier des charges §5.
+ *
+ * L'accent était auparavant déduit du suffixe « à Villemandeur », avec repli
+ * sur le dernier mot : depuis que les H1 sont génériques (refonte SEO), ce
+ * repli mettait en orange un mot arbitraire (« … & hydrofuge »). Le fragment
+ * est donc explicite dans `prestations.ts`, et sa présence dans le H1 est
+ * vérifiée par tests/content-integrity.test.ts.
  */
-function splitH1(h1: string): { start: string; accent: string } {
-  const suffix = "à Villemandeur";
-  if (h1.endsWith(suffix)) {
-    return { start: h1.slice(0, h1.length - suffix.length), accent: suffix };
+function splitH1(h1: string, h1Accent: string): { start: string; accent: string; end: string } {
+  const index = h1Accent ? h1.lastIndexOf(h1Accent) : -1;
+  if (index === -1) {
+    return { start: h1, accent: "", end: "" };
   }
-  const lastSpace = h1.lastIndexOf(" ");
-  if (lastSpace === -1) {
-    return { start: "", accent: h1 };
-  }
-  return { start: h1.slice(0, lastSpace + 1), accent: h1.slice(lastSpace + 1) };
+  return {
+    start: h1.slice(0, index),
+    accent: h1Accent,
+    end: h1.slice(index + h1Accent.length),
+  };
 }
 
 type ServiceHeroProps = {
@@ -33,7 +39,7 @@ type ServiceHeroProps = {
  * (titre, intro, bloc « En bref » citable par les IA, CTA / photo chantier).
  */
 export function ServiceHero({ prestation }: ServiceHeroProps) {
-  const { start, accent } = splitH1(prestation.h1);
+  const { start, accent, end } = splitH1(prestation.h1, prestation.h1Accent);
 
   return (
     <section className="bg-cream">
@@ -43,7 +49,8 @@ export function ServiceHero({ prestation }: ServiceHeroProps) {
           <div>
             <PageTitle>
               {start}
-              <TitleAccent>{accent}</TitleAccent>
+              {accent ? <TitleAccent>{accent}</TitleAccent> : null}
+              {end}
             </PageTitle>
             <p className="mt-5 text-base leading-relaxed sm:text-lg">{prestation.intro}</p>
 
