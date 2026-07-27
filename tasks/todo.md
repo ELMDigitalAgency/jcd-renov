@@ -93,6 +93,30 @@ création de doublons cannibales).
 - [x] 33 → 36 routes · 132 → 146 tests · audit HTML vert sur 36 pages
 - [x] `docs/seo/` : GBP, netlinking, désaveu, suivi
 
+## Phase 12 — Contenu rédactionnel fourni (28/07/2026) ✅
+- [x] `/couvreur-chalette-sur-loing` réécrite : H1 + metas du plan SEO, 9 sections
+      (réparation/rénovation, démoussage, charpente, peinture, devis ajoutées aux
+      4 sections locales existantes), FAQ 7 questions, sources officielles
+- [x] `/demoussage-toiture` enrichie : 3 sections ajoutées (identification
+      mousse/lichen/algues, démoussage vs hydrofuge, fréquence), palier
+      « nettoyage seul 8-15 €/m² » au tarif, FAQ 10 questions, sources
+- [x] Champ `sources` sur `Prestation` et `Ville` + composant `SourcesUtiles`
+      (liens officiels en `nofollow noopener`, signal E-E-A-T) — les 6 URLs
+      vérifiées en 200
+- [x] JSON-LD FAQPage : **déjà conforme au mot près**, aucune modification
+- [x] **Correction juridique** : le site affirmait qu'une déclaration préalable
+      est requise « même à matériau identique ». C'est faux — une réfection à
+      l'identique restaure l'état initial et en est dispensée (art. R.421-17 du
+      code de l'urbanisme). Corrigé sur `/couverture-toiture` et `/couvreur-gien`.
+- [x] Doublons supprimés sur `/demoussage-toiture` (deux H2 sur la fréquence,
+      puces répétées entre section et bloc « signes »)
+
+## Point ouvert — fréquence de démoussage
+Les deux documents fournis se contredisaient : 5 à 10 ans (Chalette) contre
+3 à 5 ans (Démoussage). Réconcilié par une formulation conditionnée à
+l'exposition : **3-5 ans si exposée** (nord, arbres, zone humide),
+**5-10 ans si dégagée et ventilée**. Appliqué partout de façon cohérente.
+
 ## Reste côté client (hors code)
 - [ ] **Créer la fiche Google Business Profile** — levier n°1, cf. `docs/seo/google-business-profile.md`
 - [ ] Inscriptions annuaires (Pages Jaunes en priorité) — `docs/seo/netlinking.md`
