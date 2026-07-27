@@ -198,15 +198,15 @@ export const villes: readonly Ville[] = [
     slug: "couvreur-chalette-sur-loing",
     name: "Chalette-sur-Loing",
     cp: "45120",
-    h1: "Couvreur à Chalette-sur-Loing",
-    metaTitle: "Couvreur à Chalette-sur-Loing | JCD Rénovation",
+    h1: "Couvreur à Chalette-sur-Loing : couverture & zinguerie",
+    metaTitle: "Couvreur à Chalette-sur-Loing (45120) - JCD Rénovation",
     metaDescription:
-      "JCD Rénovation, votre couvreur zingueur à Chalette-sur-Loing. Démoussage, zinguerie, recherche de fuite.",
+      "Couvreur à Chalette-sur-Loing : couverture, zinguerie, démoussage. Garantie décennale. Devis gratuit 24-48h. Artisan local Montargis.",
     enBref:
-      "JCD Rénovation, couvreur zingueur de l'agglomération Montargoise, intervient à Chalette-sur-Loing (45120) : démoussage de toiture, zinguerie, recherche de fuite, réparation et rénovation de couverture. Devis gratuit sous 24-48 h, garantie décennale.",
+      "JCD Rénovation est votre couvreur à Chalette-sur-Loing (45120), basé à Villemandeur à moins de dix minutes. Couverture, zinguerie, démoussage, charpente, recherche de fuite et peinture de façade. Garantie décennale, devis gratuit sous 24-48 h, sans engagement.",
     intro: [
-      "Parmi les plus grandes communes de l'agglomération Montargoise, Chalette-sur-Loing longe le Loing et le canal de Briare : un environnement humide qui accélère le développement des mousses et lichens sur les toitures, particulièrement dans les quartiers proches de l'eau et du lac de Chalette.",
-      "Nous intervenons dans toute la commune, du Bourg à Vésines en passant par les quartiers pavillonnaires, pour le démoussage et le traitement des couvertures, la réparation ou le remplacement de gouttières, la recherche de fuite et les travaux de couverture. Un habitat souvent construit entre les années 50 et 80, dont les toitures méritent aujourd'hui une vraie attention.",
+      "JCD Rénovation est une entreprise artisanale de couverture et de zinguerie installée à Villemandeur (45700), à moins de dix minutes de Chalette-sur-Loing. Nous intervenons sur toute la commune — du Bourg à Vésines en passant par les quartiers pavillonnaires — et dans l'ensemble de l'agglomération Montargoise : Montargis, Amilly, Cepoy, Corquilleroy et les communes voisines du Loiret.",
+      "Quatorze ans d'expérience dans le métier, un seul interlocuteur du diagnostic à la fin du chantier, et des travaux couverts par la garantie décennale. Pas de sous-traitance, pas de surprise en fin de chantier. Chalette étant dans notre cœur de zone, un diagnostic peut être planifié rapidement, et en priorité en cas de fuite active.",
     ],
     sections: [
       {
