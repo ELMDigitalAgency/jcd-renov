@@ -40,12 +40,45 @@ describe("schémas JSON-LD", () => {
     expect(schema.aggregateRating).toBeUndefined();
   });
 
-  it("RoofingContractor : couvre toute la zone d'intervention", () => {
+  it("RoofingContractor : couvre les villes ET les 3 départements", () => {
     const schema = serialize(roofingContractorSchema());
-    const areas = schema.areaServed as Array<{ name: string }>;
-    expect(areas.map((a) => a.name)).toContain("Villemandeur");
-    expect(areas.map((a) => a.name)).toContain("Montargis");
-    expect(areas).toHaveLength(siteConfig.serviceArea.length);
+    const areas = schema.areaServed as Array<{ "@type": string; name: string }>;
+    const noms = areas.map((a) => a.name);
+    expect(noms).toContain("Villemandeur");
+    expect(noms).toContain("Montargis");
+    expect(noms).toContain("Loiret (45)");
+    expect(noms).toContain("Yonne (89)");
+    expect(noms).toContain("Seine-et-Marne (77)");
+    expect(areas).toHaveLength(siteConfig.serviceArea.length + 3);
+    expect(areas.filter((a) => a["@type"] === "AdministrativeArea")).toHaveLength(3);
+  });
+
+  it("RoofingContractor : coordonnées géographiques présentes", () => {
+    const schema = serialize(roofingContractorSchema());
+    const geo = schema.geo as Json;
+    expect(geo["@type"]).toBe("GeoCoordinates");
+    expect(geo.latitude).toBe(siteConfig.geo.latitude);
+    expect(geo.longitude).toBe(siteConfig.geo.longitude);
+  });
+
+  it("RoofingContractor : catalogue des 6 métiers, sans doublon de la page pilier", () => {
+    const schema = serialize(roofingContractorSchema());
+    const catalog = schema.hasOfferCatalog as Json;
+    expect(catalog["@type"]).toBe("OfferCatalog");
+    const offres = catalog.itemListElement as Array<{ itemOffered: { name: string; url: string } }>;
+    // 7 prestations - la page pilier locale /couvreur-villemandeur = 6 métiers
+    expect(offres).toHaveLength(prestations.length - 1);
+    const urls = offres.map((o) => o.itemOffered.url);
+    expect(urls).not.toContain(`${siteConfig.url}/couvreur-villemandeur`);
+    expect(urls).toContain(`${siteConfig.url}/couverture-toiture`);
+    expect(urls).toContain(`${siteConfig.url}/demoussage-toiture`);
+  });
+
+  it("RoofingContractor : pas de sameAs tant qu'aucun profil réel n'existe", () => {
+    const schema = serialize(roofingContractorSchema());
+    expect(siteConfig.googleBusinessUrl).toBeNull();
+    // Un tableau vide ou une URL Google Maps devinée pointerait dans le vide.
+    expect(schema.sameAs).toBeUndefined();
   });
 
   it("WebSite : rattaché à l'entreprise, sans SearchAction inventée", () => {

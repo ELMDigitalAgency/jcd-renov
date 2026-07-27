@@ -8,6 +8,8 @@ import type {
   WithContext,
 } from "schema-dts";
 
+import { departements } from "@/content/communes";
+import { prestations } from "@/content/prestations";
 import type { FaqItem, Prestation } from "@/content/types";
 import type { PostMeta } from "@/lib/blog-types";
 import { siteConfig } from "@/site.config";
@@ -37,10 +39,41 @@ export function roofingContractorSchema(): WithContext<RoofingContractor> {
       addressRegion: siteConfig.address.region,
       addressCountry: siteConfig.address.country,
     },
-    areaServed: siteConfig.serviceArea.map((city) => ({
-      "@type": "City" as const,
-      name: city,
-    })),
+    geo: {
+      "@type": "GeoCoordinates",
+      latitude: siteConfig.geo.latitude,
+      longitude: siteConfig.geo.longitude,
+    },
+    // Villes + les 3 départements couverts (instructions JSON-LD §areaServed).
+    areaServed: [
+      ...siteConfig.serviceArea.map((city) => ({
+        "@type": "City" as const,
+        name: city,
+      })),
+      ...departements.map((dep) => ({
+        "@type": "AdministrativeArea" as const,
+        name: `${dep.nom} (${dep.code})`,
+      })),
+    ],
+    // Catalogue des prestations : dérivé des données, jamais saisi en double.
+    // La page pilier locale /couvreur-villemandeur est exclue — c'est la
+    // déclinaison géolocalisée de « Couverture de toiture », l'inscrire créerait
+    // une offre en doublon dans le catalogue.
+    hasOfferCatalog: {
+      "@type": "OfferCatalog",
+      name: `Prestations ${siteConfig.name}`,
+      itemListElement: prestations
+        .filter((prestation) => prestation.slug !== "couvreur-villemandeur")
+        .map((prestation) => ({
+          "@type": "Offer" as const,
+          itemOffered: {
+            "@type": "Service" as const,
+            name: prestation.serviceType,
+            description: prestation.intro,
+            url: `${siteConfig.url}/${prestation.slug}`,
+          },
+        })),
+    },
     contactPoint: {
       "@type": "ContactPoint",
       telephone: siteConfig.phoneInternational,
@@ -59,12 +92,28 @@ export function roofingContractorSchema(): WithContext<RoofingContractor> {
   };
 
   // Note Google : injectée UNIQUEMENT si validée par le client (cahier §8).
+  // Les instructions JSON-LD proposent 4.9/8 avis : c'est un placeholder que le
+  // document lui-même demande de remplacer par les vraies données Google. Les 8
+  // avis de content/avis.ts proviennent de l'ancien site (tous 5/5), pas de
+  // Google : les publier en AggregateRating serait une note fabriquée.
   if (siteConfig.googleRating) {
     schema.aggregateRating = {
       "@type": "AggregateRating",
       ratingValue: siteConfig.googleRating.value,
       reviewCount: siteConfig.googleRating.count,
+      bestRating: 5,
+      worstRating: 1,
     };
+  }
+
+  // sameAs : profils officiels réels uniquement. Un tableau vide n'est pas émis,
+  // et une URL Google Maps devinée pointerait vers une fiche inexistante.
+  const profils = [
+    siteConfig.googleBusinessUrl,
+    ...Object.values(siteConfig.socials),
+  ].filter((url): url is string => typeof url === "string" && url.length > 0);
+  if (profils.length > 0) {
+    schema.sameAs = profils;
   }
 
   return schema;

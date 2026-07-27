@@ -31,6 +31,17 @@ export const siteConfig = {
     country: "FR",
   },
 
+  /**
+   * Coordonnées du centre de Villemandeur (45700), pour le `geo` du schéma
+   * LocalBusiness. Valeurs approximatives fournies par les instructions JSON-LD.
+   * ⚠️ À aligner sur la position exacte de la fiche Google Business Profile une
+   * fois celle-ci créée : deux positions divergentes affaiblissent le signal local.
+   */
+  geo: {
+    latitude: "47.9667",
+    longitude: "2.7333",
+  },
+
   /** Horaires d'ouverture confirmés par le client. */
   openingHours: "Du lundi au samedi, 8h30 à 19h",
 
