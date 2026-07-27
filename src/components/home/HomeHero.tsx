@@ -53,8 +53,10 @@ export function HomeHero() {
         <Container className="flex min-h-[36rem] flex-col justify-center py-20 sm:min-h-[40rem] lg:min-h-[44rem] lg:py-28">
           <div className="flex max-w-2xl flex-col items-start gap-6">
             <PageTitle className="text-white lg:text-[4rem] xl:text-[4.4rem]">
-              {/* Accent orange VIF (et non terracotta) : lisible sur fond sombre */}
-              <span className="text-primary">Couvreur &amp; Zingueur</span>
+              {/* Accent orange VIF (et non terracotta) : lisible sur fond sombre.
+                  L'espace explicite évite « Zingueurà Villemandeur » dans le DOM :
+                  `block` sépare visuellement, pas textuellement (audit SEO §3.1). */}
+              <span className="text-primary">Couvreur &amp; Zingueur</span>{" "}
               <span className="block">à Villemandeur</span>
             </PageTitle>
             <p className="max-w-xl text-base leading-relaxed text-white/85 sm:text-lg">
