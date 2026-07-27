@@ -30,17 +30,21 @@ for (const f of fs.readdirSync(blogDir)) {
   if (f.endsWith(".mdx")) routes.add(`/blog/${f.replace(/\.mdx$/, "")}`);
 }
 
-// Titles attendus (stratégie SEO — à la lettre)
+// Titles attendus (stratégie SEO + audit DataForSEO — à la lettre)
 const expectedTitles = {
   "index.html": "Couvreur Zingueur à Villemandeur (45700) | JCD Rénovation",
-  "demoussage-toiture-villemandeur.html": "Démoussage de Toiture à Villemandeur | JCD Rénovation",
-  "recherche-de-fuite-toiture-villemandeur.html":
-    "Recherche de Fuite Toiture à Villemandeur | JCD Rénovation",
-  "zinguerie-villemandeur.html": "Zinguerie à Villemandeur : Gouttières, Solins | JCD Rénovation",
-  "couvreur-villemandeur.html": "Couvreur à Villemandeur : Pose & Rénovation Toiture",
-  "couvreur-zingueur-montargis.html": "Couvreur Zingueur à Montargis | JCD Rénovation",
+  "demoussage-toiture.html": "Démoussage Toiture - Nettoyage & Traitement Hydrofuge",
+  "recherche-fuite-toiture.html": "Recherche de Fuite Toiture - Diagnostic & Réparation",
+  "zinguerie.html": "Zinguerie - Gouttières, Chéneaux & Solins",
+  "couverture-toiture.html": "Couverture Toiture - Pose, Rénovation & Réparation",
+  "peinture-facade.html": "Peinture Façade - Ravalement & Enduit Extérieur",
+  "charpente.html": "Charpente Toiture - Réparation & Traitement du Bois",
+  "couvreur-villemandeur.html": "Couvreur à Villemandeur - Pose, Rénovation & Réparation",
+  "couvreur-montargis.html": "Couvreur Zingueur à Montargis | JCD Rénovation",
   "couvreur-amilly.html": "Couvreur à Amilly | JCD Rénovation",
   "couvreur-chalette-sur-loing.html": "Couvreur à Chalette-sur-Loing | JCD Rénovation",
+  "couvreur-gien.html": "Couvreur à Gien (45500) - JCD Rénovation",
+  "couvreur-sens.html": "Couvreur à Sens (89100) - JCD Rénovation",
   "zone-intervention.html": "Zone d'Intervention : Loiret, Yonne, Seine-et-Marne | JCD Rénovation",
   "realisations.html": "Nos Réalisations : Toitures & Zinguerie | JCD Rénovation",
   "avis-clients.html": "Avis Clients JCD Rénovation | Couvreur Villemandeur",

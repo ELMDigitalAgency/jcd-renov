@@ -1,0 +1,31 @@
+# Fichier de désaveu — JCD Rénovation (jcdrenovation.fr)
+#
+# NE PAS ENVOYER TEL QUEL : ce fichier est un modèle vide.
+# Lire docs/seo/desaveu-backlinks.md avant toute chose — dans la plupart des cas,
+# le désaveu n'est PAS nécessaire et Google ignore déjà ces liens.
+#
+# Ne compléter et n'envoyer ce fichier que si la Search Console signale une
+# ACTION MANUELLE pour liens artificiels.
+#
+# Format :
+#   - une directive par ligne
+#   - "domain:exemple.com" bloque tout le domaine (recommandé pour les annuaires spam)
+#   - une URL seule ne bloque que cette page
+#   - les lignes commençant par # sont des commentaires ignorés par Google
+#
+# Envoi : https://search.google.com/search-console/disavow-links
+# ATTENTION : chaque envoi REMPLACE le précédent. Ce fichier doit toujours
+# contenir la liste complète des domaines à désavouer.
+#
+# Source de la liste : Search Console → Liens → Sites qui pointent le plus vers vous → Exporter
+# Date du dernier envoi : (à compléter)
+# ---------------------------------------------------------------------------
+
+# --- Annuaires automatiques étrangers ---
+# domain:exemple-annuaire-spam.info
+
+# --- Domaines à extension suspecte (.click, .xyz…) ---
+# domain:exemple.click
+
+# --- Fermes de liens / pages sans contenu réel ---
+# domain:exemple-ferme-de-liens.com
