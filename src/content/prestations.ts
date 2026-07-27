@@ -23,10 +23,11 @@ export const prestations: readonly Prestation[] = [
     heroImage: "/images/realisations/demoussage-toiture-villemandeur-01.jpeg",
     heroImageAlt: "Démoussage de toiture à Villemandeur par JCD Rénovation",
     consiste: {
-      title: "En quoi consiste un démoussage de toiture ?",
+      title: "Qu'est-ce que le démoussage de toiture ?",
       paragraphs: [
-        "Un démoussage complet se déroule en trois temps : le nettoyage de la couverture (manuel ou basse pression selon la fragilité des tuiles), l'application d'un traitement anti-mousse curatif qui élimine les organismes en profondeur, puis, selon l'état de vos tuiles, un traitement hydrofuge qui imperméabilise la surface et retarde la repousse.",
-        "Nous adaptons systématiquement la méthode au matériau : une tuile terre cuite ancienne ne se nettoie pas comme une tuile béton ou une ardoise. Le nettoyage des gouttières est inclus dans l'intervention : les mousses délogées ne doivent jamais y stagner.",
+        "Le démoussage consiste à retirer, mécaniquement puis chimiquement, les organismes végétaux — mousses, lichens, algues — qui colonisent la surface des tuiles ou des ardoises. Ce n'est pas un nettoyage esthétique : la mousse retient l'humidité en permanence au contact du matériau, l'eau s'infiltre dans ses pores, et les cycles de gel et de dégel finissent par le faire éclater.",
+        "Les conséquences d'une toiture laissée sans entretien sont concrètes : porosité accrue et casse prématurée des tuiles, infiltrations quand l'humidité retenue traverse la couverture, surpoids de plusieurs kilos au m² sur la charpente, et obstruction des gouttières par les débris végétaux. Une toiture en terre cuite bien entretenue dure cinquante ans et plus ; négligée, elle réclame une rénovation complète bien avant ce terme.",
+        "Un démoussage complet se déroule en trois temps : nettoyage de la couverture (manuel ou à pression modérée selon la fragilité des tuiles), application d'un traitement anti-mousse curatif qui élimine les organismes en profondeur, puis, selon l'état de vos tuiles, un traitement hydrofuge qui imperméabilise la surface et retarde la repousse. Le nettoyage des gouttières est inclus : les mousses délogées ne doivent jamais y stagner.",
       ],
       points: [
         {
@@ -59,6 +60,28 @@ export const prestations: readonly Prestation[] = [
     },
     sections: [
       {
+        title: "Mousse, lichen, algues : comment les identifier et les éliminer",
+        paragraphs: [
+          "Avant d'intervenir, encore faut-il savoir à quoi on a affaire : ces trois organismes ne se ressemblent pas et ne réagissent pas aux mêmes traitements. La mousse est la plus visible — verte, épaisse, spongieuse. Elle prospère sur les versants nord, peu ensoleillés et humides, et se détache relativement bien au brossage.",
+          "Le lichen est nettement plus coriace. Gris, jaune ou orangé, il s'incruste dans la porosité du matériau et y adhère fortement : un simple brossage ne suffit pas, il faut un traitement chimique adapté pour le décoller sans abîmer la tuile. Les algues, elles, forment un film verdâtre ou noirâtre souvent glissant, qui se développe vite en milieu humide et peut recouvrir une toiture entière en quelques saisons.",
+          "En pratique, les méthodes se combinent : brossage mécanique pour éliminer la masse végétale, puis produit biocide pour neutraliser les organismes résiduels et prévenir la repousse. Le lavage sous pression complète l'opération sur les surfaces solides — à condition de doser la pression, un point sur lequel nous ne transigeons pas (voir plus bas).",
+        ],
+        bullets: [
+          "Mousse : verte et spongieuse, versants nord, part au brossage",
+          "Lichen : gris à orangé, incrusté, exige un traitement chimique adapté",
+          "Algues : film verdâtre glissant, colonisation rapide en milieu humide",
+          "Traitement biocide : indispensable après le nettoyage pour retarder la repousse",
+        ],
+      },
+      {
+        title: "Démoussage ou traitement hydrofuge : quelle différence ?",
+        paragraphs: [
+          "C'est la question qu'on nous pose le plus souvent, et la réponse est simple : ce sont deux opérations complémentaires, pas interchangeables. Le démoussage est curatif — il élimine ce qui est déjà là. C'est le point de départ obligatoire.",
+          "Le traitement hydrofuge est préventif. Appliqué après le démoussage, sur une surface propre et sèche, il forme une barrière invisible qui repousse l'eau tout en laissant respirer le matériau. Sans démoussage préalable, il ne sert à rien : on imperméabiliserait la saleté.",
+          "Pourquoi combiner les deux ? Parce que le démoussage seul ne protège pas contre la repousse : une toiture démoussée mais non traitée est recolonisée en deux à trois ans en environnement humide. Avec un hydrofuge de qualité, la protection tient trois à cinq ans, davantage sur une toiture bien exposée. Le surcoût est de l'ordre de 10 à 15 €/m², mais il espace nettement les interventions — sur la durée, le calcul est favorable.",
+        ],
+      },
+      {
         title: "Comment se déroule un chantier de démoussage chez vous ?",
         paragraphs: [
           "Avant de monter sur le toit, nous préparons le chantier au sol. Les massifs, la terrasse et les menuiseries situés sous les zones de travail sont bâchés. Si vous récupérez l'eau de pluie, la cuve est déconnectée le temps de l'intervention afin qu'aucun résidu de nettoyage n'y pénètre. Nous repérons enfin les accès, les points d'appui et l'emplacement de l'échelle ou de l'échafaudage.",
@@ -82,10 +105,25 @@ export const prestations: readonly Prestation[] = [
           "Troisième idée reçue : certains démarcheurs promettent un produit qui protégerait la toiture dix ans ou plus, sans aucun entretien. Aucun traitement ne bloque la repousse aussi longtemps : l'exposition, l'ombre et l'humidité finissent toujours par reprendre le dessus. Méfiez-vous des promesses invérifiables faites en porte-à-porte : un artisan sérieux annonce des durées réalistes et les écrit sur son devis.",
         ],
       },
+      {
+        title: "À quelle fréquence faut-il démousser sa toiture ?",
+        paragraphs: [
+          "La réponse honnête : cela dépend de votre toiture et de son environnement. En règle générale, un démoussage tous les trois à cinq ans convient à une toiture standard, mais cette fréquence descend à deux ans dans les situations les plus exposées, et s'étire au-delà de cinq ans sur une couverture dégagée et bien ventilée.",
+          "Quatre facteurs accélèrent la repousse : l'exposition au nord (moins de soleil, séchage lent), la proximité d'arbres (ombre permanente et dépôt de débris organiques), une implantation en zone humide — vallée, bord de rivière, terrain bas — et l'âge de la couverture, les tuiles poreuses offrant un bien meilleur substrat à la végétation.",
+          "L'entretien périodique de la toiture, dont l'enlèvement des mousses, relève de l'entretien courant à la charge du propriétaire : la Fédération Française du Bâtiment le rappelle régulièrement. Ce n'est pas qu'une question d'esthétique — un défaut d'entretien caractérisé peut être opposé lors de l'instruction d'un sinistre par votre assurance habitation.",
+        ],
+        bullets: [
+          "Mousse visible à l'œil nu depuis le sol",
+          "Tuiles verdâtres ou noirâtres sur une face entière",
+          "Gouttières qui débordent malgré un nettoyage récent",
+          "Tuiles qui se descellent ou se soulèvent : la mousse s'infiltre sous les emboîtements",
+        ],
+      },
     ],
     tarifs: {
       title: "Prix d'un démoussage de toiture en 2026",
       rows: [
+        { label: "Nettoyage seul, sans traitement", fourchette: "8 à 15 €", unite: "par m²" },
         { label: "Nettoyage + traitement anti-mousse", fourchette: "15 à 25 €", unite: "par m²" },
         {
           label: "Nettoyage + anti-mousse + hydrofuge",
@@ -95,9 +133,11 @@ export const prestations: readonly Prestation[] = [
         { label: "Nettoyage de gouttières seul", fourchette: "sur devis", unite: "" },
       ],
       facteurs: [
-        "Surface et pente de la toiture",
-        "Accessibilité (hauteur, obstacles, nacelle éventuelle)",
+        "Surface de la toiture : le prix au m² baisse sur les grandes surfaces",
+        "Pente : une forte pente ralentit le travail et demande plus de sécurisation",
+        "Accessibilité (hauteur, obstacles, échafaudage ou nacelle éventuels)",
         "Niveau d'encrassement et fragilité des tuiles",
+        "Matériau : tuile terre cuite, tuile béton ou ardoise",
         "Traitement choisi (avec ou sans hydrofuge)",
       ],
       disclaimer:
