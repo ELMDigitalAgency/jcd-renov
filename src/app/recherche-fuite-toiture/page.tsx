@@ -3,7 +3,7 @@ import { getPrestation } from "@/content/prestations";
 import { getPostsForPrestation } from "@/lib/blog";
 import { buildMetadata } from "@/lib/seo";
 
-const prestation = getPrestation("recherche-de-fuite-toiture-villemandeur");
+const prestation = getPrestation("recherche-fuite-toiture");
 
 export const metadata = buildMetadata({
   title: prestation.metaTitle,

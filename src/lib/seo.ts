@@ -5,7 +5,7 @@ import { siteConfig } from "@/site.config";
 type BuildMetadataInput = {
   title: string;
   description: string;
-  /** Chemin canonique de la page, ex. "/demoussage-toiture-villemandeur". */
+  /** Chemin canonique de la page, ex. "/demoussage-toiture". */
   path: string;
   /** Type OpenGraph — "article" pour le blog. */
   ogType?: "website" | "article";

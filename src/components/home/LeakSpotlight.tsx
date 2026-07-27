@@ -24,7 +24,7 @@ export function LeakSpotlight() {
         />
 
         <Link
-          href="/recherche-de-fuite-toiture-villemandeur"
+          href="/recherche-fuite-toiture"
           className="group relative mt-10 block"
           aria-label="Découvrir la recherche de fuite en toiture à Villemandeur"
         >

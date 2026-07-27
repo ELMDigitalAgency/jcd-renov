@@ -8,7 +8,7 @@ import type { Prestation, PrestationSlug } from "@/content/types";
  */
 export const prestations: readonly Prestation[] = [
   {
-    slug: "demoussage-toiture-villemandeur",
+    slug: "demoussage-toiture",
     name: "Démoussage",
     nav: "Démoussage de toiture",
     h1: "Démoussage de toiture à Villemandeur",
@@ -149,7 +149,7 @@ export const prestations: readonly Prestation[] = [
     ancre: "démoussage de couverture",
   },
   {
-    slug: "recherche-de-fuite-toiture-villemandeur",
+    slug: "recherche-fuite-toiture",
     name: "Recherche de fuite",
     nav: "Recherche de fuite",
     h1: "Recherche de fuite en toiture à Villemandeur",
@@ -296,7 +296,7 @@ export const prestations: readonly Prestation[] = [
     ancre: "recherche de fuite",
   },
   {
-    slug: "zinguerie-villemandeur",
+    slug: "zinguerie",
     name: "Zinguerie",
     nav: "Zinguerie",
     h1: "Zinguerie à Villemandeur",
@@ -574,7 +574,7 @@ export const prestations: readonly Prestation[] = [
     ancre: "pose et rénovation de toiture",
   },
   {
-    slug: "peinture-villemandeur",
+    slug: "peinture-facade",
     name: "Peinture",
     nav: "Peinture & façade",
     h1: "Peinture & ravalement de façade à Villemandeur",
@@ -706,7 +706,7 @@ export const prestations: readonly Prestation[] = [
     ancre: "peinture et ravalement",
   },
   {
-    slug: "charpente-villemandeur",
+    slug: "charpente",
     name: "Charpente",
     nav: "Charpente",
     h1: "Charpente à Villemandeur : réparation et rénovation",
@@ -717,7 +717,7 @@ export const prestations: readonly Prestation[] = [
       "La réparation ou le renfort ponctuel d'une charpente coûte généralement entre 500 et 2 000 € selon l'ampleur, et son traitement contre les insectes et les champignons se situe autour de 15 à 40 € par m². JCD Rénovation diagnostique, répare et traite les charpentes à Villemandeur (45700) et dans le Loiret. Ces travaux touchent à la solidité de l'ouvrage : la garantie décennale s'applique.",
     intro:
       "La charpente est le squelette de votre toiture : tant qu'elle est saine, la couverture tient. Un bois qui fléchit, s'humidifie ou se creuse sous l'action des insectes doit être diagnostiqué tôt, avant que le problème ne gagne toute la structure.",
-    heroImage: "/images/realisations/charpente-villemandeur-01.jpeg",
+    heroImage: "/images/realisations/charpente-01.jpeg",
     heroImageAlt: "Charpente en cours de rénovation à Villemandeur par JCD Rénovation",
     consiste: {
       title: "En quoi consistent des travaux de charpente ?",

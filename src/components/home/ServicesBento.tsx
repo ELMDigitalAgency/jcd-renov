@@ -35,12 +35,12 @@ function CardLinkLabel({ children, light = false }: { children: React.ReactNode;
  * Chaque carte prestation est entièrement cliquable.
  */
 export function ServicesBento() {
-  const demoussage = getPrestation("demoussage-toiture-villemandeur");
-  const zinguerie = getPrestation("zinguerie-villemandeur");
-  const fuite = getPrestation("recherche-de-fuite-toiture-villemandeur");
+  const demoussage = getPrestation("demoussage-toiture");
+  const zinguerie = getPrestation("zinguerie");
+  const fuite = getPrestation("recherche-fuite-toiture");
   const couverture = getPrestation("couvreur-villemandeur");
-  const peinture = getPrestation("peinture-villemandeur");
-  const charpente = getPrestation("charpente-villemandeur");
+  const peinture = getPrestation("peinture-facade");
+  const charpente = getPrestation("charpente");
 
   return (
     <section aria-label="Nos prestations" className="bg-cream">

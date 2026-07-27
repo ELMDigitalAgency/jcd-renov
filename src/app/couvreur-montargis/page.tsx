@@ -2,7 +2,7 @@ import { CityPageTemplate } from "@/components/villes/CityPageTemplate";
 import { getVille } from "@/content/villes";
 import { buildMetadata } from "@/lib/seo";
 
-const ville = getVille("couvreur-zingueur-montargis");
+const ville = getVille("couvreur-montargis");
 
 export const metadata = buildMetadata({
   title: ville.metaTitle,

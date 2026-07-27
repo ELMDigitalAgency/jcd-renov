@@ -21,7 +21,7 @@ export const communes: readonly Commune[] = [
     cp: "45200",
     statut: "secondaire",
     departement: "45",
-    href: "/couvreur-zingueur-montargis",
+    href: "/couvreur-montargis",
   },
   { name: "Amilly", cp: "45200", statut: "secondaire", departement: "45", href: "/couvreur-amilly" },
   {

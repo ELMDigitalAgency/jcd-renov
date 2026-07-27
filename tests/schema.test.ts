@@ -80,7 +80,7 @@ describe("schémas JSON-LD", () => {
         updated: undefined,
         keywords: ["a", "b"],
         category: "demoussage",
-        linkedServices: ["demoussage-toiture-villemandeur"],
+        linkedServices: ["demoussage-toiture"],
         draft: false,
       }),
     );

@@ -7,7 +7,7 @@ import type { Ville, VilleSlug } from "@/content/types";
  */
 export const villes: readonly Ville[] = [
   {
-    slug: "couvreur-zingueur-montargis",
+    slug: "couvreur-montargis",
     name: "Montargis",
     cp: "45200",
     h1: "Couvreur zingueur à Montargis",
