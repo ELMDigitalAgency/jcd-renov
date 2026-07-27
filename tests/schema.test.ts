@@ -1,11 +1,14 @@
 import { describe, expect, it } from "vitest";
 
 import { faqHome } from "@/content/faq-home";
+import { getPrestation, prestations } from "@/content/prestations";
 import {
   articleSchema,
   breadcrumbSchema,
   faqPageSchema,
   roofingContractorSchema,
+  serviceSchema,
+  websiteSchema,
 } from "@/lib/schema";
 import { siteConfig } from "@/site.config";
 
@@ -43,6 +46,47 @@ describe("schémas JSON-LD", () => {
     expect(areas.map((a) => a.name)).toContain("Villemandeur");
     expect(areas.map((a) => a.name)).toContain("Montargis");
     expect(areas).toHaveLength(siteConfig.serviceArea.length);
+  });
+
+  it("WebSite : rattaché à l'entreprise, sans SearchAction inventée", () => {
+    const schema = serialize(websiteSchema());
+    expect(schema["@type"]).toBe("WebSite");
+    expect(schema["@id"]).toBe(`${siteConfig.url}/#website`);
+    expect(schema.publisher).toEqual({ "@id": `${siteConfig.url}/#roofingcontractor` });
+    // Le site n'a pas de recherche interne : en déclarer une serait mensonger.
+    expect(schema.potentialAction).toBeUndefined();
+  });
+
+  it("Service : rattaché au nœud RoofingContractor et couvre la zone d'intervention", () => {
+    const schema = serialize(serviceSchema(getPrestation("demoussage-toiture")));
+    expect(schema["@type"]).toBe("Service");
+    expect(schema.provider).toEqual({ "@id": `${siteConfig.url}/#roofingcontractor` });
+    expect(schema.url).toBe(`${siteConfig.url}/demoussage-toiture`);
+    const areas = schema.areaServed as Array<{ name: string }>;
+    expect(areas).toHaveLength(siteConfig.serviceArea.length);
+  });
+
+  it("Service : jamais d'aggregateRating (règle : ne rien inventer)", () => {
+    for (const prestation of prestations) {
+      const schema = serialize(serviceSchema(prestation));
+      expect(schema.aggregateRating, `/${prestation.slug}`).toBeUndefined();
+    }
+  });
+
+  it("Service : offers émis uniquement si la fourchette est déclarée", () => {
+    for (const prestation of prestations) {
+      const schema = serialize(serviceSchema(prestation));
+      if (!prestation.offer) {
+        expect(schema.offers, `/${prestation.slug}`).toBeUndefined();
+        continue;
+      }
+      const offers = schema.offers as Json;
+      const spec = offers.priceSpecification as Json;
+      expect(spec["@type"]).toBe("UnitPriceSpecification");
+      expect(spec.minPrice).toBe(prestation.offer.minPrice);
+      expect(spec.maxPrice).toBe(prestation.offer.maxPrice);
+      expect(spec.unitText).toBe(prestation.offer.unitText);
+    }
   });
 
   it("FAQPage : une Question/Answer par item, textes intacts", () => {

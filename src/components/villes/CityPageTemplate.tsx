@@ -1,4 +1,5 @@
 import ArrowForwardRoundedIcon from "@mui/icons-material/ArrowForwardRounded";
+import type { Route } from "next";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -13,6 +14,7 @@ import { PageTitle, TitleAccent } from "@/components/ui/PageTitle";
 import { PhoneLink } from "@/components/ui/PhoneLink";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { IconBadge } from "@/components/ui/ServiceIcon";
+import { communes } from "@/content/communes";
 import { prestations } from "@/content/prestations";
 import type { Ville } from "@/content/types";
 
@@ -43,6 +45,11 @@ type CityPageTemplateProps = {
  */
 export function CityPageTemplate({ ville }: CityPageTemplateProps) {
   const { start, accent, end } = splitCityH1(ville.h1, ville.name);
+  // Cross-links villes ↔ villes : toutes les villes à page dédiée sauf celle-ci.
+  const villesProches = communes.filter(
+    (commune): commune is (typeof communes)[number] & { href: string } =>
+      commune.href !== undefined && commune.href !== `/${ville.slug}`,
+  );
 
   return (
     <>
@@ -209,7 +216,33 @@ export function CityPageTemplate({ ville }: CityPageTemplateProps) {
         </Container>
       </section>
 
-      {/* 6. FAQ locale + 7. CTA final. */}
+      {/* 6. Villes proches — cross-links entre pages villes (stratégie SEO §4). */}
+      <section aria-label="Nos autres villes" className="bg-cream">
+        <Container className="pb-16 sm:pb-20 pt-16 sm:pt-20">
+          <SectionHeading
+            title={
+              <>
+                Nous intervenons aussi <TitleAccent>à proximité</TitleAccent>
+              </>
+            }
+            subtitle="Les autres villes de notre zone où chaque prestation est détaillée sur sa propre page."
+          />
+          <ul className="mt-8 flex flex-wrap justify-center gap-3">
+            {villesProches.map((commune) => (
+              <li key={commune.name}>
+                <Link
+                  href={commune.href as Route}
+                  className="inline-block rounded-full border border-navy/10 bg-white px-4 py-2 text-sm font-semibold text-navy transition-colors hover:border-primary hover:text-primary"
+                >
+                  Couvreur à {commune.name}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </Container>
+      </section>
+
+      {/* 7. FAQ locale + 8. CTA final. */}
       <FaqSection items={ville.faq} withSchema />
       <FinalCta />
     </>

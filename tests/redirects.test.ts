@@ -61,7 +61,23 @@ describe("redirections 301", () => {
 });
 
 describe("registre de routes", () => {
-  it("contient les 33 pages attendues (18 pages + 15 articles)", () => {
-    expect(getAllRoutes()).toHaveLength(33);
+  it("contient les 36 pages attendues (21 pages + 15 articles)", () => {
+    // 9 statiques + 7 prestations + 5 villes + 15 articles
+    expect(getAllRoutes()).toHaveLength(36);
+  });
+
+  it("chaque ancien slug migré est bien une source de 301 (refonte SEO)", () => {
+    const sources = new Set(legacyRedirectMap.map((rule) => rule.source));
+    const anciensSlugs = [
+      "/demoussage-toiture-villemandeur",
+      "/recherche-de-fuite-toiture-villemandeur",
+      "/zinguerie-villemandeur",
+      "/peinture-villemandeur",
+      "/charpente-villemandeur",
+      "/couvreur-zingueur-montargis",
+    ];
+    for (const slug of anciensSlugs) {
+      expect(sources, `${slug} doit rediriger vers son nouveau slug`).toContain(slug);
+    }
   });
 });

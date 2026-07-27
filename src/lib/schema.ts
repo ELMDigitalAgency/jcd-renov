@@ -119,8 +119,10 @@ export function serviceSchema(prestation: Prestation): WithContext<Service> {
     schema.offers = {
       "@type": "Offer",
       priceCurrency: "EUR",
+      // UnitPriceSpecification (et non PriceSpecification) : c'est le seul type
+      // qui porte `unitText`, indispensable pour un prix au m² ou au ml.
       priceSpecification: {
-        "@type": "PriceSpecification",
+        "@type": "UnitPriceSpecification",
         priceCurrency: "EUR",
         minPrice: prestation.offer.minPrice,
         maxPrice: prestation.offer.maxPrice,
