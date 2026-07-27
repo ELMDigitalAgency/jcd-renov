@@ -22,12 +22,12 @@
 - Env : `RESEND_API_KEY`, `CONTACT_EMAIL_TO`, `NEXT_PUBLIC_GA_ID` (optionnel)
 
 ## Priorités (ordre)
-1. **SEO local Villemandeur** — stratégie complète dans `docs/strategie-seo-extrait.txt` (16 pages, metas imposées, 15 articles, maillage, 301)
+1. **SEO local Villemandeur** — stratégie d'origine dans `docs/strategie-seo-extrait.txt`, **révisée le 28/07/2026** par l'audit DataForSEO (`Plan SEO Complet  JCD Rénovation.md`) : slugs prestations passés de géolocalisés à génériques (volumes 10× supérieurs), 36 routes, livrables off-site dans `docs/seo/`
 2. **Design** — cahier des charges `docs/cahier-des-charges-extrait.txt` (template BuildSafe : orange #F2731E, marine #16213E, crème #F8F3E9, Plus Jakarta Sans/Inter, pills, bento)
 3. Conversion (devis) · Performance (LCP < 2,5 s) · Accessibilité
 
 ## Règles projet spécifiques
 - **NE JAMAIS inventer** : chiffres, certifications, note Google, avis → placeholders + `CLIENT_TODOS` dans `src/site.config.ts`, doc `A-VALIDER-CLIENT.md`
-- Zones historiques (Orléans, Nemours, Sully, Sens) **abandonnées** → 301 vers pages équivalentes
+- Zones historiques Orléans, Nemours, Sully-sur-Loire **abandonnées** → 301 vers pages équivalentes. **Sens n'est plus abandonnée** (28/07/2026) : 590 recherches/mois mesurées, page `/couvreur-sens` créée, comme `/couvreur-gien`. ⚠️ Les deux sont à ~60 km : à confirmer avec le client (`A-VALIDER-CLIENT.md` §7)
 - Les 9 avis clients réels (site .fr) sont repris mot pour mot
 - Ancien site archivé dans `legacy/` (exclu de tsconfig/eslint/tailwind — ne pas builder)

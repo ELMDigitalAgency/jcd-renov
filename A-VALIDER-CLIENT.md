@@ -17,8 +17,15 @@
 
 1. Créer la boîte **contact@jcd-renovation.fr** et la vérifier dans Resend (SPF/DKIM).
 2. Créer la **fiche Google Business Profile** au 3 bis rue des Plantes, 45700 Villemandeur.
+   → Fiche prête à remplir : `docs/seo/google-business-profile.md`
 3. Envoyer le **book photos** (démoussage, zinguerie, fuite, peinture, charpente) pour remplacer les visuels provisoires des 2 nouvelles pages.
 4. Tenir prêtes les **attestations décennale + RC pro** (fournies avec les devis).
+5. **Confirmer les zones Gien et Sens** (~60 km) — voir §7 ci-dessous. Deux pages
+   dédiées ont été créées ; à dépublier si le client ne s'y déplace pas.
+6. Une fois la fiche Google active, renseigner dans `src/site.config.ts` :
+   `googleBusinessUrl`, `googleRating` (note **réelle** uniquement) et `geo`
+   (position exacte de la fiche). Ces trois champs alimentent automatiquement le
+   JSON-LD de la page d'accueil — aucun code à modifier.
 
 ---
 
@@ -75,14 +82,24 @@
 
 ## 7. Zones géographiques
 
-- **Décision appliquée** (validée avec Cyril) : focus 100 % Villemandeur +
-  agglomération Montargoise. Les anciennes zones (Orléans, Nemours,
-  Sully-sur-Loire, Sens) sont **abandonnées** avec redirections 301 vers les
-  pages équivalentes. Faire confirmer une dernière fois par le client qu'il
-  n'intervient plus dans ces zones.
-- Communes « à confirmer » de la stratégie SEO non intégrées pour l'instant :
-  Fontenay-sur-Loing, Ferrières-en-Gâtinais, Château-Renard. À ajouter dans
-  `src/content/communes.ts` si le client s'y déplace réellement.
+> ⚠️ **Révisé le 28/07/2026 par la refonte SEO — à faire confirmer par le client.**
+
+- **Décision d'origine** (juillet 2026) : focus 100 % Villemandeur + agglomération
+  Montargoise. Les anciennes zones (Orléans, Nemours, Sully-sur-Loire, Sens)
+  étaient **abandonnées** avec redirections 301.
+- **Ce qui a changé** : l'audit DataForSEO a mesuré 590 recherches/mois sur
+  « couvreur Sens » et 110 sur « couvreur Gien ». Ces deux villes figuraient déjà
+  dans `siteConfig.serviceArea` et dans `communes.ts`, donc déclarées desservies —
+  **deux pages dédiées ont été créées** : `/couvreur-sens` et `/couvreur-gien`.
+  La redirection `/couverture-a-sens-89100` pointe désormais vers `/couvreur-sens`
+  au lieu de `/zone-intervention`.
+- **🔴 À TRANCHER AVEC LE CLIENT** : Gien et Sens sont à ~60 km de Villemandeur.
+  S'il ne s'y déplace **pas réellement**, ces deux pages doivent être dépubliées :
+  une page ville sur une zone non desservie ne produit que des leads perdus et des
+  appels refusés. Orléans, Nemours et Sully-sur-Loire restent abandonnées.
+- Communes « à confirmer » de la stratégie SEO : Fontenay-sur-Loing reste non
+  intégrée. Ferrières-en-Gâtinais et Château-Renard sont désormais dans
+  `src/content/communes.ts` (mentions seules, sans page dédiée).
 
 ## 8. Arbitrage éditorial notable
 
