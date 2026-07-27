@@ -49,13 +49,15 @@ export const prestations: readonly Prestation[] = [
       ],
     },
     signes: {
-      title: "Quand faut-il démousser sa toiture ?",
+      title: "Les signes qui doivent vous alerter",
       items: [
         "Des plaques de mousse verte sont visibles depuis la rue ou le jardin",
         "Les tuiles noircissent ou verdissent par zones (algues, lichens)",
         "Des granulats ou morceaux de mousse s'accumulent dans les gouttières",
+        "Les gouttières débordent malgré un nettoyage récent",
         "Les tuiles restent sombres longtemps après la pluie (porosité : elles se gorgent d'eau)",
-        "Le dernier démoussage date de plus de 10 ans, ou n'a jamais été fait",
+        "Des tuiles se descellent ou se soulèvent : la mousse s'infiltre sous les emboîtements",
+        "Le dernier démoussage date de plus de 5 ans, ou n'a jamais été fait",
       ],
     },
     sections: [
@@ -113,10 +115,10 @@ export const prestations: readonly Prestation[] = [
           "L'entretien périodique de la toiture, dont l'enlèvement des mousses, relève de l'entretien courant à la charge du propriétaire : la Fédération Française du Bâtiment le rappelle régulièrement. Ce n'est pas qu'une question d'esthétique — un défaut d'entretien caractérisé peut être opposé lors de l'instruction d'un sinistre par votre assurance habitation.",
         ],
         bullets: [
-          "Mousse visible à l'œil nu depuis le sol",
-          "Tuiles verdâtres ou noirâtres sur une face entière",
-          "Gouttières qui débordent malgré un nettoyage récent",
-          "Tuiles qui se descellent ou se soulèvent : la mousse s'infiltre sous les emboîtements",
+          "Exposition au nord : moins de soleil, séchage lent, repousse rapide",
+          "Arbres proches : ombre permanente et dépôt continu de débris organiques",
+          "Zone humide (vallée, bord de rivière, terrain bas) : humidité ambiante élevée",
+          "Couverture ancienne : des tuiles poreuses offrent un bien meilleur substrat",
         ],
       },
     ],
