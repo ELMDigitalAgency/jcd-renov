@@ -42,7 +42,7 @@ const expectedTitles = {
   "couvreur-villemandeur.html": "Couvreur à Villemandeur - Pose, Rénovation & Réparation",
   "couvreur-montargis.html": "Couvreur Zingueur à Montargis | JCD Rénovation",
   "couvreur-amilly.html": "Couvreur à Amilly | JCD Rénovation",
-  "couvreur-chalette-sur-loing.html": "Couvreur à Chalette-sur-Loing | JCD Rénovation",
+  "couvreur-chalette-sur-loing.html": "Couvreur à Chalette-sur-Loing (45120) - JCD Rénovation",
   "couvreur-gien.html": "Couvreur à Gien (45500) - JCD Rénovation",
   "couvreur-sens.html": "Couvreur à Sens (89100) - JCD Rénovation",
   "zone-intervention.html": "Zone d'Intervention : Loiret, Yonne, Seine-et-Marne | JCD Rénovation",

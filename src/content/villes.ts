@@ -401,13 +401,13 @@ export const villes: readonly Ville[] = [
       {
         title: "Rénover une toiture à Gien : les règles à connaître avant de commencer",
         paragraphs: [
-          "Le centre reconstruit de Gien fait l'objet d'une attention patrimoniale particulière, et le château qui domine la ville place une partie du bâti dans le périmètre de protection d'un monument historique. Concrètement, une réfection de toiture peut y être soumise à l'avis de l'Architecte des Bâtiments de France, en plus de la déclaration préalable de travaux exigée dans tous les cas dès lors que l'aspect extérieur est modifié.",
+          "Le centre reconstruit de Gien fait l'objet d'une attention patrimoniale particulière, et le château qui domine la ville place une partie du bâti dans le périmètre de protection d'un monument historique. Une réfection strictement à l'identique échappe en principe à toute formalité, mais dès que l'aspect extérieur change, la déclaration préalable devient obligatoire — et dans ce périmètre, l'avis de l'Architecte des Bâtiments de France s'y ajoute, y compris parfois sur des travaux à l'identique.",
           "Ces contraintes portent le plus souvent sur le matériau et sa teinte : conserver l'ardoise là où elle existe, respecter un format, éviter les finitions trop brillantes. Elles ne sont pas un obstacle, mais elles allongent l'instruction et doivent être anticipées : déposer le dossier après avoir commandé les matériaux est le meilleur moyen de bloquer un chantier. Le service urbanisme de la mairie de Gien est la seule source fiable pour savoir ce qui s'applique à votre adresse.",
         ],
         bullets: [
-          "Déclaration préalable exigée même à matériau identique",
-          "Avis de l'ABF possible dans le périmètre du château",
-          "Prescriptions fréquentes sur le matériau et la teinte",
+          "Réfection à l'identique : aucune formalité en principe",
+          "Changement de matériau ou de teinte : déclaration préalable obligatoire",
+          "Avis de l'ABF dans le périmètre du château, y compris à l'identique",
           "Notre appui : descriptif technique, références matériaux et photos pour le dossier",
         ],
       },
@@ -443,7 +443,7 @@ export const villes: readonly Ville[] = [
       {
         question: "Faut-il une autorisation pour refaire une toiture à Gien ?",
         answer:
-          "Une déclaration préalable de travaux est nécessaire dès lors que l'aspect extérieur change, même à matériau identique. Dans le centre reconstruit et dans le périmètre du château, l'avis de l'Architecte des Bâtiments de France peut s'ajouter et porter sur le matériau et sa teinte. Renseignez-vous auprès du service urbanisme de la mairie avant d'engager quoi que ce soit.",
+          "Une réfection strictement à l'identique ne demande en principe aucune formalité. Dès que l'aspect extérieur change, une déclaration préalable de travaux est nécessaire. Dans le centre reconstruit et dans le périmètre du château, l'avis de l'Architecte des Bâtiments de France peut s'ajouter et porter sur le matériau et sa teinte, même pour des travaux à l'identique. Renseignez-vous auprès du service urbanisme de la mairie avant d'engager quoi que ce soit.",
       },
       {
         question: "Une toiture en ardoise ancienne doit-elle être entièrement refaite ?",

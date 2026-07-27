@@ -145,9 +145,19 @@ export const prestations: readonly Prestation[] = [
     },
     faq: [
       {
+        question: "Quel est le prix d'un démoussage de toiture au m² en 2026 ?",
+        answer:
+          "Entre 15 et 35 €/m² pour un démoussage complet : 15 à 25 €/m² avec traitement anti-mousse, 25 à 35 €/m² avec hydrofuge en plus. Un nettoyage seul, sans traitement, descend à 8-15 €/m² mais n'empêche pas la repousse. Pour une toiture de 100 m², comptez donc 1 500 à 3 500 € pour une prestation complète. Le prix exact dépend de la surface, de la pente, de l'accessibilité et de l'état d'encrassement.",
+      },
+      {
         question: "À quelle fréquence faut-il démousser une toiture ?",
         answer:
-          "Tous les 5 à 10 ans en moyenne. L'intervalle dépend de l'exposition : une toiture orientée nord, entourée d'arbres ou proche d'un plan d'eau se couvre de mousse plus vite. Un contrôle visuel annuel suffit pour décider du bon moment.",
+          "Tous les 3 à 5 ans pour une toiture exposée — orientée nord, entourée d'arbres ou proche d'un plan d'eau — et plutôt tous les 5 à 10 ans pour une couverture dégagée et bien ventilée. C'est l'exposition qui commande, pas le calendrier. Un contrôle visuel annuel depuis le sol, après l'automne, suffit pour décider du bon moment.",
+      },
+      {
+        question: "L'hydrofuge est-il obligatoire après un démoussage ?",
+        answer:
+          "Non, il n'est pas obligatoire, mais il est vivement conseillé sur une toiture poreuse ou très exposée. Sans hydrofuge, une couverture démoussée est recolonisée en deux à trois ans en environnement humide. Le surcoût est de 10 à 15 €/m² et la protection tient 3 à 5 ans : sur la durée, cela espace suffisamment les interventions pour être rentable. Sur une toiture récente et bien ventilée, il peut en revanche être superflu.",
       },
       {
         question: "Quelle est la meilleure période pour un démoussage ?",
@@ -178,6 +188,25 @@ export const prestations: readonly Prestation[] = [
         question: "Un démoussage redonne-t-il sa couleur d'origine à la toiture ?",
         answer:
           "En grande partie, oui. Le nettoyage retire mousses, lichens et voile noir, et la teinte des tuiles réapparaît. Une couverture ancienne conserve toutefois sa patine : des tuiles décolorées par des années d'UV ne retrouvent pas leur teinte de sortie d'usine. Le traitement hydrofuge ravive l'aspect et homogénéise le rendu, sans jamais masquer l'âge réel des matériaux.",
+      },
+      {
+        question: "Le démoussage est-il couvert par la garantie décennale ?",
+        answer:
+          "Le démoussage seul — nettoyage et traitement — relève de l'entretien courant et n'entre pas dans le champ de la garantie décennale, qui couvre les dommages compromettant la solidité de l'ouvrage ou son étanchéité. En revanche, si l'intervention inclut des réparations de couverture (remplacement de tuiles, reprise de faîtage ou de solins), ces travaux-là sont bien couverts par notre garantie décennale de 10 ans. L'attestation est fournie avec le devis.",
+      },
+    ],
+    sources: [
+      {
+        label: "FFBâtiment — L’entretien des toitures : une obligation souvent méconnue",
+        url: "https://www.ffbatiment.fr/techniques-batiment/enveloppe-du-batiment/couverture/dossier/l-entretien-des-toitures-une-obligation-souvent-meconnue",
+      },
+      {
+        label: "Service-Public.fr — Travaux dans un logement : droits et obligations",
+        url: "https://www.service-public.gouv.fr/particuliers/vosdroits/F1328",
+      },
+      {
+        label: "IRIS-ST — Mémo entretien des couvertures (2024)",
+        url: "https://www.iris-st.org/medias/8/Iris-st_Memo_Entretien-des-couvertures_2024-hd-screen.pdf",
       },
     ],
     serviceType: "Démoussage de toiture",
@@ -711,7 +740,7 @@ export const prestations: readonly Prestation[] = [
       {
         title: "Démarches administratives avant de refaire sa toiture",
         paragraphs: [
-          "Une réfection de couverture modifie l'aspect extérieur de la construction : elle relève en principe de la déclaration préalable de travaux, y compris lorsque vous reposez un matériau identique. Le dossier se dépose en mairie et l'instruction demande généralement un mois, davantage dans les secteurs protégés. Lancer les travaux sans cette formalité vous expose à une mise en demeure, voire à l'obligation de déposer ce qui vient d'être posé.",
+          "Tout dépend de ce que vous changez. Une réfection strictement à l'identique — mêmes matériaux, même teinte — restaure l'état initial du bâtiment et échappe en principe à toute formalité. Dès que l'aspect extérieur est modifié (matériau différent, coloris différent, ajout d'une fenêtre de toit), une déclaration préalable de travaux devient obligatoire : le dossier se dépose en mairie et l'instruction demande généralement un mois, davantage en secteur protégé. Lancer les travaux sans cette formalité vous expose à une mise en demeure, voire à l'obligation de déposer ce qui vient d'être posé.",
           "Certaines communes imposent des prescriptions précises sur le matériau, la teinte des tuiles ou l'aspect des ouvrages de zinguerie, en particulier à proximité d'un monument historique où l'avis de l'Architecte des Bâtiments de France s'ajoute à l'instruction. Ces règles varient d'une parcelle à l'autre : seul le service urbanisme de votre mairie peut vous dire ce qui s'applique chez vous, et c'est la première démarche à faire.",
           "Prévenez également votre assurance habitation avant l'ouverture du chantier, et conservez le procès-verbal de réception daté : c'est lui qui fait courir le délai de la garantie décennale. Nous vous remettons le descriptif technique, les références des matériaux et les photos de l'existant nécessaires à votre dossier.",
         ],
@@ -757,7 +786,7 @@ export const prestations: readonly Prestation[] = [
       {
         question: "Faut-il une autorisation pour refaire sa toiture ?",
         answer:
-          "Oui, une déclaration préalable de travaux est en principe nécessaire, même à matériau identique, car la réfection modifie l'aspect extérieur de la construction. Comptez environ un mois d'instruction, davantage à proximité d'un monument historique où l'Architecte des Bâtiments de France intervient. Renseignez-vous auprès du service urbanisme de votre mairie : les règles changent d'une parcelle à l'autre.",
+          "Une réfection strictement à l'identique (mêmes matériaux, même teinte) restaure l'état initial et ne demande en principe aucune formalité. Dès que l'aspect extérieur change — matériau, coloris, ajout d'une fenêtre de toit — une déclaration préalable de travaux est obligatoire, avec environ un mois d'instruction. À proximité d'un monument historique, l'Architecte des Bâtiments de France intervient et peut imposer des prescriptions même à l'identique. Renseignez-vous auprès du service urbanisme de votre mairie : les règles changent d'une parcelle à l'autre.",
       },
       {
         question: "Peut-on changer de matériau de couverture ?",
