@@ -247,6 +247,53 @@ export const villes: readonly Ville[] = [
           "Si un sinistre est déclaré, nous vous accompagnons dans les échanges avec votre assurance : photos datées des dégâts, rapport d'intervention, devis détaillé poste par poste. Ces pièces facilitent l'instruction du dossier et la prise en charge des réparations. Vous gardez un seul interlocuteur, du bâchage d'urgence jusqu'à la réception des travaux.",
         ],
       },
+      {
+        title: "Réparation et rénovation de toiture à Chalette",
+        paragraphs: [
+          "Le parc immobilier de Chalette-sur-Loing est varié : pavillons des années 1970-1990 couverts en tuiles mécaniques à emboîtement, maisons de bourg plus anciennes en tuiles plates ou en ardoise, et quelques longères du Gâtinais. Chaque type de couverture a ses points faibles et ses modes d'intervention propres — on ne traite pas une tuile mécanique récente comme une tuile plate centenaire.",
+          "Chaque chantier commence par un diagnostic gratuit sur place. Nous vous disons honnêtement si une réparation suffit ou si la rénovation s'impose : réparer ce qui peut l'être coûte toujours moins cher, et un artisan qui pousse systématiquement vers la réfection complète doit vous alerter.",
+        ],
+        bullets: [
+          "Réparations ponctuelles : tuiles cassées ou déplacées après une tempête, reprise de faîtage descellé, arêtiers fissurés",
+          "Remaniement de toiture : tri complet de la couverture, remplacement des tuiles défectueuses, contrôle du liteaunage",
+          "Rénovation complète : dépose totale, écran de sous-toiture HPV, liteaux neufs, couverture neuve (180 à 280 €/m² en tuiles)",
+          "Points singuliers : faîtage scellé ou posé à sec, étanchéité des rives et des arêtiers",
+        ],
+      },
+      {
+        title: "Démoussage et nettoyage de toiture à Chalette",
+        paragraphs: [
+          "Le démoussage est l'entretien le plus régulier à prévoir sur une toiture en tuiles. Le climat du Loiret — humide en automne et au printemps — favorise la prolifération de mousses, lichens et algues sur les versants nord et ombragés. À Chalette, la proximité du Loing, du canal et du lac accentue nettement le phénomène.",
+          "L'intervention se déroule en trois temps : nettoyage mécanique (brossage, ou lavage à pression modérée pour ne pas casser les tuiles), application d'un traitement anti-mousse biocide, puis en option un hydrofuge qui imperméabilise la surface et prolonge l'effet de trois à cinq ans. Le nettoyage des gouttières est compris : les mousses délogées ne doivent jamais y stagner.",
+          "La bonne fréquence se situe entre cinq et dix ans selon l'exposition, l'inclinaison du toit et la végétation environnante. Un contrôle visuel annuel depuis le sol suffit à ajuster ce rythme à votre maison.",
+        ],
+        bullets: [
+          "Nettoyage et traitement anti-mousse : 15 à 25 €/m²",
+          "Nettoyage, traitement et hydrofuge : 25 à 35 €/m²",
+          "Fourchettes 2026 variant selon la surface, la pente, l'accessibilité et l'état d'encrassement",
+        ],
+      },
+      {
+        title: "Charpente et traitement du bois",
+        paragraphs: [
+          "Une toiture saine repose sur une charpente saine. Lors de chaque intervention de couverture, nous inspectons systématiquement les bois visibles depuis les combles : présence d'insectes xylophages (petits trous ronds, sciure fine en dessous), sections affaiblies par l'humidité ou les champignons lignivores, déformations du plan de couverture.",
+          "Si un problème est détecté, nous réalisons le traitement insecticide et fongicide par injection et badigeonnage, le renfort ou le remplacement des pièces endommagées, et la consolidation des assemblages (jambes de force, contrefiches). Un diagnostic préventif coûte bien moins cher qu'une reprise structurelle en urgence — nous préférons vous le dire clairement.",
+        ],
+      },
+      {
+        title: "Peinture et ravalement de façade à Chalette-sur-Loing",
+        paragraphs: [
+          "JCD Rénovation intervient aussi sur l'enveloppe extérieure de votre maison, au-delà de la toiture : nettoyage haute pression de la façade, enduit de rebouchage sur les fissures et les zones éclatées, peinture extérieure microporeuse adaptée au support (crépi, béton, parpaing), ou ravalement complet en enduit monocouche projeté, finition lisse ou grattée.",
+          "Un ravalement bien préparé tient quinze à vingt ans. L'étape de nettoyage et de rebouchage compte autant que la peinture elle-même : c'est elle qui détermine la tenue dans le temps, et c'est précisément celle qu'un devis anormalement bas supprime.",
+        ],
+      },
+      {
+        title: "Devis gratuit couvreur à Chalette-sur-Loing",
+        paragraphs: [
+          "Vous cherchez un couvreur 45120 disponible et qui répond vite ? Vous appelez ou vous écrivez, nous venons sur place pour un diagnostic visuel gratuit photos à l'appui, puis vous recevez un devis détaillé sous 24 à 48 h, chaque poste chiffré séparément — main-d'œuvre et matériaux distincts, aucune formule vague. Vous décidez ensuite : aucun engagement, aucun acompte avant votre accord écrit.",
+          "Chaque devis est accompagné du délai de réalisation estimé, et l'attestation d'assurance décennale est fournie sur simple demande. Nous sommes votre artisan couvreur de proximité dans l'agglomération Montargoise depuis quatorze ans : pas de démarchage, pas de pression, un devis honnête et vous laissez décider.",
+        ],
+      },
     ],
     atouts: [
       {
@@ -282,6 +329,35 @@ export const villes: readonly Ville[] = [
         question: "Un pare-feuilles sur les gouttières est-il utile à Chalette ?",
         answer:
           "Oui pour les maisons proches d'arbres : la grille empêche les feuilles de s'accumuler tout en laissant l'eau s'écouler, ce qui espace les nettoyages et limite les débordements. Nous vous conseillons le modèle adapté lors du diagnostic gratuit.",
+      },
+      {
+        question: "Quel est le prix d'un démoussage de toiture à Chalette-sur-Loing ?",
+        answer:
+          "Comptez entre 15 et 35 €/m² selon la prestation : 15 à 25 €/m² pour le nettoyage avec traitement anti-mousse, 25 à 35 €/m² avec hydrofuge en plus. Le prix final dépend de la surface, de la pente et de l'état d'encrassement. Le devis est établi gratuitement après visite sur place.",
+      },
+      {
+        question: "Faut-il une autorisation pour rénover sa toiture à Chalette-sur-Loing ?",
+        answer:
+          "Une réfection à l'identique — mêmes matériaux, même teinte — restaure l'état initial et ne nécessite en général aucune formalité. En revanche, dès que l'aspect extérieur change (matériau ou couleur différents), une déclaration préalable de travaux doit être déposée en mairie avant le début du chantier. En cas de doute, le service urbanisme de la mairie tranche : nous vous aidons à constituer le dossier technique.",
+      },
+      {
+        question: "Intervenez-vous aussi sur la charpente et la façade à Chalette-sur-Loing ?",
+        answer:
+          "Oui. JCD Rénovation intervient sur l'ensemble de l'enveloppe extérieure : couverture, zinguerie, démoussage, charpente, recherche de fuite et peinture de façade. Un seul interlocuteur pour tout le chantier, ce qui évite les renvois de responsabilité entre corps de métier.",
+      },
+    ],
+    sources: [
+      {
+        label: "CAPEB — Quelles assurances pour quelles responsabilités de l’artisan du bâtiment",
+        url: "https://www.capeb.fr/service/quelles-assurances-pour-quelles-responsabilites",
+      },
+      {
+        label: "Service-Public.fr — Garantie décennale des constructeurs",
+        url: "https://www.service-public.gouv.fr/particuliers/vosdroits/F2034",
+      },
+      {
+        label: "Anah — Les aides à la rénovation de l’habitat",
+        url: "https://www.anah.gouv.fr/action/aides",
       },
     ],
   },
