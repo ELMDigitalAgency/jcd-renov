@@ -6,6 +6,7 @@ import Link from "next/link";
 import { ContentSections } from "@/components/sections/ContentSections";
 import { FaqSection } from "@/components/sections/FaqSection";
 import { FinalCta } from "@/components/sections/FinalCta";
+import { SourcesUtiles } from "@/components/sections/SourcesUtiles";
 import { Breadcrumbs } from "@/components/ui/Breadcrumbs";
 import { ButtonLink } from "@/components/ui/ButtonLink";
 import { Card } from "@/components/ui/Card";
@@ -242,8 +243,9 @@ export function CityPageTemplate({ ville }: CityPageTemplateProps) {
         </Container>
       </section>
 
-      {/* 7. FAQ locale + 8. CTA final. */}
+      {/* 7. FAQ locale + 8. sources + 9. CTA final. */}
       <FaqSection items={ville.faq} withSchema />
+      <SourcesUtiles sources={ville.sources} />
       <FinalCta />
     </>
   );

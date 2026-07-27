@@ -7,6 +7,7 @@ import { ServiceZones } from "@/components/prestations/ServiceZones";
 import { WarningSigns } from "@/components/prestations/WarningSigns";
 import { FaqSection } from "@/components/sections/FaqSection";
 import { FinalCta } from "@/components/sections/FinalCta";
+import { SourcesUtiles } from "@/components/sections/SourcesUtiles";
 import { JsonLd } from "@/components/ui/JsonLd";
 import { TitleAccent } from "@/components/ui/PageTitle";
 import type { Prestation } from "@/content/types";
@@ -46,6 +47,7 @@ export function PrestationPageTemplate({ prestation, relatedPosts }: PrestationP
         withSchema
       />
       <RelatedArticles posts={relatedPosts} />
+      <SourcesUtiles sources={prestation.sources} />
       <FinalCta />
     </>
   );

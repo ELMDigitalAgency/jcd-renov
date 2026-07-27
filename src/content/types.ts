@@ -29,6 +29,18 @@ export type FaqItem = {
 };
 
 /**
+ * Lien externe de référence (« Sources utiles ») affiché en bas de page.
+ * Signal E-E-A-T : citer des sources officielles (Service-Public, CAPEB, Anah,
+ * FFBâtiment…) appuie les affirmations réglementaires et tarifaires du contenu.
+ * Rendus en `rel="nofollow noopener"` : ce sont des références, pas des
+ * recommandations, et on ne transmet pas de PageRank.
+ */
+export type SourceUtile = {
+  label: string;
+  url: string;
+};
+
+/**
  * Slugs des pages prestations. Génériques (et non géolocalisés) depuis la
  * refonte SEO : l'audit DataForSEO a mesuré des volumes 10× supérieurs sur les
  * requêtes sans ville (« démoussage toiture » 8 100/mois contre « démoussage
@@ -127,6 +139,8 @@ export type Prestation = {
   faq: FaqItem[];
   /** Libellé schema.org du service, ex. « Démoussage de toiture ». */
   serviceType: string;
+  /** Références externes officielles affichées en bas de page (E-E-A-T). */
+  sources?: SourceUtile[];
   /**
    * Fourchette de prix du schema Service, saisie EXPLICITEMENT et jamais
    * dérivée de `tarifs.rows` (chaînes libres : les parser reviendrait à
@@ -161,6 +175,8 @@ export type Ville = {
   sections: ContentSection[];
   atouts: { title: string; text: string }[];
   faq: FaqItem[];
+  /** Références externes officielles affichées en bas de page (E-E-A-T). */
+  sources?: SourceUtile[];
 };
 
 export type Avis = {
