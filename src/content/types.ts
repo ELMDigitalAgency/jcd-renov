@@ -28,13 +28,22 @@ export type FaqItem = {
   answer: string;
 };
 
+/**
+ * Slugs des pages prestations. Génériques (et non géolocalisés) depuis la
+ * refonte SEO : l'audit DataForSEO a mesuré des volumes 10× supérieurs sur les
+ * requêtes sans ville (« démoussage toiture » 8 100/mois contre « démoussage
+ * toiture Villemandeur »). L'ancrage local reste porté par le contenu et par
+ * /couvreur-villemandeur, page pilier locale. Anciens slugs → 301 dans
+ * lib/redirects.ts.
+ */
 export const prestationSlugs = [
-  "demoussage-toiture-villemandeur",
-  "recherche-de-fuite-toiture-villemandeur",
-  "zinguerie-villemandeur",
+  "demoussage-toiture",
+  "recherche-fuite-toiture",
+  "zinguerie",
   "couvreur-villemandeur",
-  "peinture-villemandeur",
-  "charpente-villemandeur",
+  "couverture-toiture",
+  "peinture-facade",
+  "charpente",
 ] as const;
 
 export type PrestationSlug = (typeof prestationSlugs)[number];
@@ -117,9 +126,11 @@ export type Prestation = {
 };
 
 export type VilleSlug =
-  | "couvreur-zingueur-montargis"
+  | "couvreur-montargis"
   | "couvreur-amilly"
-  | "couvreur-chalette-sur-loing";
+  | "couvreur-chalette-sur-loing"
+  | "couvreur-gien"
+  | "couvreur-sens";
 
 export type Ville = {
   slug: VilleSlug;
