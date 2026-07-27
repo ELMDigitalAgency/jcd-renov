@@ -29,14 +29,15 @@ Sans `RESEND_API_KEY`, le formulaire simule l'envoi en dev (log console).
 | `npm run dev` | Développement (Turbopack) |
 | `npm run check` | **La** commande pré-livraison : typecheck + lint + tests + build |
 | `npm run test` | Tests Vitest (301, registre blog, schémas JSON-LD, API devis…) |
-| `npm run build` | Build production (génère les 31 pages + OG images) |
+| `npm run build` | Build production (génère les 36 pages + OG images) |
+| `node scripts/audit-build.mjs` | Audit du HTML généré : liens internes, titles, H1 uniques, canonicals (à lancer après `build`) |
 
 ## Architecture
 
 ```
 src/
 ├── site.config.ts        ← NAP, stats, CLIENT_TODOS — SOURCE UNIQUE de vérité
-├── app/                  ← 16 routes + blog/[slug] + api/devis + sitemap/robots/OG
+├── app/                  ← 21 routes + blog/[slug] + api/devis + sitemap/robots/OG
 ├── components/
 │   ├── ui/               ← primitives design system (PageTitle = seul <h1> du site)
 │   ├── home|prestations|villes|blog|avis|realisations|devis|consent|sections|layout
