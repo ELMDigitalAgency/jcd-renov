@@ -18,10 +18,12 @@ const APP_DIR = path.join(ROOT, ".next", "server", "app");
 const routes = new Set([
   "/", "/zone-intervention", "/realisations", "/avis-clients", "/a-propos",
   "/blog", "/devis-gratuit", "/mentions-legales", "/politique-de-confidentialite",
-  "/demoussage-toiture-villemandeur", "/recherche-de-fuite-toiture-villemandeur",
-  "/zinguerie-villemandeur", "/couvreur-villemandeur",
-  "/peinture-villemandeur", "/charpente-villemandeur",
-  "/couvreur-zingueur-montargis", "/couvreur-amilly", "/couvreur-chalette-sur-loing",
+  // Prestations (slugs génériques depuis la refonte SEO)
+  "/demoussage-toiture", "/recherche-fuite-toiture", "/zinguerie",
+  "/couvreur-villemandeur", "/couverture-toiture", "/peinture-facade", "/charpente",
+  // Villes
+  "/couvreur-montargis", "/couvreur-amilly", "/couvreur-chalette-sur-loing",
+  "/couvreur-gien", "/couvreur-sens",
 ]);
 const blogDir = path.join(ROOT, "src", "content", "blog");
 for (const f of fs.readdirSync(blogDir)) {
