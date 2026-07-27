@@ -213,15 +213,30 @@ tort :
 Google envoie un code de validation par courrier à l'adresse déclarée (compter 5 à 14 jours).
 **Tant que la fiche n'est pas validée, elle n'apparaît pas.**
 
-Une fois validée, deux valeurs sont à reporter dans `src/site.config.ts` :
+Une fois validée, trois valeurs sont à reporter dans `src/site.config.ts` :
 
 ```ts
-googleBusinessUrl: "https://…",          // lien vers la fiche → affiché sur le site
-googleRating: { value: 4.8, count: 12 }, // note RÉELLE uniquement
+googleBusinessUrl: "https://…",          // → alimente le sameAs du JSON-LD
+googleRating: { value: 4.8, count: 12 }, // → alimente l'aggregateRating. Note RÉELLE uniquement
+geo: { latitude: "…", longitude: "…" },  // → aligner sur la position exacte de la fiche
 ```
 
-⚠️ `googleRating` reste `null` tant qu'il n'y a pas de note réelle. Le renseigner avec une note
-inventée injecterait un `aggregateRating` mensonger dans les données structurées du site —
-c'est une violation des consignes Google, sanctionnable par la perte des rich snippets.
+**Ces trois champs pilotent directement le JSON-LD de la page d'accueil** (`src/lib/schema.ts`,
+schéma `RoofingContractor`). Aucune modification de code n'est nécessaire : le schéma les lit
+automatiquement.
+
+- `googleBusinessUrl` et les réseaux sociaux → le bloc `sameAs` apparaît dès qu'au moins une URL
+  réelle est renseignée. Tant que tout est `null`, `sameAs` n'est pas émis (plutôt qu'un tableau
+  vide ou une URL Google Maps devinée qui pointerait dans le vide).
+- `googleRating` → le bloc `aggregateRating` apparaît automatiquement, avec `bestRating` 5 et
+  `worstRating` 1.
+- `geo` → actuellement `47.9667 / 2.7333`, coordonnées approximatives du centre de Villemandeur.
+  **À corriger avec la position exacte de la fiche une fois créée** : deux positions divergentes
+  entre le site et le GBP affaiblissent le signal local.
+
+⚠️ `googleRating` reste `null` tant qu'il n'y a pas de note réelle **issue de Google**. Les 8 avis
+affichés sur le site proviennent de l'ancien site (tous notés 5/5) : les publier en
+`aggregateRating` serait une note fabriquée. Le renseigner avec une note inventée est une
+violation des consignes Google, sanctionnable par la perte des rich snippets.
 
 Voir aussi [suivi.md](suivi.md) pour le suivi mensuel.
