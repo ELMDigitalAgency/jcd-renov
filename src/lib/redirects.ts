@@ -18,32 +18,51 @@ export type RedirectRule = {
   permanent: boolean;
 };
 
-const anciennesVillesSecondaires = ["nemours-77140", "sens-89100", "sully-sur-loire-45600"];
+const anciennesVillesSecondaires = ["nemours-77140", "sully-sur-loire-45600"];
 const anciennesVillesArticles = ["montargis", "nemours", "orleans", "sens", "sully-sur-loire"];
+
+/**
+ * Slugs de prestations migrés lors de la refonte SEO (juillet 2026) :
+ * géolocalisés → génériques. Les destinations legacy ci-dessous pointent
+ * DIRECTEMENT vers les nouveaux slugs : passer par l'ancien créerait une
+ * chaîne à deux sauts, interdite par tests/redirects.test.ts.
+ */
+const migrationSlugs: ReadonlyArray<{ source: string; destination: string }> = [
+  { source: "/demoussage-toiture-villemandeur", destination: "/demoussage-toiture" },
+  { source: "/recherche-de-fuite-toiture-villemandeur", destination: "/recherche-fuite-toiture" },
+  { source: "/zinguerie-villemandeur", destination: "/zinguerie" },
+  { source: "/peinture-villemandeur", destination: "/peinture-facade" },
+  { source: "/charpente-villemandeur", destination: "/charpente" },
+  { source: "/couvreur-zingueur-montargis", destination: "/couvreur-montargis" },
+];
 
 /** Entrées « métier » : ancienne URL (sans extension) → nouvelle URL. */
 export const legacyRedirectMap: ReadonlyArray<{
   source: string;
   destination: string;
 }> = [
+  ...migrationSlugs,
+
   // ── Jeu 1 : site en ligne jcdrenovation.fr (Webkom) ────────────────────
-  { source: "/nettoyage-et-demoussage-de-toiture-45", destination: "/demoussage-toiture-villemandeur" },
-  { source: "/urgence-fuite-de-toiture-45", destination: "/recherche-de-fuite-toiture-villemandeur" },
-  { source: "/couverture-a-montargis-45200", destination: "/couvreur-zingueur-montargis" },
+  { source: "/nettoyage-et-demoussage-de-toiture-45", destination: "/demoussage-toiture" },
+  { source: "/urgence-fuite-de-toiture-45", destination: "/recherche-fuite-toiture" },
+  { source: "/couverture-a-montargis-45200", destination: "/couvreur-montargis" },
   { source: "/couverture-a-nemours-77140", destination: "/zone-intervention" },
-  { source: "/couverture-a-sens-89100", destination: "/zone-intervention" },
+  { source: "/couverture-a-sens-89100", destination: "/couvreur-sens" },
   { source: "/couverture-a-sully-sur-loire-45600", destination: "/zone-intervention" },
   { source: "/contact", destination: "/devis-gratuit" },
-  // Prestations abandonnées (peinture, espaces verts, ravalement) → accueil
-  { source: "/peinture-interieur-et-exterieur-45", destination: "/" },
+  // Peinture et ravalement ont désormais leur page dédiée (refonte SEO).
+  { source: "/peinture-interieur-et-exterieur-45", destination: "/peinture-facade" },
+  { source: "/ravalement-de-facade-45", destination: "/peinture-facade" },
+  // Prestation réellement abandonnée : espaces verts.
   { source: "/entretien-espace-vert-45", destination: "/" },
-  { source: "/ravalement-de-facade-45", destination: "/" },
 
   // ── Jeu 2 : dossier local jcd-renovation.com (ELM) ──────────────────────
-  { source: "/nettoyage-demoussage-45", destination: "/demoussage-toiture-villemandeur" },
-  { source: "/fuite-toiture-45", destination: "/recherche-de-fuite-toiture-villemandeur" },
-  { source: "/ravalement-facade-45", destination: "/" },
-  { source: "/couverture-montargis-45200", destination: "/couvreur-zingueur-montargis" },
+  { source: "/nettoyage-demoussage-45", destination: "/demoussage-toiture" },
+  { source: "/fuite-toiture-45", destination: "/recherche-fuite-toiture" },
+  { source: "/ravalement-facade-45", destination: "/peinture-facade" },
+  { source: "/couverture-montargis-45200", destination: "/couvreur-montargis" },
+  { source: "/couverture-sens-89100", destination: "/couvreur-sens" },
   ...anciennesVillesSecondaires.map((ville) => ({
     source: `/couverture-${ville}`,
     destination: "/zone-intervention",
